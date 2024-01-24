@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify if the user can login using unverified account</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a07064bf-4740-410e-b5a2-88342de04e16</testCaseGuid>
+</TestCaseEntity>

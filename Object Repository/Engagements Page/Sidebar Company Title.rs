@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Sidebar Company Title</name>
+   <tag></tag>
+   <elementGuidId>cd14cc17-861b-4715-b554-a482182906f2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//section[@class='MainSidebar-section']//div[@class='avatar-wrapper']//a[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>cf947100-e239-4e22-af94-0bfa75cce86f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//section[@class='MainSidebar-section']//div[@class='avatar-wrapper']//a[2]</value>
+      <webElementGuid>0c401cc9-58f6-4f02-b24c-0545bc17703b</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
