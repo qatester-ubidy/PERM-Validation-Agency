@@ -34,4 +34,24 @@
       <initValue>'Invalid Email'</initValue>
       <name>EmailValidation</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Sign in to your Ubidy Agency Account'</initValue>
+      <name>LoginTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Wrong email or password.'</initValue>
+      <name>IncorrectCredentials</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'qa.tester@ubidy.com'</initValue>
+      <name>QAEmail</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'E=A>g6QA'</initValue>
+      <name>QAPw</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
