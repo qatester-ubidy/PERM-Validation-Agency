@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify if user can register with invalid values</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>69a0e348-ec3e-4479-828f-4f89f42d5dc6</testCaseGuid>
+</TestCaseEntity>
