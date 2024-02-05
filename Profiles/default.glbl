@@ -54,4 +54,9 @@
       <initValue>'E=A>g6QA'</initValue>
       <name>QAPw</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'543 345 657'</initValue>
+      <name>PhoneNo</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
