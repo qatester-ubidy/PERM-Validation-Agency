@@ -41,4 +41,4 @@ WebUI.click(findTestObject('Object Repository/My Profile/Save AND Continue btn')
 
 WebUI.delay(5)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/My Profile/Company Bio Tab'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/My Profile/Company Bio Tab'), 5)

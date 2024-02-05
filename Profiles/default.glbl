@@ -61,9 +61,37 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
-      <name>verifiedAccount</name>
       <initValue>'543 345 657'</initValue>
       <name>PhoneNo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Company Name is required!'</initValue>
+      <name>companyNameValidationMessage</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Email is required!'</initValue>
+      <name>companyEmailValidationMessage</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Phone Number is required!'</initValue>
+      <name>companyPhoneValidationMessage</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'skype cannot be empty'</initValue>
+      <name>companySkypeValidationMessage</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'linkedIn cannot be empty'</initValue>
+      <name>companyLinkedInValidationMessage</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>emptyCompanyName</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
