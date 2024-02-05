@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Verify if user can save information on Profile Details tab</name>
+   <name>2. Verify if user can save information on Profile Details tab</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>088c2e83-2d1a-41a0-9f42-0b3100a59a26</testCaseGuid>
