@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify if user can succesfully register account with valid details</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bd5f976d-1d63-442a-971b-b198ef8c94be</testCaseGuid>
+</TestCaseEntity>

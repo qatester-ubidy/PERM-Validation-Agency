@@ -56,6 +56,13 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>'Alexander Bartholomew Kensington III, Esquire, Jr., Ph.D., CAPM, PMI-PBA, PMI-ACP, PMI-RMP, PMI-SP, PgMP, PfMP, CAPM, PMI-PBA, PgMP, PfMP, CAPM, PMI-PBA, PMI-ACP, PMI-RMP, PMI-SP, CSCP, CLTD, SCOR-P, Six Sigma Black Belt, Six Sigma Green Belt, CSCP, CLTD, SCOR-P, Six Sigma Black Belt, Six Sigma Green Belt'</initValue>
+      <name>LongName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>verifiedAccount</name>
       <initValue>'543 345 657'</initValue>
       <name>PhoneNo</name>
    </GlobalVariableEntity>

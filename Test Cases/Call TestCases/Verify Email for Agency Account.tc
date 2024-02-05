@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Email for Agency Account</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>93038d7b-08fb-4032-a3c2-6edb9feaf1b5</testCaseGuid>
+</TestCaseEntity>
