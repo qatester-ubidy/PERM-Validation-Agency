@@ -63,5 +63,7 @@
       <description></description>
       <initValue>''</initValue>
       <name>verifiedAccount</name>
+      <initValue>'543 345 657'</initValue>
+      <name>PhoneNo</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
