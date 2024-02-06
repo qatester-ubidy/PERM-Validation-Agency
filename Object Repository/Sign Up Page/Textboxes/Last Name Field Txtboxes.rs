@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>First Name Field</name>
+   <name>Last Name Field Txtboxes</name>
    <tag></tag>
-   <elementGuidId>4e09fe72-c27d-4d18-af4c-2a5ab84a9fc7</elementGuidId>
+   <elementGuidId>c31d5bfb-eff0-4d2b-9c6a-678febfd8889</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@id = 'firstName']</value>
+         <value>//input[@id = 'lastName']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,14 +18,14 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>14c6124a-f4ea-4919-961b-4609e2af09f0</webElementGuid>
+      <webElementGuid>be4069d3-ca32-4cd6-83ec-585ebdffbb5a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>firstName</value>
-      <webElementGuid>004e8c20-b371-442f-abe9-3ec75c8e9fc4</webElementGuid>
+      <value>lastName</value>
+      <webElementGuid>0c5afaa8-ecdd-4c4d-adf8-2338486db8c6</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

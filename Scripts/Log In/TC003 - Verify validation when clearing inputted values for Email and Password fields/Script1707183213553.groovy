@@ -23,15 +23,15 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
 
 //INPUT VALUES
-WebUI.waitForElementPresent(findTestObject('Object Repository/Login Page/Email Textbox'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), 3)
 
-WebUI.setText(findTestObject('Object Repository/Login Page/Email Textbox'), GlobalVariable.ValidEmail)
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), GlobalVariable.ValidEmail)
 
-WebUI.setText(findTestObject('Object Repository/Login Page/Password Textbox'), GlobalVariable.StandardPw)
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), GlobalVariable.StandardPw)
 
-WebUI.sendKeys(findTestObject('Object Repository/Login Page/Email Textbox'), Keys.CONTROL + Keys.chord('a') + Keys.BACK_SPACE)
+WebUI.sendKeys(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), Keys.CONTROL + Keys.chord('a') + Keys.BACK_SPACE)
 
-WebUI.sendKeys(findTestObject('Object Repository/Login Page/Password Textbox'), Keys.CONTROL + Keys.chord('a') + Keys.BACK_SPACE)
+WebUI.sendKeys(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), Keys.CONTROL + Keys.chord('a') + Keys.BACK_SPACE)
 
 //VERIFY VALIDATION
 WebUI.verifyTextPresent('Please provide your email', false)

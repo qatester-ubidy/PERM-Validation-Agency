@@ -66,72 +66,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Company Name is required!'</initValue>
-      <name>CompanyNameValidationMessage</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'Email is required!'</initValue>
-      <name>CompanyEmailValidationMessage</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'Phone Number is required!'</initValue>
-      <name>CompanyPhoneValidationMessage</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'skype cannot be empty'</initValue>
-      <name>CompanySkypeValidationMessage</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'linkedIn cannot be empty'</initValue>
-      <name>CompanyLinkedInValidationMessage</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
       <initValue>''</initValue>
-      <name>EmptyCompanyName</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'new company that provides expertise in search marketing solutions for businesses worldwide, including website promotion, online advertising, and search engine optimization techniques to improve its clients\' positioning in search engines. We cater to the higher education market, including colleges, universities, and professional educational institutions.'</initValue>
-      <name>CompanyBioMessage</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'Address 1 is required!'</initValue>
-      <name>AddressErrorMessage</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'City is required!'</initValue>
-      <name>CityErrorMessage</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'Province/State is required!'</initValue>
-      <name>ProvinceErrorMessage</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'Country is required!'</initValue>
-      <name>CountryErrorMessage</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'Postal/Zip is required!'</initValue>
-      <name>PostalErrorMessage</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'Phone is required!'</initValue>
-      <name>PhoneErrorMessage</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'Email is required!'</initValue>
-      <name>EmailErrorMessage</name>
+      <name>VerifiedAccount</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

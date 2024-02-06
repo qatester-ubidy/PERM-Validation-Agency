@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Password Change Request Title</name>
+   <name>Password Change Request Title Txt</name>
    <tag></tag>
    <elementGuidId>b97413db-8e31-44f1-a8e7-f10bcda27c6f</elementGuidId>
    <selectorCollection>

@@ -20,13 +20,13 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
 
 //EMPTY FIELDS
-WebUI.waitForElementPresent(findTestObject('Object Repository/Login Page/Sign In Btn'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'), 3)
 
-WebUI.click(findTestObject('Object Repository/Login Page/Sign In Btn'))
+WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Login Page/Validation Message'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Login Page/Validation Messages/Provide Required Fields Validation'), 3)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Login Page/Validation Message'), GlobalVariable.LoginValidationMessage)
+WebUI.verifyElementText(findTestObject('Object Repository/Login Page/Validation Messages/Provide Required Fields Validation'), GlobalVariable.LoginValidationMessage)
 
 WebUI.verifyTextPresent(GlobalVariable.LoginTitle, false)
 

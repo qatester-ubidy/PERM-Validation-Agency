@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Sign Up Password Field</name>
+   <name>Sign Up Email Field Txtboxes</name>
    <tag></tag>
-   <elementGuidId>ddcd54ee-d132-43c7-a313-6bbac4f17945</elementGuidId>
+   <elementGuidId>c0d54fa8-ca21-4be3-9adc-4423b5e276f6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class='ant-tabs-tabpane ant-tabs-tabpane-active sign-up-tab']//input[@id = 'password']</value>
+         <value>//div[@class='ant-tabs-tabpane ant-tabs-tabpane-active sign-up-tab']//input[@id = 'email']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,22 +18,22 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>26836b8f-6a39-4bf3-ab4b-1cd5c3356752</webElementGuid>
+      <webElementGuid>53ecce23-8eb1-465a-a2db-f65cc86a6339</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>password</value>
-      <webElementGuid>4dbc3bb3-b0cc-463b-927c-01a4d163c862</webElementGuid>
+      <value>email</value>
+      <webElementGuid>d68d3f29-b645-447f-a390-a515609638cc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@class='ant-tabs-tabpane ant-tabs-tabpane-active sign-up-tab']//input[@id = 'password']</value>
-      <webElementGuid>5ced06df-4895-4675-a3e1-0258bfe7d4de</webElementGuid>
+      <value>//div[@class='ant-tabs-tabpane ant-tabs-tabpane-active sign-up-tab']//input[@id = 'email']</value>
+      <webElementGuid>c05debb2-87b7-4e59-b7a2-1eff3b91b093</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

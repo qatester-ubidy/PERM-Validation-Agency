@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Email Field</name>
+   <name>Company Name Field Txtboxes</name>
    <tag></tag>
-   <elementGuidId>e7cd3f44-6a57-406d-9648-439e95ad87e5</elementGuidId>
+   <elementGuidId>a0c3c061-ae00-41be-831d-5de2cf5be302</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@placeholder = 'Type Email Address']</value>
+         <value>//input[@id = 'organizationName']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,14 +18,14 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>cf54306f-581a-4c8a-b143-9690ba8a7ad8</webElementGuid>
+      <webElementGuid>d0583a4d-8850-4f11-a4b5-9c023297bc33</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>placeholder</name>
+      <name>id</name>
       <type>Main</type>
-      <value>Type Email Address</value>
-      <webElementGuid>22dcf680-fc6e-4be5-8ae8-922f64215d73</webElementGuid>
+      <value>organizationName</value>
+      <webElementGuid>d45772c0-9a90-47ba-902f-99fcadabe3bd</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -21,25 +21,25 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase("Call TestCases/Go To Sign Up Page"), [:])
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Sign Up Page/Sign Up Email Field'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Sign Up Page/Textboxes/Sign Up Email Field Txtboxes'), 3)
 
-WebUI.setText(findTestObject('Object Repository/Sign Up Page/Sign Up Email Field'), "adminEmail.Testing! ")
+WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/Sign Up Email Field Txtboxes'), "adminEmail.Testing! ")
 
-WebUI.setText(findTestObject('Object Repository/Sign Up Page/Sign Up Password Field'), "test")
+WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/Sign Up Password Field Txtboxes'), "test")
 
-WebUI.setText(findTestObject('Object Repository/Sign Up Page/Confirm Password Field'), "TesT")
+WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/Confirm Password Field Txtboxes'), "TesT")
 
-WebUI.setText(findTestObject('Object Repository/Sign Up Page/Company Name Field'), "Co")
+WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/Company Name Field Txtboxes'), "Co")
 
-WebUI.setText(findTestObject('Object Repository/Sign Up Page/First Name Field'), GlobalVariable.LongName)
+WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/First Name Field Txtboxes'), GlobalVariable.LongName)
 
-WebUI.setText(findTestObject('Object Repository/Sign Up Page/Last Name Field'), GlobalVariable.LongName)
+WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/Last Name Field Txtboxes'), GlobalVariable.LongName)
 
-WebUI.click(findTestObject('Object Repository/Sign Up Page/General Terms and Condition Checkbox'))
+WebUI.click(findTestObject('Object Repository/Sign Up Page/Checkboxes/General Terms and Condition Checkbox'))
 
-WebUI.click(findTestObject('Object Repository/Sign Up Page/Perm Placement T and C Checkbox'))
+WebUI.click(findTestObject('Object Repository/Sign Up Page/Checkboxes/Perm Placement T and C Checkbox'))
 
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/Sign Up Page/Create An Account Btn'))
+WebUI.verifyElementNotClickable(findTestObject('Object Repository/Sign Up Page/Buttons/Create An Account Btn'))
 
 //VERIFY VALIDATION MESSAGES
 WebUI.verifyElementVisible(findTestObject('Object Repository/Sign Up Page/Validation Messages/Sign Up Invalid Email'))

@@ -18,6 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.apache.commons.lang3.RandomStringUtils
 
+//CREATE ACCOUNT
 WebUI.callTestCase(findTestCase("Call TestCases/Go To Sign Up Page"), [:])
 
 String[] firstName = findTestData('Data Files/First Names').getAllData()
@@ -64,16 +65,14 @@ WebUI.verifyElementClickable(findTestObject('Object Repository/Sign Up Page/Butt
 
 WebUI.click(findTestObject('Object Repository/Sign Up Page/Buttons/Create An Account Btn'))
 
-//VERIFY REDIRECTION
-WebUI.verifyElementPresent(findTestObject('Object Repository/Sign Up Page/Confirm Email/Confirm Email Title'), 3)
+//VERIFY ACCOUNT
+WebUI.callTestCase(findTestCase("Call TestCases/Verify Email for Agency Account"), [:])
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Sign Up Page/Confirm Email/Thank You for Registering Text'), 3)
+//REDIRECT TO OPPORTUNITIES
+WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Sign Up Page/Confirm Email/Go Back To Sign In Page Btn'), 3)
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), GlobalVariable.VerifiedAccount)
 
-WebUI.verifyElementClickable(findTestObject('Object Repository/Sign Up Page/Confirm Email/Go Back To Sign In Page Btn'))
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), GlobalVariable.StandardPw)
 
-//VERIFY EMAIL CONFIRMATION
-WebUI.callTestCase(findTestCase('Call TestCases/Verify Email for Agency Account'), [:])
-
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))

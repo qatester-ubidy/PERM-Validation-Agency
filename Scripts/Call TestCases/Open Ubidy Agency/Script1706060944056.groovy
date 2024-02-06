@@ -21,6 +21,6 @@ WebUI.openBrowser(GlobalVariable.StagingEnv)
 
 WebUI.maximizeWindow()
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Login Page/Email Textbox'), 5)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), 5)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Login Page/Password Textbox'), 5)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), 5)

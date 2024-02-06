@@ -20,17 +20,17 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
 
 //LOG IN WITH INVALID CREDENTIALS
-WebUI.waitForElementPresent(findTestObject('Object Repository/Login Page/Email Textbox'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), 3)
 
-WebUI.setText(findTestObject('Object Repository/Login Page/Email Textbox'), 'admin@testing.com')
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), 'admin@testing.com')
 
-WebUI.setText(findTestObject('Object Repository/Login Page/Password Textbox'), 'Password123@')
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), 'Password123@')
 
-WebUI.click(findTestObject('Object Repository/Login Page/Sign In Btn'))
+WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
 
 //VALIDATION MESSAGES
-WebUI.verifyElementPresent(findTestObject('Object Repository/Login Page/Incorrect Credentials Validation'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Login Page/Validation Messages/Incorrect Credentials Validation'), 3)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Login Page/Incorrect Credentials Validation'), GlobalVariable.IncorrectCredentials)
+WebUI.verifyElementText(findTestObject('Object Repository/Login Page/Validation Messages/Incorrect Credentials Validation'), GlobalVariable.IncorrectCredentials)
 
 WebUI.closeBrowser()

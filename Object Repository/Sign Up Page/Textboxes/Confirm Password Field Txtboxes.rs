@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Confirm Email Subtitle</name>
+   <name>Confirm Password Field Txtboxes</name>
    <tag></tag>
-   <elementGuidId>4ea577ac-0685-4356-ba6d-446f15258574</elementGuidId>
+   <elementGuidId>ffde71cb-15d6-4c42-93df-78da0f34524e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[(text() = 'Please confirm your email before proceeding to log in.' or . = 'Please confirm your email before proceeding to log in.')]</value>
+         <value>//input[@id = 'confirmPassword']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,15 +17,15 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
-      <webElementGuid>987bc74f-8b10-4dd9-b379-e9c42ca14639</webElementGuid>
+      <value>input</value>
+      <webElementGuid>7f326e33-d575-4099-82cc-749662b326a6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>id</name>
       <type>Main</type>
-      <value>Please confirm your email before proceeding to log in.</value>
-      <webElementGuid>1e5ab9fd-5206-4f4f-833b-a9de4f025f69</webElementGuid>
+      <value>confirmPassword</value>
+      <webElementGuid>2b305593-1e74-4b0d-afd5-47a38640e609</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

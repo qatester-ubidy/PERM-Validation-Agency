@@ -17,16 +17,4 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Call TestCases/Redirect to forgot password page'), [:])
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Forgot Password Page/Textboxes/Email Field Txtboxes'), 3)
-
-WebUI.setText(findTestObject('Object Repository/Forgot Password Page/Textboxes/Email Field Txtboxes'), "QA.tester")
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Login Page/Validation Messages/Invalid Email Validation'), 3)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Login Page/Validation Messages/Invalid Email Validation'), GlobalVariable.EmailValidation)
-
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/Forgot Password Page/Buttons/Reset Password Btn'))
-
-WebUI.closeBrowser()
+WebUI.callTestCase(findTestCase("Call TestCases/Agency Registration"), [:])

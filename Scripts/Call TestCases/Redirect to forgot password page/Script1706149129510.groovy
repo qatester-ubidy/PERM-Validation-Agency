@@ -19,10 +19,10 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Login Page/Forgot Password Link'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Login Page/Buttons/Forgot Password Link'), 3)
 
-WebUI.click(findTestObject('Object Repository/Login Page/Forgot Password Link'))
+WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Forgot Password Link'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Forgot Password Page/Email Field'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Forgot Password Page/Textboxes/Email Field Txtboxes'), 3)
 
 WebUI.verifyTextPresent("RESET YOUR UBIDY PASSWORD", false)

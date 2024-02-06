@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Confirm Email Title</name>
+   <name>First Name Field Txtboxes</name>
    <tag></tag>
-   <elementGuidId>e1760cbc-07af-4467-9bb1-f770cec12125</elementGuidId>
+   <elementGuidId>4e09fe72-c27d-4d18-af4c-2a5ab84a9fc7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[(text() = 'CONFIRM YOUR EMAIL' or . = 'CONFIRM YOUR EMAIL')]</value>
+         <value>//input[@id = 'firstName']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,15 +17,15 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
-      <webElementGuid>76e9b7d7-2272-4905-9465-cd042630c686</webElementGuid>
+      <value>input</value>
+      <webElementGuid>14c6124a-f4ea-4919-961b-4609e2af09f0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>id</name>
       <type>Main</type>
-      <value>CONFIRM YOUR EMAIL</value>
-      <webElementGuid>c15ec9a3-741d-4a47-90a8-3e39f9debd2b</webElementGuid>
+      <value>firstName</value>
+      <webElementGuid>004e8c20-b371-442f-abe9-3ec75c8e9fc4</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

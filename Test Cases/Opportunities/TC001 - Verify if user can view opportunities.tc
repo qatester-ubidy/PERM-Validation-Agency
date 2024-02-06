@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC001 - Verify if user can view opportunities</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>86bb4e97-5388-49e4-895c-58c26f8fe934</testCaseGuid>
+</TestCaseEntity>
