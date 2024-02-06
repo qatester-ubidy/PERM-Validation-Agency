@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Company Bio Tab</name>
+   <name>Company Bio Header Title</name>
    <tag></tag>
    <elementGuidId>e2a9904a-fe53-4fae-951d-41dd1b640468</elementGuidId>
    <selectorCollection>

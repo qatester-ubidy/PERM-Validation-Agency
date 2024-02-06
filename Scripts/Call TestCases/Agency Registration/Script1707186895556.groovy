@@ -29,7 +29,7 @@ def getRandomFirstname = findTestData('First Names').getValue('First Names', ran
 
 def emailAddress = ('qa.tester+' + getRandomFirstname + RandomStringUtils.randomNumeric(4)) + '@ubidy.com'
 
-GlobalVariable.verifiedAccount = emailAddress
+GlobalVariable.VerifiedAccount = emailAddress
 
 String[] lastName = findTestData('Data Files/Last Names').getAllData()
 
@@ -71,7 +71,7 @@ WebUI.callTestCase(findTestCase("Call TestCases/Verify Email for Agency Account"
 //REDIRECT TO OPPORTUNITIES
 WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
 
-WebUI.setText(findTestObject('Object Repository/Login Page/Email Textbox'), GlobalVariable.verifiedAccount)
+WebUI.setText(findTestObject('Object Repository/Login Page/Email Textbox'), GlobalVariable.VerifiedAccount)
 
 WebUI.setText(findTestObject('Object Repository/Login Page/Password Textbox'), GlobalVariable.StandardPw)
 

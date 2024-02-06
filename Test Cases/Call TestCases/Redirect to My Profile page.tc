@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>1. Verify validation on profile details tab</name>
+   <name>Redirect to My Profile page</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>38489374-3ecb-46e4-80e0-244193951c04</testCaseGuid>
+   <testCaseGuid>87d2bbaa-5a64-4dc8-98eb-25b70d7859f0</testCaseGuid>
 </TestCaseEntity>

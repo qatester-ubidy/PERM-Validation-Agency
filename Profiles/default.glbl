@@ -67,6 +67,6 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>''</initValue>
-      <name>verifiedAccount</name>
+      <name>VerifiedAccount</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -28,7 +28,7 @@ def getRandomFirstname = findTestData('First Names').getValue('First Names', ran
 
 def emailAddress = ('qa.tester+' + getRandomFirstname + RandomStringUtils.randomNumeric(4)) + '@ubidy.com'
 
-GlobalVariable.verifiedAccount = emailAddress
+GlobalVariable.VerifiedAccount = emailAddress
 
 String[] lastName = findTestData('Data Files/Last Names').getAllData()
 
