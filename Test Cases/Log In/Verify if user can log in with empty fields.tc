@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Verify if user can log in with empty fields</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>4528b113-41df-4121-96a2-511c55faedd2</testCaseGuid>
-</TestCaseEntity>
