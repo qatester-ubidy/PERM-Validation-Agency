@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Verify if General Terms of User hyperlink is working as expected</name>
+   <name>TC002 - Verify if General Terms of User hyperlink is working as expected</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>d6407b71-2589-4b73-a5ef-be71543b857b</testCaseGuid>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Verify if an error message is displayed when registering an email that is already existing</name>
+   <name>TC003 - Verify if an error message is displayed when registering an email that is already existing</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>e07c5916-54df-4efe-8688-186d939f26a2</testCaseGuid>
