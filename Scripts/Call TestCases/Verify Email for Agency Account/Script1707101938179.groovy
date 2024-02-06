@@ -23,31 +23,31 @@ WebUI.maximizeWindow()
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Email field'), 3)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Next Btn'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Buttons/Next Btn'), 3)
 
 WebUI.setText(findTestObject('Object Repository/Gmail Page/Email field'), GlobalVariable.QAEmail)
 
-WebUI.click(findTestObject('Object Repository/Gmail Page/Next Btn'))
+WebUI.click(findTestObject('Object Repository/Gmail Page/Buttons/Next Btn'))
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Password field'), 5)
 
 WebUI.setText(findTestObject('Object Repository/Gmail Page/Password field'), GlobalVariable.QAPw)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Next Btn'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Buttons/Next Btn'), 3)
 
-WebUI.click(findTestObject('Object Repository/Gmail Page/Next Btn'))
+WebUI.click(findTestObject('Object Repository/Gmail Page/Buttons/Next Btn'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/First Email Notif'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'), 3)
 
-WebUI.click(findTestObject('Object Repository/Gmail Page/First Email Notif'))
+WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'))
 
 WebUI.verifyTextPresent('Welcome to Ubidy', false)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Confirm Email Btn'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Buttons/Confirm Email Btn'), 3)
 
-WebUI.verifyElementClickable(findTestObject('Object Repository/Gmail Page/Confirm Email Btn'))
+WebUI.verifyElementClickable(findTestObject('Object Repository/Gmail Page/Buttons/Confirm Email Btn'))
 
-WebUI.click(findTestObject('Object Repository/Gmail Page/Confirm Email Btn'))
+WebUI.click(findTestObject('Object Repository/Gmail Page/Buttons/Confirm Email Btn'))
 
 WebUI.switchToWindowIndex(1)
 

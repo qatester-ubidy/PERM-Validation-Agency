@@ -20,29 +20,29 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
 
 //LOG IN UNVERIFIED ACCOUNT
-WebUI.setText(findTestObject('Object Repository/Login Page/Email Textbox'), GlobalVariable.UnverifiedAccount)
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), GlobalVariable.UnverifiedAccount)
 
-WebUI.setText(findTestObject('Object Repository/Login Page/Password Textbox'), GlobalVariable.StandardPw)
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), GlobalVariable.StandardPw)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Login Page/Sign In Btn'), 5)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'), 5)
 
-WebUI.click(findTestObject('Object Repository/Login Page/Sign In Btn'))
+WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
 
 //VERIFY REDIRECTION
-WebUI.waitForElementPresent(findTestObject('Object Repository/Confirm Email Page/Confirm Email Logo'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Confirm Email Page/Logo/Confirm Email Logo'), 5)
 
 def TabTitle = WebUI.getWindowTitle()
 
 WebUI.verifyMatch(TabTitle, "Ubidy Agency - Confirm Email", false)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Confirm Email Page/Confirm Email Title'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Confirm Email Page/Texts/Confirm Your Email Txt'), 3)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Confirm Email Page/Confirm Email Title'), "CONFIRM YOUR EMAIL")
+WebUI.verifyElementText(findTestObject('Object Repository/Confirm Email Page/Texts/Confirm Your Email Txt'), "CONFIRM YOUR EMAIL")
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Confirm Email Page/Confirm Email Subtitle'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Confirm Email Page/Texts/Confirm Email Subtitle Txt'), 3)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Confirm Email Page/Confirm Email Subtitle'), "Please confirm your email before proceeding to log in.")
+WebUI.verifyElementText(findTestObject('Object Repository/Confirm Email Page/Texts/Confirm Email Subtitle Txt'), "Please confirm your email before proceeding to log in.")
 
-WebUI.verifyElementClickable(findTestObject('Object Repository/Confirm Email Page/Go Back To Sign In Link'))
+WebUI.verifyElementClickable(findTestObject('Object Repository/Confirm Email Page/Links/Go Back To Sign In Link'))
 
 WebUI.closeBrowser()

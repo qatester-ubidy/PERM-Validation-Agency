@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Email Field Validation</name>
+   <name>Invalid Email Validation</name>
    <tag></tag>
    <elementGuidId>06ede863-c73d-4ba9-a10b-b6a24a89dbc3</elementGuidId>
    <selectorCollection>

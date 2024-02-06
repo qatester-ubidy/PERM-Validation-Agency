@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Confirm Password Field</name>
+   <name>Confirm Your Email Txt</name>
    <tag></tag>
-   <elementGuidId>ffde71cb-15d6-4c42-93df-78da0f34524e</elementGuidId>
+   <elementGuidId>e1760cbc-07af-4467-9bb1-f770cec12125</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@id = 'confirmPassword']</value>
+         <value>//div[(text() = 'CONFIRM YOUR EMAIL' or . = 'CONFIRM YOUR EMAIL')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,15 +17,15 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>input</value>
-      <webElementGuid>7f326e33-d575-4099-82cc-749662b326a6</webElementGuid>
+      <value>div</value>
+      <webElementGuid>76e9b7d7-2272-4905-9465-cd042630c686</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>text</name>
       <type>Main</type>
-      <value>confirmPassword</value>
-      <webElementGuid>2b305593-1e74-4b0d-afd5-47a38640e609</webElementGuid>
+      <value>CONFIRM YOUR EMAIL</value>
+      <webElementGuid>c15ec9a3-741d-4a47-90a8-3e39f9debd2b</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

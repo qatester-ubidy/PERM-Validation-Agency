@@ -19,8 +19,8 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Call TestCases/Open Ubidy Agency'), [:])
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Login Page/Sign Up tab'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Login Page/Tabs/Sign Up tab'), 3)
 
-WebUI.click(findTestObject('Object Repository/Login Page/Sign Up tab'))
+WebUI.click(findTestObject('Object Repository/Login Page/Tabs/Sign Up tab'))
 
 WebUI.verifyTextPresent("Sign up for a Ubidy Agency Account", false)

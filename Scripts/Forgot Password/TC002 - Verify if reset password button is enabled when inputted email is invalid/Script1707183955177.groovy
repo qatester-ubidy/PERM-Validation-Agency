@@ -19,14 +19,14 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Call TestCases/Redirect to forgot password page'), [:])
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Forgot Password Page/Email Field'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Forgot Password Page/Textboxes/Email Field Txtboxes'), 3)
 
-WebUI.setText(findTestObject('Object Repository/Forgot Password Page/Email Field'), "QA.tester")
+WebUI.setText(findTestObject('Object Repository/Forgot Password Page/Textboxes/Email Field Txtboxes'), "QA.tester")
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Login Page/Email Field Validation'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Login Page/Validation Messages/Invalid Email Validation'), 3)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Login Page/Email Field Validation'), GlobalVariable.EmailValidation)
+WebUI.verifyElementText(findTestObject('Object Repository/Login Page/Validation Messages/Invalid Email Validation'), GlobalVariable.EmailValidation)
 
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/Forgot Password Page/Reset Password Btn'))
+WebUI.verifyElementNotClickable(findTestObject('Object Repository/Forgot Password Page/Buttons/Reset Password Btn'))
 
 WebUI.closeBrowser()

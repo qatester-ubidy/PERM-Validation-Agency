@@ -42,27 +42,27 @@ int randomCompany = new Random().nextInt(companyName.length + 1)
 
 def getRandomCompany = findTestData('Company Names').getValue('Company Names', randomCompany)
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Sign Up Page/Sign Up Email Field'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Sign Up Page/Textboxes/Sign Up Email Field Txtboxes'), 3)
 
-WebUI.setText(findTestObject('Object Repository/Sign Up Page/Sign Up Email Field'), emailAddress)
+WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/Sign Up Email Field Txtboxes'), emailAddress)
 
-WebUI.setText(findTestObject('Object Repository/Sign Up Page/Sign Up Password Field'), GlobalVariable.StandardPw)
+WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/Sign Up Password Field Txtboxes'), GlobalVariable.StandardPw)
 
-WebUI.setText(findTestObject('Object Repository/Sign Up Page/Confirm Password Field'), GlobalVariable.StandardPw)
+WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/Confirm Password Field Txtboxes'), GlobalVariable.StandardPw)
 
-WebUI.setText(findTestObject('Object Repository/Sign Up Page/Company Name Field'), getRandomCompany)
+WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/Company Name Field Txtboxes'), getRandomCompany)
 
-WebUI.setText(findTestObject('Object Repository/Sign Up Page/First Name Field'), getRandomFirstname)
+WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/First Name Field Txtboxes'), getRandomFirstname)
 
-WebUI.setText(findTestObject('Object Repository/Sign Up Page/Last Name Field'), getRandomLastname)
+WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/Last Name Field Txtboxes'), getRandomLastname)
 
-WebUI.click(findTestObject('Object Repository/Sign Up Page/General Terms and Condition Checkbox'))
+WebUI.click(findTestObject('Object Repository/Sign Up Page/Checkboxes/General Terms and Condition Checkbox'))
 
-WebUI.click(findTestObject('Object Repository/Sign Up Page/Perm Placement T and C Checkbox'))
+WebUI.click(findTestObject('Object Repository/Sign Up Page/Checkboxes/Perm Placement T and C Checkbox'))
 
-WebUI.verifyElementClickable(findTestObject('Object Repository/Sign Up Page/Create An Account Btn'))
+WebUI.verifyElementClickable(findTestObject('Object Repository/Sign Up Page/Buttons/Create An Account Btn'))
 
-WebUI.click(findTestObject('Object Repository/Sign Up Page/Create An Account Btn'))
+WebUI.click(findTestObject('Object Repository/Sign Up Page/Buttons/Create An Account Btn'))
 
 //VERIFY REDIRECTION
 WebUI.verifyElementPresent(findTestObject('Object Repository/Sign Up Page/Confirm Email/Confirm Email Title'), 3)

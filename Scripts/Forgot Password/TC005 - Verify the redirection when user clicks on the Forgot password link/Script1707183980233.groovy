@@ -21,10 +21,10 @@ WebUI.callTestCase(findTestCase('Call TestCases/Redirect to forgot password page
 
 WebUI.verifyTextPresent("Submit your email address and we'll send you a link to reset your password", false)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Forgot Password Page/Reset Password Btn'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Forgot Password Page/Buttons/Reset Password Btn'), 3)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Forgot Password Page/Go Back To Sign In Btn'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Forgot Password Page/Buttons/Go Back To Sign In Btn'), 3)
 
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/Forgot Password Page/Reset Password Btn'))
+WebUI.verifyElementNotClickable(findTestObject('Object Repository/Forgot Password Page/Buttons/Reset Password Btn'))
 
 WebUI.closeBrowser()

@@ -21,28 +21,28 @@ WebUI.openBrowser('https://mail.google.com/mail/u/0/#inbox')
 
 WebUI.maximizeWindow()
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Email Field'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Buttons/Email Field Txtbox'), 3)
 
-WebUI.setText(findTestObject('Object Repository/Gmail Page/Email Field'), GlobalVariable.QAEmail)
+WebUI.setText(findTestObject('Object Repository/Gmail Page/Buttons/Email Field Txtbox'), GlobalVariable.QAEmail)
 
-WebUI.click(findTestObject('Object Repository/Gmail Page/Next Btn'))
+WebUI.click(findTestObject('Object Repository/Gmail Page/Buttons/Next Btn'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Password Field'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Buttons/Password Field Txtbox'), 3)
 
-WebUI.setText(findTestObject('Object Repository/Gmail Page/Password Field'), GlobalVariable.QAPw)
+WebUI.setText(findTestObject('Object Repository/Gmail Page/Buttons/Password Field Txtbox'), GlobalVariable.QAPw)
 
-WebUI.click(findTestObject('Object Repository/Gmail Page/Next Btn'))
+WebUI.click(findTestObject('Object Repository/Gmail Page/Buttons/Next Btn'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/First Email Notif'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'), 3)
 
-WebUI.click(findTestObject('Object Repository/Gmail Page/First Email Notif'))
+WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Password Change Request Title'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Texts/Password Change Request Title Txt'), 3)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Gmail Page/Password Change Request Title'), "Password Change Request")
+WebUI.verifyElementText(findTestObject('Object Repository/Gmail Page/Texts/Password Change Request Title Txt'), "Password Change Request")
 
 WebUI.verifyTextPresent("Ubidy Agency Account Password", false)
 
-WebUI.verifyElementClickable(findTestObject('Object Repository/Gmail Page/Click Here Link'))
+WebUI.verifyElementClickable(findTestObject('Object Repository/Gmail Page/Links/Click Here Link'))
 
 WebUI.closeBrowser()

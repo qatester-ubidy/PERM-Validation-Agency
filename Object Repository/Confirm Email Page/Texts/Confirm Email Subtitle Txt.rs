@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Validation Message</name>
+   <name>Confirm Email Subtitle Txt</name>
    <tag></tag>
-   <elementGuidId>9e7d6599-0403-435b-86e0-aa0ea7a91d11</elementGuidId>
+   <elementGuidId>4ea577ac-0685-4356-ba6d-446f15258574</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class = 'login-warning-message _spacer-sm']</value>
+         <value>//div[(text() = 'Please confirm your email before proceeding to log in.' or . = 'Please confirm your email before proceeding to log in.')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,14 +18,14 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>19d61a6e-8832-4640-b233-b8fce7b4d0b9</webElementGuid>
+      <webElementGuid>987bc74f-8b10-4dd9-b379-e9c42ca14639</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>text</name>
       <type>Main</type>
-      <value>login-warning-message _spacer-sm</value>
-      <webElementGuid>0712a9f4-1459-42e7-9695-175d0b4bf66b</webElementGuid>
+      <value>Please confirm your email before proceeding to log in.</value>
+      <webElementGuid>1e5ab9fd-5206-4f4f-833b-a9de4f025f69</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

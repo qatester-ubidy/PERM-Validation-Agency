@@ -19,29 +19,29 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
 
-WebUI.setText(findTestObject('Object Repository/Login Page/Email Textbox'), "admin!@#()*&")
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), "admin!@#()*&")
 
-WebUI.setText(findTestObject('Object Repository/Login Page/Password Textbox'), "  123")
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), "  123")
 
-WebUI.click(findTestObject('Object Repository/Login Page/Sign In Btn'))
+WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
 
 //VERIFY VALIDATION
-WebUI.waitForElementPresent(findTestObject('Object Repository/Login Page/Validation Message'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Login Page/Validation Messages/Provide Required Fields Validation'), 5)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Login Page/Validation Message'), GlobalVariable.LoginValidationMessage)
+WebUI.verifyElementText(findTestObject('Object Repository/Login Page/Validation Messages/Provide Required Fields Validation'), GlobalVariable.LoginValidationMessage)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Login Page/Email Field Validation'), 5)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Login Page/Validation Messages/Invalid Email Validation'), 5)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Login Page/Email Field Validation'), GlobalVariable.EmailValidation)
+WebUI.verifyElementText(findTestObject('Object Repository/Login Page/Validation Messages/Invalid Email Validation'), GlobalVariable.EmailValidation)
 
-WebUI.sendKeys(findTestObject('Object Repository/Login Page/Email Textbox'), Keys.CONTROL + Keys.chord('a') + Keys.BACK_SPACE)
+WebUI.sendKeys(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), Keys.CONTROL + Keys.chord('a') + Keys.BACK_SPACE)
 
-WebUI.setText(findTestObject('Object Repository/Login Page/Email Textbox'), "       ")
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), "       ")
 
-WebUI.setText(findTestObject('Object Repository/Login Page/Password Textbox'), "    ")
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), "    ")
 
-WebUI.click(findTestObject('Object Repository/Login Page/Sign In Btn'))
+WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Login Page/Validation Message'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Login Page/Validation Messages/Provide Required Fields Validation'), 5)
 
 WebUI.closeBrowser()

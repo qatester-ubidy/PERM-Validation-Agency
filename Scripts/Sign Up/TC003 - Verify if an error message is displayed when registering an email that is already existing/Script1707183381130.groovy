@@ -19,13 +19,13 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase("Call TestCases/Go To Sign Up Page"), [:])
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Sign Up Page/Sign Up Email Field'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Sign Up Page/Textboxes/Sign Up Email Field Txtboxes'), 3)
 
-WebUI.setText(findTestObject('Object Repository/Sign Up Page/Sign Up Email Field'), GlobalVariable.ValidEmail)
+WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/Sign Up Email Field Txtboxes'), GlobalVariable.ValidEmail)
 
-WebUI.setText(findTestObject('Object Repository/Sign Up Page/Sign Up Password Field'), GlobalVariable.StandardPw)
+WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/Sign Up Password Field Txtboxes'), GlobalVariable.StandardPw)
 
-WebUI.setText(findTestObject('Object Repository/Sign Up Page/Confirm Password Field'), GlobalVariable.StandardPw)
+WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/Confirm Password Field Txtboxes'), GlobalVariable.StandardPw)
 
 //RANDOM COMPANY NAME
 String[] Company = findTestData('Company Names').getAllData()
@@ -34,7 +34,7 @@ int randomCompany = new Random().nextInt(Company.length + 1)
 
 def CompanyName = findTestData('Company Names').getValue('Company Names', randomCompany)
 
-WebUI.setText(findTestObject('Object Repository/Sign Up Page/Company Name Field'), CompanyName)
+WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/Company Name Field Txtboxes'), CompanyName)
 
 //RANDOM FIRST NAME	
 String[] FirstNames = findTestData('First Names').getAllData()
@@ -43,7 +43,7 @@ int randomFirstName = new Random().nextInt(FirstNames.length + 1)
 
 def FirstName = findTestData('First Names').getValue('First Names', randomFirstName)
 
-WebUI.setText(findTestObject('Object Repository/Sign Up Page/First Name Field'), FirstName)
+WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/First Name Field Txtboxes'), FirstName)
 
 //RANDOM LAST NAME
 String[] LastNames = findTestData('Last Names').getAllData()
@@ -52,16 +52,16 @@ int randomLastName = new Random().nextInt(LastNames.length + 1)
 
 def LastName = findTestData('Last Names').getValue('Surnames', randomLastName)
 
-WebUI.setText(findTestObject('Object Repository/Sign Up Page/Last Name Field'), LastName)
+WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/Last Name Field Txtboxes'), LastName)
 
 //CHECK GENERAL AND PERM PLACEMENT TERMS & CONDITIONS
-WebUI.click(findTestObject('Object Repository/Sign Up Page/General Terms and Condition Checkbox'))
+WebUI.click(findTestObject('Object Repository/Sign Up Page/Checkboxes/General Terms and Condition Checkbox'))
 
-WebUI.click(findTestObject('Object Repository/Sign Up Page/Perm Placement T and C Checkbox'))
+WebUI.click(findTestObject('Object Repository/Sign Up Page/Checkboxes/Perm Placement T and C Checkbox'))
 
-WebUI.verifyElementClickable(findTestObject('Object Repository/Sign Up Page/Create An Account Btn'))
+WebUI.verifyElementClickable(findTestObject('Object Repository/Sign Up Page/Buttons/Create An Account Btn'))
 
-WebUI.click(findTestObject('Object Repository/Sign Up Page/Create An Account Btn'))
+WebUI.click(findTestObject('Object Repository/Sign Up Page/Buttons/Create An Account Btn'))
 
 //VERIFY VALIDATION
 WebUI.verifyElementPresent(findTestObject('Object Repository/Sign Up Page/Validation Messages/Sign Up Existing Email Validation'), 3)
