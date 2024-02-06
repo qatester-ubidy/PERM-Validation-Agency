@@ -17,28 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
-WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
-
-//LOG IN VALID ACCOUNT
-WebUI.setText(findTestObject('Object Repository/Login Page/Email Textbox'), GlobalVariable.ValidEmail)
-
-WebUI.setText(findTestObject('Object Repository/Login Page/Password Textbox'), GlobalVariable.StandardPw)
-
-WebUI.click(findTestObject('Object Repository/Login Page/Sign In Btn'))
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Engagements Page/Slider Btn'), 3)
-
-WebUI.click(findTestObject('Object Repository/Engagements Page/Slider Btn'))
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Engagements Page/Sidebar Company Logo'), 3)
-
-WebUI.click(findTestObject('Object Repository/Engagements Page/Sidebar Company Logo'))
-
-WebUI.setText(findTestObject('Object Repository/My Profile/PhoneNo Field'), GlobalVariable.PhoneNo)
-
-WebUI.click(findTestObject('Object Repository/My Profile/Save AND Continue btn'))
-
-WebUI.delay(5)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/My Profile/Company Bio Tab'), 5)
