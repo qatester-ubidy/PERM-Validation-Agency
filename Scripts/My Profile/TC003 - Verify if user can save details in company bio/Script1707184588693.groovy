@@ -22,9 +22,9 @@ WebUI.callTestCase(findTestCase("Call TestCases/Redirect to My Profile page"), [
 
 WebUI.delay(5)
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/My Profile/Company Bio btn'), 10)
+WebUI.waitForElementPresent(findTestObject('Object Repository/My Profile/Buttons/Company Bio btn'), 10)
 
-WebUI.click(findTestObject('Object Repository/My Profile/Company Bio btn'))
+WebUI.click(findTestObject('Object Repository/My Profile/Buttons/Company Bio btn'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/My Profile/Company Bio Text Field'), 10)
 
@@ -34,8 +34,8 @@ WebUI.setText(findTestObject('Object Repository/My Profile/Company Bio Text Fiel
 
 WebUI.setText(findTestObject('Object Repository/My Profile/Company Bio Text Field'), GlobalVariable.CompanyBioMessage)
 
-WebUI.click(findTestObject('Object Repository/My Profile/Company Bio Save AND btn'))
+WebUI.click(findTestObject('Object Repository/My Profile/Buttons/Company Bio Save AND Continue Btn'))
 
 WebUI.delay(5)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/My Profile/Addressess Header Title'), 5)
+WebUI.verifyElementPresent(findTestObject('Object Repository/My Profile/Label/Addressess Header Title'), 5)
