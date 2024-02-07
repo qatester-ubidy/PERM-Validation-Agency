@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Addressess Header Title</name>
+   <name>Company Name Txtboxes</name>
    <tag></tag>
-   <elementGuidId>1e1f4b7b-e0ef-4f13-b2c6-c13842cf6b00</elementGuidId>
+   <elementGuidId>3e1acccd-bf93-4e13-9f56-283ddc996f5d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'profile-header']</value>
+         <value>//*[@id = 'companyName']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,9 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>id</name>
       <type>Main</type>
-      <value>profile-header</value>
-      <webElementGuid>cb27db34-e54a-4d9e-9b3d-5e487dc5c114</webElementGuid>
+      <value>companyName</value>
+      <webElementGuid>a69f6eae-9d33-4819-ba41-0af633a02ef6</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

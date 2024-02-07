@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Profile Save AND Continue Btn</name>
+   <name>Email Validation</name>
    <tag></tag>
-   <elementGuidId>33056ab9-efed-4568-989d-bae1b62781a6</elementGuidId>
+   <elementGuidId>fdf685f1-b706-4c87-8c49-ab560498c294</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//button[(text() = 'Save &amp; Continue' or . = 'Save &amp; Continue')]</value>
+         <value>//*[@class = 'ant-form-explain' and (text() = 'Email is required!' or . = 'Email is required!')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,17 +15,17 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>tag</name>
+      <name>class</name>
       <type>Main</type>
-      <value>button</value>
-      <webElementGuid>85d6d070-6fdf-44d2-ae73-8eaf2879f9ab</webElementGuid>
+      <value>ant-form-explain</value>
+      <webElementGuid>9eda565d-af3a-4d5d-b46c-7cea23f8fe11</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Save &amp; Continue</value>
-      <webElementGuid>a3fe9c9e-f6f4-4711-a9a4-6441a37bf087</webElementGuid>
+      <value>Email is required!</value>
+      <webElementGuid>c91c8037-38b4-4533-946e-da6a3579d732</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

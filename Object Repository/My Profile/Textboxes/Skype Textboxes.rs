@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Skype Field</name>
+   <name>Skype Textboxes</name>
    <tag></tag>
    <elementGuidId>3c3ffba0-5c05-48fe-b22d-faf935faa1ea</elementGuidId>
    <selectorCollection>

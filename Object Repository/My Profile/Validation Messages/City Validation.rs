@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Email Address Field</name>
+   <name>City Validation</name>
    <tag></tag>
-   <elementGuidId>12e2b3b7-90ca-4186-b869-a6d991ceca52</elementGuidId>
+   <elementGuidId>426ca9c1-6a1a-46e9-a722-fc06e0525e2b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'email' and @class = 'ant-input']</value>
+         <value>//*[@class = 'ant-form-explain' and (text() = 'City is required!' or . = 'City is required!')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,17 +15,17 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>class</name>
       <type>Main</type>
-      <value>email</value>
-      <webElementGuid>290260db-e6c1-4a42-be1f-b228c0f13c5c</webElementGuid>
+      <value>ant-form-explain</value>
+      <webElementGuid>6794cf19-6fdc-428e-927e-f640c50bcd31</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>text</name>
       <type>Main</type>
-      <value>ant-input</value>
-      <webElementGuid>d5f65fa8-7ac8-40b5-a262-73216ceb5f2a</webElementGuid>
+      <value>City is required!</value>
+      <webElementGuid>dcdc616b-9bc4-4c9b-a360-dace08fc0bdf</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

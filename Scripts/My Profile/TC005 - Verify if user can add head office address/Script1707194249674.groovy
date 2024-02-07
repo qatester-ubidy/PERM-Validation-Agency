@@ -17,6 +17,71 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase("Call TestCases/Redirect to My Profile page"), [:])
+// WebUI.callTestCase(findTestCase("Call TestCases/Redirect to My Profile page"), [:], FailureHandling.CONTINUE_ON_FAILURE)== true)
+
+
+WebUI.openBrowser(GlobalVariable.StagingEnv)
+
+WebUI.maximizeWindow()
+
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), 'qa.tester+kompamp-meta8759@ubidy.com')
+
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), 'Ubidy12345!')
+
+WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
 
 WebUI.delay(5)
+
+// VERIFY HEAD OFFICE ADDRESS VALIDATION MESSAGES
+
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Engagements Page/Slider Btn'), 3)
+
+WebUI.click(findTestObject('Object Repository/Engagements Page/Slider Btn'))
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Engagements Page/Sidebar Company Logo'), 3)
+
+WebUI.click(findTestObject('Object Repository/Engagements Page/Sidebar Company Logo'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/My Profile/Buttons/Addressess Btn'), 10)
+
+WebUI.click(findTestObject('Object Repository/My Profile/Buttons/Addressess Btn'))
+
+WebUI.click(findTestObject('Object Repository/My Profile/Buttons/Edit Head Office Address Btn'))
+
+WebUI.click(findTestObject('Object Repository/My Profile/Buttons/Save Address Btn'))
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/My Profile/Validation Messages/Address 1 Validation'), 3)
+
+WebUI.verifyElementText(findTestObject('Object Repository/My Profile/Validation Messages/Address 1 Validation'), "Address 1 is required!")
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/My Profile/Validation Messages/City Validation'), 3)
+
+WebUI.verifyElementText(findTestObject('Object Repository/My Profile/Validation Messages/City Validation'), "City is required!")
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/My Profile/Validation Messages/Province Validation'), 3)
+
+WebUI.verifyElementText(findTestObject('Object Repository/My Profile/Validation Messages/Province Validation'), "Province/State is required!")
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/My Profile/Validation Messages/Country Validation'), 3)
+
+WebUI.verifyElementText(findTestObject('Object Repository/My Profile/Validation Messages/Country Validation'), "Country is required!")
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/My Profile/Validation Messages/Postal Validation'), 3)
+
+WebUI.verifyElementText(findTestObject('Object Repository/My Profile/Validation Messages/Postal Validation'), "Postal/Zip is required!" ,FailureHandling.CONTINUE_ON_FAILURE)== true
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/My Profile/Validation Messages/Phone Validation'), 3)
+
+WebUI.verifyElementText(findTestObject('Object Repository/My Profile/Validation Messages/Phone Validation'), "Phone is required!")
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/My Profile/Validation Messages/Email Validation'), 3)
+
+WebUI.verifyElementText(findTestObject('Object Repository/My Profile/Validation Messages/Email Validation'), "Email is required!")
+
+WebUI.closeBrowser()
+
+//WebUI.verifyElementPresent(findTestObject('Object Repository/My Profile/Validation Messages/Address 1 Validation'), 3)
+
+//WebUI.verifyElementText(('Object Repository/My Profile/Validation Messages/Address 1 Validation'), "Address 1 is required!")
+
