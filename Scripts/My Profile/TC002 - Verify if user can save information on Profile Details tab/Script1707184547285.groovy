@@ -37,8 +37,8 @@ WebUI.click(findTestObject('Object Repository/Engagements Page/Logo/Sidebar Comp
 
 WebUI.setText(findTestObject('Object Repository/My Profile/PhoneNo Field'), GlobalVariable.PhoneNo)
 
-WebUI.click(findTestObject('Object Repository/My Profile/Save AND Continue btn'))
+WebUI.click(findTestObject('Object Repository/My Profile/Buttons/Profile Save AND Continue btn'))
 
 WebUI.delay(5)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/My Profile/Company Bio Header Title'), 5)
+WebUI.verifyElementPresent(findTestObject('Object Repository/My Profile/Label/Company Bio Header Title'), 5)

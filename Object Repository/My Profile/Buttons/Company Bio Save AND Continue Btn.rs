@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Company Bio Save AND btn</name>
+   <name>Company Bio Save AND Continue Btn</name>
    <tag></tag>
    <elementGuidId>65337741-2300-4a42-a6f9-90bac0c14849</elementGuidId>
    <selectorCollection>

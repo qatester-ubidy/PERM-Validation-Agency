@@ -38,7 +38,7 @@ WebUI.setText(findTestObject('Object Repository/My Profile/Email Address Field')
 
 WebUI.setText(findTestObject('Object Repository/My Profile/PhoneNo Field'), Keys.chord(Keys.ALT, 'a') + Keys.BACK_SPACE)
 
-WebUI.click(findTestObject('Object Repository/My Profile/Save AND Continue btn'))
+WebUI.click(findTestObject('Object Repository/My Profile/Buttons/Profile Save AND Continue btn'))
 
 
 //VALIDATION MESSAGES
