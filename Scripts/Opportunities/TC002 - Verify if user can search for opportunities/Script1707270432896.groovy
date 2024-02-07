@@ -17,28 +17,33 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+def SearchKeyword = "Electrical Engineer"
 
 WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
 
-//LOG IN VALID ACCOUNT
-WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), GlobalVariable.ValidEmail)
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), "qa.tester+a01@ubidy.com")
 
 WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), GlobalVariable.StandardPw)
 
 WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Engagements Page/Buttons/Slider Btn'), 3)
+//SEARCH FOR ENGAGEMENT
+WebUI.waitForElementPresent(findTestObject('Object Repository/Opportunities Page/Buttons/Opportunities Tab Btn'), 3)
 
-WebUI.click(findTestObject('Object Repository/Engagements Page/Buttons/Slider Btn'))
+WebUI.click(findTestObject('Object Repository/Opportunities Page/Buttons/Opportunities Tab Btn'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Engagements Page/Logo/Sidebar Company Logo'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), 3)
 
-WebUI.click(findTestObject('Object Repository/Engagements Page/Logo/Sidebar Company Logo'))
+WebUI.setText(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), SearchKeyword)
 
-WebUI.setText(findTestObject('Object Repository/My Profile/PhoneNo Field'), GlobalVariable.PhoneNo)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Opportunities Page/Buttons/Clear Search Btn'), 3)
 
-WebUI.click(findTestObject('Object Repository/My Profile/Buttons/Profile Save AND Continue btn'))
+WebUI.verifyElementPresent(findTestObject('Object Repository/Opportunities Page/Elements/Opportunities List Section'), 3)
 
-WebUI.delay(5)
+WebUI.verifyElementVisible(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/My Profile/Label/Company Bio Header Title'), 5)
+def SearchResult = WebUI.getAttribute(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Title Card'), "title")
+
+WebUI.verifyMatch(SearchResult, SearchKeyword, false)
+
+WebUI.closeBrowser()
