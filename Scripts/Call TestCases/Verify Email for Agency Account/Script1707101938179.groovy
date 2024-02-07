@@ -21,17 +21,17 @@ WebUI.openBrowser('https://mail.google.com/')
 
 WebUI.maximizeWindow()
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Email field'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Textboxes/Email Field Txtbox'), 3)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Buttons/Next Btn'), 3)
 
-WebUI.setText(findTestObject('Object Repository/Gmail Page/Email field'), GlobalVariable.QAEmail)
+WebUI.setText(findTestObject('Object Repository/Gmail Page/Textboxes/Email Field Txtbox'), GlobalVariable.QAEmail)
 
 WebUI.click(findTestObject('Object Repository/Gmail Page/Buttons/Next Btn'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Password field'), 5)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Textboxes/Password Field Txtbox'), 5)
 
-WebUI.setText(findTestObject('Object Repository/Gmail Page/Password field'), GlobalVariable.QAPw)
+WebUI.setText(findTestObject('Object Repository/Gmail Page/Textboxes/Password Field Txtbox'), GlobalVariable.QAPw)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Buttons/Next Btn'), 3)
 

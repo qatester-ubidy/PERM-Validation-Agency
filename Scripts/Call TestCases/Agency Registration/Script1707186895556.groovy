@@ -65,10 +65,19 @@ WebUI.verifyElementClickable(findTestObject('Object Repository/Sign Up Page/Butt
 
 WebUI.click(findTestObject('Object Repository/Sign Up Page/Buttons/Create An Account Btn'))
 
+WebUI.waitForElementPresent(findTestObject('Object Repository/Sign Up Page/Confirm Email/Confirm Email Title'), 3)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Sign Up Page/Confirm Email/Thank You for Registering Text'), 3)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Sign Up Page/Confirm Email/Go Back To Sign In Page Btn'), 3)
+
 //VERIFY ACCOUNT
 WebUI.callTestCase(findTestCase("Call TestCases/Verify Email for Agency Account"), [:])
 
-//REDIRECT TO OPPORTUNITIES
+//VERIFY ACCOUNT IN BACK OFFICE
+WebUI.callTestCase(findTestCase("Call TestCases/Approve Created Agency From Back Office"), [:])
+
+//COMPLETE PROFILE
 WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
 
 WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), GlobalVariable.VerifiedAccount)
@@ -76,3 +85,4 @@ WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textb
 WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), GlobalVariable.StandardPw)
 
 WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
+

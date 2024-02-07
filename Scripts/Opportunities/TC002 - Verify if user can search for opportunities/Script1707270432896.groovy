@@ -17,6 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+def SearchKeyword = "Electrical Engineer"
+
 WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
 
 WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), "qa.tester+a01@ubidy.com")
@@ -32,6 +34,16 @@ WebUI.click(findTestObject('Object Repository/Opportunities Page/Buttons/Opportu
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), 3)
 
-WebUI.setText(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), "Electrical Engineer")
+WebUI.setText(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), SearchKeyword)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Opportunities Page/Buttons/Clear Search Btn'), 3)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Opportunities Page/Elements/Opportunities List Section'), 3)
+
+WebUI.verifyElementVisible(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'))
+
+def SearchResult = WebUI.getAttribute(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Title Card'), "title")
+
+WebUI.verifyMatch(SearchResult, SearchKeyword, false)
+
+WebUI.closeBrowser()
