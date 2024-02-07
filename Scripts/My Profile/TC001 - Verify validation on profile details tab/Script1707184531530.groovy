@@ -24,13 +24,13 @@ WebUI.maximizeWindow()
 
 WebUI.callTestCase(findTestCase("Call TestCases/Login with correct credential"), [:])
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Engagements Page/Slider Btn'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Engagements Page/Buttons/Slider Btn'), 3)
 
-WebUI.click(findTestObject('Object Repository/Engagements Page/Slider Btn'))
+WebUI.click(findTestObject('Object Repository/Engagements Page/Buttons/Slider Btn'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Engagements Page/Sidebar Company Logo'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Engagements Page/Logo/Sidebar Company Logo'), 3)
 
-WebUI.click(findTestObject('Object Repository/Engagements Page/Sidebar Company Logo'))
+WebUI.click(findTestObject('Object Repository/Engagements Page/Logo/Sidebar Company Logo'))
 
 WebUI.setText(findTestObject('Object Repository/My Profile/Company Name Field'), Keys.chord(Keys.ALT, 'a') + Keys.BACK_SPACE)
 

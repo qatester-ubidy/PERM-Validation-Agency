@@ -27,18 +27,18 @@ WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Te
 WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
 
 //VERIFY REDIRECTION
-WebUI.waitForElementPresent(findTestObject('Object Repository/Engagements Page/Engagements Title'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagements Page/Texts/Engagements Title Txt'), 3)
 
 def TabTitle = WebUI.getWindowTitle()
 
 WebUI.verifyMatch(TabTitle, "Ubidy Agency - Engagement Board", false)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Engagements Page/Slider Btn'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Engagements Page/Buttons/Slider Btn'), 3)
 
-WebUI.click(findTestObject('Object Repository/Engagements Page/Slider Btn'))
+WebUI.click(findTestObject('Object Repository/Engagements Page/Buttons/Slider Btn'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Engagements Page/Sidebar Company Logo'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Engagements Page/Logo/Sidebar Company Logo'), 3)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Engagements Page/Sidebar Company Title'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Engagements Page/Buttons/Sidebar Company Title'), 3)
 
 WebUI.closeBrowser()

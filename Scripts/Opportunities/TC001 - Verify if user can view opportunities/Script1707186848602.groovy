@@ -17,4 +17,27 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase("Call TestCases/Agency Registration"), [:])
+WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
+
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), "qa.tester+a01@ubidy.com")
+
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), GlobalVariable.StandardPw)
+
+WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
+
+//VIEW ALL ENGAGEMENTS
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagements Page/Buttons/Slider Btn'), 3)
+
+WebUI.click(findTestObject('Object Repository/Opportunities Page/Buttons/Opportunities Tab Btn'))
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Opportunities Page/Texts/Opportunities Title Txt'), 3)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Opportunities Page/Elements/Empty Opportunities Section'), 3)
+
+WebUI.click(findTestObject('Object Repository/Opportunities Page/Buttons/All Other Opportunities Tab Btn'))
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Opportunities Page/Elements/Opportunities List Section'), 3)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'), 3)
+
+WebUI.closeBrowser()

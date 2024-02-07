@@ -17,16 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(GlobalVariable.StagingEnv)
+WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
 
-WebUI.maximizeWindow()
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), "qa.tester+a01@ubidy.com")
 
-WebUI.callTestCase(findTestCase("Call TestCases/Login with correct credential"), [:])
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), GlobalVariable.StandardPw)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Engagements Page/Buttons/Slider Btn'), 3)
+WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
 
-WebUI.click(findTestObject('Object Repository/Engagements Page/Buttons/Slider Btn'))
+//SEARCH FOR ENGAGEMENT
+WebUI.waitForElementPresent(findTestObject('Object Repository/Opportunities Page/Buttons/Opportunities Tab Btn'), 3)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Engagements Page/Logo/Sidebar Company Logo'), 3)
+WebUI.click(findTestObject('Object Repository/Opportunities Page/Buttons/Opportunities Tab Btn'))
 
-WebUI.click(findTestObject('Object Repository/Engagements Page/Logo/Sidebar Company Logo'))
+WebUI.verifyElementPresent(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), 3)
+
+WebUI.setText(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), "Electrical Engineer")
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Opportunities Page/Buttons/Clear Search Btn'), 3)
