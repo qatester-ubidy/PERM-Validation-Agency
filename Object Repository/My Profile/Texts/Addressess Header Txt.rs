@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>LinkedIn Field</name>
+   <name>Addressess Header Txt</name>
    <tag></tag>
-   <elementGuidId>af335b47-07cd-4926-8ab8-79db5bfe275b</elementGuidId>
+   <elementGuidId>1e1f4b7b-e0ef-4f13-b2c6-c13842cf6b00</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'linkedIn']</value>
+         <value>//*[@class = 'profile-header']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,9 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>class</name>
       <type>Main</type>
-      <value>linkedIn</value>
-      <webElementGuid>08a6b42b-ac8d-44f1-af7f-db08994448c0</webElementGuid>
+      <value>profile-header</value>
+      <webElementGuid>cb27db34-e54a-4d9e-9b3d-5e487dc5c114</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Continue btn</name>
+   <name>Continue Btn</name>
    <tag></tag>
    <elementGuidId>794da7fb-9015-4d4c-b5c4-5c817f7c3306</elementGuidId>
    <selectorCollection>

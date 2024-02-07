@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Profile Save AND Continue Btn</name>
+   <name>Addressess Btn</name>
    <tag></tag>
-   <elementGuidId>33056ab9-efed-4568-989d-bae1b62781a6</elementGuidId>
+   <elementGuidId>fc97ebce-9912-4315-b4ff-18eeef250168</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//button[(text() = 'Save &amp; Continue' or . = 'Save &amp; Continue')]</value>
+         <value>//*[@id = 'robot-menu-Addresses']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,17 +15,17 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>robot-menu-Addresses</value>
+      <webElementGuid>b9da9f48-5741-43de-bad8-5a0789ee7e91</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>85d6d070-6fdf-44d2-ae73-8eaf2879f9ab</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>Save &amp; Continue</value>
-      <webElementGuid>a3fe9c9e-f6f4-4711-a9a4-6441a37bf087</webElementGuid>
+      <webElementGuid>157b289d-b028-455e-87bd-15e0df5e0098</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

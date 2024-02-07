@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Company Bio Text Field</name>
+   <name>Company Bio Txtboxes</name>
    <tag></tag>
    <elementGuidId>e9de2247-a23c-4436-99d7-4655f645c6e3</elementGuidId>
    <selectorCollection>

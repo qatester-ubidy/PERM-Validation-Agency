@@ -26,16 +26,16 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/My Profile/Buttons
 
 WebUI.click(findTestObject('Object Repository/My Profile/Buttons/Company Bio btn'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/My Profile/Company Bio Text Field'), 10)
+WebUI.waitForElementPresent(findTestObject('Object Repository/My Profile/Textboxes/Company Bio Txtboxes'), 10)
 
-WebUI.click(findTestObject('Object Repository/My Profile/Company Bio Text Field'))
+WebUI.click(findTestObject('Object Repository/My Profile/Textboxes/Company Bio Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/My Profile/Company Bio Text Field'), Keys.chord(Keys.COMMAND, 'a') + Keys.BACK_SPACE)
+WebUI.setText(findTestObject('Object Repository/My Profile/Textboxes/Company Bio Txtboxes'), Keys.chord(Keys.COMMAND, 'a') + Keys.BACK_SPACE)
 
-WebUI.setText(findTestObject('Object Repository/My Profile/Company Bio Text Field'), GlobalVariable.CompanyBioMessage)
+WebUI.setText(findTestObject('Object Repository/My Profile/Textboxes/Company Bio Txtboxes'), GlobalVariable.CompanyBioMessage)
 
 WebUI.click(findTestObject('Object Repository/My Profile/Buttons/Company Bio Save AND Continue Btn'))
 
 WebUI.delay(5)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/My Profile/Label/Addressess Header Title'), 5)
+WebUI.verifyElementPresent(findTestObject('Object Repository/My Profile/Texts/Addressess Header Txt'), 5)

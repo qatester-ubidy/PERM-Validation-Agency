@@ -32,11 +32,11 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Engagements Page/Si
 
 WebUI.click(findTestObject('Object Repository/Engagements Page/Sidebar Company Logo'))
 
-WebUI.setText(findTestObject('Object Repository/My Profile/Company Name Field'), Keys.chord(Keys.ALT, 'a') + Keys.BACK_SPACE)
+WebUI.setText(findTestObject('Object Repository/My Profile/Textboxes/Company Name Txtboxes'), Keys.chord(Keys.ALT, 'a') + Keys.BACK_SPACE)
 
-WebUI.setText(findTestObject('Object Repository/My Profile/Email Address Field'), Keys.chord(Keys.ALT, 'a') + Keys.BACK_SPACE)
+WebUI.setText(findTestObject('Object Repository/My Profile/Textboxes/Email Address Txtboxes'), Keys.chord(Keys.ALT, 'a') + Keys.BACK_SPACE)
 
-WebUI.setText(findTestObject('Object Repository/My Profile/PhoneNo Field'), Keys.chord(Keys.ALT, 'a') + Keys.BACK_SPACE)
+WebUI.setText(findTestObject('Object Repository/My Profile/Textboxes/PhoneNo Txtboxes'), Keys.chord(Keys.ALT, 'a') + Keys.BACK_SPACE)
 
 WebUI.click(findTestObject('Object Repository/My Profile/Buttons/Profile Save AND Continue btn'))
 

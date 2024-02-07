@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Company Bio Header Title</name>
+   <name>Email Address Txtboxes</name>
    <tag></tag>
-   <elementGuidId>e2a9904a-fe53-4fae-951d-41dd1b640468</elementGuidId>
+   <elementGuidId>12e2b3b7-90ca-4186-b869-a6d991ceca52</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;root&quot;]/div/div[2]/div[3]/div/main/div/div/div/div[2]/div/div/div/h2[count(. | //*[@class = 'profile-header']) = count(//*[@class = 'profile-header'])]</value>
+         <value>//*[@id = 'email' and @class = 'ant-input']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,17 +15,17 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>id</name>
       <type>Main</type>
-      <value>//*[@id=&quot;root&quot;]/div/div[2]/div[3]/div/main/div/div/div/div[2]/div/div/div/h2</value>
-      <webElementGuid>744c10c0-f1b6-4f9e-9caa-7075d65b6bde</webElementGuid>
+      <value>email</value>
+      <webElementGuid>290260db-e6c1-4a42-be1f-b228c0f13c5c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>profile-header</value>
-      <webElementGuid>cf7ea829-cd3d-4f4a-af9a-521605339cf3</webElementGuid>
+      <value>ant-input</value>
+      <webElementGuid>d5f65fa8-7ac8-40b5-a262-73216ceb5f2a</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

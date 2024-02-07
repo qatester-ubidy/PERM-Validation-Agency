@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Company Name Field</name>
+   <name>LinkedIn Txtboxes</name>
    <tag></tag>
-   <elementGuidId>3e1acccd-bf93-4e13-9f56-283ddc996f5d</elementGuidId>
+   <elementGuidId>af335b47-07cd-4926-8ab8-79db5bfe275b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'companyName']</value>
+         <value>//*[@id = 'linkedIn']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>companyName</value>
-      <webElementGuid>a69f6eae-9d33-4819-ba41-0af633a02ef6</webElementGuid>
+      <value>linkedIn</value>
+      <webElementGuid>08a6b42b-ac8d-44f1-af7f-db08994448c0</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

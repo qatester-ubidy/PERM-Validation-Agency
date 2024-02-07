@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Profile Save AND Continue Btn</name>
+   <name>Phone Validation</name>
    <tag></tag>
-   <elementGuidId>33056ab9-efed-4568-989d-bae1b62781a6</elementGuidId>
+   <elementGuidId>25adf3db-bb19-433a-a6ab-cf58b56f665c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//button[(text() = 'Save &amp; Continue' or . = 'Save &amp; Continue')]</value>
+         <value>//*[@class = 'ant-form-explain' and (text() = 'Phone is required!' or . = 'Phone is required!')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,17 +15,17 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>tag</name>
+      <name>class</name>
       <type>Main</type>
-      <value>button</value>
-      <webElementGuid>85d6d070-6fdf-44d2-ae73-8eaf2879f9ab</webElementGuid>
+      <value>ant-form-explain</value>
+      <webElementGuid>41f866a0-f135-4ff0-9b76-8f32da3839bb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Save &amp; Continue</value>
-      <webElementGuid>a3fe9c9e-f6f4-4711-a9a4-6441a37bf087</webElementGuid>
+      <value>Phone is required!</value>
+      <webElementGuid>4e61eedc-6e09-48f3-802b-f35e60960066</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

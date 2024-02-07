@@ -35,10 +35,10 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Engagements Page/Si
 
 WebUI.click(findTestObject('Object Repository/Engagements Page/Sidebar Company Logo'))
 
-WebUI.setText(findTestObject('Object Repository/My Profile/PhoneNo Field'), GlobalVariable.PhoneNo)
+WebUI.setText(findTestObject('Object Repository/My Profile/Textboxes/PhoneNo Txtboxes'), GlobalVariable.PhoneNo)
 
 WebUI.click(findTestObject('Object Repository/My Profile/Buttons/Profile Save AND Continue btn'))
 
 WebUI.delay(5)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/My Profile/Label/Company Bio Header Title'), 5)
+WebUI.verifyElementPresent(findTestObject('Object Repository/My Profile/Texts/Company Bio Header Txt'), 5)

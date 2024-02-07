@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Profile Save AND Continue Btn</name>
+   <name>Country Validation</name>
    <tag></tag>
-   <elementGuidId>33056ab9-efed-4568-989d-bae1b62781a6</elementGuidId>
+   <elementGuidId>cb0263e3-c079-47fb-b186-bfc1e23a34db</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//button[(text() = 'Save &amp; Continue' or . = 'Save &amp; Continue')]</value>
+         <value>//*[@class = 'ant-form-explain' and (text() = 'Country is required!' or . = 'Country is required!')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,17 +15,17 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>tag</name>
+      <name>class</name>
       <type>Main</type>
-      <value>button</value>
-      <webElementGuid>85d6d070-6fdf-44d2-ae73-8eaf2879f9ab</webElementGuid>
+      <value>ant-form-explain</value>
+      <webElementGuid>cb224644-f244-41a3-809f-0d7b210e9628</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Save &amp; Continue</value>
-      <webElementGuid>a3fe9c9e-f6f4-4711-a9a4-6441a37bf087</webElementGuid>
+      <value>Country is required!</value>
+      <webElementGuid>c2019174-0ecb-4f46-815c-feb3816dae61</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
