@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Save AND Continue btn</name>
+   <name>Profile Save AND Continue btn</name>
    <tag></tag>
    <elementGuidId>33056ab9-efed-4568-989d-bae1b62781a6</elementGuidId>
    <selectorCollection>

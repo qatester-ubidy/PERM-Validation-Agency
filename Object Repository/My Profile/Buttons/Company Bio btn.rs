@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Company Bio btn</name>
+   <name>Company Bio Btn</name>
    <tag></tag>
    <elementGuidId>7d103dc3-b86f-4f59-9567-35172213a9b6</elementGuidId>
    <selectorCollection>
