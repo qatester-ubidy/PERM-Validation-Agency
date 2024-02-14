@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Agency Registration</name>
+   <name>TC003 - Verify if user can apply for opportunities</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>36aefcbe-536c-42ca-bd59-7f769c3fb055</testCaseGuid>
+   <testCaseGuid>337b5a40-802f-40a0-837f-439e98eca355</testCaseGuid>
 </TestCaseEntity>

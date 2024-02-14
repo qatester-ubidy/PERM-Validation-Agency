@@ -69,4 +69,14 @@
       <initValue>''</initValue>
       <name>VerifiedAccount</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'NexaTech Incorporated'</initValue>
+      <name>ExistingEmployerName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'qa.tester+jerryemp01@ubidy.com'</initValue>
+      <name>EmployerAccount</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
