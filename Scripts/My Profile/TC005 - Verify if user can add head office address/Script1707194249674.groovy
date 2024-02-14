@@ -33,15 +33,13 @@ WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
 WebUI.delay(5)
 
 // VERIFY HEAD OFFICE ADDRESS VALIDATION MESSAGES
+WebUI.verifyElementPresent(findTestObject('Object Repository/Engagements Page/Buttons/Slider Btn'), 5)
 
+WebUI.click(findTestObject('Object Repository/Engagements Page/Buttons/Slider Btn'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Engagements Page/Slider Btn'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Engagements Page/Logo/Sidebar Company Logo'), 3)
 
-WebUI.click(findTestObject('Object Repository/Engagements Page/Slider Btn'))
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Engagements Page/Sidebar Company Logo'), 3)
-
-WebUI.click(findTestObject('Object Repository/Engagements Page/Sidebar Company Logo'))
+WebUI.click(findTestObject('Object Repository/Engagements Page/Logo/Sidebar Company Logo'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/My Profile/Buttons/Addressess Btn'), 10)
 
@@ -79,9 +77,33 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/My Profile/Validati
 
 WebUI.verifyElementText(findTestObject('Object Repository/My Profile/Validation Messages/Email Validation'), "Email is required!")
 
-WebUI.closeBrowser()
+// VERIFY IF USER CAN ADD HEAD OFFICE ADDRESS 
+WebUI.click(findTestObject('Object Repository/My Profile/Textboxes/Address 1 Txtboxes'))
 
-//WebUI.verifyElementPresent(findTestObject('Object Repository/My Profile/Validation Messages/Address 1 Validation'), 3)
+WebUI.setText(findTestObject('Object Repository/My Profile/Textboxes/Address 1 Txtboxes'), GlobalVariable.Address1)
 
-//WebUI.verifyElementText(('Object Repository/My Profile/Validation Messages/Address 1 Validation'), "Address 1 is required!")
+WebUI.click(findTestObject('Object Repository/My Profile/Textboxes/City Txtboxes'))
 
+WebUI.setText(findTestObject('Object Repository/My Profile/Textboxes/City Txtboxes'), GlobalVariable.City)
+
+WebUI.click(findTestObject('Object Repository/My Profile/Textboxes/State Txtboxes'))
+
+WebUI.setText(findTestObject('Object Repository/My Profile/Textboxes/State Txtboxes'), GlobalVariable.Province)
+
+WebUI.click(findTestObject('Object Repository/My Profile/Buttons/Select Country Btn'))
+
+WebUI.click(findTestObject('Object Repository/My Profile/Buttons/Country Btn'))
+
+WebUI.click(findTestObject('Object Repository/My Profile/Textboxes/Postal Txtboxes'))
+
+WebUI.setText(findTestObject('Object Repository/My Profile/Textboxes/Postal Txtboxes'), GlobalVariable.PostalZip)
+
+WebUI.click(findTestObject('Object Repository/My Profile/Textboxes/Address Phone Txtboxes'))
+
+WebUI.setText(findTestObject('Object Repository/My Profile/Textboxes/Address Phone Txtboxes'), GlobalVariable.AddressPhone)
+
+WebUI.click(findTestObject('Object Repository/My Profile/Textboxes/Email Address Txtboxes'))
+
+WebUI.setText(findTestObject('Object Repository/My Profile/Textboxes/Email Address Txtboxes'), GlobalVariable.AddressEmail)
+
+WebUI.click(findTestObject('Object Repository/My Profile/Buttons/Address Save Changes Btn'))
