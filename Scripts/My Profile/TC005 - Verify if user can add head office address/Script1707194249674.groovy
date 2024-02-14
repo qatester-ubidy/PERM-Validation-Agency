@@ -77,7 +77,6 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/My Profile/Validati
 
 WebUI.verifyElementText(findTestObject('Object Repository/My Profile/Validation Messages/Email Validation'), "Email is required!")
 
-
 // VERIFY IF USER CAN ADD HEAD OFFICE ADDRESS 
 WebUI.click(findTestObject('Object Repository/My Profile/Textboxes/Address 1 Txtboxes'))
 
@@ -91,9 +90,9 @@ WebUI.click(findTestObject('Object Repository/My Profile/Textboxes/State Txtboxe
 
 WebUI.setText(findTestObject('Object Repository/My Profile/Textboxes/State Txtboxes'), GlobalVariable.Province)
 
-WebUI.click(findTestObject('Object Repository/My Profile/Buttons/div_Select Country'))
+WebUI.click(findTestObject('Object Repository/My Profile/Buttons/Select Country Btn'))
 
-WebUI.click(findTestObject('Object Repository/My Profile/Buttons/li_Canada'))
+WebUI.click(findTestObject('Object Repository/My Profile/Buttons/Country Btn'))
 
 WebUI.click(findTestObject('Object Repository/My Profile/Textboxes/Postal Txtboxes'))
 

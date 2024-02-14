@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Select Country</name>
+   <name>Select Country Btn</name>
    <tag></tag>
    <elementGuidId>10dd66f0-a42b-4eab-828b-87638185bf85</elementGuidId>
    <selectorCollection>
