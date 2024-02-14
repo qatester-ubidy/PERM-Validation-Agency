@@ -61,7 +61,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'543 345 657'</initValue>
+      <initValue>'543 345 111'</initValue>
       <name>PhoneNo</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -78,5 +78,42 @@
       <description></description>
       <initValue>'qa.tester+jerryemp01@ubidy.com'</initValue>
       <name>EmployerAccount</name>
+      <initValue>'company that provides expertise in search marketing solutions for businesses worldwide, including website promotion, online advertising, and search engine optimization techniques to improve its clients\' positioning in search engines. We new company that provides expertise in search marketing solutions for businesses worldwide, including website promotion, online advertising, and search engine optimization techniques to improve its clients\' positioning in search engines. We cater to the higher education market, including colleges, universities, and professional educational institutions.ater to the higher education market, including colleges, universities, and professional educational institutions.'</initValue>
+      <name>CompanyBioMessage</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Blk 10 Lot 6 '</initValue>
+      <name>Address1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Calgary'</initValue>
+      <name>City</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Canada'</initValue>
+      <name>CountryAddress</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Alberta'</initValue>
+      <name>Province</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'2012'</initValue>
+      <name>PostalZip</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'435 854 237'</initValue>
+      <name>AddressPhone</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'qa.tester+head@ubidy.com'</initValue>
+      <name>AddressEmail</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
