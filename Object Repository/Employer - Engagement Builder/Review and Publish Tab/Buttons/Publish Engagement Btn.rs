@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Job Title Txtbox</name>
+   <name>Publish Engagement Btn</name>
    <tag></tag>
-   <elementGuidId>e0254f2b-79ef-457a-8f34-ce3ca5002ae1</elementGuidId>
+   <elementGuidId>8f258958-a1f0-49f9-a06a-2ad73695e4a8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@id = 'Job Requirements form_jobTitle']</value>
+         <value>//button[(text() = 'Publish Engagement' or . = 'Publish Engagement')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,15 +17,15 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
-      <webElementGuid>4d23dbfa-9e11-422b-821c-02c709669d2f</webElementGuid>
+      <value>button</value>
+      <webElementGuid>96473e1c-e2f1-49ba-b1e3-86ca724cde60</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>text</name>
       <type>Main</type>
-      <value>Job Requirements form_jobTitle</value>
-      <webElementGuid>1f7ff3df-4804-47a4-8d31-81c227dfc159</webElementGuid>
+      <value>Publish Engagement</value>
+      <webElementGuid>d087a573-b5ee-40dd-927d-6082f783c021</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
