@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Uploaded JD Document</name>
+   <tag></tag>
+   <elementGuidId>38fc2d8e-8a6e-4591-8e0c-82091f35558b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@class='document-list-container']//button[@class='doc-button-action']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>b9b4acec-0c97-45de-b353-dc2b0087bea0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@class='document-list-container']//button[@class='doc-button-action']</value>
+      <webElementGuid>a40e14d9-d3a3-41a5-8751-05c7eb3dafa1</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

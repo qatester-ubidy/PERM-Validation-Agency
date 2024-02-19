@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>First Hiring Lead Option</name>
+   <name>Hiring Lead List</name>
    <tag></tag>
-   <elementGuidId>2661371b-3a36-449c-9ad2-bcb682d552f5</elementGuidId>
+   <elementGuidId>8bb21f00-261b-408c-8478-3eab221fc5c9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>/html/body/div[6]/div/div/div/ul/li[1]</value>
+         <value>/html/body/div[3]/div/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[6]/div/div/div/ul/li[1]</value>
-      <webElementGuid>dca485ac-2d25-4748-9c9d-deedae559ec7</webElementGuid>
+      <value>/html/body/div[3]/div/div</value>
+      <webElementGuid>8ece0ed5-7c52-433b-9125-0f56e490b24e</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

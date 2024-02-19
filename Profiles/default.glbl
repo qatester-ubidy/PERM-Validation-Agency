@@ -71,13 +71,11 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'NexaTech Incorporated'</initValue>
+      <initValue>'PureSilver WaffleMaker Corp'</initValue>
       <name>ExistingEmployerName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'qa.tester+jerryemp01@ubidy.com'</initValue>
-      <name>EmployerAccount</name>
       <initValue>'company that provides expertise in search marketing solutions for businesses worldwide, including website promotion, online advertising, and search engine optimization techniques to improve its clients\' positioning in search engines. We new company that provides expertise in search marketing solutions for businesses worldwide, including website promotion, online advertising, and search engine optimization techniques to improve its clients\' positioning in search engines. We cater to the higher education market, including colleges, universities, and professional educational institutions.ater to the higher education market, including colleges, universities, and professional educational institutions.'</initValue>
       <name>CompanyBioMessage</name>
    </GlobalVariableEntity>
@@ -115,5 +113,15 @@
       <description></description>
       <initValue>'qa.tester+head@ubidy.com'</initValue>
       <name>AddressEmail</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'qa.tester+newe01@ubidy.com'</initValue>
+      <name>EmployerAccount</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'C:\\Sarah_Fowler.pdf'</initValue>
+      <name>JDFileLocation</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
