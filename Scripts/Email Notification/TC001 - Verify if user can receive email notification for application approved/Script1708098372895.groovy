@@ -32,7 +32,7 @@ WebUI.click(findTestObject('Object Repository/Opportunities Page/Buttons/All Oth
 
 WebUI.setText(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), GlobalVariable.GetRandomJobTitle)
 
-WebUI.sendKeys(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), Keys.ENTER)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), 3)
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'), 3)
 
@@ -57,6 +57,47 @@ WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Applic
 WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Elements/Submitting Application Toast Msg'), 3)
 
 //APPROVE APPLICATION
-//WebUI.callTestCase(findTestCase("Call TestCases/Login Employer Account"), [:])
-//
-//WebUI.waitForElementPresent()
+WebUI.callTestCase(findTestCase("Call TestCases/Login Employer Account"), [:])
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Notification Page/Buttons/Notification Btn'), 3)
+
+WebUI.click(findTestObject('Object Repository/Employer - Notification Page/Buttons/Notification Btn'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Notification Page/Buttons/First Card View Now Btn'), 3)
+
+WebUI.click(findTestObject('Object Repository/Employer - Notification Page/Buttons/First Card View Now Btn'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Application Status Update Dropdown Btn'), 3)
+
+WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Application Status Update Dropdown Btn'))
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Approve Option'), 3)
+
+WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Approve Option'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Approve Application Modal/Approve Application Btn'), 3)
+
+WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Approve Application Modal/Approve Application Btn'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Approve Application Modal/Approve Application Success Toast Msg'), 3)
+
+WebUI.verifyTextPresent("Agency application status updated successfully.", false)
+
+//VERIFY EMAIL NOTIFICATION
+WebUI.callTestCase(findTestCase("Call TestCases/Redirect To Gmail"), [:])
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Textboxes/Search Txtbox'), 3)
+
+WebUI.setText(findTestObject('Object Repository/Gmail Page/Textboxes/Search Txtbox'), "Engagement Application Approved")
+
+WebUI.click(findTestObject('Object Repository/Gmail Page/Buttons/Search Btn'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'), 3)
+
+WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Approved Engagement Notif'))
+
+WebUI.verifyTextPresent("Application has been approved", false)
+
+WebUI.verifyTextPresent(GlobalVariable.GetRandomJobTitle, false)
+
+WebUI.closeBrowser()

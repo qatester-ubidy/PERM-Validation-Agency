@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>First Card View Now Btn</name>
+   <tag></tag>
+   <elementGuidId>800daf95-7a34-4467-a20e-54b0776333c1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@class=&quot;ant-table-body&quot;]//following::tbody/tr[1]/td[@class=&quot;actionTd&quot;]//button</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>5461d238-7e50-4fa2-bfbd-91d8d939e30a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@class=&quot;ant-table-body&quot;]//following::tbody/tr[1]/td[@class=&quot;actionTd&quot;]//button</value>
+      <webElementGuid>7efd9dea-41a3-414c-b56c-66d8e7c556f4</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
