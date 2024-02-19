@@ -26,6 +26,8 @@ int randomJobTitle = new Random().nextInt(jobTitle.length + 1)
 
 def getRandomJobTitle = findTestData('Job Titles').getValue('Jobtitles', randomJobTitle)
 
+GlobalVariable.GetRandomJobTitle = getRandomJobTitle
+
 String[] cities = findTestData('Data Files/Cities').getAllData()
 
 int randomCity = new Random().nextInt(cities.length + 1)
@@ -34,17 +36,7 @@ def getRandomCity = findTestData('Cities').getValue('Cities', randomCity)
 
 def randomNumber = RandomStringUtils.randomNumeric(1)
 
-WebUI.openBrowser("https://stagingemployer.ubidyapp.com/")
-
-WebUI.maximizeWindow()
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Log In Page/Textboxes/Email Txtbox'), 3)
-
-WebUI.setText(findTestObject('Object Repository/Employer - Log In Page/Textboxes/Email Txtbox'), GlobalVariable.EmployerAccount)
-
-WebUI.setText(findTestObject('Object Repository/Employer - Log In Page/Textboxes/Password Txtbox'), GlobalVariable.StandardPw)
-
-WebUI.click(findTestObject('Object Repository/Employer - Log In Page/Buttons/Sign In Btn'))
+WebUI.callTestCase(findTestCase("Call TestCases/Login Employer Account"), [:])
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Buttons/Talent Request Tab Btn'), 3)
 
@@ -105,10 +97,6 @@ WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job
 
 WebUI.setText(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/City Dropdown Btn'), getRandomCity)
 
-//WebUI.setText(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Textboxes/Preferred Languages Txtbox'), "English")
-//
-//WebUI.sendKeys(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Textboxes/Preferred Languages Txtbox'), Keys.ENTER)
-
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/Next Btn'))
 
 //COMPENSATION
@@ -144,7 +132,7 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Talent R
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Review and Publish/Buttons/Save and Publish Btn'))
 
 //ENGAGEMENT BUILDER - SET UP
-WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagement Builder/Set Up Tab/Textboxes/CV Slot Txtbox'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagement Builder/Set Up Tab/Textboxes/CV Slot Txtbox'), 5)
 
 WebUI.setText(findTestObject('Object Repository/Employer - Engagement Builder/Set Up Tab/Textboxes/CV Slot Txtbox'), randomNumber)
 
@@ -173,3 +161,7 @@ WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job
 WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagement Builder/Review and Publish Tab/Buttons/Publish Engagement Btn'), 3)
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagement Builder/Review and Publish Tab/Buttons/Publish Engagement Btn'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Elements/Creating Engagement Toast Message/Creating Job Post Toast Msg'), 3)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Texts/Engagements Title Txt'), 3)

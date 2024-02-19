@@ -17,28 +17,22 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase("Call TestCase/Open Ubidy Agency"), [:])
+WebUI.openBrowser('https://mail.google.com/')
 
-//LOG IN VALID ACCOUNT
-WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), GlobalVariable.ValidEmail)
+WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), GlobalVariable.StandardPw)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Textboxes/Email Field Txtbox'), 3)
 
-WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
+WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Buttons/Next Btn'), 3)
 
-//VERIFY REDIRECTION
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Texts/Engagements Title Txt'), 3)
+WebUI.setText(findTestObject('Object Repository/Gmail Page/Textboxes/Email Field Txtbox'), GlobalVariable.QAEmail)
 
-def TabTitle = WebUI.getWindowTitle()
+WebUI.click(findTestObject('Object Repository/Gmail Page/Buttons/Next Btn'))
 
-WebUI.verifyMatch(TabTitle, "Ubidy Agency - Engagement Board", false)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Textboxes/Password Field Txtbox'), 5)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Buttons/Slider Btn'), 3)
+WebUI.setText(findTestObject('Object Repository/Gmail Page/Textboxes/Password Field Txtbox'), GlobalVariable.QAPw)
 
-WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Buttons/Slider Btn'))
+WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Buttons/Next Btn'), 3)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Logo/Sidebar Company Logo'), 3)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Buttons/Sidebar Company Title'), 3)
-
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Object Repository/Gmail Page/Buttons/Next Btn'))

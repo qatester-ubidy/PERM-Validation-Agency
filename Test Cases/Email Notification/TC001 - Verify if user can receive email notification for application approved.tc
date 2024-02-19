@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Verify if user can receive email notification for application approved</name>
+   <name>TC001 - Verify if user can receive email notification for application approved</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>e568728e-7b3a-4bdf-b683-7b56c84bd871</testCaseGuid>

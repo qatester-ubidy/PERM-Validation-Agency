@@ -33,13 +33,13 @@ WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
 WebUI.delay(5)
 
 // VERIFY HEAD OFFICE ADDRESS VALIDATION MESSAGES
-WebUI.verifyElementPresent(findTestObject('Object Repository/Engagements Page/Buttons/Slider Btn'), 5)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Buttons/Slider Btn'), 5)
 
-WebUI.click(findTestObject('Object Repository/Engagements Page/Buttons/Slider Btn'))
+WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Buttons/Slider Btn'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Engagements Page/Logo/Sidebar Company Logo'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Logo/Sidebar Company Logo'), 3)
 
-WebUI.click(findTestObject('Object Repository/Engagements Page/Logo/Sidebar Company Logo'))
+WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Logo/Sidebar Company Logo'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/My Profile/Buttons/Addressess Btn'), 10)
 
