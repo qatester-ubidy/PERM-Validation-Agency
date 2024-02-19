@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Agencies Tab Btn</name>
+   <tag></tag>
+   <elementGuidId>1310c524-9a1b-4753-a809-568cc4bf1f29</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@class = 'menu-btn' and (text() = 'Agencies' or . = 'Agencies')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>5154f31f-5755-411a-9960-690bf67a75a4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>menu-btn</value>
+      <webElementGuid>8be4ea89-7ed1-49f4-892e-96b131f4877b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Agencies</value>
+      <webElementGuid>ad8bd16c-c965-4b8b-9128-5cd508cfb194</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
