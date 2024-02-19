@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC003 - Verify if user can receive email notification for declined application</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bf863029-aaf7-4e67-a26d-47cc18470854</testCaseGuid>
+</TestCaseEntity>
