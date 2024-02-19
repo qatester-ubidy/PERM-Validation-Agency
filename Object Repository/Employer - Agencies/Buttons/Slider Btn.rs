@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Slider Btn</name>
+   <tag></tag>
+   <elementGuidId>9f7b6212-8222-4558-aa83-307d1bce2116</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;root&quot;]/div/div[2]/div[2]/button[count(. | //button[@class = '_button-normalize']) = count(//button[@class = '_button-normalize'])]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>_button-normalize</value>
+      <webElementGuid>cb13b956-eb8f-484c-a544-986f22e4d666</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;root&quot;]/div/div[2]/div[2]/button</value>
+      <webElementGuid>c497a449-3230-4202-9cf9-3ea0b2d95048</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>df906bba-e2bb-4fd4-b25a-0b7704fc8474</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
