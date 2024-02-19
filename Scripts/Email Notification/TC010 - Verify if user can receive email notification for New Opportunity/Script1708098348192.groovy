@@ -17,3 +17,26 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.callTestCase(findTestCase("Call TestCases/Create New Job Post"), [:])
+
+WebUI.callTestCase(findTestCase("Call TestCases/Redirect To Gmail"), [:])
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Textboxes/Search Txtbox'), 3)
+
+WebUI.setText(findTestObject('Object Repository/Gmail Page/Textboxes/Search Txtbox'), "New Opportunity")
+
+WebUI.click(findTestObject('Object Repository/Gmail Page/Buttons/Search Btn'))
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Elements/First Email New Opportunity Notif'), 3)
+
+WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email New Opportunity Notif'))
+
+WebUI.verifyTextPresent("New Recruitment Opportunity", false)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Buttons/Sign In Btn'), 3)
+
+WebUI.verifyElementClickable(findTestObject('Object Repository/Gmail Page/Buttons/Sign In Btn'))
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Elements/New Opportunity Table Details'), 3)
+
+WebUI.closeBrowser()

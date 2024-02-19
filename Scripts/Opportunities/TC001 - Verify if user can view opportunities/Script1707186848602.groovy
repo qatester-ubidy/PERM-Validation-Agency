@@ -26,7 +26,7 @@ WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Te
 WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
 
 //VIEW ALL ENGAGEMENTS
-WebUI.waitForElementPresent(findTestObject('Object Repository/Engagements Page/Buttons/Slider Btn'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Buttons/Slider Btn'), 3)
 
 WebUI.click(findTestObject('Object Repository/Opportunities Page/Buttons/Opportunities Tab Btn'))
 

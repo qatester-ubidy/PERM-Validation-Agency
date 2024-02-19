@@ -124,4 +124,14 @@
       <initValue>'C:\\Sarah_Fowler.pdf'</initValue>
       <name>JDFileLocation</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'qa.tester+a01@ubidy.com'</initValue>
+      <name>AgencyAccount</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>GetRandomJobTitle</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

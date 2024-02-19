@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC010 - Verify if user can receive email notification for New Opportunity</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0dec7176-8611-425e-acf9-f55506b6ead8</testCaseGuid>
+</TestCaseEntity>
