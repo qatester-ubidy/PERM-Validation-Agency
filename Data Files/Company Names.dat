@@ -7,7 +7,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator>COMMA</csvSeperator>
    <dataFileGUID>8344366a-58db-4642-8d8f-f7242ee3558a</dataFileGUID>
-   <dataSourceUrl>/Users/joymartinez/Documents/PERM/Data Files/Company names.csv</dataSourceUrl>
+   <dataSourceUrl>C:\Users\USER\Documents\Company names.csv</dataSourceUrl>
    <driver>CSV</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>
