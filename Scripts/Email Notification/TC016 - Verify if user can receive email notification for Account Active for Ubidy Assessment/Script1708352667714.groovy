@@ -17,25 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase("Call TestCases/Redirect to My Profile page"), [:])
-
-
-WebUI.delay(5)
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/My Profile/Buttons/Company Bio btn'), 10)
-
-WebUI.click(findTestObject('Object Repository/My Profile/Buttons/Company Bio btn'))
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/My Profile/Textboxes/Company Bio Txtboxes'), 10)
-
-WebUI.click(findTestObject('Object Repository/My Profile/Textboxes/Company Bio Txtboxes'))
-
-WebUI.setText(findTestObject('Object Repository/My Profile/Textboxes/Company Bio Txtboxes'), Keys.chord(Keys.COMMAND, 'a') + Keys.BACK_SPACE)
-
-WebUI.setText(findTestObject('Object Repository/My Profile/Textboxes/Company Bio Txtboxes'), GlobalVariable.CompanyBioMessage)
-
-WebUI.click(findTestObject('Object Repository/My Profile/Buttons/Company Bio Save AND Continue Btn'))
-
-WebUI.delay(5)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/My Profile/Texts/Addressess Header Txt'), 5)

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC017 - Verify if user can receive email notification for Account Declined for Ubidy Assessment</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>baaa9392-6f95-465d-94a4-dc584f04f30a</testCaseGuid>
+</TestCaseEntity>
