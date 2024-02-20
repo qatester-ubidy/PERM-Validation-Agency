@@ -14,10 +14,8 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable
-import org.apache.commons.lang3.RandomStringUtils
+import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
 
 WebUI.callTestCase(findTestCase("Call TestCases/Agency Apply To New Engagement"), [:])
 
@@ -57,9 +55,9 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Candida
 
 WebUI.click(findTestObject('Object Repository/Employer - Candidate Viewer/Buttons/Status Update Dropdown Btn'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Candidate Viewer/Elements/Offer Extended Option'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Candidate Viewer/Elements/Interviewing Option'), 3)
 
-WebUI.click(findTestObject('Object Repository/Employer - Candidate Viewer/Elements/Offer Extended Option'))
+WebUI.click(findTestObject('Object Repository/Employer - Candidate Viewer/Elements/Interviewing Option'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Candidate Viewer/Candidate Status Update Modal/24 hours Option'), 3)
 
@@ -69,22 +67,22 @@ WebUI.click(findTestObject('Object Repository/Employer - Candidate Viewer/Candid
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Candidate Viewer/Elements/Candidate Status Update Toast Msg'), 3)
 
-WebUI.verifyTextPresent("candidate has an Offer Extended", false)
+WebUI.verifyTextPresent("candidate is now under Interviewing", false)
 
 //VERIFY EMAIL NOTIF
 WebUI.callTestCase(findTestCase("Call TestCases/Redirect To Gmail"), [:])
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Textboxes/Search Txtbox'), 3)
 
-WebUI.setText(findTestObject('Object Repository/Gmail Page/Textboxes/Search Txtbox'), "Candidate Offer Extended ")
+WebUI.setText(findTestObject('Object Repository/Gmail Page/Textboxes/Search Txtbox'), "Candidate Interviewing")
 
 WebUI.click(findTestObject('Object Repository/Gmail Page/Buttons/Search Btn'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'), 3)
 
-WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Offer Extended Notif'))
+WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Interviewing Notif'))
 
-WebUI.verifyTextPresent("Candidate has an Offer Extended", false)
+WebUI.verifyTextPresent("Candidate is now Interviewing", false)
 
 WebUI.verifyTextPresent(GlobalVariable.GetRandomJobTitle, false)
 
