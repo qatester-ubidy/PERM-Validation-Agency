@@ -61,4 +61,18 @@ WebUI.setText(findTestObject('Object Repository/Employer - Agencies/Textboxes/Ag
 
 WebUI.setText(findTestObject('Object Repository/Employer - Agencies/Textboxes/Agency Email Txtboxes'), emailAddress)
 
-//WebUI.
+WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Agencies/Buttons/Send Invitation Btn'), 3)
+WebUI.click(findTestObject('Object Repository/Employer - Agencies/Buttons/Send Invitation Btn'))
+
+WebUI.delay(5)
+
+
+//VERIFY EMAIL INVITATION RECEIVE
+WebUI.callTestCase(findTestCase("Call TestCases/Redirect To Gmail"), [:])
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'), 3)
+
+WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'))
+
+WebUI.verifyTextPresent('Congratulations! You have been invited to register', false)
+
