@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC005 - Verify if user can receive email notification for Candidate Status update for Interviewing</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>038ebc0b-e8d3-463e-84c5-173d7c10d696</testCaseGuid>
+</TestCaseEntity>
