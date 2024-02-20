@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Approve Option</name>
+   <name>Decline Option</name>
    <tag></tag>
-   <elementGuidId>59c99e94-82f1-4633-a5d6-e529a5c41e9c</elementGuidId>
+   <elementGuidId>7d1da42e-b9a9-4364-8cb5-24220690b5ce</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//li[text()=&quot; Approve&quot;]</value>
+         <value>//li[text()=&quot; Decline&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//li[text()=&quot; Approve&quot;]</value>
-      <webElementGuid>f930ae25-b120-46ef-a6ba-ecf5af32cb3f</webElementGuid>
+      <value>//li[text()=&quot; Decline&quot;]</value>
+      <webElementGuid>d28e3e8c-e6d2-43ba-96e5-ab3451584728</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

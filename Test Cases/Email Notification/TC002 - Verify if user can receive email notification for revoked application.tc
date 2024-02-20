@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC002 - Verify if user can receive email notification for revoked application</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>924d3481-dfb7-44a3-8e1e-6aaf0771db9e</testCaseGuid>
+</TestCaseEntity>
