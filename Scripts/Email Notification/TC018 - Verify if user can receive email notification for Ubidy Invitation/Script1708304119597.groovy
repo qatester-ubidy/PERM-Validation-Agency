@@ -30,7 +30,7 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Agencies
 
 WebUI.click(findTestObject('Object Repository/Employer - Agencies/Buttons/Agencies Tab Btn'))
 
-String[] firstName = findTestData('Data Files/First Names').getAllData()
+String[] firstName = findTestData('Data Files/Last Names').getAllData()
 
 int randomFirstname = new Random().nextInt(firstName.length + 1)
 
@@ -46,7 +46,7 @@ int randomLastname = new Random().nextInt(lastName.length + 1)
 
 def getRandomLastname = findTestData('Last Names').getValue('Surnames', randomLastname)
 
-String[] companyName = findTestData('Data Files/Company Names').getAllData()
+String[] companyName = findTestData('Data Files/Last Names').getAllData()
 
 int randomCompany = new Random().nextInt(companyName.length + 1)
 

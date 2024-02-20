@@ -16,9 +16,149 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.apache.commons.lang3.RandomStringUtils
 
-WebUI.callTestCase(findTestCase("Call TestCases/Create New Account and Verification"), [:])
+//WebUI.callTestCase(findTestCase("Call TestCases/Create New Account and Verification"), [:])
+
+WebUI.openBrowser(GlobalVariable.StagingEnv)
+
+WebUI.maximizeWindow()
+
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), 'qa.tester+kompamp-meta8759@ubidy.com')
+
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), 'Ubidy12345!')
+
+WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
+
+WebUI.delay(5)
+
+// VERIFY HEAD OFFICE ADDRESS VALIDATION MESSAGES
+WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Buttons/Slider Btn'), 5)
+
+WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Buttons/Slider Btn'))
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Logo/Sidebar Company Logo'), 3)
+
+WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Logo/Sidebar Company Logo'))
+
+String[] firstName = findTestData('Data Files/First Names').getAllData()
+
+int randomFirstname = new Random().nextInt(firstName.length + 1)
+
+def getRandomFirstname = findTestData('First Names').getValue('First Names', randomFirstname)
+
+def emailAddress = ('qa.tester+' + getRandomFirstname + RandomStringUtils.randomNumeric(4)) + '@ubidy.com'
+
+GlobalVariable.VerifiedAccount = emailAddress
+
+String[] lastName = findTestData('Data Files/Last Names').getAllData()
+
+int randomLastname = new Random().nextInt(lastName.length + 1)
+
+def getRandomLastname = findTestData('Last Names').getValue('Surnames', randomLastname)
+
+String[] companyName = findTestData('Data Files/Company Names').getAllData()
+
+int randomCompany = new Random().nextInt(companyName.length + 1)
+
+def getRandomCompany = findTestData('Company Names').getValue('Company Names', randomCompany)
+
+String[] cities = findTestData('Data Files/Cities').getAllData()
+
+int randomCity = new Random().nextInt(cities.length + 1)
+
+def getRandomCity = findTestData('Cities').getValue('Cities', randomCity)
+
+def randomNumber = RandomStringUtils.randomNumeric(9)
+
+def policyNumber = RandomStringUtils.randomNumeric(6)
+
+def postalCode = RandomStringUtils.randomNumeric(4)
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Buttons/Assessment Btn'), 10)
+
+WebUI.delay(3)
+
 WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Assessment Btn'))
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Legal Name Txtboxes'))
+
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Legal Name Txtboxes'), getRandomCompany)
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Company No Txtboxes'))
+
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Company No Txtboxes'), randomNumber)
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Trading Name Txtboxes'))
+
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Trading Name Txtboxes'), "LLC")
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Insurer Txtboxes'))
+
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Insurer Txtboxes'), "Insurance")
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Policy No Txtboxes'))
+
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Policy No Txtboxes'), policyNumber)
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Assessment - Expiry Month Dropdown Btn'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Elements/January Option'), 3)
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Elements/January Option'))
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Assessment - Expiry Day Dropdown Btn'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Elements/14 Option'), 3)
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Elements/14 Option'))
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Assessment - Expiry Year Dropdown Btn'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Elements/2025 Option'), 3)
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Elements/2025 Option'))
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Limit of Idemnity Txtboxes'))
+
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Limit of Idemnity Txtboxes'), "2,000,000")
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Address 1 Txtboxes'))
+
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Address 1 Txtboxes'), "Blk 10 Lot 32")
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Address2 Txtboxes'))
+
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Address2 Txtboxes'), "Santa Rosa")
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - City Txtboxes'))
+
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - City Txtboxes'), getRandomCity)
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Assessment - Country Dropdown Btn'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Elements/Algeria Option'), 3)
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Elements/Algeria Option'))
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Postal Code Txtboxes'))
+
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Postal Code Txtboxes'), postalCode)
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Contact Name Txtboxes'))
+
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Contact Name Txtboxes'), "Joy Martinez")
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Department Email Txtboxes'))
+
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Department Email Txtboxes'), "qa.tester+assessment@ubidy.com")
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Phone Txtboxes'))
+
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Phone Txtboxes'), randomNumber)
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Assessment - Start Survey Btn'))
+
 
