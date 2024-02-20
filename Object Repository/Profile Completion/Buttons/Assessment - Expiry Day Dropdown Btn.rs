@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Assessment - Company No Txtboxes</name>
+   <name>Assessment - Expiry Day Dropdown Btn</name>
    <tag></tag>
-   <elementGuidId>5147fae3-7f4f-4657-ab1c-376799d1c112</elementGuidId>
+   <elementGuidId>a6c2d06c-2f59-4ca1-a7e2-3cac44d6cfdf</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'companyNumber']</value>
+         <value>//*[@id=&quot;expiryDate&quot;]/div[2]/div/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,9 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>companyNumber</value>
-      <webElementGuid>8ce0391c-a316-463d-8712-3b4efc76f3ee</webElementGuid>
+      <value>//*[@id=&quot;expiryDate&quot;]/div[2]/div/div</value>
+      <webElementGuid>2ec03bd5-8109-4b79-b6fa-a3c64ba8785b</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
