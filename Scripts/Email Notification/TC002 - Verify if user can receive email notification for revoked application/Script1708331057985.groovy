@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase("Email Notification/TC001 - Verify if user can receive email notification for application approved"), [:])
+WebUI.callTestCase(findTestCase("Call TestCases/Agency Apply To New Engagement"),[:])
 
 WebUI.callTestCase(findTestCase("Call TestCases/Login Employer Account"), [:])
 

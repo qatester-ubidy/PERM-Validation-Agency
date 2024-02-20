@@ -22,7 +22,7 @@ import org.openqa.selenium.Keys as Keys
 
 String[] jobTitle = findTestData('Data Files/Job TItles').getAllData()
 
-int randomJobTitle = new Random().nextInt(jobTitle.length + 1)
+int randomJobTitle = new Random().nextInt(jobTitle.length + 0 + 1)
 
 def getRandomJobTitle = findTestData('Job Titles').getValue('Jobtitles', randomJobTitle)
 
@@ -30,11 +30,11 @@ GlobalVariable.GetRandomJobTitle = getRandomJobTitle
 
 String[] cities = findTestData('Data Files/Cities').getAllData()
 
-int randomCity = new Random().nextInt(cities.length + 1)
+int randomCity = new Random().nextInt(cities.length + 0 + 1)
 
 def getRandomCity = findTestData('Cities').getValue('Cities', randomCity)
 
-def randomNumber = RandomStringUtils.randomNumeric(1)
+def randomNumber = RandomStringUtils.randomNumeric(0 + 1)
 
 WebUI.callTestCase(findTestCase("Call TestCases/Login Employer Account"), [:])
 

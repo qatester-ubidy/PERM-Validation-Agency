@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>View Now Btn</name>
+   <tag></tag>
+   <elementGuidId>6078a148-a0a4-401e-9979-6b57f12f6854</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>/html/body/div[1]/div/div[2]/div[3]/div/main/section/div[3]/div/div/div/div/div[1]/table/tbody/tr[1]//td[@class=&quot;actionTd&quot;]//button</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>9c6d7edc-b329-4775-911f-54173ee0650f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html/body/div[1]/div/div[2]/div[3]/div/main/section/div[3]/div/div/div/div/div[1]/table/tbody/tr[1]//td[@class=&quot;actionTd&quot;]//button</value>
+      <webElementGuid>dcf29991-f842-4269-8376-a3052b0c3304</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

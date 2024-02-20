@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Fulfillment Tab Btn</name>
+   <tag></tag>
+   <elementGuidId>45c54490-2574-4c42-b413-a65e6be4a62a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//span[text()=&quot;fulfillment&quot;]//parent::button</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>4f067179-b206-480f-bf00-f707cd1090bb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//span[text()=&quot;fulfillment&quot;]//parent::button</value>
+      <webElementGuid>6cd16d21-aede-4123-8f4f-aa9a9654211d</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
