@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC008 - Verify if user can receive email notification for Candidate Status update for Rejected</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>94c3bcbe-9b46-4d77-811b-33702832f15a</testCaseGuid>
+</TestCaseEntity>

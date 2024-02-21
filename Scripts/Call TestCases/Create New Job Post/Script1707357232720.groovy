@@ -36,6 +36,8 @@ def getRandomCity = findTestData('Cities').getValue('Cities', randomCity)
 
 def randomNumber = RandomStringUtils.randomNumeric(0 + 1)
 
+GlobalVariable.EngagementFee = randomNumber
+
 WebUI.callTestCase(findTestCase("Call TestCases/Login Employer Account"), [:])
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Buttons/Talent Request Tab Btn'), 3)
