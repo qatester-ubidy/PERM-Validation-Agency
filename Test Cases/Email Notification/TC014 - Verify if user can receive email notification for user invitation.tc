@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC014 - Verify if user can receive email notification for user invitation</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ce7a4f38-88aa-4deb-b8f1-261586e254b3</testCaseGuid>
+</TestCaseEntity>
