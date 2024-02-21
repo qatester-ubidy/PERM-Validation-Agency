@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Assessment - Country Btn</name>
+   <name>Assessment - Country Dropdown Btn</name>
    <tag></tag>
-   <elementGuidId>38ece2a5-4e2f-4045-8545-6822fefddc69</elementGuidId>
+   <elementGuidId>4e0a933a-5156-4265-b98e-e7543f1fcf24</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -18,7 +18,7 @@
       <name>id</name>
       <type>Main</type>
       <value>countryId</value>
-      <webElementGuid>6b55ad99-2925-4da9-a199-ecfb8b00078b</webElementGuid>
+      <webElementGuid>de0bc56f-859e-4392-b0ac-86b428d474ef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -26,14 +26,6 @@
       <name>class</name>
       <type>Main</type>
       <value>ant-select ant-select-enabled</value>
-      <webElementGuid>305036de-ea36-4e07-a346-5213dd79c759</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>tag</name>
-      <type>Main</type>
-      <value>button</value>
-      <webElementGuid>dae5a336-89fb-4668-af08-cb6fbb03cff0</webElementGuid>
+      <webElementGuid>c05b5547-10f0-4a26-87ea-ac305877eb10</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

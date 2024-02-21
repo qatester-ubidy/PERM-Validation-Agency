@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Assessment - Company No Txtboxes</name>
+   <name>Confirm Date - Day Dropdown Btn</name>
    <tag></tag>
-   <elementGuidId>5147fae3-7f4f-4657-ab1c-376799d1c112</elementGuidId>
+   <elementGuidId>31ab8299-aa48-4662-88ce-ac5129cd2142</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'companyNumber']</value>
+         <value>//*[@id=&quot;confirmedDate&quot;]/div[2]/div/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,9 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>companyNumber</value>
-      <webElementGuid>8ce0391c-a316-463d-8712-3b4efc76f3ee</webElementGuid>
+      <value>//*[@id=&quot;confirmedDate&quot;]/div[2]/div/div</value>
+      <webElementGuid>8ec315f5-506e-4bca-b072-7c61fb2d2438</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

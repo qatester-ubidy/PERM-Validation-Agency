@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Assessment - Company No Txtboxes</name>
+   <name>Assessment - Confirm Name Txtboxes</name>
    <tag></tag>
-   <elementGuidId>5147fae3-7f4f-4657-ab1c-376799d1c112</elementGuidId>
+   <elementGuidId>683c273d-fa05-4a91-bbf8-77f01d552e49</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'companyNumber']</value>
+         <value>//*[@id = 'confirmedName']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>companyNumber</value>
-      <webElementGuid>8ce0391c-a316-463d-8712-3b4efc76f3ee</webElementGuid>
+      <value>confirmedName</value>
+      <webElementGuid>388fc344-c075-49c0-909d-2ee177cb734a</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
