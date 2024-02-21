@@ -134,4 +134,19 @@
       <initValue>''</initValue>
       <name>GetRandomJobTitle</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>EngagementFee</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>UbidyFee</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>AgencyPayment</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
