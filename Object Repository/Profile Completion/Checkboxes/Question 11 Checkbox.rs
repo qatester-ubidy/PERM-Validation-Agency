@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Question 11 Checkbox</name>
+   <tag></tag>
+   <elementGuidId>d10b1df0-ba7b-461e-8b4b-82f2c989773f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;4aa8a3b5_a6e8_e811_a591_109836a5ea9c&quot;]//input[@value=&quot;1|1-2&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;4aa8a3b5_a6e8_e811_a591_109836a5ea9c&quot;]//input[@value=&quot;1|1-2&quot;]</value>
+      <webElementGuid>82f0b554-3b34-424c-b64b-6fa61100b4e6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>1c564ace-be83-420b-8bc6-f1395e4b9c64</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

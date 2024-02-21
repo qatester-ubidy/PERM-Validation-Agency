@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Create New Account and Verification</name>
+   <name>Create New Account</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>e1d9666e-56b8-4dba-835a-80e8953fae77</testCaseGuid>
