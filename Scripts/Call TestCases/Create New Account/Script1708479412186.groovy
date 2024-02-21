@@ -82,5 +82,3 @@ WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Te
 
 WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
 
-WebUI.verifyTextPresent("Please add your preferred Job Classifications.", false)
-

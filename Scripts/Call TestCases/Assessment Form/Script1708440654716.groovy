@@ -1,4 +1,5 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -18,7 +19,6 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.apache.commons.lang3.RandomStringUtils
 
-WebUI.delay(5)
 
 // VERIFY HEAD OFFICE ADDRESS VALIDATION MESSAGES
 WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Buttons/Slider Btn'), 5)
@@ -65,9 +65,9 @@ def postalCode = RandomStringUtils.randomNumeric(4)
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Buttons/Assessment Btn'), 10)
 
-WebUI.delay(3)
-
 WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Assessment Btn'))
+
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Legal Name Txtboxes'))
 
@@ -218,4 +218,6 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion
 WebUI.click(findTestObject('Object Repository/Profile Completion/Elements/2026 Option'))
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Submit Assessment Btn'))
+
+WebUI.delay(5)
 

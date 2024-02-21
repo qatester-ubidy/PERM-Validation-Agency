@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Question 2 Checkbox</name>
+   <tag></tag>
+   <elementGuidId>cec59f0e-84f8-4041-90bd-e589874c7dfc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;08377e8b_a4e8_e811_a591_109836a5ea9c&quot;]//input[@value=&quot;Yes&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;08377e8b_a4e8_e811_a591_109836a5ea9c&quot;]//input[@value=&quot;Yes&quot;]</value>
+      <webElementGuid>3578bb6b-5fd6-4473-b252-ef8f23d3cdca</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>d9982c21-39b1-497c-aa72-5242213e4644</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
