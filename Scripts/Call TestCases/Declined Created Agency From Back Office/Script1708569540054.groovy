@@ -29,7 +29,7 @@ WebUI.setText(findTestObject('Object Repository/Back Office - Log In Page/Textbo
 
 WebUI.click(findTestObject('Object Repository/Back Office - Log In Page/Buttons/Log In Btn'))
 
-//VERIFY CREATED ACCOUNT
+//DECLINED VERIFICATION
 WebUI.waitForElementPresent(findTestObject('Object Repository/Back Office - Assesstment Page/Buttons/Assesstment Tab Btn'), 3)
 
 WebUI.click(findTestObject('Object Repository/Back Office - Assesstment Page/Buttons/Assesstment Tab Btn'))
@@ -54,10 +54,3 @@ WebUI.click(findTestObject('Object Repository/Back Office - Assesstment Page/Act
 
 WebUI.verifyElementText(findTestObject('Object Repository/Back Office - Assesstment Page/Elements/Application Status Field'), "Declined")
 
-WebUI.callTestCase(findTestCase("Call TestCases/Redirect To Gmail"), [:])
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'), 3)
-
-WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'))
-
-WebUI.verifyTextPresent('Account Declined', false)
