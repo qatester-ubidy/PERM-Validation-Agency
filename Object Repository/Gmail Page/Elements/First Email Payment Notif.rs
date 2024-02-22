@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>/html/body/div[8]/div[3]/div/div[2]/div[4]/div/div/div/div[2]/div/div[1]/div/div[3]/div/div[2]/div[1]/div[2]/div[6]/div[1]/div/table/tbody/tr[3]/td[6]/div/div/div[2]//span[text()=&quot;Email&quot;]/parent::span</value>
+         <value>/html/body/div[8]/div[3]/div/div[2]/div[4]/div/div/div/div[2]/div/div[1]/div/div[3]/div/div[2]/div[1]/div[2]/div[6]/div[1]/div/table/tbody/tr[2]/td[6]/div/div/div[2]//span[text()=&quot;Email&quot;]/parent::span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[8]/div[3]/div/div[2]/div[4]/div/div/div/div[2]/div/div[1]/div/div[3]/div/div[2]/div[1]/div[2]/div[6]/div[1]/div/table/tbody/tr[3]/td[6]/div/div/div[2]//span[text()=&quot;Email&quot;]/parent::span</value>
-      <webElementGuid>a6e5d9d8-e0a1-4651-92b6-4de8a353a8fa</webElementGuid>
+      <value>/html/body/div[8]/div[3]/div/div[2]/div[4]/div/div/div/div[2]/div/div[1]/div/div[3]/div/div[2]/div[1]/div[2]/div[6]/div[1]/div/table/tbody/tr[2]/td[6]/div/div/div[2]//span[text()=&quot;Email&quot;]/parent::span</value>
+      <webElementGuid>e52dd40f-a4e9-4ead-a8f5-d239c7163976</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

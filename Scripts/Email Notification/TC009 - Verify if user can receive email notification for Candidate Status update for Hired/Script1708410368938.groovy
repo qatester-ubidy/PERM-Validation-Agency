@@ -21,7 +21,7 @@ WebUI.callTestCase(findTestCase("Call TestCases/Agency Apply To New Engagement")
 
 WebUI.callTestCase(findTestCase("Call TestCases/Log In Existing Agency Account"), [:])
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Notification Page/Buttons/Notification Btn'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Notification Page/Buttons/Notification Btn'), 5)
 
 WebUI.click(findTestObject('Object Repository/Notification Page/Buttons/Notification Btn'))
 
@@ -81,7 +81,7 @@ WebUI.verifyTextPresent("Congratulations, candidate Hired", false)
 //VERIFY EMAIL NOTIF
 WebUI.callTestCase(findTestCase("Call TestCases/Redirect To Gmail"), [:])
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Textb	oxes/Search Txtbox'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Textboxes/Search Txtbox'), 3)
 
 WebUI.setText(findTestObject('Object Repository/Gmail Page/Textboxes/Search Txtbox'), "Candidate Hired")
 
