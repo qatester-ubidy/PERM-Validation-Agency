@@ -17,3 +17,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.callTestCase(findTestCase("Call TestCases/Approve Created Agency From Back Office"), [:])
+
+WebUI.callTestCase(findTestCase("Call TestCases/Redirect To Gmail"), [:])
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'), 3)
+
+WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'))
+
+WebUI.verifyTextPresent('Your Account is Now Active!', false)
