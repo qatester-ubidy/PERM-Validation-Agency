@@ -43,6 +43,10 @@ WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email No
 
 WebUI.verifyTextPresent('Welcome to Ubidy', false)
 
+WebUI.verifyTextPresent("Verify your Agency ID email address", false)
+
+WebUI.verifyTextPresent(GlobalVariable.VerifiedAccount, false)
+
 WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Buttons/Confirm Email Btn'), 3)
 
 WebUI.verifyElementClickable(findTestObject('Object Repository/Gmail Page/Buttons/Confirm Email Btn'))

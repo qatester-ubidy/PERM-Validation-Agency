@@ -28,29 +28,29 @@ WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/Sign Up P
 WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/Confirm Password Field Txtboxes'), GlobalVariable.StandardPw)
 
 //RANDOM COMPANY NAME
-String[] Company = findTestData('Company Names').getAllData()
+String[] Company = findTestData('Company Names - Windows').getAllData()
 
 int randomCompany = new Random().nextInt(Company.length + 1)
 
-def CompanyName = findTestData('Company Names').getValue('Company Names', randomCompany)
+def CompanyName = findTestData('Company Names - Windows').getValue('Company Names', randomCompany)
 
 WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/Company Name Field Txtboxes'), CompanyName)
 
 //RANDOM FIRST NAME	
-String[] FirstNames = findTestData('First Names').getAllData()
+String[] FirstNames = findTestData('First Names - Windows').getAllData()
 
 int randomFirstName = new Random().nextInt(FirstNames.length + 1)
 
-def FirstName = findTestData('First Names').getValue('First Names', randomFirstName)
+def FirstName = findTestData('First Names - Windows').getValue('First Names', randomFirstName)
 
 WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/First Name Field Txtboxes'), FirstName)
 
 //RANDOM LAST NAME
-String[] LastNames = findTestData('Last Names').getAllData()
+String[] LastNames = findTestData('Last Names - Windows').getAllData()
 
 int randomLastName = new Random().nextInt(LastNames.length + 1)
 
-def LastName = findTestData('Last Names').getValue('Surnames', randomLastName)
+def LastName = findTestData('Last Names - Windows').getValue('Surnames', randomLastName)
 
 WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/Last Name Field Txtboxes'), LastName)
 

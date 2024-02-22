@@ -20,19 +20,19 @@ import org.apache.commons.lang.math.RandomUtils
 import org.apache.commons.lang3.RandomStringUtils
 import org.openqa.selenium.Keys as Keys
 
-String[] jobTitle = findTestData('Data Files/Job TItles').getAllData()
+String[] jobTitle = findTestData('Data Files/Job Titles - Windows').getAllData()
 
 int randomJobTitle = new Random().nextInt(jobTitle.length + 0 + 1)
 
-def getRandomJobTitle = findTestData('Job Titles').getValue('Jobtitles', randomJobTitle)
+def getRandomJobTitle = findTestData('Job Titles - Windows').getValue('Jobtitles', randomJobTitle)
 
 GlobalVariable.GetRandomJobTitle = getRandomJobTitle
 
-String[] cities = findTestData('Data Files/Cities').getAllData()
+String[] cities = findTestData('Data Files/Cities - Windows').getAllData()
 
 int randomCity = new Random().nextInt(cities.length + 0 + 1)
 
-def getRandomCity = findTestData('Cities').getValue('Cities', randomCity)
+def getRandomCity = findTestData('Cities - Windows').getValue('Cities', randomCity)
 
 def randomNumber = RandomStringUtils.randomNumeric(0 + 1)
 
