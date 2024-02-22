@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys
 import org.openqa.selenium.grid.web.ErrorHandler as Keys
 
 //HIRE CANDIDATE
-WebUI.callTestCase(findTestCase("Email Notification/TC009 - Verify if user can receive email notification for Candidate Status update for Hired"), [:])
+//WebUI.callTestCase(findTestCase("Email Notification/TC009 - Verify if user can receive email notification for Candidate Status update for Hired"), [:])
 
 //COMPUTATION FOR PAYMENT
 //def UbidyFee = GlobalVariable.EngagementFee * 0.25
