@@ -17,17 +17,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser("https://stagingbackoffice.ubidyapp.com/")
+WebUI.callTestCase(findTestCase("Call TestCases/Declined Created Agency From Back Office"), [:])
 
-WebUI.maximizeWindow()
+WebUI.callTestCase(findTestCase("Call TestCases/Redirect To Gmail"), [:])
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Back Office - Log In Page/Textboxes/Email Field Txtbox'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'), 3)
 
-WebUI.setText(findTestObject('Object Repository/Back Office - Log In Page/Textboxes/Email Field Txtbox'), "qa.tester+jerrybackopis@ubidy.com")
+WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'))
 
-WebUI.setText(findTestObject('Object Repository/Back Office - Log In Page/Textboxes/Password Field Txtbox'), "Tester12345!")
-
-WebUI.click(findTestObject('Object Repository/Back Office - Log In Page/Buttons/Log In Btn'))
-
-
-//DECLINED CREATED ACCOUNT
+WebUI.verifyTextPresent('Account Declined', false)
