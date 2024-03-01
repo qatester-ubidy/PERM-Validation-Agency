@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>First Opportunity Title Card</name>
+   <name>Email Verified Section</name>
    <tag></tag>
-   <elementGuidId>3621e5f9-b423-4711-b8e0-02dd633bc3a1</elementGuidId>
+   <elementGuidId>6f69c00c-8ccd-4913-91e1-0f801b7531ca</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>/html/body/div[1]/div/div[2]/div[3]/div/main/div[5]/div/div/div[2]/section/div/div[2]/div/div[2]/div[1]</value>
+         <value>/html/body/div/main/section/div/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[1]/div/div[2]/div[3]/div/main/div[5]/div/div/div[2]/section/div/div[2]/div/div[2]/div[1]</value>
-      <webElementGuid>8d04514b-d7ea-44cb-9631-3469450507b7</webElementGuid>
+      <value>/html/body/div/main/section/div/div</value>
+      <webElementGuid>5accc776-3377-4be7-ab25-6d128be2c70b</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

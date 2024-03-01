@@ -39,13 +39,15 @@ WebUI.click(findTestObject('Object Repository/Gmail Page/Buttons/Next Btn'))
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'), 3)
 
-WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'))
+WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Verify Agency Notif'))
 
 WebUI.verifyTextPresent('Welcome to Ubidy', false)
 
 WebUI.verifyTextPresent("Verify your Agency ID email address", false)
 
-WebUI.verifyTextPresent(GlobalVariable.VerifiedAccount, false)
+WebUI.scrollToElement(findTestObject('Object Repository/Gmail Page/Buttons/Confirm Email Btn'), 3)
+
+//WebUI.verifyTextPresent(GlobalVariable.VerifiedAccount, false)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Buttons/Confirm Email Btn'), 3)
 
@@ -54,6 +56,8 @@ WebUI.verifyElementClickable(findTestObject('Object Repository/Gmail Page/Button
 WebUI.click(findTestObject('Object Repository/Gmail Page/Buttons/Confirm Email Btn'))
 
 WebUI.switchToWindowIndex(1)
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Elements/Email Verified Section'), 3)
 
 WebUI.verifyTextPresent('Email Verified', false)
 

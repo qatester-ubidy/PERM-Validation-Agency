@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>First Opportunity Title Card</name>
+   <name>Employer T and C Checkbox</name>
    <tag></tag>
-   <elementGuidId>3621e5f9-b423-4711-b8e0-02dd633bc3a1</elementGuidId>
+   <elementGuidId>3d198046-3712-42b4-a033-0a3d1051d748</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>/html/body/div[1]/div/div[2]/div[3]/div/main/div[5]/div/div/div[2]/section/div/div[2]/div/div[2]/div[1]</value>
+         <value>//*[text()=&quot; Employer's Terms &amp; Conditions&quot;]//preceding::input[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[1]/div/div[2]/div[3]/div/main/div[5]/div/div/div[2]/section/div/div[2]/div/div[2]/div[1]</value>
-      <webElementGuid>8d04514b-d7ea-44cb-9631-3469450507b7</webElementGuid>
+      <value>//*[text()=&quot; Employer's Terms &amp; Conditions&quot;]//preceding::input[1]</value>
+      <webElementGuid>88e74b56-e746-481d-b7ba-8d2cbb4ec725</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

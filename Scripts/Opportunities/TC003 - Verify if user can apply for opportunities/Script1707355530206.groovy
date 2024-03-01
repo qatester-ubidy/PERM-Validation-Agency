@@ -17,18 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase("Call TestCases/Agency Registration and Account Verification"), [:])
+WebUI.callTestCase(findTestCase("Call TestCases/Agency Apply To New Engagement"), [:])
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Opportunities Page/Buttons/Opportunities Tab Btn'), 3)
-
-WebUI.click(findTestObject('Object Repository/Opportunities Page/Buttons/Opportunities Tab Btn'))
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), 3)
-
-WebUI.setText(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), GlobalVariable.ExistingEmployerName)
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Opportunities Page/Elements/Opportunities List Section'), 3)
-
-WebUI.click(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'))
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Texts/Engagement No Title'), 3)
+WebUI.closeBrowser()
