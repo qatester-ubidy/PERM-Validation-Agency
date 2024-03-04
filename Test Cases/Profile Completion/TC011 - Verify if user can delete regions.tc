@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC011 - Verify if user can delete regions</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>80df3b28-0522-4844-8956-18bdfdc9f387</testCaseGuid>
+</TestCaseEntity>

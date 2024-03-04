@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC007 - Verify if user can add office address</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6ee35e1c-9400-45d0-9745-589ead3cd491</testCaseGuid>
+</TestCaseEntity>

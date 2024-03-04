@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Addressess Btn</name>
+   <name>Edit Office Address Btn</name>
    <tag></tag>
-   <elementGuidId>fc97ebce-9912-4315-b4ff-18eeef250168</elementGuidId>
+   <elementGuidId>b53c3fcf-7163-46a8-9240-2986e75a53ad</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'robot-menu-Addresses']</value>
+         <value>//*[@id = 'label-editOfficeAddress robot-btn-editOfficeAddress']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,8 +17,8 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>robot-menu-Addresses</value>
-      <webElementGuid>b9da9f48-5741-43de-bad8-5a0789ee7e91</webElementGuid>
+      <value>label-editOfficeAddress robot-btn-editOfficeAddress</value>
+      <webElementGuid>4ce15ca7-1d29-492a-bd69-747a4a785647</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -26,6 +26,6 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>157b289d-b028-455e-87bd-15e0df5e0098</webElementGuid>
+      <webElementGuid>486f483f-6c9d-4b3b-87a6-b05428ed6c2d</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
