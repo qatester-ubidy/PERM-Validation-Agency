@@ -149,19 +149,19 @@ WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Assessm
 
 
 //START ASSESSMENT FORM
-WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Question 1 Checkbox'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Assessment/Question 1 Checkbox'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Question 2 Checkbox'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Assessment/Question 2 Checkbox'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Question 3 Checkbox'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Assessment/Question 3 Checkbox'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Question 4 Checkbox'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Assessment/Question 4 Checkbox'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Question 5 Checkbox'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Assessment/Question 5 Checkbox'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Question 6 Checkbox'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Assessment/Question 6 Checkbox'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Question 7 Checkbox'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Assessment/Question 7 Checkbox'))
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Question 8 Dropdown Btn'))
 
@@ -181,15 +181,15 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Elements/5 Option'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Question 11 Checkbox'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Assessment/Question 11 Checkbox'))
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Question 12 Txtboxes'))
 
 WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Question 12 Txtboxes'), "Potential Agency Here")
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Question 13 Checkbox'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Assessment/Question 13 Checkbox'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Question 14 Checkbox'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Assessment/Question 14 Checkbox'))
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Confirm Name Txtboxes'))
 

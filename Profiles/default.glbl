@@ -82,37 +82,37 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>'Blk 10 Lot 6 '</initValue>
-      <name>Address1</name>
+      <name>HeadAddress1</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'Calgary'</initValue>
-      <name>City</name>
+      <name>HeadCity</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'Canada'</initValue>
-      <name>CountryAddress</name>
+      <name>HeadCountryAddress</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'Alberta'</initValue>
-      <name>Province</name>
+      <name>HeadProvince</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'2012'</initValue>
-      <name>PostalZip</name>
+      <name>HeadPostalZip</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'435 854 237'</initValue>
-      <name>AddressPhone</name>
+      <name>HeadAddressPhone</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'qa.tester+head@ubidy.com'</initValue>
-      <name>AddressEmail</name>
+      <name>HeadAddressEmail</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
@@ -153,5 +153,55 @@
       <description></description>
       <initValue>''</initValue>
       <name>AddedUserEmail</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor imperdiet vestibulum. Vestibulum elementum tempor ex, malesuada tincidunt diam sollicitudin vel. Cras in leo ut odio mollis commodo vitae eu erat. Maecenas id lacus tortor. Donec euismod tortor vel nunc condimentum, a tempor erat condimentum. Integer nec libero rhoncus, congue orci fringilla, pharetra odio. Curabitur in volutpat lectus, at vulputate mi. Aenean ac metus convallis, mattis turpis bibendum, maximus nisl. Cras ullamcorper leo est, quis maximus quam ultricies eget. In in ornare velit. Morbi vitae est ex. Sed molestie scelerisque augue sit amet tempor. Maecenas vulputate et magna ac sagittis. Praesent scelerisque pellentesque arcu, vitae rutrum dolor semper vel.\nSed vel ultrices tortor. Maecenas efficitur maximus consequat. Ut fermentum, odio at hendrerit tempus, lorem nisi mattis massa, id luctus augue est eu lorem. Praesent efficitur a nibh sed cursus. Ut et blandit mauris, id dapibus lacus. Pellentesque vitae molestie diam. Pellentesque in lorem nec sem ullamcorper pharetra a convallis metus. Nulla et semper augue, at scelerisque lorem. In hac habitasse platea dictumst. Duis volutpat at diam ut molestie. Maecenas faucibus hendrerit purus, sit amet varius ante condimentum at. Aenean posuere eros in augue fermentum, eget euismod dui suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris placerat, enim eget egestas accumsan, erat lacus fringilla sem, a egestas eros ex a enim. Sed commodo erat non dui egestas tristique.\nInteger pellentesque a ligula id vehicula. Nullam sapien metus, efficitur ac tellus a, pellentesque semper eros. In varius, justo id suscipit sollicitudin, nibh tortor varius orci, eu ultricies mi velit eget elit. Nunc nec varius diam, sed mattis ipsum. Mauris sit amet orci ante. Cras congue commodo ligula, ac viverra diam vestibulum vitae. Proin commodo dui vitae lorem dignissim, quis sodales tellus facilisis. Proin ut ante et erat hendrerit semper. In ornare, nibh et aliquet congue, nisi lectus pulvinar felis, mattis bibendum ante dolor sit amet diam. Aliquam ut semper ante. Praesent ut efficitur nisl. Curabitur dignissim elementum tortor a lacinia. Aliquam sapien elit, mollis sit amet lectus a, pellentesque malesuada sapien. Donec quis sollicitudin nibh.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor imperdiet vestibulum. Vestibulum elementum tempor ex, malesuada tincidunt diam sollicitudin vel. Cras in leo ut odio mollis commodo vitae eu erat. Maecenas id lacus tortor. Donec euismod tortor vel nunc condimentum, a tempor erat condimentum. Integer nec libero rhoncus, congue orci fringilla, pharetra odio. Curabitur in volutpat lectus, at vulputate mi. Aenean ac metus convallis, mattis turpis bibendum, maximus nisl. Cras ullamcorper leo est, quis maximus quam ultricies eget. In in ornare velit. Morbi vitae est ex. Sed molestie scelerisque augue sit amet tempor. Maecenas vulputate et magna ac sagittis. Praesent scelerisque pellentesque arcu, vitae rutrum dolor semper vel.\nSed vel ultrices tortor. Maecenas efficitur maximus consequat. Ut fermentum, odio at hendrerit tempus, lorem nisi mattis massa, id luctus augue est eu lorem. Praesent efficitur a nibh sed cursus. Ut et blandit mauris, id dapibus lacus. Pellentesque vitae molestie diam. Pellentesque in lorem nec sem ullamcorper pharetra a convallis metus. Nulla et semper augue, at scelerisque lorem. In hac habitasse platea dictumst. Duis volutpat at diam ut molestie. Maecenas faucibus hendrerit purus, sit amet varius ante condimentum at. Aenean posuere eros in augue fermentum, eget euismod dui suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris placerat, enim eget egestas accumsan, erat lacus fringilla sem, a egestas eros ex a enim. Sed commodo erat non dui egestas tristique.\nInteger pellentesque a ligula id vehicula. Nullam sapien metus, efficitur ac tellus a, pellentesque semper eros. In varius, justo id suscipit sollicitudin, nibh tortor varius orci, eu ultricies mi velit eget elit. Nunc nec varius diam, sed mattis ipsum. Mauris sit amet orci ante. Cras congue commodo ligula, ac viverra diam vestibulum vitae. Proin commodo dui vitae lorem dignissim, quis sodales tellus facilisis. Proin ut ante et erat hendrerit semper. In ornare, nibh et aliquet congue, nisi lectus pulvinar felis, mattis bibendum ante dolor sit amet diam. Aliquam ut semper ante. Praesent ut efficitur nisl. Curabitur dignissim elementum tortor a lacinia. Aliquam sapien elit, mollis sit amet lectus a, pellentesque malesuada sapien. Donec quis sollicitudin nibh.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor imperdiet vestibulum. Vestibulum elementum tempor ex, malesuada tincidunt diam sollicitudin vel. Cras in leo ut odio mollis commodo vitae eu erat. Maecenas id lacus tortor. Donec euismod tortor vel nunc condimentum, a tempor erat condimentum. Integer nec libero rhoncus, congue orci fringilla, pharetra odio. Curabitur in volutpat lectus, at vulputate mi. Aenean ac metus convallis, mattis turpis bibendum, maximus nisl. Cras ullamcorper leo est, quis maximus quam ultricies eget. In in ornare velit. Morbi vitae est ex. Sed molestie scelerisque augue sit amet tempor. Maecenas vulputate et magna ac sagittis. Praesent scelerisque pellentesque arcu, vitae rutrum dolor semper vel.\nSed vel ultrices tortor. Maecenas efficitur maximus consequat. Ut fermentum, odio at hendrerit tempus, lorem nisi mattis massa, id luctus augue est eu lorem. Praesent efficitur a nibh sed cursus. Ut et blandit mauris, id dapibus lacus. Pellentesque vitae molestie diam. Pellentesque in lorem nec sem ullamcorper pharetra a convallis metus. Nulla et semper augue, at scelerisque lorem. In hac habitasse platea dictumst. Duis volutpat at diam ut molestie. '</initValue>
+      <name>CompanyMaximumCharacter</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Blk 11 Lot 20'</initValue>
+      <name>HeadEditAddress</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'711-2880 Nulla St.'</initValue>
+      <name>OfficeAddress1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Manila'</initValue>
+      <name>OfficeCity</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Quezon City'</initValue>
+      <name>OfficeProvince</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Philippines'</initValue>
+      <name>OfficeCountry</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'2000'</initValue>
+      <name>OfficePostal</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'0905-563-7401'</initValue>
+      <name>OfficePhone</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'qa.tester+office@ubidy.com'</initValue>
+      <name>OfficeEmail</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'191-103 Integer Rd.'</initValue>
+      <name>EditOfficeAddress</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
