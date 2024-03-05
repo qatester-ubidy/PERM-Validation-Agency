@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC010 - Verify if user can add regions</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d21ce38a-c3c0-4c1c-896e-675a6c84b5ac</testCaseGuid>
+</TestCaseEntity>

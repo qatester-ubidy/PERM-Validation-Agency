@@ -41,9 +41,9 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engageme
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Logo/Sidebar Company Logo'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Buttons/Addressess Btn'), 10)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Buttons/Addresses Tab Btn'), 10)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Addressess Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Addresses Tab Btn'))
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Edit Head Office Address Btn'))
 
@@ -80,15 +80,15 @@ WebUI.verifyElementText(findTestObject('Object Repository/Profile Completion/Val
 // VERIFY IF USER CAN ADD HEAD OFFICE ADDRESS 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Address 1 Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Address 1 Txtboxes'), GlobalVariable.Address1)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Address 1 Txtboxes'), GlobalVariable.HeadAddress1)
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/City Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/City Txtboxes'), GlobalVariable.City)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/City Txtboxes'), GlobalVariable.HeadCity)
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/State Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/State Txtboxes'), GlobalVariable.Province)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/State Txtboxes'), GlobalVariable.HeadProvince)
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Select Country Btn'))
 
@@ -96,14 +96,14 @@ WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Country
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Postal Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Postal Txtboxes'), GlobalVariable.PostalZip)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Postal Txtboxes'), GlobalVariable.HeadPostalZip)
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Address Phone Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Address Phone Txtboxes'), GlobalVariable.AddressPhone)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Address Phone Txtboxes'), GlobalVariable.HeadAddressPhone)
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Email Address Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Email Address Txtboxes'), GlobalVariable.AddressEmail)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Email Address Txtboxes'), GlobalVariable.HeadAddressEmail)
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Address Save Changes Btn'))
