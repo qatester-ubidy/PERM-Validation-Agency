@@ -34,9 +34,9 @@ int randomCity = new Random().nextInt(cities.length + 0 + 1)
 
 def getRandomCity = findTestData('Cities - Windows').getValue('Cities', randomCity)
 
-def randomNumber = RandomStringUtils.randomNumeric(0 + 1)
+def randomInt = RandomStringUtils.randomNumeric(1)
 
-GlobalVariable.EngagementFee = randomNumber
+GlobalVariable.EngagementFee = randomInt
 
 WebUI.callTestCase(findTestCase("Call TestCases/Login Employer Account"), [:])
 
@@ -59,7 +59,7 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Talent R
 
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Elements/Role Category Options/Professional Option'))
 
-WebUI.setText(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Textboxes/Required Roles Txtbox'), randomNumber)
+WebUI.setText(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Textboxes/Required Roles Txtbox'), randomInt)
 
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/Hiring Lead Dropdown Btn'))
 
@@ -136,7 +136,7 @@ WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Rev
 //ENGAGEMENT BUILDER - SET UP
 WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagement Builder/Set Up Tab/Textboxes/CV Slot Txtbox'), 5)
 
-WebUI.setText(findTestObject('Object Repository/Employer - Engagement Builder/Set Up Tab/Textboxes/CV Slot Txtbox'), randomNumber)
+WebUI.setText(findTestObject('Object Repository/Employer - Engagement Builder/Set Up Tab/Textboxes/CV Slot Txtbox'), randomInt)
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagement Builder/Set Up Tab/Buttons/Engagement Type Dropdown Btn'))
 
@@ -155,7 +155,7 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagem
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagement Builder/Select TR Tab/Elements/Percent Base - Annual Option'))
 
-WebUI.setText(findTestObject('Object Repository/Employer - Engagement Builder/Select TR Tab/Textboxes/Amount Txtbox'), randomNumber)
+WebUI.setText(findTestObject('Object Repository/Employer - Engagement Builder/Select TR Tab/Textboxes/Amount Txtbox'), randomInt)
 
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/Next Btn'))
 

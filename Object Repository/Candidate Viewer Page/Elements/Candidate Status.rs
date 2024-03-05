@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>First Opportunity Title Card</name>
+   <name>Candidate Status</name>
    <tag></tag>
-   <elementGuidId>3621e5f9-b423-4711-b8e0-02dd633bc3a1</elementGuidId>
+   <elementGuidId>1d04414f-caa2-4e87-b759-8de9d3afaa79</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>/html/body/div[1]/div/div[2]/div[3]/div/main/div[5]/div/div/div[2]/section/div/div[2]/div/div[2]/div[1]</value>
+         <value>//div[@class=&quot;candidate-info&quot;]/div[@class=&quot;status&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[1]/div/div[2]/div[3]/div/main/div[5]/div/div/div[2]/section/div/div[2]/div/div[2]/div[1]</value>
-      <webElementGuid>8d04514b-d7ea-44cb-9631-3469450507b7</webElementGuid>
+      <value>//div[@class=&quot;candidate-info&quot;]/div[@class=&quot;status&quot;]</value>
+      <webElementGuid>85ea9d69-d31d-4a0c-9d45-1f31e24eef5e</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

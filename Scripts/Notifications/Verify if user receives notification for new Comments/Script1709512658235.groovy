@@ -17,6 +17,24 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase("Call TestCases/Agency Apply To New Engagement"), [:])
+WebUI.callTestCase(findTestCase("Notifications/Verify if user receives notification when candidate application status is updated"), [:])
+
+WebUI.callTestCase(findTestCase("Call TestCases/Log In Existing Agency Account"), [:])
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Notification Page/Buttons/Notification Btn'), 5)
+
+WebUI.click(findTestObject('Object Repository/Notification Page/Buttons/Notification Btn'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Notification Page/Buttons/New Comment View Now Btn'), 3)
+
+//WebUI.verifyTextPresent("New Comment", false)
+
+WebUI.click(findTestObject('Object Repository/Notification Page/Buttons/New Comment View Now Btn'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer Page/Buttons/Comments Tab'), 3)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Candidate Viewer Page/Elements/Employer Msg'), 3)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Comments Textarea'), 3)
 
 WebUI.closeBrowser()

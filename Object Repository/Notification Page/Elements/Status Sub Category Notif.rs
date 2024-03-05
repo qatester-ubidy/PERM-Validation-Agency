@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>First Opportunity Title Card</name>
+   <name>Status Sub Category Notif</name>
    <tag></tag>
-   <elementGuidId>3621e5f9-b423-4711-b8e0-02dd633bc3a1</elementGuidId>
+   <elementGuidId>00c4102e-64a5-4b2f-b0a0-41b6e8f9c103</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>/html/body/div[1]/div/div[2]/div[3]/div/main/div[5]/div/div/div[2]/section/div/div[2]/div/div[2]/div[1]</value>
+         <value>//tr[1]/td[4]/span/span[@class='status ']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[1]/div/div[2]/div[3]/div/main/div[5]/div/div/div[2]/section/div/div[2]/div/div[2]/div[1]</value>
-      <webElementGuid>8d04514b-d7ea-44cb-9631-3469450507b7</webElementGuid>
+      <value>//tr[1]/td[4]/span/span[@class='status ']</value>
+      <webElementGuid>62fedd2c-d51b-494d-8758-d98da04d4556</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

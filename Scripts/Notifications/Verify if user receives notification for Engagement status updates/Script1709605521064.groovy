@@ -19,4 +19,4 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase("Call TestCases/Agency Apply To New Engagement"), [:])
 
-WebUI.closeBrowser()
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Fulfillment Tab/Fulfillment Tab'), 3)

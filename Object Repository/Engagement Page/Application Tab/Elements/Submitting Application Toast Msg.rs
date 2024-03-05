@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>First Opportunity Title Card</name>
+   <name>Submitting Application Toast Msg</name>
    <tag></tag>
-   <elementGuidId>3621e5f9-b423-4711-b8e0-02dd633bc3a1</elementGuidId>
+   <elementGuidId>3f9b492b-9099-405b-a7a7-ee32cd09067b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>/html/body/div[1]/div/div[2]/div[3]/div/main/div[5]/div/div/div[2]/section/div/div[2]/div/div[2]/div[1]</value>
+         <value>div[@class=&quot;ant-notification-notice ant-notification-notice-closable ubidy-ui-kit notification-card info&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[1]/div/div[2]/div[3]/div/main/div[5]/div/div/div[2]/section/div/div[2]/div/div[2]/div[1]</value>
-      <webElementGuid>8d04514b-d7ea-44cb-9631-3469450507b7</webElementGuid>
+      <value>div[@class=&quot;ant-notification-notice ant-notification-notice-closable ubidy-ui-kit notification-card info&quot;]</value>
+      <webElementGuid>9add85a4-3a3d-4423-98c4-92175db7cc60</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

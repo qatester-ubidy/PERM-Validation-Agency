@@ -17,11 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-def SearchKeyword = "Electrical Engineer"
+def SearchKeyword = "Accountant"
 
 WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
 
-WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), "qa.tester+a01@ubidy.com")
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), GlobalVariable.ValidEmail)
 
 WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), GlobalVariable.StandardPw)
 
@@ -36,7 +36,9 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Opportunities Page/
 
 WebUI.setText(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), SearchKeyword)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Opportunities Page/Buttons/Clear Search Btn'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Opportunities Page/Elements/Search Keyword Suggestion'), 3)
+
+WebUI.click(findTestObject('Object Repository/Opportunities Page/Elements/Search Keyword Suggestion'))
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Opportunities Page/Elements/Opportunities List Section'), 3)
 
