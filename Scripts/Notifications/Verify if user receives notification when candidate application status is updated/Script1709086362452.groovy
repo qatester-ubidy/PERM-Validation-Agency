@@ -19,13 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase("Call TestCases/Agency Apply To New Engagement"), [:])
 
-WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
-
-WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), GlobalVariable.VerifiedAccount)
-
-WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), GlobalVariable.StandardPw)
-
-WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
+WebUI.callTestCase(findTestCase("Call TestCases/Log In Existing Agency Account"), [:])
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Notification Page/Buttons/Notification Btn'), 3)
 
@@ -49,7 +43,7 @@ WebUI.callTestCase(findTestCase("Call TestCases/Submit Candidate Only"), [:])
 //UPDATE CANDIDATE STATUS
 WebUI.callTestCase(findTestCase("Call TestCases/Login Employer Account"), [:])
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Notification Page/Buttons/Notification Btn'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Notification Page/Buttons/Notification Btn'), 5)
 
 WebUI.click(findTestObject('Object Repository/Employer - Notification Page/Buttons/Notification Btn'))
 
@@ -77,3 +71,17 @@ WebUI.verifyTextPresent("candidate has an Offer Extended", false)
 
 //VERIFY WEBAPP NOTIFICATION
 WebUI.callTestCase(findTestCase("Call TestCases/Log In Existing Agency Account"), [:])
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Notification Page/Buttons/Notification Btn'), 5)
+
+WebUI.click(findTestObject('Object Repository/Notification Page/Buttons/Notification Btn'))
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Notification Page/Buttons/Offer Extended View Now Btn'), 3)
+
+WebUI.click(findTestObject('Object Repository/Notification Page/Buttons/Offer Extended View Now Btn'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer Page/Elements/Candidate Status'), 3)
+
+WebUI.verifyElementText(findTestObject('Object Repository/Candidate Viewer Page/Elements/Candidate Status'), "Offer Extended")
+
+WebUI.closeBrowser()

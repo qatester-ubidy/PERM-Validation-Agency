@@ -20,7 +20,8 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase("Call TestCases/Create New Job Post"), [:])
 
 //APPLY TO THE NEWLY CREATED JOB POST
-WebUI.callTestCase(findTestCase("Call TestCases/Agency Registration and Account Verification"), [:])
+//WebUI.callTestCase(findTestCase("Call TestCases/Agency Registration and Account Verification"), [:])
+WebUI.callTestCase(findTestCase("Call TestCases/Log In Existing Agency Account"), [:])
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Buttons/Slider Btn'), 3)
 
