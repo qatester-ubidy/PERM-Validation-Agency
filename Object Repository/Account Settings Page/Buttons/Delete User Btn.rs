@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Create Password Btn</name>
+   <name>Delete User Btn</name>
    <tag></tag>
-   <elementGuidId>ac977d37-4d79-4588-bf12-fab15abf19cb</elementGuidId>
+   <elementGuidId>0f7b4fa8-45dd-46a7-801c-6282ac8b71e1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[text()='CREATE PASSWORD']/parent::a</value>
+         <value>//*[@id = 'btn-deleteUser']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,15 +17,15 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>a</value>
-      <webElementGuid>5f612440-524f-4c47-9c7b-b2a25824f04e</webElementGuid>
+      <value>button</value>
+      <webElementGuid>eedeceb3-b9a0-4117-b4dc-88725cf3b829</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>id</name>
       <type>Main</type>
-      <value>//*[text()='CREATE PASSWORD']/parent::a</value>
-      <webElementGuid>5bbb5609-9b34-448d-aef9-0998c57679c5</webElementGuid>
+      <value>btn-deleteUser</value>
+      <webElementGuid>987fda55-fb5f-42b1-b0eb-132854886a34</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

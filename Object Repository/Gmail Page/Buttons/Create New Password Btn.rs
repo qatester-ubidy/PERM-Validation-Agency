@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Create Password Btn</name>
+   <name>Create New Password Btn</name>
    <tag></tag>
-   <elementGuidId>ac977d37-4d79-4588-bf12-fab15abf19cb</elementGuidId>
+   <elementGuidId>40dc67b6-d5eb-46ea-bad8-7ea524101ca6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[text()='CREATE PASSWORD']/parent::a</value>
+         <value>//*[@class = 'auth0-lock-submit']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,15 +17,15 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>a</value>
-      <webElementGuid>5f612440-524f-4c47-9c7b-b2a25824f04e</webElementGuid>
+      <value>button</value>
+      <webElementGuid>6c6d8599-53ad-4f7a-9804-3f9cf59eab43</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>class</name>
       <type>Main</type>
-      <value>//*[text()='CREATE PASSWORD']/parent::a</value>
-      <webElementGuid>5bbb5609-9b34-448d-aef9-0998c57679c5</webElementGuid>
+      <value>auth0-lock-submit</value>
+      <webElementGuid>af0ccbc7-49ba-4d76-8359-58b489c3a526</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

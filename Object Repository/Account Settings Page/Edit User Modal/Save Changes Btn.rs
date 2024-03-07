@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Create Password Btn</name>
+   <name>Save Changes Btn</name>
    <tag></tag>
-   <elementGuidId>ac977d37-4d79-4588-bf12-fab15abf19cb</elementGuidId>
+   <elementGuidId>10c1734f-ffa3-4716-b8f6-a7063f4a8eed</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[text()='CREATE PASSWORD']/parent::a</value>
+         <value>//button[@id = 'robot-btn-saveChanges']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>a</value>
-      <webElementGuid>5f612440-524f-4c47-9c7b-b2a25824f04e</webElementGuid>
+      <value>button</value>
+      <webElementGuid>637a8ca8-fc17-4bd5-9d48-5118c1e2682c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>id</name>
       <type>Main</type>
-      <value>//*[text()='CREATE PASSWORD']/parent::a</value>
-      <webElementGuid>5bbb5609-9b34-448d-aef9-0998c57679c5</webElementGuid>
+      <value>robot-btn-saveChanges</value>
+      <webElementGuid>cf8d0f9e-6c25-45e7-ac59-f5fbc0c649bf</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

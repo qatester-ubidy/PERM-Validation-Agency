@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Create Password Btn</name>
+   <name>Retype New Password</name>
    <tag></tag>
-   <elementGuidId>ac977d37-4d79-4588-bf12-fab15abf19cb</elementGuidId>
+   <elementGuidId>17a7d733-3845-4a5b-9384-d45d99cbab31</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[text()='CREATE PASSWORD']/parent::a</value>
+         <value>//*[@class = 'auth0-lock-input' and @placeholder = 'Re-type New Password']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>tag</name>
+      <name>class</name>
       <type>Main</type>
-      <value>a</value>
-      <webElementGuid>5f612440-524f-4c47-9c7b-b2a25824f04e</webElementGuid>
+      <value>auth0-lock-input</value>
+      <webElementGuid>4ceea7d5-96d5-4f6e-a1f4-103b1f885d62</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>placeholder</name>
       <type>Main</type>
-      <value>//*[text()='CREATE PASSWORD']/parent::a</value>
-      <webElementGuid>5bbb5609-9b34-448d-aef9-0998c57679c5</webElementGuid>
+      <value>Re-type New Password</value>
+      <webElementGuid>8f31c844-7ce6-421a-9b3f-f19ec4580cac</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

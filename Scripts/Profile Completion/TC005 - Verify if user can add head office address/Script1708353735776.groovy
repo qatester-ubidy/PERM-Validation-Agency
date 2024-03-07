@@ -19,16 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 // WebUI.callTestCase(findTestCase("Call TestCases/Redirect to My Profile page"), [:], FailureHandling.CONTINUE_ON_FAILURE)== true)
 
-
-WebUI.openBrowser(GlobalVariable.StagingEnv)
-
-WebUI.maximizeWindow()
-
-WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), 'qa.tester+kompamp-meta8759@ubidy.com')
-
-WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), 'Ubidy12345!')
-
-WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
+WebUI.callTestCase(findTestCase("Call TestCases/Redirect to My Profile page"), [:])
 
 WebUI.delay(5)
 
