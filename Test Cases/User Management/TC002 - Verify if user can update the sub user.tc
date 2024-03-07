@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC002 - Verify if user can update the sub user</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ffd91d8a-149d-40b8-aae0-93c549897ac5</testCaseGuid>
+</TestCaseEntity>

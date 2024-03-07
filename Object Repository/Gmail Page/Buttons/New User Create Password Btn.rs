@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>New User Create Password Btn</name>
+   <tag></tag>
+   <elementGuidId>6cb805bc-78af-4bec-b587-859eb983ece0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;:3tj&quot;]/div[2]/table/tbody/tr[2]/td/table/tbody/tr[3]/td/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;:3tj&quot;]/div[2]/table/tbody/tr[2]/td/table/tbody/tr[3]/td/a</value>
+      <webElementGuid>33253a3f-a2bc-4848-987e-207bc972426a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>31f6def2-8694-4c47-8544-b183883de066</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

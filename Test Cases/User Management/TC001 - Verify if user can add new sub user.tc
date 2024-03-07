@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC001 - Verify if user can add new sub user</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d382b949-3ff5-41c9-9fbc-02e4c9bd1375</testCaseGuid>
+</TestCaseEntity>

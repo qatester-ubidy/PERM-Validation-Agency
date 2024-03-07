@@ -19,10 +19,8 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase("Call TestCases/Redirect to My Profile page"), [:])
 
-
 WebUI.delay(5)
 
-//
 WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Buttons/Company Bio btn'), 10)
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Company Bio btn'))

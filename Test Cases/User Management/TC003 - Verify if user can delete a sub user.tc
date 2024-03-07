@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC003 - Verify if user can delete a sub user</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e117b514-b2dd-4161-b0ac-63d98180dfa4</testCaseGuid>
+</TestCaseEntity>
