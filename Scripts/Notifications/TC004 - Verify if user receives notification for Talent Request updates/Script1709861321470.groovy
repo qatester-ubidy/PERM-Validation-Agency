@@ -17,6 +17,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase("Call TestCases/Agency Apply To New Engagement"), [:])
+WebUI.callTestCase(findTestCase("Notifications/TC003 - Verify if user receives notification for Engagement status updates"), [:])
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Fulfillment Tab/Fulfillment Tab'), 3)
+WebUI.callTestCase(findTestCase("Call TestCases/Log In Existing Agency Account"), [:])
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Notification Page/Buttons/Notification Btn'), 3)
+
+WebUI.click(findTestObject('Object Repository/Notification Page/Buttons/Notification Btn'))
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Notification Page/Elements/Status Sub Category Notif'), 3)
+
+WebUI.verifyElementText(findTestObject('Object Repository/Notification Page/Elements/Status Sub Category Notif'), "Cancelled")
+
+WebUI.verifyTextPresent("PureSilver WaffleMaker Corp cancelled Talent Request", false)
+
+WebUI.closeBrowser()
