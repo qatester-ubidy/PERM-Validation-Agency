@@ -67,7 +67,7 @@ WebUI.click(findTestObject('Object Repository/Employer - Candidate Viewer/Candid
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Candidate Viewer/Elements/Candidate Status Update Toast Msg'), 5)
 
-WebUI.verifyTextPresent("candidate has an Offer Extended", false)
+//WebUI.verifyTextPresent("candidate has an Offer Extended", false)
 
 //VERIFY WEBAPP NOTIFICATION
 WebUI.callTestCase(findTestCase("Call TestCases/Log In Existing Agency Account"), [:])

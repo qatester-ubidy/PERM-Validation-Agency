@@ -67,9 +67,15 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Talent R
 
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Elements/Hiring Lead/Hiring Lead Option'))
 
+WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Textboxes/Required Roles Txtbox'))
+
+WebUI.scrollToElement(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/Job Classification Dropdown Btn'), 3)
+
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/Job Classification Dropdown Btn'))
 
 WebUI.setText(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Textboxes/Job Classification Txtbox'), "Sport & Recreation")
+
+WebUI.scrollToElement(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/Job Classification Dropdown Btn'), 3)
 
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Elements/Job Classification Options/Sport and Recreation Option'))
 
@@ -94,6 +100,8 @@ WebUI.setText(findTestObject('Object Repository/Employer - Talent Request Page/J
 WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Elements/Cities/French Polynesia Option'), 3)
 
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Elements/Cities/French Polynesia Option'))
+
+WebUI.scrollToElement(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/City Dropdown Btn'), 3)
 
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/City Dropdown Btn'))
 
@@ -129,9 +137,9 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Talent R
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/Next Btn'))
 
 //REVIEW & PUBLISH
-WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Talent Request Page/Review and Publish/Buttons/Save and Publish Btn'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Talent Request Page/Review and Publish/Buttons/Continue to Publish Btn'), 3)
 
-WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Review and Publish/Buttons/Save and Publish Btn'))
+WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Review and Publish/Buttons/Continue to Publish Btn'))
 
 //ENGAGEMENT BUILDER - SET UP
 WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagement Builder/Set Up Tab/Textboxes/CV Slot Txtbox'), 5)

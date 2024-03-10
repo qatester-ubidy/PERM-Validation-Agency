@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class=&quot;ant-notification-notice-description&quot;]</value>
+         <value>//div[@class = 'ant-notification-notice-content']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,9 +15,17 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>tag</name>
       <type>Main</type>
-      <value>//div[@class=&quot;ant-notification-notice-description&quot;]</value>
-      <webElementGuid>611bfd34-821c-46d8-93f8-07eaf16c5dd3</webElementGuid>
+      <value>div</value>
+      <webElementGuid>ed91f8d9-a87e-4da0-afe8-4474ddf4c697</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ant-notification-notice-content</value>
+      <webElementGuid>03af1e27-dd98-4f0b-874f-1ec3dd460e55</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
