@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Candidate Status Update Toast Msg</name>
+   <name>Edit TR Btn</name>
    <tag></tag>
-   <elementGuidId>17d825e3-fee1-4105-a719-f0a21cb5835b</elementGuidId>
+   <elementGuidId>92c905a4-0598-4859-8b82-863e9ed84d8b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class = 'ant-notification-notice-content']</value>
+         <value>//button[@class = 'edit-btn']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,15 +17,15 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
-      <webElementGuid>ed91f8d9-a87e-4da0-afe8-4474ddf4c697</webElementGuid>
+      <value>button</value>
+      <webElementGuid>cdb110bd-342e-4c5b-bfcd-1979c8015a33</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ant-notification-notice-content</value>
-      <webElementGuid>03af1e27-dd98-4f0b-874f-1ec3dd460e55</webElementGuid>
+      <value>edit-btn</value>
+      <webElementGuid>9a03c5db-9e13-4bb2-b936-e71a599aa08c</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

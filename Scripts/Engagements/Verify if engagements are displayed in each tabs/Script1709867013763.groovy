@@ -17,6 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase("Call TestCases/Agency Apply To New Engagement"), [:])
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Fulfillment Tab/Fulfillment Tab'), 3)

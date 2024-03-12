@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Candidate Status Update Toast Msg</name>
+   <name>TR no longer required Option</name>
    <tag></tag>
-   <elementGuidId>17d825e3-fee1-4105-a719-f0a21cb5835b</elementGuidId>
+   <elementGuidId>0d3eaa4d-f9d3-4bd9-b64b-5ff1fdddad74</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class = 'ant-notification-notice-content']</value>
+         <value>//*[text()=&quot;The Talent Request is no longer required&quot;]/preceding-sibling::span/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
-      <webElementGuid>ed91f8d9-a87e-4da0-afe8-4474ddf4c697</webElementGuid>
+      <value>input</value>
+      <webElementGuid>10318a43-3257-4935-b433-efb30632264d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>ant-notification-notice-content</value>
-      <webElementGuid>03af1e27-dd98-4f0b-874f-1ec3dd460e55</webElementGuid>
+      <value>//*[text()=&quot;The Talent Request is no longer required&quot;]/preceding-sibling::span/input</value>
+      <webElementGuid>a1be5394-0f81-439d-a60b-d6f0a6463c3b</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

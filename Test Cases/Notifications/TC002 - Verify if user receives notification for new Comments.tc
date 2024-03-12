@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC002 - Verify if user receives notification for new Comments</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3dc1720a-0fa9-47f7-8145-cf2c3808bee6</testCaseGuid>
+</TestCaseEntity>

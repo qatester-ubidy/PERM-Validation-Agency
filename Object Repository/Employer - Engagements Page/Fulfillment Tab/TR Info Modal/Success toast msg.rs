@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Candidate Status Update Toast Msg</name>
+   <name>Success toast msg</name>
    <tag></tag>
-   <elementGuidId>17d825e3-fee1-4105-a719-f0a21cb5835b</elementGuidId>
+   <elementGuidId>b2fdc693-96a7-4e63-ab41-a0f258a90a68</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class = 'ant-notification-notice-content']</value>
+         <value>//div[@class = 'ant-notification-notice ant-notification-notice-closable ubidy-ui-kit notification-card success']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,14 +18,14 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>ed91f8d9-a87e-4da0-afe8-4474ddf4c697</webElementGuid>
+      <webElementGuid>d88af8bf-fbc0-41ea-9c9a-ea3c74d9fba8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ant-notification-notice-content</value>
-      <webElementGuid>03af1e27-dd98-4f0b-874f-1ec3dd460e55</webElementGuid>
+      <value>ant-notification-notice ant-notification-notice-closable ubidy-ui-kit notification-card success</value>
+      <webElementGuid>838d5a6f-8da0-4358-8742-3ace35bf2e04</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
