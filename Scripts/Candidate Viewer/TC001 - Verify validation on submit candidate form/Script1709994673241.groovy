@@ -17,7 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase("Call TestCase/Open Ubidy Agency"), [:])
+
+WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
 
 //LOG IN VALID ACCOUNT
 WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), GlobalVariable.ValidEmail)
@@ -25,3 +26,27 @@ WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textb
 WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), GlobalVariable.StandardPw)
 
 WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
+
+WebUI.click(findTestObject('Object Repository/Engagement Page/Engagement Tab'))
+
+WebUI.click(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Buttons/Submit New Candidate Btn'))
+
+WebUI.click(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Candidate Form/Buttons/Submit Candidate Btn'))
+
+//VERIFY VALIDATION MESSAGES
+WebUI.verifyTextPresent('Please input Candidate first name', false)
+
+WebUI.verifyTextPresent('Please input Candidate last name', false)
+
+WebUI.verifyTextPresent('Please input Candidate email', false)
+
+WebUI.verifyTextPresent('Please input Candidate contact no.', false)
+
+WebUI.verifyTextPresent('Please select a nationality', false)
+
+WebUI.verifyTextPresent('Please input Candidate location', false)
+
+WebUI.verifyTextPresent('Please input annualized base salary.', false)
+
+WebUI.closeBrowser()
+

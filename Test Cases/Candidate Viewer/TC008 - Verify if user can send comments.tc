@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC008 - Verify if user can send comments</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e73dba55-f214-4233-bf0d-274a1efd908a</testCaseGuid>
+</TestCaseEntity>

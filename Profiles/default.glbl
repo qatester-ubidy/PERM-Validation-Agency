@@ -206,12 +206,21 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+<<<<<<< HEAD
       <initValue>''</initValue>
       <name>randomFirstName</name>
+=======
+      <initValue>'/Users/joymartinez/Documents/Resume.pdf'</initValue>
+      <name>CVFile</name>
+>>>>>>> a0f5b49ee908e5f6cc8bd12afa306c994dbfc391
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>''</initValue>
+<<<<<<< HEAD
       <name>randomLastName</name>
+=======
+      <name>ExistingCandidate</name>
+>>>>>>> a0f5b49ee908e5f6cc8bd12afa306c994dbfc391
    </GlobalVariableEntity>
 </GlobalVariableEntities>

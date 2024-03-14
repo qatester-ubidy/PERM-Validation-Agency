@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC007 - Verify if user can update submitted candidates</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>87836cc0-ed3e-4d2e-8cf6-7296f51550bb</testCaseGuid>
+</TestCaseEntity>
