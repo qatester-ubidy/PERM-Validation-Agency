@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC005 - Verify if user can close CV Viewer</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>56598f22-87eb-4a6d-b59e-243746a9307e</testCaseGuid>
+</TestCaseEntity>

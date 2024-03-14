@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase("Call TestCase/Open Ubidy Agency"), [:])
+WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
 
 //LOG IN VALID ACCOUNT
 WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), GlobalVariable.ValidEmail)
@@ -25,3 +25,15 @@ WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textb
 WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), GlobalVariable.StandardPw)
 
 WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
+
+WebUI.click(findTestObject('Object Repository/Engagement Page/Engagement Tab'))
+
+WebUI.click(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Buttons/View Candidate Btn'))
+
+WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Buttons/Edit Details Btn'))
+
+WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Base Salary Txtbox'), "24000")
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer Page/Elements/Update Candidate Success Toast Msg'), 3)
+
+WebUI.verifyTextPresent("Candidate has been successfully updated.", false)
