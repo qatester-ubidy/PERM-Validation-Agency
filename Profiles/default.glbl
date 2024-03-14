@@ -204,4 +204,14 @@
       <initValue>'191-103 Integer Rd.'</initValue>
       <name>EditOfficeAddress</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/Users/joymartinez/Documents/Resume.pdf'</initValue>
+      <name>CVFile</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>ExistingCandidate</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

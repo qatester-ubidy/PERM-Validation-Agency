@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC006 - Verify if user can view messages from employer upon application status update</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c12b73ff-1089-48e9-aa63-241e65f35826</testCaseGuid>
+</TestCaseEntity>
