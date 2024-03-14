@@ -206,12 +206,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
-      <name>randomFirstName</name>
+      <initValue>'/Users/joymartinez/Documents/Resume.pdf'</initValue>
+      <name>CVFile</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>''</initValue>
-      <name>randomLastName</name>
+      <name>ExistingCandidate</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

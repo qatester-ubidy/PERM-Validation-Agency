@@ -18,38 +18,47 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.apache.commons.lang3.RandomStringUtils
 
-String[] firstName = findTestData('Data Files/First Names - Windows').getAllData()
+WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
+
+//LOG IN VALID ACCOUNT
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), GlobalVariable.ValidEmail)
+
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), GlobalVariable.StandardPw)
+
+WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
+
+WebUI.click(findTestObject('Object Repository/Engagement Page/Engagement Tab'))
+
+WebUI.click(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Buttons/Submit New Candidate Btn'))
+
+String[] firstName = findTestData('Data Files/First Names').getAllData()
 
 int randomFirstname = new Random().nextInt(firstName.length+ 0 + 1)
 
-def getRandomFirstname = findTestData('First Names - Windows').getValue('First Names', randomFirstname)
-
-GlobalVariable.randomFirstName = getRandomFirstname
+def getRandomFirstname = findTestData('First Names').getValue('First Names', randomFirstname)
 
 def emailAddress = ('qa.tester+' + getRandomFirstname + RandomStringUtils.randomNumeric(4)) + '@ubidy.com'
 
 GlobalVariable.VerifiedAccount = emailAddress
 
-String[] lastName = findTestData('Data Files/Last Names - Windows').getAllData()
+String[] lastName = findTestData('Data Files/Last Names').getAllData()
 
 int randomLastname = new Random().nextInt(lastName.length+ 0 + 1)
 
-def getRandomLastname = findTestData('Last Names - Windows').getValue('Surnames', randomLastname)
-
-GlobalVariable.randomLastName = getRandomLastname
+def getRandomLastname = findTestData('Last Names').getValue('Surnames', randomLastname)
 
 def randomNumber = RandomStringUtils.randomNumeric(10)
 
-String[] city = findTestData('Data Files/Cities - Windows').getAllData()
+String[] city = findTestData('Data Files/Cities').getAllData()
 
 int randomCity = new Random().nextInt(city.length + 0 + 1)
 
-def getRandomCity = findTestData('Cities - Windows').getValue('Cities', randomCity)
+def getRandomCity = findTestData('Cities').getValue('Cities', randomCity)
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer Page/Buttons/Upload CV Btn'), 3)
 
 //UPLOAD CV
-WebUI.uploadFile(findTestObject('Object Repository/Candidate Viewer Page/Elements/Candidate CV Section'), GlobalVariable.JDFileLocation)
+WebUI.uploadFile(findTestObject('Object Repository/Candidate Viewer Page/Elements/Candidate CV Section'), GlobalVariable.CVFile)
 
 //FILL IN CANDIDATE DETAILS
 WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/First Name Txtbox'), getRandomFirstname)
