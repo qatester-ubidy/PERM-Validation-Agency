@@ -204,4 +204,14 @@
       <initValue>'191-103 Integer Rd.'</initValue>
       <name>EditOfficeAddress</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>randomFirstName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>randomLastName</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

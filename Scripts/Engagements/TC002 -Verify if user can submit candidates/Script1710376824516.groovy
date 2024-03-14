@@ -17,25 +17,28 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
 
-WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), "qa.tester+a01@ubidy.com")
+WebUI.callTestCase(findTestCase("Call TestCases/Agency Apply To New Engagement"), [:])
 
-WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), GlobalVariable.StandardPw)
+WebUI.callTestCase(findTestCase("Call TestCases/Log In Existing Agency Account"), [:])
 
-WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Buttons/Engagements Tab Btn'), 3)
 
-//VIEW ALL ENGAGEMENTS
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Buttons/Slider Btn'), 3)
+WebUI.click(findTestObject('Object Repository/Engagement Page/Buttons/Engagements Tab Btn'))
 
-WebUI.click(findTestObject('Object Repository/Opportunities Page/Buttons/Opportunities Tab Btn'))
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Elements/First Engagement Card'), 3)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Opportunities Page/Texts/Opportunities Title Txt'), 3)
+WebUI.click(findTestObject('Object Repository/Engagement Page/Elements/First Engagement Card'))
 
-WebUI.click(findTestObject('Object Repository/Opportunities Page/Buttons/All Other Opportunities Tab Btn'))
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Buttons/Submit New Candidate Btn'), 3)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Opportunities Page/Elements/Opportunities List Section'), 3)
+WebUI.click(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Buttons/Submit New Candidate Btn'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'), 3)
+//UPLOAD CV
+WebUI.callTestCase(findTestCase("Call TestCases/Submit Candidate Only"), [:])
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Elements/Submitted Candidate'), 3)
+
+WebUI.verifyElementText(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Elements/Submitted Candidate Name'), GlobalVariable.randomFirstName + " " + GlobalVariable.randomLastName)
 
 WebUI.closeBrowser()

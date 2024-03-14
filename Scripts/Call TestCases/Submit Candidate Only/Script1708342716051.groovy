@@ -24,6 +24,8 @@ int randomFirstname = new Random().nextInt(firstName.length+ 0 + 1)
 
 def getRandomFirstname = findTestData('First Names - Windows').getValue('First Names', randomFirstname)
 
+GlobalVariable.randomFirstName = getRandomFirstname
+
 def emailAddress = ('qa.tester+' + getRandomFirstname + RandomStringUtils.randomNumeric(4)) + '@ubidy.com'
 
 GlobalVariable.VerifiedAccount = emailAddress
@@ -33,6 +35,8 @@ String[] lastName = findTestData('Data Files/Last Names - Windows').getAllData()
 int randomLastname = new Random().nextInt(lastName.length+ 0 + 1)
 
 def getRandomLastname = findTestData('Last Names - Windows').getValue('Surnames', randomLastname)
+
+GlobalVariable.randomLastName = getRandomLastname
 
 def randomNumber = RandomStringUtils.randomNumeric(10)
 

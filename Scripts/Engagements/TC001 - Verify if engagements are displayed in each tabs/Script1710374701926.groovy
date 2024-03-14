@@ -17,3 +17,24 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.callTestCase(findTestCase("Call TestCases/Log In Existing Agency Account"), [:])
+	
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Buttons/Engagements Tab Btn'), 3)
+
+WebUI.click(findTestObject('Object Repository/Engagement Page/Buttons/Engagements Tab Btn'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Texts/Engagements Title'), 3)
+
+WebUI.verifyElementText(findTestObject('Object Repository/Engagement Page/Texts/Engagements Title'), "Engagements")
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Engagement Page/Texts/Engagement Total Counts Text'), 3)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Engagement Page/Elements/Engagements List'), 3)
+
+WebUI.click(findTestObject('Object Repository/Engagement Page/Buttons/Assigned To Others Tab'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Texts/Engagement Total Counts Text'), 3)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Engagement Page/Elements/Engagements List'), 3)
+
+WebUI.closeBrowser()

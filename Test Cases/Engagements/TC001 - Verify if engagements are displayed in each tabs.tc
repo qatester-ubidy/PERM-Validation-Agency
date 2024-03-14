@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Verify if engagements are displayed in each tabs</name>
+   <name>TC001 - Verify if engagements are displayed in each tabs</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>374fd9da-b058-4ca3-a27b-6cb50eba2708</testCaseGuid>
