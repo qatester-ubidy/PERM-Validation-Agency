@@ -18,14 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.apache.commons.lang3.RandomStringUtils
 
-WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
-
-//LOG IN VALID ACCOUNT
-WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), GlobalVariable.ValidEmail)
-
-WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), GlobalVariable.StandardPw)
-
-WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
+WebUI.callTestCase(findTestCase("Call TestCases/Login with correct credential"), [:])
 
 WebUI.click(findTestObject('Object Repository/Engagement Page/Engagement Tab'))
 
