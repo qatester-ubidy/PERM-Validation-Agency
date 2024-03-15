@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC003 - User should be able to withdraw submitted candidates</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>04147656-7b81-484d-acab-39d06a41246e</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC004 - User should be able to view engagement notices</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bb3690e9-8a5a-400b-8609-7ad0625c8b84</testCaseGuid>
+</TestCaseEntity>

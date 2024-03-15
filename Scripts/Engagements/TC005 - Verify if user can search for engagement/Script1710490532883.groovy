@@ -17,28 +17,24 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
 WebUI.callTestCase(findTestCase("Call TestCases/Agency Apply To New Engagement"), [:])
 
-WebUI.callTestCase(findTestCase("Call TestCases/Log In Existing Agency Account"), [:])
+WebUI.callTestCase(findTestCase("Call TestCases/Log In Existing Agency Account"),[:])
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Buttons/Engagements Tab Btn'), 3)
 
 WebUI.click(findTestObject('Object Repository/Engagement Page/Buttons/Engagements Tab Btn'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Elements/First Engagement Card'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Textboxes/Search Txtbox'), 3)
 
-WebUI.click(findTestObject('Object Repository/Engagement Page/Elements/First Engagement Card'))
+WebUI.setText(findTestObject('Object Repository/Engagement Page/Textboxes/Search Txtbox'), GlobalVariable.GetRandomJobTitle)
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Buttons/Submit New Candidate Btn'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Elements/Total Engagement Count'), 3)
 
-WebUI.click(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Buttons/Submit New Candidate Btn'))
+WebUI.click(findTestObject('Object Repository/Engagement Page/Elements/Total Engagement Count'))
 
-//UPLOAD CV
-WebUI.callTestCase(findTestCase("Call TestCases/Submit Candidate Only"), [:])
+WebUI.verifyElementPresent(findTestObject('Object Repository/Engagement Page/Elements/Engagements List'), 3)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Elements/Submitted Candidate'), 3)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Elements/Submitted Candidate Name'), GlobalVariable.getRandomFirstname + " " + GlobalVariable.getRandomLastname)
+WebUI.verifyTextPresent(GlobalVariable.GetRandomJobTitle, false)
 
 WebUI.closeBrowser()

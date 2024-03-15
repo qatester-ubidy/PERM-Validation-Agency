@@ -24,7 +24,7 @@ int randomFirstname = new Random().nextInt(firstName.length+ 0 + 1)
 
 def getRandomFirstname = findTestData('First Names - Windows').getValue('First Names', randomFirstname)
 
-GlobalVariable.randomFirstName = getRandomFirstname
+GlobalVariable.getRandomFirstname = getRandomFirstname
 
 def emailAddress = ('qa.tester+' + getRandomFirstname + RandomStringUtils.randomNumeric(4)) + '@ubidy.com'
 
@@ -36,7 +36,7 @@ int randomLastname = new Random().nextInt(lastName.length+ 0 + 1)
 
 def getRandomLastname = findTestData('Last Names - Windows').getValue('Surnames', randomLastname)
 
-GlobalVariable.randomLastName = getRandomLastname
+GlobalVariable.getRandomLastname = getRandomLastname
 
 def randomNumber = RandomStringUtils.randomNumeric(10)
 

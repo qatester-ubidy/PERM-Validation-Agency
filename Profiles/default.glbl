@@ -214,4 +214,14 @@
       <initValue>''</initValue>
       <name>ExistingCandidate</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>getRandomFirstname</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>getRandomLastname</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
