@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC002 - Verify if user can view all candidates from each tabs</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9595fe4d-fe01-4cdf-ae12-3fd10ba54e0d</testCaseGuid>
+</TestCaseEntity>
