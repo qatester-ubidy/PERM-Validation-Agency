@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC001 - Verify if user can search for candidate</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a5ac3f65-dafa-43e4-9f74-8a3883a65e10</testCaseGuid>
+</TestCaseEntity>
