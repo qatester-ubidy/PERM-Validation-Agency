@@ -47,19 +47,33 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagem
 
 WebUI.verifyTextPresent("notice has been successfully created", false)
 
-//VERIFY EMAIL NOTIFICATION
-WebUI.callTestCase(findTestCase("Call TestCases/Redirect To Gmail"), [:])
+//LOG IN AGENCY
+WebUI.callTestCase(findTestCase("Call TestCases/Log In Existing Agency Account"), [:])
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Textboxes/Search Txtbox'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Buttons/Engagements Tab Btn'), 3)
 
-WebUI.setText(findTestObject('Object Repository/Gmail Page/Textboxes/Search Txtbox'), "Notices")
+WebUI.click(findTestObject('Object Repository/Engagement Page/Buttons/Engagements Tab Btn'))
 
-WebUI.click(findTestObject('Object Repository/Gmail Page/Buttons/Search Btn'))
+WebUI.click(findTestObject('Object Repository/Engagement Page/Elements/First Engagement Card'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Notices Tab/Notices Tab'), 3)
 
-WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Notices Notif'))
+WebUI.click(findTestObject('Object Repository/Engagement Page/Notices Tab/Notices Tab'))
 
-WebUI.verifyElementText("Notice Message", false)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Notices Tab/Notices Title'), 3)
+
+WebUI.verifyElementText(findTestObject('Object Repository/Engagement Page/Notices Tab/Notices Title'), "Notices")
+
+WebUI.verifyElementText(findTestObject('Object Repository/Engagement Page/Notices Tab/Notices Subtitle'), "*Notices are accessible by everyone on this engagement")
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Engagement Page/Notices Tab/Notice Card'), 3)
+
+WebUI.verifyElementText(findTestObject('Object Repository/Engagement Page/Notices Tab/Notices Card Title'), "This is a test subject")
+
+WebUI.click(findTestObject('Object Repository/Engagement Page/Notices Tab/Notice Card'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Notices Tab/Notices Content'), 3)
+
+WebUI.verifyElementText(findTestObject('Object Repository/Engagement Page/Notices Tab/Notices Content'), "This is a test content")
 
 WebUI.closeBrowser()

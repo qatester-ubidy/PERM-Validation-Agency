@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Verify if engagements are displayed in each tabs</name>
+   <name>TC005 - Verify if user can search for engagement</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>374fd9da-b058-4ca3-a27b-6cb50eba2708</testCaseGuid>
+   <testCaseGuid>24344ae3-c870-4483-a323-0175c2e78772</testCaseGuid>
 </TestCaseEntity>

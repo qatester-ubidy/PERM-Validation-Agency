@@ -17,25 +17,24 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
+WebUI.callTestCase(findTestCase("Call TestCases/Log In Existing Agency Account"), [:])
+	
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Buttons/Engagements Tab Btn'), 3)
 
-WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), "qa.tester+a01@ubidy.com")
+WebUI.click(findTestObject('Object Repository/Engagement Page/Buttons/Engagements Tab Btn'))
 
-WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), GlobalVariable.StandardPw)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Texts/Engagements Title'), 3)
 
-WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
+WebUI.verifyElementText(findTestObject('Object Repository/Engagement Page/Texts/Engagements Title'), "Engagements")
 
-//VIEW ALL ENGAGEMENTS
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Buttons/Slider Btn'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Engagement Page/Texts/Engagement Total Counts Text'), 3)
 
-WebUI.click(findTestObject('Object Repository/Opportunities Page/Buttons/Opportunities Tab Btn'))
+WebUI.verifyElementPresent(findTestObject('Object Repository/Engagement Page/Elements/Engagements List'), 3)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Opportunities Page/Texts/Opportunities Title Txt'), 3)
+WebUI.click(findTestObject('Object Repository/Engagement Page/Buttons/Assigned To Others Tab'))
 
-WebUI.click(findTestObject('Object Repository/Opportunities Page/Buttons/All Other Opportunities Tab Btn'))
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Texts/Engagement Total Counts Text'), 3)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Opportunities Page/Elements/Opportunities List Section'), 3)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Engagement Page/Elements/Engagements List'), 3)
 
 WebUI.closeBrowser()

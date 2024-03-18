@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Engagements Tab Btn</name>
+   <tag></tag>
+   <elementGuidId>4cc2622e-262b-48a8-8705-245e587b0c4f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//span[text()=&quot;Engagements&quot;]/parent::span/parent::a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>efc1f147-da14-4443-860f-28d5ce8405d6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//span[text()=&quot;Engagements&quot;]/parent::span/parent::a</value>
+      <webElementGuid>fb939d83-b27f-4a67-b945-d92bd267c34a</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -29,11 +29,9 @@ WebUI.click(findTestObject('Object Repository/Opportunities Page/Buttons/All Oth
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), 3)
 
-WebUI.setText(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), "Automation - Senior Sports Analyst")
+WebUI.setText(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), "Automaton")
 
-WebUI.delay(2)
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'), 6)
 
 WebUI.click(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'))
 
