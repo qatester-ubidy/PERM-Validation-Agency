@@ -36,3 +36,6 @@ WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Co
 WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Comments Textarea'), "Hi, Please review my CV")
 
 WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Buttons/Send Comment Btn'))
+
+WebUI.verifyTextPresent("Hi, Please review my CV", false)
+
