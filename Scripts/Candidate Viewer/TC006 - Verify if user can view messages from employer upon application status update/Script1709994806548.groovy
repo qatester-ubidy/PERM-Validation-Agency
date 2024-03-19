@@ -17,3 +17,49 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+
+WebUI.callTestCase(findTestCase("Call TestCases/Submit Candidate - iOS"), [:])
+
+//UPDATE CANDIDATE STATUS
+WebUI.callTestCase(findTestCase("Call TestCases/Login Employer Account"), [:])
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Notification Page/Buttons/Notification Btn'), 3)
+
+WebUI.click(findTestObject('Object Repository/Employer - Notification Page/Buttons/Notification Btn'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Notification Page/Buttons/First Card View Now Btn'), 3)
+
+WebUI.click(findTestObject('Object Repository/Employer - Notification Page/Buttons/First Card View Now Btn'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Candidate Viewer/Buttons/Status Update Dropdown Btn'), 3)
+
+WebUI.click(findTestObject('Object Repository/Employer - Candidate Viewer/Buttons/Status Update Dropdown Btn'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Candidate Viewer/Elements/Screening Option'), 3)
+
+WebUI.click(findTestObject('Object Repository/Employer - Candidate Viewer/Elements/Screening Option'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Candidate Viewer/Candidate Status Update Modal/24 hours Option'), 3)
+
+WebUI.click(findTestObject('Object Repository/Employer - Candidate Viewer/Candidate Status Update Modal/24 hours Option'))
+
+WebUI.click(findTestObject('Object Repository/Employer - Candidate Viewer/Candidate Status Update Modal/Confirm Btn'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Candidate Viewer/Elements/Candidate Status Update Toast Msg'), 3)
+
+WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
+
+//LOG IN VALID ACCOUNT
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), GlobalVariable.ValidEmail)
+
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), GlobalVariable.StandardPw)
+
+WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
+
+WebUI.click(findTestObject('Object Repository/Engagement Page/Engagement Tab'))
+
+WebUI.click(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Buttons/View Candidate Btn'))
+
+WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Buttons/Comments Tab Btn'))
+
+WebUI.verifyTextPresent('We are reviewing the candidate, please expect an update in 24 hours.', false)
