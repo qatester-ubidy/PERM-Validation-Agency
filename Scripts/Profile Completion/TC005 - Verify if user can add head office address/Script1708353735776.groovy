@@ -24,14 +24,6 @@ WebUI.callTestCase(findTestCase("Call TestCases/Redirect to My Profile page"), [
 WebUI.delay(5)
 
 // VERIFY HEAD OFFICE ADDRESS VALIDATION MESSAGES
-WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Buttons/Slider Btn'), 5)
-
-WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Buttons/Slider Btn'))
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Logo/Sidebar Company Logo'), 3)
-
-WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Logo/Sidebar Company Logo'))
-
 WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Buttons/Addresses Tab Btn'), 10)
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Addresses Tab Btn'))

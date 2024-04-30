@@ -20,19 +20,19 @@ import org.apache.commons.lang.math.RandomUtils
 import org.apache.commons.lang3.RandomStringUtils
 import org.openqa.selenium.Keys as Keys
 
-String[] jobTitle = findTestData('Data Files/Job Titles - Windows').getAllData()
+String[] jobTitle = findTestData('Data Files/Job Titles').getAllData()
 
 int randomJobTitle = new Random().nextInt(jobTitle.length + 0 + 1)
 
-def getRandomJobTitle = findTestData('Job Titles - Windows').getValue('Jobtitles', randomJobTitle)
+def getRandomJobTitle = findTestData('Job Titles').getValue('Jobtitles', randomJobTitle)
 
 GlobalVariable.GetRandomJobTitle = getRandomJobTitle
 
-String[] cities = findTestData('Data Files/Cities - Windows').getAllData()
+String[] cities = findTestData('Data Files/Cities').getAllData()
 
 int randomCity = new Random().nextInt(cities.length + 0 + 1)
 
-def getRandomCity = findTestData('Cities - Windows').getValue('Cities', randomCity)
+def getRandomCity = findTestData('Cities').getValue('Cities', randomCity)
 
 def randomInt = RandomStringUtils.randomNumeric(1)
 
@@ -85,13 +85,9 @@ WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job
 
 WebUI.setText(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Textboxes/Job Title Txtbox'), getRandomJobTitle)
 
-WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/Experience Dropdown Btn'))
-
-WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/Experience Dropdown Btn'))
-
 WebUI.delay(3)
 
-WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Elements/Experience/1-3 Years Option'))
+WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Checkboxes/Min years of experience'))
 
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/Country Dropdown Btn'))
 
@@ -125,7 +121,7 @@ WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job
 //ADDITIONAL DOCUMENTS
 WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Talent Request Page/Additional Documents/Buttons/Choose File Btn'), 3)
 
-WebUI.uploadFile(findTestObject('Object Repository/Employer - Talent Request Page/Additional Documents/Elements/Job Description Container'), GlobalVariable.JDFileLocation)
+WebUI.uploadFile(findTestObject('Object Repository/Employer - Talent Request Page/Additional Documents/Elements/Job Description Container'), GlobalVariable.JobDescriptionFile)
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Talent Request Page/Additional Documents/Buttons/Uploaded JD Document'), 3)
 

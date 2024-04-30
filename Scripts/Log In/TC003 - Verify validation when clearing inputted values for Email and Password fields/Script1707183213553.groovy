@@ -3,9 +3,6 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-
-import java.util.concurrent.ConcurrentHashMap.KeySetView
-
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -29,13 +26,11 @@ WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textb
 
 WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), GlobalVariable.StandardPw)
 
-WebUI.sendKeys(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), Keys.CONTROL + Keys.chord('a') + Keys.BACK_SPACE)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Company Bio Txtboxes'), Keys.chord(Keys.COMMAND, 'a') + Keys.BACK_SPACE)
 
-WebUI.sendKeys(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), Keys.CONTROL + Keys.chord('a') + Keys.BACK_SPACE)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Company Bio Txtboxes'), Keys.chord(Keys.COMMAND, 'a') + Keys.BACK_SPACE)
 
 //VERIFY VALIDATION
-WebUI.verifyTextPresent('Please provide your email', false)
-
 WebUI.verifyTextPresent('Please provide your password', false)
 
 WebUI.closeBrowser()

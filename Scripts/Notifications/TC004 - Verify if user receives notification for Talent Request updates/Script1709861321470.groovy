@@ -29,6 +29,6 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Notification Page/E
 
 WebUI.verifyElementText(findTestObject('Object Repository/Notification Page/Elements/Status Sub Category Notif'), "Cancelled")
 
-WebUI.verifyTextPresent("PureSilver WaffleMaker Corp cancelled Talent Request", false)
+WebUI.verifyTextPresent("PureSilver CorpTEST cancelled Talent Request", false)
 
 WebUI.closeBrowser()

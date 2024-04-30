@@ -23,17 +23,17 @@ String[] firstName = findTestData('Data Files/First Names - Windows').getAllData
 
 int randomFirstname = new Random().nextInt(firstName.length + 1)
 
-def getFirstname = findTestData('First Names - Windows').getValue('First Names', randomFirstname)
+def getFirstname = findTestData('First Names').getValue('First Names', randomFirstname)
 
 def getNewUserEmail = "qa.tester+" + getFirstname + RandomStringUtils.randomNumeric(3) + "@ubidy.com"
 
 GlobalVariable.AddedUserEmail = getNewUserEmail
 
-String[] lastName = findTestData('Data Files/Last Names - Windows').getAllData()
+String[] lastName = findTestData('Data Files/Last Names').getAllData()
 
 int randomLastname = new Random().nextInt(lastName.length + 1)
 
-def getLastname = findTestData('Last Names - Windows').getValue('Surnames', randomLastname)
+def getLastname = findTestData('Last Names').getValue('Surnames', randomLastname)
 
 
 WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])

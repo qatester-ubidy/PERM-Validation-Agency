@@ -18,11 +18,11 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.apache.commons.lang3.RandomStringUtils
 
-String[] firstName = findTestData('Data Files/First Names - Windows').getAllData()
+String[] firstName = findTestData('Data Files/First Names').getAllData()
 
 int randomFirstname = new Random().nextInt(firstName.length+ 0 + 1)
 
-def getRandomFirstname = findTestData('First Names - Windows').getValue('First Names', randomFirstname)
+def getRandomFirstname = findTestData('First Names').getValue('First Names', randomFirstname)
 
 GlobalVariable.getRandomFirstname = getRandomFirstname
 
@@ -30,26 +30,26 @@ def emailAddress = ('qa.tester+' + getRandomFirstname + RandomStringUtils.random
 
 GlobalVariable.VerifiedAccount = emailAddress
 
-String[] lastName = findTestData('Data Files/Last Names - Windows').getAllData()
+String[] lastName = findTestData('Data Files/Last Names').getAllData()
 
 int randomLastname = new Random().nextInt(lastName.length+ 0 + 1)
 
-def getRandomLastname = findTestData('Last Names - Windows').getValue('Surnames', randomLastname)
+def getRandomLastname = findTestData('Last Names').getValue('Surnames', randomLastname)
 
 GlobalVariable.getRandomLastname = getRandomLastname
 
 def randomNumber = RandomStringUtils.randomNumeric(10)
 
-String[] city = findTestData('Data Files/Cities - Windows').getAllData()
+String[] city = findTestData('Data Files/Cities').getAllData()
 
 int randomCity = new Random().nextInt(city.length + 0 + 1)
 
-def getRandomCity = findTestData('Cities - Windows').getValue('Cities', randomCity)
+def getRandomCity = findTestData('Cities').getValue('Cities', randomCity)
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer Page/Buttons/Upload CV Btn'), 3)
 
 //UPLOAD CV
-WebUI.uploadFile(findTestObject('Object Repository/Candidate Viewer Page/Elements/Candidate CV Section'), GlobalVariable.JDFileLocation)
+WebUI.uploadFile(findTestObject('Object Repository/Candidate Viewer Page/Elements/Candidate CV Section'), GlobalVariable.CVFile)
 
 //FILL IN CANDIDATE DETAILS
 WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/First Name Txtbox'), getRandomFirstname)
