@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Opportunities</name>
+   <name>User Management Page</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,33 +10,33 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>0cca392b-bd5e-41a5-abd5-6e7129d364f2</testSuiteGuid>
+   <testSuiteGuid>a898d4ac-3550-46a5-8dff-42b3579ad630</testSuiteGuid>
    <testCaseLink>
-      <guid>0237016b-dbb7-42f8-9e64-eee1b02d4b05</guid>
+      <guid>4f8688ab-468f-4672-93fb-4c9591edbcb5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Opportunities/TC001 - Verify if user can view opportunities</testCaseId>
+      <testCaseId>Test Cases/User Management/TC004 - Verify if newly invited sub user can log in to their account</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4b5541b6-16e5-47d6-a930-dfe52c2abe06</guid>
+      <guid>b1b7eaed-429b-4b69-b0d6-826db96aa6d2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Opportunities/TC002 - Verify if user can search for opportunities</testCaseId>
+      <testCaseId>Test Cases/User Management/TC003 - Verify if user can delete a sub user</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e2c87da2-b094-4d5e-ad32-5e206a0124cd</guid>
+      <guid>4b42b26e-9ff2-4623-8dd7-137065201c30</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Opportunities/TC003 - Verify if user can apply for opportunities</testCaseId>
+      <testCaseId>Test Cases/User Management/TC001 - Verify if user can add new sub user</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f99f1d0f-2131-4add-8303-c7c87728ead0</guid>
+      <guid>8ffa1f10-755f-4e84-bf70-846383ba1789</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Opportunities/TC004 - Verify if user can apply for opportunities without inputting fee amount</testCaseId>
+      <testCaseId>Test Cases/User Management/TC002 - Verify if user can update the sub user</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

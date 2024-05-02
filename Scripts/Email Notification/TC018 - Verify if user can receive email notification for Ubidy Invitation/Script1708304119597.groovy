@@ -30,27 +30,27 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Agencies
 
 WebUI.click(findTestObject('Object Repository/Employer - Agencies/Buttons/Agencies Tab Btn'))
 
-String[] firstName = findTestData('Data Files/First Names - Windows').getAllData()
+String[] firstName = findTestData('Data Files/First Names').getAllData()
 
 int randomFirstname = new Random().nextInt(firstName.length + 1)
 
-def getRandomFirstname = findTestData('First Names - Windows').getValue('First Names', randomFirstname)
+def getRandomFirstname = findTestData('First Names').getValue('First Names', randomFirstname)
 
 def emailAddress = ('qa.tester+' + getRandomFirstname + RandomStringUtils.randomNumeric(4)) + '@ubidy.com'
 
 GlobalVariable.VerifiedAccount = emailAddress
 
-String[] lastName = findTestData('Data Files/Last Names - Windows').getAllData()
+String[] lastName = findTestData('Data Files/Last Names').getAllData()
 
 int randomLastname = new Random().nextInt(lastName.length + 1)
 
-def getRandomLastname = findTestData('Last Names - Windows').getValue('Surnames', randomLastname)
+def getRandomLastname = findTestData('Last Names').getValue('Surnames', randomLastname)
 
-String[] companyName = findTestData('Data Files/Company Names - Windows').getAllData()
+String[] companyName = findTestData('Data Files/Company Names').getAllData()
 
 int randomCompany = new Random().nextInt(companyName.length + 1)
 
-def getRandomCompany = findTestData('Company Names - Windows').getValue('Company Names', randomCompany)
+def getRandomCompany = findTestData('Company Names').getValue('Company Names', randomCompany)
 
 
 WebUI.setText(findTestObject('Object Repository/Employer - Agencies/Textboxes/Agency Name Txtboxes'), getRandomCompany)

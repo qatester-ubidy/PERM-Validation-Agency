@@ -224,4 +224,9 @@
       <initValue>''</initValue>
       <name>getRandomLastname</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/Users/joymartinez/Documents/Non Disclosure.pdf'</initValue>
+      <name>JobDescriptionFile</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

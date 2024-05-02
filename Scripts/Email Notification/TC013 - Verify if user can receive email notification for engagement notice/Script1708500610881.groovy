@@ -60,6 +60,6 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Element
 
 WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Notices Notif'))
 
-WebUI.verifyElementText("Notice Message", false)
+WebUI.verifyElementText("Notice Message:", false)
 
 WebUI.closeBrowser()

@@ -35,9 +35,9 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Opportunities Page
 
 WebUI.click(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Application Tab/Textboxes/Fee Amount Txtbox'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Application Tab/Textboxes/Fee Amount Txtbox'), 5)
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Application Tab/Checkboxes/Ubidy NDA Checkbox'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Application Tab/Checkboxes/Ubidy NDA Checkbox'), 5)
 
 WebUI.click(findTestObject('Object Repository/Engagement Page/Application Tab/Checkboxes/Ubidy NDA Checkbox'))
 
