@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>/html/body/div[8]/div[3]/div/div[2]/div[4]/div/div/div/div[2]/div/div[1]/div/div[3]/div/div[2]/div[1]/div[2]/div[6]/div[1]/div/table/tbody/tr[1]/td[6]/div/div/div[2]/span/span/span[text()=&quot;Approved&quot;]/parent::span</value>
+         <value>/html/body/div[8]/div[3]/div/div[2]/div[4]/div/div/div/div[2]/div/div[1]/div/div[1]/div[5]/div[1]/div/table/tbody/tr[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[8]/div[3]/div/div[2]/div[4]/div/div/div/div[2]/div/div[1]/div/div[3]/div/div[2]/div[1]/div[2]/div[6]/div[1]/div/table/tbody/tr[1]/td[6]/div/div/div[2]/span/span/span[text()=&quot;Approved&quot;]/parent::span</value>
-      <webElementGuid>9f40e462-dd47-4923-a761-c29940fcf8c1</webElementGuid>
+      <value>/html/body/div[8]/div[3]/div/div[2]/div[4]/div/div/div/div[2]/div/div[1]/div/div[1]/div[5]/div[1]/div/table/tbody/tr[1]</value>
+      <webElementGuid>c7fef138-32a0-4078-bfbe-837641aa2277</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

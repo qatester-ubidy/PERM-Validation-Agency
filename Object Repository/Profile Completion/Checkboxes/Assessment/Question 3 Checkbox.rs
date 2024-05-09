@@ -3,11 +3,11 @@
    <description></description>
    <name>Question 3 Checkbox</name>
    <tag></tag>
-   <elementGuidId>a4b440ac-b6f4-4455-936d-9b2575268dca</elementGuidId>
+   <elementGuidId>cca46057-d46c-4e8e-b61a-0410de099cfd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;7ea5bfef_a4e8_e811_a591_109836a5ea9c&quot;]//input[@value=&quot;Yes&quot;]</value>
+         <value>//*[@id=&quot;fc08de5c_415b_4a4d_a889_fca362df9cba&quot;]/label[1]/span[1]/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,8 +17,8 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;7ea5bfef_a4e8_e811_a591_109836a5ea9c&quot;]//input[@value=&quot;Yes&quot;]</value>
-      <webElementGuid>37790ef2-44ee-4996-8e30-89bc11266389</webElementGuid>
+      <value>//*[@id=&quot;fc08de5c_415b_4a4d_a889_fca362df9cba&quot;]/label[1]/span[1]/input</value>
+      <webElementGuid>4c4f1012-5031-4ca3-b9be-fedd4778cbbe</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -26,6 +26,6 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>acf86ad7-310c-454b-8f99-990dd721a349</webElementGuid>
+      <webElementGuid>385fcc32-4131-4e3f-87c5-0b2910e8efd0</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

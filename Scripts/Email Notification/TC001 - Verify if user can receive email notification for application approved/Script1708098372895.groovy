@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase("Call TestCases/Agency Apply To New Engagement"),[:])
+//WebUI.callTestCase(findTestCase("Call TestCases/Agency Apply To New Engagement"),[:])
 
 //VERIFY EMAIL NOTIFICATION
 WebUI.callTestCase(findTestCase("Call TestCases/Redirect To Gmail"), [:])
@@ -29,6 +29,8 @@ WebUI.setText(findTestObject('Object Repository/Gmail Page/Textboxes/Search Txtb
 WebUI.click(findTestObject('Object Repository/Gmail Page/Buttons/Search Btn'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'), 3)
+
+WebUI.delay(5)
 
 WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Approved Engagement Notif'))
 

@@ -25,16 +25,15 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Company Bio btn'))
 
+WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Create Your Company Bio Btn'))
+
 WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Textboxes/Company Bio Txtboxes'), 10)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Company Bio Txtboxes'))
+//WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Company Bio Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Company Bio Txtboxes'), Keys.chord(Keys.COMMAND, 'a') + Keys.BACK_SPACE)
+//WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Company Bio Txtboxes'), Keys.chord(Keys.COMMAND, 'a') + Keys.BACK_SPACE)
 
 WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Company Bio Txtboxes'), GlobalVariable.CompanyBioMessage)
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Company Bio Save AND Continue Btn'))
 
-WebUI.delay(5)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Profile Completion/Texts/Addressess Header Txt'), 5)

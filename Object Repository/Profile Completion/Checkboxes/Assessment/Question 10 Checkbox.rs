@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>First Email Agency Invitation Notif</name>
+   <name>Question 10 Checkbox</name>
    <tag></tag>
-   <elementGuidId>c0f2e5d9-335f-463d-a852-e391a553fddd</elementGuidId>
+   <elementGuidId>606f3849-147d-4353-b6da-60db589559c2</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>/html/body/div[8]/div[3]/div/div[2]/div[4]/div/div/div/div[2]/div/div[1]/div/div[1]/div[5]/div[1]/div/table/tbody/tr[1]</value>
+         <value>//*[@id=&quot;532c810b_9c88_44e2_ac89_339bf2b63e4a&quot;]/label[1]/span[1]/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[8]/div[3]/div/div[2]/div[4]/div/div/div/div[2]/div/div[1]/div/div[1]/div[5]/div[1]/div/table/tbody/tr[1]</value>
-      <webElementGuid>03fc3446-e82b-476c-925d-addf10c98ebe</webElementGuid>
+      <value>//*[@id=&quot;532c810b_9c88_44e2_ac89_339bf2b63e4a&quot;]/label[1]/span[1]/input</value>
+      <webElementGuid>e01aab2a-0342-45ee-a94a-17e7c0e6ec0d</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

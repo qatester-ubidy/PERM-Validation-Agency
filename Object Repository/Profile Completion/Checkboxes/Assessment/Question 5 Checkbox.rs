@@ -3,11 +3,11 @@
    <description></description>
    <name>Question 5 Checkbox</name>
    <tag></tag>
-   <elementGuidId>803f69d9-6698-48bf-b5dc-3f98c6d8f45f</elementGuidId>
+   <elementGuidId>6541f1c7-5f26-47cf-bc45-27e407bbbb03</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;26be89ba_a5e8_e811_a591_109836a5ea9c&quot;]//input[@value=&quot;Yes&quot;]</value>
+         <value>//*[@id=&quot;451d0415_a5e8_e811_a591_109836a5ea9c&quot;]//input[@value=&quot;3|None&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,8 +17,8 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;26be89ba_a5e8_e811_a591_109836a5ea9c&quot;]//input[@value=&quot;Yes&quot;]</value>
-      <webElementGuid>36f236de-f3d8-45a9-b482-2bad9072f46d</webElementGuid>
+      <value>//*[@id=&quot;451d0415_a5e8_e811_a591_109836a5ea9c&quot;]//input[@value=&quot;3|None&quot;]</value>
+      <webElementGuid>234c0011-a2ed-4fe9-9a70-c43d525b372d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -26,6 +26,6 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>98efbfef-05ab-47e6-926f-4ccac86aa0d8</webElementGuid>
+      <webElementGuid>dc99da10-534a-45f9-908f-5d20a6082dff</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

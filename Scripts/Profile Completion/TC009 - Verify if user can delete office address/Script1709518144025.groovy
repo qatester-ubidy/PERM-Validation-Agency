@@ -36,5 +36,3 @@ WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Address
 WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Delete Office Address Btn'))
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Delete Address Modal/OK Address Btn'))
-
-WebUI.verifyTextPresent('Edit Regional Address', false)

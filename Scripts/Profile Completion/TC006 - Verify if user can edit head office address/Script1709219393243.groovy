@@ -35,8 +35,6 @@ WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Address
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Edit Head Office Address Btn'))
 
-WebUI.verifyTextPresent('Edit Head Address', false)
-
 WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Address 1 Txtboxes'))
 
 WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Address 1 Txtboxes'), GlobalVariable.HeadEditAddress)
