@@ -18,6 +18,6 @@
       <name>class</name>
       <type>Main</type>
       <value>notranslate public-DraftEditor-content</value>
-      <webElementGuid>9986e7a4-ddd3-4497-8b4d-531a33b073e2</webElementGuid>
+      <webElementGuid>3f694deb-4ffd-4a3e-b45f-696565c0584a</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

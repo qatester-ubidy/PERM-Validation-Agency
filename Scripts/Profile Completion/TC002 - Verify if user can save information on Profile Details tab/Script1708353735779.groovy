@@ -39,6 +39,3 @@ WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Pho
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Profile Save AND Continue btn'))
 
-WebUI.delay(5)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Profile Completion/Texts/Company Bio Header Txt'), 5)

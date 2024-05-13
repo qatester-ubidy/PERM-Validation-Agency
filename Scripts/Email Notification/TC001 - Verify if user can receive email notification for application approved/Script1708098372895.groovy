@@ -30,6 +30,8 @@ WebUI.click(findTestObject('Object Repository/Gmail Page/Buttons/Search Btn'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'), 3)
 
+WebUI.delay(5)
+
 WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Approved Engagement Notif'))
 
 WebUI.verifyTextPresent("Application has been approved", false)

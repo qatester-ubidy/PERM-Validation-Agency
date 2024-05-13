@@ -26,9 +26,11 @@ WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textb
 
 WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), GlobalVariable.StandardPw)
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Company Bio Txtboxes'), Keys.chord(Keys.COMMAND, 'a') + Keys.BACK_SPACE)
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), Keys.chord(Keys.ALT, 'a') + Keys.BACK_SPACE)
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Company Bio Txtboxes'), Keys.chord(Keys.COMMAND, 'a') + Keys.BACK_SPACE)
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), Keys.chord(Keys.ALT, 'a') + Keys.BACK_SPACE)
+
+WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
 
 //VERIFY VALIDATION
 WebUI.verifyTextPresent('Please provide your password', false)
