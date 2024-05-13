@@ -21,7 +21,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'qa.tester+account1@ubidy.com'</initValue>
+      <initValue>'qa.tester+a01@ubidy.com'</initValue>
       <name>ValidEmail</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
