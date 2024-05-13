@@ -19,7 +19,7 @@ import internal.GlobalVariable
 import org.apache.commons.lang3.RandomStringUtils
 import org.openqa.selenium.Keys as Keys
 
-String[] firstName = findTestData('Data Files/First Names - Windows').getAllData()
+String[] firstName = findTestData('Data Files/First Names').getAllData()
 
 int randomFirstname = new Random().nextInt(firstName.length + 1)
 
