@@ -7,9 +7,9 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator>COMMA</csvSeperator>
    <dataFileGUID>0ea5fd65-fb04-43d1-b334-b6d2ad92a54e</dataFileGUID>
-   <dataSourceUrl>/Users/joymartinez/Documents/PERM/Data Files/Cities.csv</dataSourceUrl>
+   <dataSourceUrl>Files/Cities.csv</dataSourceUrl>
    <driver>CSV</driver>
-   <isInternalPath>false</isInternalPath>
+   <isInternalPath>true</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName></sheetName>
