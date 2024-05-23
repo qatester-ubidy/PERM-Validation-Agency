@@ -31,14 +31,14 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engageme
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Logo/Sidebar Company Logo'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Buttons/Regions Tab Btn'), 10)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Regions Tab/Buttons/Regions Tab Btn'), 10)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Regions Tab Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Regions Tab/Buttons/Regions Tab Btn'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Delete Region Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Regions Tab/Buttons/Delete Region Btn'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Delete Regions Modal/OK Regions Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Regions Tab/Delete Regions Modal/OK Regions Btn'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Delete Regions Modal/Delete Region Success Toast Msg'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Regions Tab/Delete Regions Modal/Delete Region Success Toast Msg'), 3)
 
 WebUI.verifyTextPresent('Region has been successfully deleted!', false)

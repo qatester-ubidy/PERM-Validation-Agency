@@ -30,16 +30,16 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engageme
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Logo/Sidebar Company Logo'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Buttons/Regions Tab Btn'), 10)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Regions Tab/Buttons/Regions Tab Btn'), 10)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Regions Tab Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Regions Tab/Buttons/Regions Tab Btn'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Regions - Select Region Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Regions Tab/Buttons/Regions - Select Region Btn'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Asia Pacific Dropdown Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Buttons/Asia Pacific Dropdown Btn'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Regions - Select Country Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Regions Tab/Buttons/Regions - Select Country Btn'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Philippines Dropdown Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Buttons/Philippines Dropdown Btn'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Add Regions Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Regions Tab/Buttons/Add Regions Btn'))

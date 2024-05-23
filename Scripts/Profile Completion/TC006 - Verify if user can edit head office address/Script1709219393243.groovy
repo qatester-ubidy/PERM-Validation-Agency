@@ -29,14 +29,14 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engageme
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Logo/Sidebar Company Logo'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Buttons/Addresses Tab Btn'), 10)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Addresses Tab Btn'), 10)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Addresses Tab Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Addresses Tab Btn'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Edit Head Office Address Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Edit Head Office Address Btn'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Address 1 Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Textboxes/Address 1 Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Address 1 Txtboxes'), GlobalVariable.HeadEditAddress)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Addresses Tab/Textboxes/Address 1 Txtboxes'), GlobalVariable.HeadEditAddress)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Address Save Changes Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Address Save Changes Btn'))

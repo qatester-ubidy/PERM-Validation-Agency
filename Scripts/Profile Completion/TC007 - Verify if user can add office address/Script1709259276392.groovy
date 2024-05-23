@@ -23,38 +23,38 @@ WebUI.callTestCase(findTestCase("Call TestCases/Redirect to My Profile page"), [
 WebUI.delay(5)
 
 // VERIFY HEAD OFFICE ADDRESS VALIDATION MESSAGES
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Buttons/Addresses Tab Btn'), 10)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Addresses Tab Btn'), 10)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Addresses Tab Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Addresses Tab Btn'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Add Office Address Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Add Office Address Btn'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Address 1 Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Textboxes/Address 1 Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Address 1 Txtboxes'), GlobalVariable.OfficeAddress1)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Addresses Tab/Textboxes/Address 1 Txtboxes'), GlobalVariable.OfficeAddress1)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/City Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Textboxes/City Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/City Txtboxes'), GlobalVariable.OfficeCity)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Addresses Tab/Textboxes/City Txtboxes'), GlobalVariable.OfficeCity)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/State Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Profile Details Tab/Textboxes/State Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/State Txtboxes'), GlobalVariable.OfficeProvince)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Profile Details Tab/Textboxes/State Txtboxes'), GlobalVariable.OfficeProvince)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Select Country Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Select Country Btn'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/OfficeCountry Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/OfficeCountry Btn'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Postal Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Postal Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Postal Txtboxes'), GlobalVariable.OfficePostal)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Postal Txtboxes'), GlobalVariable.OfficePostal)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Address Phone Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Textboxes/Address Phone Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Address Phone Txtboxes'), GlobalVariable.OfficePhone)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Addresses Tab/Textboxes/Address Phone Txtboxes'), GlobalVariable.OfficePhone)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Email Address Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Profile Details Tab/Textboxes/Email Address Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Email Address Txtboxes'), GlobalVariable.OfficeEmail)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Profile Details Tab/Textboxes/Email Address Txtboxes'), GlobalVariable.OfficeEmail)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Address Save Changes Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Address Save Changes Btn'))

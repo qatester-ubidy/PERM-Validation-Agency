@@ -21,7 +21,7 @@ WebUI.openBrowser(GlobalVariable.StagingEnv)
 
 WebUI.maximizeWindow()
 
-WebUI.callTestCase(findTestCase("Call TestCases/Login with correct credential"), [:])
+WebUI.callTestCase(findTestCase("Call TestCases/Login Agency Account"), [:])
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Buttons/Slider Btn'), 3)
 

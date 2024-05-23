@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Login with correct credential</name>
+   <name>Login Agency Account</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>38bcedda-a049-41a6-b48e-edfadd9dc09b</testCaseGuid>

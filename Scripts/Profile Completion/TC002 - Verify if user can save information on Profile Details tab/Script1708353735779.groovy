@@ -35,7 +35,7 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engageme
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Logo/Sidebar Company Logo'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/PhoneNo Txtboxes'), GlobalVariable.PhoneNo)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Profile Details Tab/Textboxes/PhoneNo Txtboxes'), GlobalVariable.PhoneNo)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Profile Save AND Continue btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Profile Details Tab/Buttons/Profile Save AND Continue Btn'))
 

@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Question 14 Checkbox</name>
+   <name>Question 13 Checkbox</name>
    <tag></tag>
-   <elementGuidId>e61f0c92-883a-481e-a6f1-3be7f03ea513</elementGuidId>
+   <elementGuidId>b4453fab-07c7-4924-870a-b50102ecaeca</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = '532c810b_9c88_44e2_ac89_339bf2b63e4a']//input[@value=&quot;Yes&quot;]</value>
+         <value>//*[@id=&quot;e539f437_8902_4a69_92c7_f54225527f15&quot;]/label[1]/span[1]/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath</name>
-      <type>Main</type>
-      <value>//*[@id = '532c810b_9c88_44e2_ac89_339bf2b63e4a']//input[@value=&quot;Yes&quot;]</value>
-      <webElementGuid>0ff8af3c-3ca7-4216-bd9c-5a3ad1980474</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>0675d515-5bfd-4d58-84aa-bf82bac8e3a5</webElementGuid>
+      <webElementGuid>fbaab0b4-be59-4b09-93a7-0ebea522c57e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;e539f437_8902_4a69_92c7_f54225527f15&quot;]/label[1]/span[1]/input</value>
+      <webElementGuid>90a1d810-325a-4805-9d42-112d2964b5d7</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

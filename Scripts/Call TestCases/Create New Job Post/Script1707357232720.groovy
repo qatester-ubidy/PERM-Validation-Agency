@@ -15,28 +15,19 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
-
 import org.apache.commons.lang.math.RandomUtils
 import org.apache.commons.lang3.RandomStringUtils
 import org.openqa.selenium.Keys as Keys
+import randomInput.RandomInputs
 
-String[] jobTitle = findTestData('Data Files/Job Titles').getAllData()
-
-int randomJobTitle = new Random().nextInt(jobTitle.length + 0 + 1)
-
-def getRandomJobTitle = findTestData('Job Titles').getValue('Jobtitles', randomJobTitle)
-
-GlobalVariable.GetRandomJobTitle = getRandomJobTitle
-
-String[] cities = findTestData('Data Files/Cities').getAllData()
-
-int randomCity = new Random().nextInt(cities.length + 0 + 1)
-
-def getRandomCity = findTestData('Cities').getValue('Cities', randomCity)
-
-def randomInt = RandomStringUtils.randomNumeric(1)
-
-GlobalVariable.EngagementFee = randomInt
+def uploadFile() {
+	String osName = System.getProperty('os.name')
+	if (osName.contains("Mac OS X")) {
+		WebUI.uploadFile(findTestObject('Object Repository/Employer - Talent Request Page/Additional Documents/Elements/Job Description Container'), GlobalVariable.JobDescriptionFile)
+	} else {
+		WebUI.uploadFile(findTestObject('Object Repository/Employer - Talent Request Page/Additional Documents/Elements/Job Description Container'), GlobalVariable.JDFileLocation)
+	}
+}
 
 WebUI.callTestCase(findTestCase("Call TestCases/Login Employer Account"), [:])
 
@@ -59,7 +50,7 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Talent R
 
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Elements/Role Category Options/Professional Option'))
 
-WebUI.setText(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Textboxes/Required Roles Txtbox'), randomInt)
+WebUI.setText(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Textboxes/Required Roles Txtbox'), RandomInputs.randomNumber())
 
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/Hiring Lead Dropdown Btn'))
 
@@ -73,19 +64,17 @@ WebUI.scrollToElement(findTestObject('Object Repository/Employer - Talent Reques
 
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/Job Classification Dropdown Btn'))
 
-WebUI.setText(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Textboxes/Job Classification Txtbox'), "Sport & Recreation")
+WebUI.setText(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Textboxes/Job Classification Txtbox'), "Sport & Recreation" + Keys.ENTER)
 
 WebUI.scrollToElement(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/Job Classification Dropdown Btn'), 3)
-
-WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Elements/Job Classification Options/Sport and Recreation Option'))
 
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/Job Sub Classification Dropdown Btn'))
 
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Elements/Job Sub Classification Options/All Other and Recreation Option'))
 
-WebUI.setText(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Textboxes/Job Title Txtbox'), getRandomJobTitle)
+GlobalVariable.randomJob = RandomInputs.randomJobTitle()
 
-WebUI.delay(3)
+WebUI.setText(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Textboxes/Job Title Txtbox'), GlobalVariable.randomJob + Keys.ENTER)
 
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Checkboxes/Min years of experience'))
 
@@ -101,16 +90,14 @@ WebUI.scrollToElement(findTestObject('Object Repository/Employer - Talent Reques
 
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/City Dropdown Btn'))
 
-WebUI.setText(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/City Dropdown Btn'), getRandomCity)
+WebUI.setText(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/City Dropdown Btn'), RandomInputs.randomCity() + Keys.ENTER)
 
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/Next Btn'))
 
-//COMPENSATION
+//STEP 2 - COMPENSATION
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Compensation/Buttons/Currency Dropdown Btn'))
 
-WebUI.setText(findTestObject('Object Repository/Employer - Talent Request Page/Compensation/Textboxes/Currency Txtbox'), "USD")
-
-WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Compensation/Elements/Currencies/USD Option'))
+WebUI.setText(findTestObject('Object Repository/Employer - Talent Request Page/Compensation/Textboxes/Currency Txtbox'), "USD" + Keys.ENTER)
 
 WebUI.setText(findTestObject('Object Repository/Employer - Talent Request Page/Compensation/Textboxes/Minimum Txtbox'), "1000")
 
@@ -118,29 +105,29 @@ WebUI.setText(findTestObject('Object Repository/Employer - Talent Request Page/C
 
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/Next Btn'))
 
-//ADDITIONAL DOCUMENTS
-WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Talent Request Page/Additional Documents/Buttons/Choose File Btn'), 3)
+//STEP 3 - ADDITIONAL DOCUMENTS
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Talent Request Page/Additional Documents/Buttons/Choose File Btn'), 3)
 
-WebUI.uploadFile(findTestObject('Object Repository/Employer - Talent Request Page/Additional Documents/Elements/Job Description Container'), GlobalVariable.JobDescriptionFile)
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Talent Request Page/Additional Documents/Buttons/Uploaded JD Document'), 3)
+uploadFile()
 
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/Next Btn'))
 
-//CANDIDATE QUALIFICATIONS
+//STEP 4 - CANDIDATE QUALIFICATIONS
 WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/Next Btn'), 3)
 
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/Next Btn'))
 
-//REVIEW & PUBLISH
-WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Talent Request Page/Review and Publish/Buttons/Continue to Publish Btn'), 3)
+//STEP 5 - REVIEW & PUBLISH
+WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Talent Request Page/Review and Publish/Buttons/Continue to Engagement Builder Btn'), 3)
 
-WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Review and Publish/Buttons/Continue to Publish Btn'))
+WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Review and Publish/Buttons/Continue to Engagement Builder Btn'))
 
 //ENGAGEMENT BUILDER - SET UP
+String numberRoles = new Random().nextInt(20) + 1
+
 WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagement Builder/Set Up Tab/Textboxes/CV Slot Txtbox'), 5)
 
-WebUI.setText(findTestObject('Object Repository/Employer - Engagement Builder/Set Up Tab/Textboxes/CV Slot Txtbox'), randomInt)
+WebUI.setText(findTestObject('Object Repository/Employer - Engagement Builder/Set Up Tab/Textboxes/CV Slot Txtbox'), numberRoles)
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagement Builder/Set Up Tab/Buttons/Engagement Type Dropdown Btn'))
 
@@ -159,7 +146,7 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagem
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagement Builder/Select TR Tab/Elements/Percent Base - Annual Option'))
 
-WebUI.setText(findTestObject('Object Repository/Employer - Engagement Builder/Select TR Tab/Textboxes/Amount Txtbox'), randomInt)
+WebUI.setText(findTestObject('Object Repository/Employer - Engagement Builder/Select TR Tab/Textboxes/Amount Txtbox'), numberRoles)
 
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/Next Btn'))
 

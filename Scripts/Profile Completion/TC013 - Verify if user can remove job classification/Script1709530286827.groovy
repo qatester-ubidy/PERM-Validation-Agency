@@ -30,14 +30,14 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engageme
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Logo/Sidebar Company Logo'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Job Classification Tab Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Job Classifications Tab/Buttons/Job Classification Tab Btn'))
 
 //REMOVE JOB CLASSIFICATION
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Job Classifications/IT Job Header'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Job Classifications Tab/Checkboxes/IT Job Header'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Job Classifications/Testing Quality Assurance Checkbox'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Job Classifications Tab/Checkboxes/Testing Quality Assurance Checkbox'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Checkboxes/Job Classifications/Remove Classification Success Toast Msg'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Job Classifications Tab/Checkboxes/Remove Classification Success Toast Msg'), 3)
 
 WebUI.verifyTextPresent('Classification has been successfully removed!', false)

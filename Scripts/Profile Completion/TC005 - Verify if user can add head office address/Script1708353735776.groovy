@@ -24,69 +24,69 @@ WebUI.callTestCase(findTestCase("Call TestCases/Redirect to My Profile page"), [
 WebUI.delay(5)
 
 // VERIFY HEAD OFFICE ADDRESS VALIDATION MESSAGES
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Buttons/Addresses Tab Btn'), 10)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Addresses Tab Btn'), 10)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Addresses Tab Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Addresses Tab Btn'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Edit Head Office Address Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Edit Head Office Address Btn'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Save Address Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Save Address Btn'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Profile Completion/Validation Messages/Address 1 Validation'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/Address 1 Validation'), 3)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Profile Completion/Validation Messages/Address 1 Validation'), "Address 1 is required!")
+WebUI.verifyElementText(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/Address 1 Validation'), "Address 1 is required!")
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Profile Completion/Validation Messages/City Validation'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/City Validation'), 3)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Profile Completion/Validation Messages/City Validation'), "City is required!")
+WebUI.verifyElementText(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/City Validation'), "City is required!")
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Profile Completion/Validation Messages/Province Validation'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/Province Validation'), 3)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Profile Completion/Validation Messages/Province Validation'), "Province/State is required!")
+WebUI.verifyElementText(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/Province Validation'), "Province/State is required!")
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Profile Completion/Validation Messages/Country Validation'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/Country Validation'), 3)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Profile Completion/Validation Messages/Country Validation'), "Country is required!")
+WebUI.verifyElementText(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/Country Validation'), "Country is required!")
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Profile Completion/Validation Messages/Postal Validation'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/Postal Validation'), 3)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Profile Completion/Validation Messages/Postal Validation'), "Postal/Zip is required!" ,FailureHandling.CONTINUE_ON_FAILURE)== true
+WebUI.verifyElementText(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/Postal Validation'), "Postal/Zip is required!" ,FailureHandling.CONTINUE_ON_FAILURE)== true
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Profile Completion/Validation Messages/Phone Validation'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/Phone Validation'), 3)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Profile Completion/Validation Messages/Phone Validation'), "Phone is required!")
+WebUI.verifyElementText(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/Phone Validation'), "Phone is required!")
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Profile Completion/Validation Messages/Email Validation'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/Email Validation'), 3)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Profile Completion/Validation Messages/Email Validation'), "Email is required!")
+WebUI.verifyElementText(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/Email Validation'), "Email is required!")
 
 // VERIFY IF USER CAN ADD HEAD OFFICE ADDRESS 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Address 1 Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Textboxes/Address 1 Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Address 1 Txtboxes'), GlobalVariable.HeadAddress1)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Addresses Tab/Textboxes/Address 1 Txtboxes'), GlobalVariable.HeadAddress1)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/City Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Textboxes/City Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/City Txtboxes'), GlobalVariable.HeadCity)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Addresses Tab/Textboxes/City Txtboxes'), GlobalVariable.HeadCity)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/State Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Profile Details Tab/Textboxes/State Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/State Txtboxes'), GlobalVariable.HeadProvince)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Profile Details Tab/Textboxes/State Txtboxes'), GlobalVariable.HeadProvince)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Select Country Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Select Country Btn'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Country Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Regions Tab/Buttons/Country Btn'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Postal Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Postal Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Postal Txtboxes'), GlobalVariable.HeadPostalZip)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Postal Txtboxes'), GlobalVariable.HeadPostalZip)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Address Phone Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Textboxes/Address Phone Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Address Phone Txtboxes'), GlobalVariable.HeadAddressPhone)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Addresses Tab/Textboxes/Address Phone Txtboxes'), GlobalVariable.HeadAddressPhone)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Email Address Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Profile Details Tab/Textboxes/Email Address Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Email Address Txtboxes'), GlobalVariable.HeadAddressEmail)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Profile Details Tab/Textboxes/Email Address Txtboxes'), GlobalVariable.HeadAddressEmail)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Address Save Changes Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Address Save Changes Btn'))

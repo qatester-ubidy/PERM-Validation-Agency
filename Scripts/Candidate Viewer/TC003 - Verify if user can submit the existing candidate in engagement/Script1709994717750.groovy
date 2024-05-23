@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.apache.commons.lang3.RandomStringUtils
 
-WebUI.callTestCase(findTestCase("Call TestCases/Login with correct credential"), [:])
+WebUI.callTestCase(findTestCase("Call TestCases/Login Agency Account"), [:])
 
 WebUI.click(findTestObject('Object Repository/Engagement Page/Engagement Tab'))
 

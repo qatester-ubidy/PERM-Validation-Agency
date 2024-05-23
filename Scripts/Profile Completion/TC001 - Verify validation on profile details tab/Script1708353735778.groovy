@@ -22,7 +22,7 @@ WebUI.openBrowser(GlobalVariable.StagingEnv)
 
 WebUI.maximizeWindow()
 
-WebUI.callTestCase(findTestCase("Call TestCases/Login with correct credential"), [:])
+WebUI.callTestCase(findTestCase("Call TestCases/Login Agency Account"), [:])
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Buttons/Slider Btn'), 3)
 
@@ -32,13 +32,13 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engageme
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Logo/Sidebar Company Logo'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Company Name Txtboxes'), Keys.chord(Keys.ALT, 'a') + Keys.BACK_SPACE)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Profile Details Tab/Textboxes/Company Name Txtboxes'), Keys.chord(Keys.ALT, 'a') + Keys.BACK_SPACE)
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Email Address Txtboxes'), Keys.chord(Keys.ALT, 'a') + Keys.BACK_SPACE)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Profile Details Tab/Textboxes/Email Address Txtboxes'), Keys.chord(Keys.ALT, 'a') + Keys.BACK_SPACE)
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/PhoneNo Txtboxes'), Keys.chord(Keys.ALT, 'a') + Keys.BACK_SPACE)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Profile Details Tab/Textboxes/PhoneNo Txtboxes'), Keys.chord(Keys.ALT, 'a') + Keys.BACK_SPACE)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Profile Save AND Continue btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Profile Details Tab/Buttons/Profile Save AND Continue Btn'))
 
 
 //VALIDATION MESSAGES

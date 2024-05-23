@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Continue to Publish Btn</name>
+   <name>Create Your Company Bio Btn</name>
    <tag></tag>
-   <elementGuidId>baabe792-703a-4dfe-b4b2-9a377473269b</elementGuidId>
+   <elementGuidId>ef8f484f-3e3a-4564-ac76-9695b5d59080</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//button[(text() = 'Continue to Publish' or . = 'Continue to Publish')]</value>
+         <value>//*[@id = 'robot-btn-createCompanyBio']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,17 +15,17 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>robot-btn-createCompanyBio</value>
+      <webElementGuid>9bf16416-6f39-4e71-b9e5-92edf85c50aa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>b9a96a46-6a25-492a-8604-68eac1d1a8c1</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>Continue to Publish</value>
-      <webElementGuid>81cb6f23-d4d0-4e40-b475-5abbc54c391b</webElementGuid>
+      <webElementGuid>a4cd80fc-2ea8-4537-8d94-728f8c881dd6</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
