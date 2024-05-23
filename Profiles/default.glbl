@@ -236,11 +236,6 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'qa.tester+kompamp-meta16@ubidy.com'</initValue>
-      <name>AJoyAccount</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
       <initValue>'/Users/joymartinez/Documents/Code of Conduct and Policy.pdf'</initValue>
       <name>ConductPolicyFile</name>
    </GlobalVariableEntity>
