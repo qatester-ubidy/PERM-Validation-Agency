@@ -18,44 +18,32 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.apache.commons.lang3.RandomStringUtils
+import randomInput.RandomInputs
+import randomInput.RandomInputs as random
 
+WebUI.openBrowser(GlobalVariable.StagingEnv)
 
-// VERIFY HEAD OFFICE ADDRESS VALIDATION MESSAGES
-WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Buttons/Slider Btn'), 5)
+WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Buttons/Slider Btn'))
+WebUI.callTestCase(findTestCase("Call TestCases/Login Agency Account"), [:])
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Logo/Sidebar Company Logo'), 3)
+WebUI.delay(3)
 
-WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Logo/Sidebar Company Logo'))
+WebUI.verifyElementPresent(findTestObject('Object Repository/Engagement Page/Slider Btn'), 5)
 
-String[] firstName = findTestData('Data Files/First Names').getAllData()
+WebUI.click(findTestObject('Object Repository/Engagement Page/Slider Btn'))
 
-int randomFirstname = new Random().nextInt(firstName.length + 1)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Engagement Page/Logo/Sidebar Company Logo'), 3)
 
-def getRandomFirstname = findTestData('First Names').getValue('First Names', randomFirstname)
+WebUI.click(findTestObject('Object Repository/Engagement Page/Logo/Sidebar Company Logo'))
 
-def emailAddress = ('qa.tester+' + getRandomFirstname + RandomStringUtils.randomNumeric(4)) + '@ubidy.com'
+def firstName = random.randomFirstName()
+
+def number = RandomStringUtils.randomNumeric(2)
+
+def emailAddress = "qa.tester+" + firstName + number + "@ubidy.com"
 
 GlobalVariable.VerifiedAccount = emailAddress
-
-String[] lastName = findTestData('Data Files/Last Names').getAllData()
-
-int randomLastname = new Random().nextInt(lastName.length + 1)
-
-def getRandomLastname = findTestData('Last Names').getValue('Surnames', randomLastname)
-
-String[] companyName = findTestData('Data Files/Company Names').getAllData()
-
-int randomCompany = new Random().nextInt(companyName.length + 1)
-
-def getRandomCompany = findTestData('Company Names').getValue('Company Names', randomCompany)
-
-String[] cities = findTestData('Data Files/Cities').getAllData()
-
-int randomCity = new Random().nextInt(cities.length + 1)
-
-def getRandomCity = findTestData('Cities').getValue('Cities', randomCity)
 
 def randomNumber = RandomStringUtils.randomNumeric(9)
 
@@ -63,151 +51,186 @@ def policyNumber = RandomStringUtils.randomNumeric(6)
 
 def postalCode = RandomStringUtils.randomNumeric(4)
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Buttons/Assessment Btn'), 10)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Assessment Tab/Buttons/Assessment Btn'), 10)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Assessment Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Buttons/Assessment Btn'))
 
 WebUI.delay(3)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Legal Name Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Legal Name Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Legal Name Txtboxes'), getRandomCompany)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Legal Name Txtboxes'), RandomInputs.randomCompany() + Keys.ENTER)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Company No Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Company No Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Company No Txtboxes'), randomNumber)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Company No Txtboxes'), randomNumber)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Trading Name Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Trading Name Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Trading Name Txtboxes'), "LLC")
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Trading Name Txtboxes'), "LLC")
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Insurer Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Insurer Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Insurer Txtboxes'), "Insurance")
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Insurer Txtboxes'), "Insurance")
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Policy No Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Policy No Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Policy No Txtboxes'), policyNumber)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Policy No Txtboxes'), policyNumber)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Assessment - Expiry Month Dropdown Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Buttons/Assessment - Expiry Month Dropdown Btn'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Elements/January Option'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Assessment Tab/Elements/January Option'), 3)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Elements/January Option'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Elements/January Option'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Assessment - Expiry Day Dropdown Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Buttons/Assessment - Expiry Day Dropdown Btn'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Elements/14 Option'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Assessment Tab/Elements/14 Option'), 3)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Elements/14 Option'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Elements/14 Option'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Assessment - Expiry Year Dropdown Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Buttons/Assessment - Expiry Year Dropdown Btn'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Elements/2025 Option'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Assessment Tab/Elements/2025 Option'), 3)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Elements/2025 Option'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Elements/2025 Option'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Limit of Idemnity Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Limit of Idemnity Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Limit of Idemnity Txtboxes'), "2,000,000")
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Limit of Idemnity Txtboxes'), "2,000,000")
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Address 1 Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Address 1 Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Address 1 Txtboxes'), "Blk 10 Lot 32")
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Address 1 Txtboxes'), "Blk 10 Lot 32")
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Address2 Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Address2 Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Address2 Txtboxes'), "Santa Rosa")
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Address2 Txtboxes'), "Santa Rosa")
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - City Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - City Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - City Txtboxes'), getRandomCity)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - City Txtboxes'), RandomInputs.randomCity() + Keys.ENTER)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Assessment - Country Dropdown Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Buttons/Assessment - Country Dropdown Btn'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Elements/Algeria Option'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Assessment Tab/Elements/Algeria Option'), 3)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Elements/Algeria Option'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Elements/Algeria Option'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Postal Code Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Postal Code Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Postal Code Txtboxes'), postalCode)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Postal Code Txtboxes'), postalCode)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Contact Name Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Contact Name Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Contact Name Txtboxes'), "Joy Martinez")
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Contact Name Txtboxes'), RandomInputs.randomFirstName() + RandomInputs.randomLastName())
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Department Email Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Department Email Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Department Email Txtboxes'), "qa.tester+assessment@ubidy.com")
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Department Email Txtboxes'), emailAddress)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Phone Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Phone Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Phone Txtboxes'), randomNumber)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Phone Txtboxes'), randomNumber)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Assessment - Start Survey Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Buttons/Assessment - Start Survey Btn'))
 
+def uploadFile() {
+	String osName = System.getProperty('os.name')
+	if (osName.contains("Mac OS X")) {
+		WebUI.uploadFile(findTestObject('Object Repository/Profile Completion/Assessment Tab/Buttons/11 File Uploader Btn'), GlobalVariable.ConductPolicyFile)
+	} else {
+		WebUI.uploadFile(findTestObject('Object Repository/Profile Completion/Assessment Tab/Buttons/11 File Uploader Btn'), GlobalVariable.JDFileLocation)
+	}
+}
+
+def uploadFile1() {
+	String osName = System.getProperty('os.name')
+	if (osName.contains("Mac OS X")) {
+		WebUI.uploadFile(findTestObject('Object Repository/Profile Completion/Assessment Tab/Buttons/14 File Uploader Btn'), GlobalVariable.FormalEngagementFile)
+	} else {
+		WebUI.uploadFile(findTestObject('Object Repository/Profile Completion/Assessment Tab/Buttons/14 File Uploader Btn'), GlobalVariable.JDFileLocation)
+	}
+}
 
 //START ASSESSMENT FORM
-WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Assessment/Question 1 Checkbox'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Checkboxes/Question 1 Checkbox'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Assessment/Question 2 Checkbox'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Checkboxes/Question 2 Checkbox'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Assessment/Question 4 Checkbox'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Checkboxes/Question 3 Checkbox'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Assessment/Question 5 Checkbox'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Checkboxes/Question 4 Checkbox'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Assessment/Question 6 Checkbox'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Checkboxes/Question 5 Checkbox'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Assessment/Question 7 Checkbox'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Checkboxes/Question 6 Checkbox'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Question 8 Dropdown Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Checkboxes/Question 7 Checkbox'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Elements/4 Option'), 3)
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Buttons/Question 8 Dropdown Btn'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Elements/4 Option'))
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Assessment Tab/Elements/4 Option'), 3)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Assessment/Question 9 Checkbox'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Elements/4 Option'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Assessment/Question 10 Checkbox'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Checkboxes/Question 9 Checkbox'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Assessment/Question 11 Checkbox'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Checkboxes/Question 10 Checkbox'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Question 12 Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Checkboxes/Question 11 Checkbox'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Question 12 Txtboxes'), "Potential Agency Here")
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Assessment Tab/Buttons/11 File Uploader Btn'), 3)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Assessment/Question 13 Checkbox'))
+uploadFile()
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Checkboxes/Assessment/Question 14 Checkbox'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Checkboxes/Question 12 Checkbox'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Confirm Name Txtboxes'))
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Question 12 Txtboxes'), "Ubidy Pty Ltd")
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Confirm Name Txtboxes'), "Joy Martinez")
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Checkboxes/Question 13 Checkbox'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Confirm Position Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Checkboxes/Question 13-1 Checkbox'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Assessment - Confirm Position Txtboxes'), "Human Resources")
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Checkboxes/Question 13-2 Checkbox'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Confirm Date - Month Dropdown Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Checkboxes/Question 14 Checkbox'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Elements/March Option'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Assessment Tab/Buttons/14 File Uploader Btn'), 3)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Elements/March Option'))
+uploadFile1()
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Confirm Date - Day Dropdown Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Checkboxes/Question 15 Checkbox'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Elements/13 Option'), 3)
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Checkboxes/Question 16 Checkbox'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Elements/13 Option'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Confirm Name Txtboxes'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Confirm Date - Year Dropdown Btn'))
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Confirm Name Txtboxes'), "Joy Martinez")
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Elements/2026 Option'), 3)
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Confirm Position Txtboxes'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Elements/2026 Option'))
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Confirm Position Txtboxes'), "Human Resources")
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Submit Assessment Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Buttons/Confirm Date - Month Dropdown Btn'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Assessment Tab/Elements/March Option'), 3)
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Elements/March Option'))
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Buttons/Confirm Date - Day Dropdown Btn'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Assessment Tab/Elements/13 Option'), 3)
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Elements/13 Option'))
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Buttons/Confirm Date - Year Dropdown Btn'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Assessment Tab/Elements/2026 Option'), 3)
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Elements/2026 Option'))
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Buttons/Submit Assessment Btn'))
 
 WebUI.delay(5)
 

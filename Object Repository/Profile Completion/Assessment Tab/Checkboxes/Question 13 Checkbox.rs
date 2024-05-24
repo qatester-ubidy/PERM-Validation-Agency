@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Question 13 Checkbox</name>
+   <tag></tag>
+   <elementGuidId>b4453fab-07c7-4924-870a-b50102ecaeca</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;e539f437_8902_4a69_92c7_f54225527f15&quot;]/label[1]/span[1]/input</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>fbaab0b4-be59-4b09-93a7-0ebea522c57e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;e539f437_8902_4a69_92c7_f54225527f15&quot;]/label[1]/span[1]/input</value>
+      <webElementGuid>90a1d810-325a-4805-9d42-112d2964b5d7</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

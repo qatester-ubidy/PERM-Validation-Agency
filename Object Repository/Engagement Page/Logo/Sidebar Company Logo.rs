@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Question 14 Checkbox</name>
+   <name>Sidebar Company Logo</name>
    <tag></tag>
-   <elementGuidId>e61f0c92-883a-481e-a6f1-3be7f03ea513</elementGuidId>
+   <elementGuidId>87206b2c-2429-494f-b2d4-e6ed7be3ddba</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = '532c810b_9c88_44e2_ac89_339bf2b63e4a']//input[@value=&quot;Yes&quot;]</value>
+         <value>//section[@class='MainSidebar-section']//div[@class='avatar-wrapper']//a[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>tag</name>
       <type>Main</type>
-      <value>//*[@id = '532c810b_9c88_44e2_ac89_339bf2b63e4a']//input[@value=&quot;Yes&quot;]</value>
-      <webElementGuid>0ff8af3c-3ca7-4216-bd9c-5a3ad1980474</webElementGuid>
+      <value>img</value>
+      <webElementGuid>5bc4eb1a-9691-4d39-908d-70589bc8bdaf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>tag</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>input</value>
-      <webElementGuid>0675d515-5bfd-4d58-84aa-bf82bac8e3a5</webElementGuid>
+      <value>//section[@class='MainSidebar-section']//div[@class='avatar-wrapper']//a[1]</value>
+      <webElementGuid>f8b945fc-2671-4d12-b0a7-e0f7628e5611</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

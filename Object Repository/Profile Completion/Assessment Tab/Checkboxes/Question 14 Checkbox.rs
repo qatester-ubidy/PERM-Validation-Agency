@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Question 13 Checkbox</name>
+   <name>Question 14 Checkbox</name>
    <tag></tag>
-   <elementGuidId>b4453fab-07c7-4924-870a-b50102ecaeca</elementGuidId>
+   <elementGuidId>e61f0c92-883a-481e-a6f1-3be7f03ea513</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = '09300a14_49c4_4822_9e3b_a0bc1f1e15b6']//input[@value=&quot;3|LinkedIn&quot;]</value>
+         <value>//*[@id = '6ef6ea35_5d2f_495c_a7b9_0c32b0ace569']//input[@value=&quot;Yes&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,15 +17,15 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id = '09300a14_49c4_4822_9e3b_a0bc1f1e15b6']//input[@value=&quot;3|LinkedIn&quot;]</value>
-      <webElementGuid>d1a45d39-2cc3-474c-8cb1-3c212808574b</webElementGuid>
+      <value>//*[@id = '6ef6ea35_5d2f_495c_a7b9_0c32b0ace569']//input[@value=&quot;Yes&quot;]</value>
+      <webElementGuid>6a24a438-c2d1-451e-9f9c-e908966f8240</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>73943ebe-ab30-4c1d-917a-5d8f5751ad79</webElementGuid>
+      <webElementGuid>35a1968b-61d2-43be-8424-e7257cc1a98f</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

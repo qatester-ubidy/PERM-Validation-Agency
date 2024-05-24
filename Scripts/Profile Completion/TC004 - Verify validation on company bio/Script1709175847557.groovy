@@ -23,17 +23,17 @@ WebUI.delay(5)
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Buttons/Company Bio btn'), 10)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Company Bio btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Company Bio Tab/Buttons/Company Bio Btn'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Textboxes/Company Bio Txtboxes'), 10)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Company Bio Tab/Textboxes/Company Bio Txtboxes'), 10)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Textboxes/Company Bio Txtboxes'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Company Bio Tab/Textboxes/Company Bio Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Company Bio Txtboxes'), Keys.chord(Keys.COMMAND, 'a') + Keys.BACK_SPACE)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Company Bio Tab/Textboxes/Company Bio Txtboxes'), Keys.chord(Keys.COMMAND, 'a') + Keys.BACK_SPACE)
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Textboxes/Company Bio Txtboxes'), GlobalVariable.CompanyMaximumCharacter)
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Company Bio Tab/Textboxes/Company Bio Txtboxes'), GlobalVariable.CompanyMaximumCharacter)
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Buttons/Company Bio Save AND Continue Btn'))
+WebUI.click(findTestObject('Object Repository/Profile Completion/Company Bio Tab/Buttons/Company Bio Save AND Continue Btn'))
 
 WebUI.verifyTextPresent('You exceed the maximum number of character', false)
 

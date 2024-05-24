@@ -6,7 +6,7 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://agency.ubidyapp.com/'</initValue>
+      <initValue>'https://stagingagency.ubidyapp.com/'</initValue>
       <name>StagingEnv</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -228,5 +228,20 @@
       <description></description>
       <initValue>'/Users/joymartinez/Documents/Non Disclosure.pdf'</initValue>
       <name>JobDescriptionFile</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>randomJob</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/Users/joymartinez/Documents/Code of Conduct and Policy.pdf'</initValue>
+      <name>ConductPolicyFile</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/Users/joymartinez/Documents/Formal Engagement.pdf'</initValue>
+      <name>FormalEngagementFile</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
