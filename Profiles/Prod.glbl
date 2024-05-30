@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GlobalVariableEntities>
    <description></description>
-   <name>default</name>
+   <name>Prod</name>
    <tag></tag>
-   <defaultProfile>true</defaultProfile>
+   <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://stagingagency.ubidyapp.com/'</initValue>
+      <initValue>'https://agency.ubidyapp.com/'</initValue>
       <name>StagingEnv</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -266,7 +266,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://stagingemployer.ubidyapp.com/'</initValue>
+      <initValue>'https://employer.ubidyapp.com/'</initValue>
       <name>EmployerEnv</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
