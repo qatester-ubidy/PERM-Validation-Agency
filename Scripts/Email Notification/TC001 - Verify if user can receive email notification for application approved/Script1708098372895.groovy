@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//WebUI.callTestCase(findTestCase("Call TestCases/Agency Apply To New Engagement"),[:])
+WebUI.callTestCase(findTestCase("Call TestCases/Agency Apply To New Engagement"),[:])
 
 //VERIFY EMAIL NOTIFICATION
 WebUI.callTestCase(findTestCase("Call TestCases/Redirect To Gmail"), [:])
@@ -36,6 +36,6 @@ WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Ap
 
 WebUI.verifyTextPresent("Application has been approved", false)
 
-//WebUI.verifyTextPresent(GlobalVariable.GetRandomJobTitle, false)
+WebUI.verifyTextPresent(GlobalVariable.GetRandomJobTitle, false)
 
 WebUI.closeBrowser()
