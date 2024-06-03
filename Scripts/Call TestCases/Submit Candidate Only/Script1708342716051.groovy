@@ -46,10 +46,19 @@ int randomCity = new Random().nextInt(city.length + 0 + 1)
 
 def getRandomCity = findTestData('Cities').getValue('Cities', randomCity)
 
+def uploadFile() {
+	String osName = System.getProperty('os.name')
+	if (osName.contains("Mac OS X")) {
+		WebUI.uploadFile(findTestObject('Object Repository/Candidate Viewer Page/Elements/Candidate CV Section'), GlobalVariable.CVFile)
+	} else {
+		WebUI.uploadFile(findTestObject('Object Repository/Candidate Viewer Page/Elements/Candidate CV Section'), GlobalVariable.JDFileLocation)
+	}
+}
+
 WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer Page/Buttons/Upload CV Btn'), 3)
 
 //UPLOAD CV
-WebUI.uploadFile(findTestObject('Object Repository/Candidate Viewer Page/Elements/Candidate CV Section'), GlobalVariable.CVFile)
+uploadFile()
 
 //FILL IN CANDIDATE DETAILS
 WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/First Name Txtbox'), getRandomFirstname)
