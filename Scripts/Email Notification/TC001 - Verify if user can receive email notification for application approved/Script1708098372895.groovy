@@ -32,7 +32,7 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Element
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Approved Engagement Notif'))
+WebUI.enhancedClick(findTestObject('Object Repository/Gmail Page/Elements/First Email Approved Engagement Notif'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyTextPresent("Application has been approved", false)
 
