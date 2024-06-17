@@ -26,7 +26,7 @@ int randomFirstname = new Random().nextInt(firstName.length + 1)
 
 def getRandomFirstname = findTestData('First Names').getValue('First Names', randomFirstname)
 
-def emailAddress = ('qa.tester+' + getRandomFirstname + RandomStringUtils.randomNumeric(4)) + '@ubidy.com'
+def emailAddress = ('qa.tester+' + getRandomFirstname + RandomStringUtils.randomNumeric(4)) +'qatestdata' + '@ubidy.com'
 
 GlobalVariable.VerifiedAccount = emailAddress
 

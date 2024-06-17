@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 
-WebUI.callTestCase(findTestCase("Call TestCases/Submit Candidate - iOS"), [:])
+WebUI.callTestCase(findTestCase("Call TestCases/Submit Candidate Only"), [:])
 
 //UPDATE CANDIDATE STATUS
 WebUI.callTestCase(findTestCase("Call TestCases/Login Employer Account"), [:])
@@ -63,3 +63,5 @@ WebUI.click(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Bu
 WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Buttons/Comments Tab Btn'))
 
 WebUI.verifyTextPresent('We are reviewing the candidate, please expect an update in 24 hours.', false)
+
+WebUI.closeBrowser()

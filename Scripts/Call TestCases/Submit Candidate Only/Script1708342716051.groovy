@@ -17,34 +17,22 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.apache.commons.lang3.RandomStringUtils
+import randomInput.RandomInputs
+import randomInput.RandomInputs as random
 
-String[] firstName = findTestData('Data Files/First Names').getAllData()
+def firstName = random.randomFirstName()
 
-int randomFirstname = new Random().nextInt(firstName.length+ 0 + 1)
+def number = RandomStringUtils.randomNumeric(3)
 
-def getRandomFirstname = findTestData('First Names').getValue('First Names', randomFirstname)
-
-GlobalVariable.getRandomFirstname = getRandomFirstname
-
-def emailAddress = ('qa.tester+' + getRandomFirstname + RandomStringUtils.randomNumeric(4)) + '@ubidy.com'
+def emailAddress = "qa.tester+" + firstName + number + "@ubidy.com"
 
 GlobalVariable.VerifiedAccount = emailAddress
 
-String[] lastName = findTestData('Data Files/Last Names').getAllData()
+def lastName = random.randomLastName()
 
-int randomLastname = new Random().nextInt(lastName.length+ 0 + 1)
+def companyName = random.randomCompany()
 
-def getRandomLastname = findTestData('Last Names').getValue('Surnames', randomLastname)
-
-GlobalVariable.getRandomLastname = getRandomLastname
-
-def randomNumber = RandomStringUtils.randomNumeric(10)
-
-String[] city = findTestData('Data Files/Cities').getAllData()
-
-int randomCity = new Random().nextInt(city.length + 0 + 1)
-
-def getRandomCity = findTestData('Cities').getValue('Cities', randomCity)
+def city = random.randomCity()
 
 def uploadFile() {
 	String osName = System.getProperty('os.name')
@@ -61,9 +49,9 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer P
 uploadFile()
 
 //FILL IN CANDIDATE DETAILS
-WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/First Name Txtbox'), getRandomFirstname)
+WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/First Name Txtbox'), firstName)
 
-WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Last Name Txtbox'), getRandomLastname)
+WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Last Name Txtbox'), lastName)
 
 WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Email Address Txtbox'), emailAddress)
 
@@ -73,7 +61,7 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer P
 
 WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Elements/Afghanistan Option'))
 
-WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Contact No Txtbox'), randomNumber)
+WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Contact No Txtbox'), number)
 
 WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Buttons/Nationality Dropdown Btn'))
 
@@ -83,7 +71,7 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer P
 
 WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Elements/French Polynesia Option'))
 
-WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Location Txtbox'), getRandomCity)
+WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Location Txtbox'), RandomInputs.randomCity())
 
 WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Base Salary Txtbox'), "100000")
 

@@ -26,3 +26,5 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Elements
 WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'))
 
 WebUI.verifyTextPresent('Your Account is Now Active!', false)
+
+WebUI.closeBrowser()
