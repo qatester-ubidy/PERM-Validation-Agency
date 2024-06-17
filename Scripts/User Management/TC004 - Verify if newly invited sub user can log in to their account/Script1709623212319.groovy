@@ -17,25 +17,20 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.apache.commons.lang3.RandomStringUtils
-
+import randomInput.RandomInputs
+import randomInput.RandomInputs as random
 
 WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
 
-String[] firstName = findTestData('Data Files/First Names').getAllData()
+def firstName = random.randomFirstName()
 
-int randomFirstname = new Random().nextInt(firstName.length + 1)
+def number = RandomStringUtils.randomNumeric(3)
 
-def getFirstname = findTestData('First Names').getValue('First Names', randomFirstname)
-
-def getNewUserEmail = "qa.tester+" + getFirstname + RandomStringUtils.randomNumeric(3) + "@ubidy.com"
+def getNewUserEmail = "qa.tester+" + firstName + RandomStringUtils.randomNumeric(3) + "@ubidy.com"
 
 GlobalVariable.AddedUserEmail = getNewUserEmail
 
-String[] lastName = findTestData('Data Files/Last Names').getAllData()
-
-int randomLastname = new Random().nextInt(lastName.length + 1)
-
-def getLastname = findTestData('Last Names').getValue('Surnames', randomLastname)
+def lastName = random.randomLastName()
 
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), 3)
@@ -67,9 +62,9 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Account Settings P
 
 WebUI.setText(findTestObject('Object Repository/Account Settings Page/Add User Modal/Email Address Txtbox'), GlobalVariable.AddedUserEmail)
 
-WebUI.setText(findTestObject('Object Repository/Account Settings Page/Add User Modal/First Name Txtbox'), getFirstname)
+WebUI.setText(findTestObject('Object Repository/Account Settings Page/Add User Modal/First Name Txtbox'), firstName)
 
-WebUI.setText(findTestObject('Object Repository/Account Settings Page/Add User Modal/Last Name Txtbox'), getLastname)
+WebUI.setText(findTestObject('Object Repository/Account Settings Page/Add User Modal/Last Name Txtbox'), lastName)
 
 WebUI.click(findTestObject('Object Repository/Account Settings Page/Add User Modal/Save Changes Btn'))
 
