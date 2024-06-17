@@ -37,3 +37,5 @@ WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/
 WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer Page/Elements/Update Candidate Success Toast Msg'), 3)
 
 WebUI.verifyTextPresent("Candidate has been successfully updated.", false)
+
+WebUI.closeBrowser()

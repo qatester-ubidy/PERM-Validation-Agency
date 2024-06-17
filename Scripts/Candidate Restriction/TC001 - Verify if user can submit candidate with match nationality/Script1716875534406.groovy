@@ -43,6 +43,7 @@ WebUI.click(findTestObject('Object Repository/Engagement Page/Engagement Tab'))
 WebUI.click(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Buttons/Submit New Candidate Btn'))
 
 def firstName = RandomInputs.randomFirstName()
+
 def emailAddress = ('qa.tester+' + firstName + RandomStringUtils.randomNumeric(4)) + '@ubidy.com'
 
 GlobalVariable.VerifiedAccount = emailAddress
@@ -85,3 +86,5 @@ WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Confirm Cons
 WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer Page/Elements/Submit Candidate Success Toast Msg'), 10)
 
 WebUI.verifyTextPresent("Candidate has been successfully submitted to the employer.", false)
+
+WebUI.closeBrowser()

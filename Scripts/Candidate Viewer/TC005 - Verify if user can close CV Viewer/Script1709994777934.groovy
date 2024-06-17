@@ -31,3 +31,5 @@ WebUI.click(findTestObject('Object Repository/Engagement Page/Engagement Tab'))
 WebUI.click(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Buttons/View Candidate Btn'))
 
 WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Buttons/Close CV Btn'))
+
+WebUI.closeBrowser()

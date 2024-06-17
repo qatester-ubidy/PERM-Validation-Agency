@@ -81,7 +81,7 @@ class RandomInputs {
 			return "No data found"
 		}
 		int randomJobTitle = new Random().nextInt(jobTitle.length)
-		String randomJob = jobTitle[randomJobTitle][0].replaceAll("\\[|\\]", "")
+		String randomJob = jobTitle[randomJobTitle][0].replaceAll("\\[|\\]", "") + " - QATestData"
 		return randomJob
 	}
 
@@ -102,7 +102,7 @@ class RandomInputs {
 			return "No data found"
 		}
 		int randomCompany = new Random().nextInt(Company.length)
-		String getRandomCompany = Company[randomCompany][0].replaceAll("\\[|\\]", "")
+		String getRandomCompany = Company[randomCompany][0].replaceAll("\\[|\\]", "") + "TEST"
 		return getRandomCompany
 	}
 }

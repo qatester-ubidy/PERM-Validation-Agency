@@ -21,13 +21,13 @@ WebUI.openBrowser("https://stagingbackoffice.ubidyapp.com/")
 
 WebUI.maximizeWindow()
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Back Office - Log In Page/Textboxes/Email Field Txtbox'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Back Office/Login Page/Textboxes/Email Field Txtbox'), 3)
 
-WebUI.setText(findTestObject('Object Repository/Back Office - Log In Page/Textboxes/Email Field Txtbox'), "qa.tester+jerrybackopis@ubidy.com")
+WebUI.setText(findTestObject('Object Repository/Back Office/Login Page/Textboxes/Email Field Txtbox'), GlobalVariable.BackOfficeEmail)
 
-WebUI.setText(findTestObject('Object Repository/Back Office - Log In Page/Textboxes/Password Field Txtbox'), "Tester12345!")
+WebUI.setText(findTestObject('Object Repository/Back Office/Login Page/Textboxes/Password Field Txtbox'), GlobalVariable.BackOfficePassword)
 
-WebUI.click(findTestObject('Object Repository/Back Office - Log In Page/Buttons/Log In Btn'))
+WebUI.click(findTestObject('Object Repository/Back Office/Login Page/Buttons/Log In Btn'))
 
 //DECLINED VERIFICATION
 WebUI.waitForElementPresent(findTestObject('Object Repository/Back Office - Assesstment Page/Buttons/Assesstment Tab Btn'), 3)
