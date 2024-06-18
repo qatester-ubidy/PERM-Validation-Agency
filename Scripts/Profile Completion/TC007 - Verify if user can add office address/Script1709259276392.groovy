@@ -18,7 +18,12 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 
-WebUI.callTestCase(findTestCase("Call TestCases/Redirect to My Profile page"), [:])
+WebUI.openBrowser(GlobalVariable.StagingEnv)
+
+WebUI.maximizeWindow()
+
+//LOG IN VALID ACCOUNT
+WebUI.callTestCase(findTestCase("Call TestCases/Login with Verifed Account"), [:])
 
 WebUI.delay(5)
 
@@ -58,3 +63,5 @@ WebUI.click(findTestObject('Object Repository/Profile Completion/Profile Details
 WebUI.setText(findTestObject('Object Repository/Profile Completion/Profile Details Tab/Textboxes/Email Address Txtboxes'), GlobalVariable.OfficeEmail)
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Address Save Changes Btn'))
+
+WebUI.closeBrowser()

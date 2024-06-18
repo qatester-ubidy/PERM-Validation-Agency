@@ -107,3 +107,5 @@ WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textb
 WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), GlobalVariable.StandardPw)
 
 WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
+
+WebUI.closeBrowser()

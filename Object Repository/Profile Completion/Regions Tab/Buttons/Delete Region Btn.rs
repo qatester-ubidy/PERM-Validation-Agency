@@ -7,25 +7,25 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'link-DeleteRegion']</value>
+         <value>//a[@id = 'link-DeleteRegion']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>tag</name>
-      <type>Main</type>
-      <value>button</value>
-      <webElementGuid>18eb3737-0379-4745-b6f5-4ae2ecfb05fb</webElementGuid>
-   </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
       <value>link-DeleteRegion</value>
-      <webElementGuid>d243f051-1e36-4450-ae79-e6ac62c65ed4</webElementGuid>
+      <webElementGuid>b1e09cc7-77fb-4fd7-9e12-8b79e8f4aad4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>24917ea6-eb3c-46ee-800a-8cccf04c72cc</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

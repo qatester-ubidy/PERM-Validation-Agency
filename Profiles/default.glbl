@@ -284,4 +284,9 @@
       <initValue>''</initValue>
       <name>getCompanyName</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'qa.tester+kama28@ubidy.com'</initValue>
+      <name>NewlyCreatedAccount</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

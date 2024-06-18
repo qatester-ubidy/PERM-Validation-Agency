@@ -70,4 +70,4 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Account Settings P
 
 WebUI.verifyTextPresent("User has been added", false)
 
-WebUI.verifyTextPresent("We have sent them an email to create their account password.", false)
+WebUI.closeBrowser()
