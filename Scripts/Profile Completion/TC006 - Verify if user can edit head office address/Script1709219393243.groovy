@@ -37,5 +37,3 @@ WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/T
 WebUI.setText(findTestObject('Object Repository/Profile Completion/Addresses Tab/Textboxes/Address 1 Txtboxes'), GlobalVariable.HeadEditAddress)
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Address Save Changes Btn'))
-
-WebUI.closeBrowser()

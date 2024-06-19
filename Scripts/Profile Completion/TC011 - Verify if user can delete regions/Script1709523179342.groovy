@@ -42,4 +42,6 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion
 
 WebUI.verifyTextPresent('Region has been successfully deleted!', false)
 
+WebUI.delay(5)
+
 WebUI.closeBrowser()

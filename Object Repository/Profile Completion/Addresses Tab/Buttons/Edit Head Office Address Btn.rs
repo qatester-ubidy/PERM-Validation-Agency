@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'robot-btn-editHeadOfficeAddress']</value>
+         <value>//*[@id = 'robot-btn-editHeadOfficeAddress' and (text() = 'Edit' or . = 'Edit')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,7 +18,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>07f1b4ba-66ae-4618-91ea-ab18475b9534</webElementGuid>
+      <webElementGuid>f620b012-18c7-4cb1-9f17-e0e9c0e6d743</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -26,6 +26,14 @@
       <name>id</name>
       <type>Main</type>
       <value>robot-btn-editHeadOfficeAddress</value>
-      <webElementGuid>0ce8c50b-2289-4531-be37-405eef0f386e</webElementGuid>
+      <webElementGuid>6633783d-8714-4580-b433-bf0f94d4ed15</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Edit</value>
+      <webElementGuid>46374d61-3940-4ae5-bea8-d3c72fe6f059</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

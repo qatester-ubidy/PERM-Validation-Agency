@@ -63,5 +63,3 @@ WebUI.click(findTestObject('Object Repository/Profile Completion/Profile Details
 WebUI.setText(findTestObject('Object Repository/Profile Completion/Profile Details Tab/Textboxes/Email Address Txtboxes'), GlobalVariable.OfficeEmail)
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Address Save Changes Btn'))
-
-WebUI.closeBrowser()
