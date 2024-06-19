@@ -25,7 +25,7 @@ WebUI.openBrowser(GlobalVariable.StagingEnv)
 
 WebUI.maximizeWindow()
 
-WebUI.callTestCase(findTestCase("Call TestCases/Login Agency Account"), [:])
+WebUI.callTestCase(findTestCase("Call TestCases/Login with Verifed Account"), [:])
 
 WebUI.delay(3)
 

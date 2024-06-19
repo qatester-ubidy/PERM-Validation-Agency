@@ -17,25 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(GlobalVariable.StagingEnv)
+//LOG IN USING VERIFIED ACCOUNT
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), GlobalVariable.NewlyCreatedAccount)
 
-WebUI.maximizeWindow()
+WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Textbox'), GlobalVariable.StandardPw)
 
-//LOG IN VALID ACCOUNT
-WebUI.callTestCase(findTestCase("Call TestCases/Login with Verifed Account"), [:])
-
-WebUI.delay(5)
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Addresses Tab Btn'), 10)
-
-WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Addresses Tab Btn'))
-
-WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Edit Office Address Btn'))
-
-WebUI.verifyTextPresent('Edit Regional Address', false)
-
-WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Textboxes/Address 1 Txtboxes'))
-
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Addresses Tab/Textboxes/Address 1 Txtboxes'), GlobalVariable.EditOfficeAddress)
-
-WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Address Save Changes Btn'))
+WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))

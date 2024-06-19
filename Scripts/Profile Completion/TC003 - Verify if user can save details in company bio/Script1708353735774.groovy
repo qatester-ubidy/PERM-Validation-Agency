@@ -17,11 +17,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase("Call TestCases/Redirect to My Profile page"), [:])
+WebUI.openBrowser(GlobalVariable.StagingEnv)
+
+WebUI.maximizeWindow()
+
+//LOG IN VALID ACCOUNT
+WebUI.callTestCase(findTestCase("Call TestCases/Login with Verifed Account"), [:])
 
 WebUI.delay(5)
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Buttons/Company Bio btn'), 10)
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Company Bio Tab/Buttons/Company Bio Btn'))
 
@@ -33,3 +36,4 @@ WebUI.setText(findTestObject('Object Repository/Profile Completion/Company Bio T
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Company Bio Tab/Buttons/Company Bio Save AND Continue Btn'))
 
+WebUI.closeBrowser()
