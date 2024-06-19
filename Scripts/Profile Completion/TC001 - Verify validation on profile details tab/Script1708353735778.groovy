@@ -22,11 +22,7 @@ WebUI.openBrowser(GlobalVariable.StagingEnv)
 
 WebUI.maximizeWindow()
 
-WebUI.callTestCase(findTestCase("Call TestCases/Login Agency Account"), [:])
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Buttons/Slider Btn'), 3)
-
-WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Buttons/Slider Btn'))
+WebUI.callTestCase(findTestCase("Call TestCases/Login with Verifed Account"), [:])
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Logo/Sidebar Company Logo'), 3)
 
@@ -46,6 +42,6 @@ WebUI.verifyTextPresent('Company Name is required!', false)
 
 WebUI.verifyTextPresent('Email is required!', false)
 
-WebUI.verifyTextPresent('Phone Number is required!', false)
+WebUI.verifyTextPresent('Phone is required!', false)
 
 WebUI.closeBrowser()

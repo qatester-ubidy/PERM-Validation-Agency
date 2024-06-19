@@ -18,7 +18,7 @@
       <name>id</name>
       <type>Main</type>
       <value>label-editOfficeAddress robot-btn-editOfficeAddress</value>
-      <webElementGuid>4ce15ca7-1d29-492a-bd69-747a4a785647</webElementGuid>
+      <webElementGuid>f5929095-8658-401d-b022-12f24132aa43</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -26,6 +26,6 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>486f483f-6c9d-4b3b-87a6-b05428ed6c2d</webElementGuid>
+      <webElementGuid>ab6c15a7-ac6a-40b8-a644-3b7b8b652221</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

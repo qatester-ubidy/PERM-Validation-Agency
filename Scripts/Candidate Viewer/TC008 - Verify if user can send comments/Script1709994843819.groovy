@@ -39,3 +39,4 @@ WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Buttons/Send
 
 WebUI.verifyTextPresent("Hi, Please review my CV", false)
 
+WebUI.closeBrowser()

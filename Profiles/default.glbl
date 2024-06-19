@@ -269,4 +269,24 @@
       <initValue>'https://stagingemployer.ubidyapp.com/'</initValue>
       <name>EmployerEnv</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'qa.tester+jerrybackopis@ubidy.com'</initValue>
+      <name>BackOfficeEmail</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Tester12345!'</initValue>
+      <name>BackOfficePassword</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>getCompanyName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'qa.tester+liam394qatestdata@ubidy.com'</initValue>
+      <name>NewlyCreatedAccount</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

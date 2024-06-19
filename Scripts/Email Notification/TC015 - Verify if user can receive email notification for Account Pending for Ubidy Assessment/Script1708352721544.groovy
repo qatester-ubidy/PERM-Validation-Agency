@@ -28,3 +28,5 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Elements
 WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'))
 
 WebUI.verifyTextPresent('Account Pending Review', false)
+
+WebUI.closeBrowser()

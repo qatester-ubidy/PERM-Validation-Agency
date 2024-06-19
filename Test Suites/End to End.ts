@@ -536,4 +536,18 @@
       <testCaseId>Test Cases/Forgot Password/TC005 - Verify the redirection when user clicks on the Forgot password link</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>293950ef-fa72-474d-b486-46b426373959</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Candidate Restriction/TC001 - Verify if user can submit candidate with match nationality</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f4f6ba2e-6d03-4bfe-b62d-8aedc6f7070a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Candidate Restriction/TC002 - Verify if user can submit candidate with not match nationality</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

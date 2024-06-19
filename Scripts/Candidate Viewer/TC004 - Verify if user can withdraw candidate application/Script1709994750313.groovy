@@ -33,3 +33,5 @@ WebUI.click(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Bu
 WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Buttons/Withdraw this candidate Btn'))
 
 WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Withdraw Modal/Withdraw Btn'))
+
+WebUI.closeBrowser()

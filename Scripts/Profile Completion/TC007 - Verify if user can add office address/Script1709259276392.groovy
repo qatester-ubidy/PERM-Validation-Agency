@@ -18,7 +18,12 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 
-WebUI.callTestCase(findTestCase("Call TestCases/Redirect to My Profile page"), [:])
+WebUI.openBrowser(GlobalVariable.StagingEnv)
+
+WebUI.maximizeWindow()
+
+//LOG IN VALID ACCOUNT
+WebUI.callTestCase(findTestCase("Call TestCases/Login with Verifed Account"), [:])
 
 WebUI.delay(5)
 

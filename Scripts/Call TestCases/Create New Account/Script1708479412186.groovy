@@ -17,31 +17,25 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.apache.commons.lang3.RandomStringUtils
+import randomInput.RandomInputs
+import randomInput.RandomInputs as random
 
 //CREATE ACCOUNT
 WebUI.callTestCase(findTestCase("Call TestCases/Go To Sign Up Page"), [:])
 
-String[] firstName = findTestData('Data Files/First Names').getAllData()
 
-int randomFirstname = new Random().nextInt(firstName.length + 1)
+def firstName = random.randomFirstName()
 
-def getRandomFirstname = findTestData('First Names').getValue('First Names', randomFirstname)
+def number = RandomStringUtils.randomNumeric(3)
 
-def emailAddress = ('qa.tester+' + getRandomFirstname + RandomStringUtils.randomNumeric(4)) + '@ubidy.com'
+def emailAddress = "qa.tester+" + firstName + number + "qatestdata" + "@ubidy.com"
 
 GlobalVariable.VerifiedAccount = emailAddress
 
-String[] lastName = findTestData('Data Files/Last Names').getAllData()
+def lastName = random.randomLastName()
 
-int randomLastname = new Random().nextInt(lastName.length + 1)
+def companyName = random.randomCompany()
 
-def getRandomLastname = findTestData('Last Names').getValue('Surnames', randomLastname)
-
-String[] companyName = findTestData('Data Files/Company Names').getAllData()
-
-int randomCompany = new Random().nextInt(companyName.length + 1)
-
-def getRandomCompany = findTestData('Company Names').getValue('Company Names', randomCompany)
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Sign Up Page/Textboxes/Sign Up Email Field Txtboxes'), 3)
 
@@ -51,11 +45,11 @@ WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/Sign Up P
 
 WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/Confirm Password Field Txtboxes'), GlobalVariable.StandardPw)
 
-WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/Company Name Field Txtboxes'), getRandomCompany)
+WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/Company Name Field Txtboxes'), companyName)
 
-WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/First Name Field Txtboxes'), getRandomFirstname)
+WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/First Name Field Txtboxes'), firstName)
 
-WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/Last Name Field Txtboxes'), getRandomLastname)
+WebUI.setText(findTestObject('Object Repository/Sign Up Page/Textboxes/Last Name Field Txtboxes'), lastName)
 
 WebUI.click(findTestObject('Object Repository/Sign Up Page/Checkboxes/General Terms and Condition Checkbox'))
 

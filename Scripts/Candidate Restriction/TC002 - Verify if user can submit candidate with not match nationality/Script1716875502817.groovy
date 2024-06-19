@@ -62,6 +62,7 @@ WebUI.click(findTestObject('Object Repository/Engagement Page/Engagement Tab'))
 WebUI.click(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Buttons/Submit New Candidate Btn'))
 
 def firstName = RandomInputs.randomFirstName()
+
 def emailAddress = ('qa.tester+' + firstName + RandomStringUtils.randomNumeric(4)) + '@ubidy.com'
 
 GlobalVariable.VerifiedAccount = emailAddress

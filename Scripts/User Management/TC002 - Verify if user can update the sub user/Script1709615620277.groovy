@@ -16,14 +16,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import randomInput.RandomInputs
+import randomInput.RandomInputs as random
 
 WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
 
-String[] firstName = findTestData('Data Files/First Names').getAllData()
-
-int randomFirstname = new Random().nextInt(firstName.length + 1)
-
-def getFirstname = findTestData('First Names').getValue('First Names', randomFirstname)
+def firstName = random.randomFirstName()
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Login Page/Textboxes/Email Textbox'), 3)
 
@@ -48,7 +46,7 @@ WebUI.click(findTestObject('Object Repository/Account Settings Page/Buttons/Edit
 
 WebUI.click(findTestObject('Object Repository/Account Settings Page/Edit User Modal/First Name Txtbox'))
 	
-WebUI.setText(findTestObject('Object Repository/Account Settings Page/Edit User Modal/First Name Txtbox'), getFirstname)
+WebUI.setText(findTestObject('Object Repository/Account Settings Page/Edit User Modal/First Name Txtbox'), firstName)
 
 WebUI.click(findTestObject('Object Repository/Account Settings Page/Edit User Modal/Save Changes Btn'))
 
