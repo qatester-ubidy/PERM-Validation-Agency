@@ -28,7 +28,9 @@ WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
 
 WebUI.click(findTestObject('Object Repository/Engagement Page/Engagement Tab'))
 
-WebUI.click(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Buttons/View Candidate Btn'))
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Buttons/View Candidate Btn'), 3)
+
+WebUI.enhancedClick(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Buttons/View Candidate Btn'))
 
 WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Buttons/Close CV Btn'))
 

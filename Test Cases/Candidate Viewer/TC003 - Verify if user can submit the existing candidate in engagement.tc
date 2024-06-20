@@ -4,5 +4,6 @@
    <name>TC003 - Verify if user can submit the existing candidate in engagement</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>0bdf4f58-7078-4849-a827-d0336c66b8d8</testCaseGuid>
 </TestCaseEntity>

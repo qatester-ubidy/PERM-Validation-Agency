@@ -4,5 +4,6 @@
    <name>TC005 - Verify if user can close CV Viewer</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>56598f22-87eb-4a6d-b59e-243746a9307e</testCaseGuid>
 </TestCaseEntity>
