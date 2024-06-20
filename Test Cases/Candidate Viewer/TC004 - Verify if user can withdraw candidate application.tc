@@ -4,5 +4,6 @@
    <name>TC004 - Verify if user can withdraw candidate application</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>e48e9b9b-431f-4f6f-82f7-5cce83c66e47</testCaseGuid>
 </TestCaseEntity>

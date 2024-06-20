@@ -28,11 +28,17 @@ WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
 
 WebUI.click(findTestObject('Object Repository/Engagement Page/Engagement Tab'))
 
-WebUI.click(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Buttons/View Candidate Btn'))
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Buttons/View Candidate Btn'), 3)
+
+WebUI.enhancedClick(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Buttons/View Candidate Btn'))
 
 WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Buttons/Edit Details Btn'))
 
 WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Base Salary Txtbox'), "24000")
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer Page/Buttons/Save Details Btn'), 3)
+
+WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Buttons/Save Details Btn'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer Page/Elements/Update Candidate Success Toast Msg'), 3)
 

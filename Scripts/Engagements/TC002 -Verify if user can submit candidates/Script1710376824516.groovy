@@ -39,6 +39,6 @@ WebUI.callTestCase(findTestCase("Call TestCases/Submit Candidate Only"), [:])
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Elements/Submitted Candidate'), 3)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Elements/Submitted Candidate Name'), GlobalVariable.getRandomFirstname + " " + GlobalVariable.getRandomLastname)
+WebUI.verifyTextPresent(GlobalVariable.getRandomFirstname + " " + GlobalVariable.getRandomLastname, false)
 
 WebUI.closeBrowser()

@@ -20,27 +20,38 @@ import org.apache.commons.lang3.RandomStringUtils
 import randomInput.RandomInputs
 import randomInput.RandomInputs as random
 
+
+def firstName = random.randomFirstName()
+
+def number = RandomStringUtils.randomNumeric(3)
+
+def mobileNo = RandomStringUtils.randomNumeric(7)
+
+def emailAddress = "qa.tester+" + firstName + number + "@ubidy.com"
+
+def lastName = random.randomLastName()
+
+def uploadFile() {
+	String osName = System.getProperty('os.name')
+	if (osName.contains("Mac OS X")) {
+		WebUI.uploadFile(findTestObject('Object Repository/Candidate Viewer Page/Elements/Candidate CV Section'), GlobalVariable.CVFile)
+	} else {
+		WebUI.uploadFile(findTestObject('Object Repository/Candidate Viewer Page/Elements/Candidate CV Section'), GlobalVariable.JDFile)
+	}
+}
+
+WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
+
 WebUI.callTestCase(findTestCase("Call TestCases/Login Agency Account"), [:])
 
 WebUI.click(findTestObject('Object Repository/Engagement Page/Engagement Tab'))
 
 WebUI.click(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Buttons/Submit New Candidate Btn'))
 
-
-def firstName = random.randomFirstName()
-
-def number = RandomStringUtils.randomNumeric(3)
-
-def emailAddress = "qa.tester+" + firstName + number + "@ubidy.com"
-
-GlobalVariable.VerifiedAccount = emailAddress
-
-def lastName = random.randomLastName()
-
 WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer Page/Buttons/Upload CV Btn'), 3)
 
 //UPLOAD CV
-WebUI.uploadFile(findTestObject('Object Repository/Candidate Viewer Page/Elements/Candidate CV Section'), GlobalVariable.CVFile)
+uploadFile()
 
 //FILL IN CANDIDATE DETAILS
 WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/First Name Txtbox'), firstName)
@@ -49,13 +60,15 @@ WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/
 
 WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Email Address Txtbox'), emailAddress)
 
+GlobalVariable.ExistingCandidate = emailAddress
+
 WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Buttons/Country Dropdown Btn'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer Page/Elements/Afghanistan Option'), 3)
 
 WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Elements/Afghanistan Option'))
 
-WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Contact No Txtbox'), number)
+WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Contact No Txtbox'), mobileNo)
 
 WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Buttons/Nationality Dropdown Btn'))
 
@@ -81,7 +94,7 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer P
 WebUI.click(findTestObject('Object Repository/Engagement Page/Fulfillment Tab/Buttons/Submit New Candidate Btn'))
 
 //UPLOAD CV
-WebUI.uploadFile(findTestObject('Object Repository/Candidate Viewer Page/Elements/Candidate CV Section'), GlobalVariable.CVFile)
+uploadFile()
 
 WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/First Name Txtbox'), firstName)
 
@@ -95,7 +108,7 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer P
 
 WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Elements/Afghanistan Option'))
 
-WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Contact No Txtbox'), number)
+WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Contact No Txtbox'), mobileNo)
 
 WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Buttons/Nationality Dropdown Btn'))
 

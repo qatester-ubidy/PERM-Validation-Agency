@@ -4,5 +4,6 @@
    <name>TC001 - Verify if user can search for candidate</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>a5ac3f65-dafa-43e4-9f74-8a3883a65e10</testCaseGuid>
 </TestCaseEntity>

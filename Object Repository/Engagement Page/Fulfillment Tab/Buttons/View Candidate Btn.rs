@@ -7,18 +7,19 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'ant-table-row ant-table-row-level-0']</value>
+         <value>//tbody[@class=&quot;ant-table-tbody&quot;]/tr[1][@data-row-key=&quot;0&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>ant-table-row ant-table-row-level-0</value>
-      <webElementGuid>e826f94e-6ed8-4532-bd08-955c5c864328</webElementGuid>
+      <webElementGuid>5941b077-e5e2-476f-8a88-03d505c6bb3c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -26,6 +27,14 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>d4f4b4c6-be31-4b17-bf5d-120a6efe8811</webElementGuid>
+      <webElementGuid>9d5d7237-3539-402d-b699-9a8f89edfba5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//tbody[@class=&quot;ant-table-tbody&quot;]/tr[1][@data-row-key=&quot;0&quot;]</value>
+      <webElementGuid>98ba27c2-0ff4-465d-828d-342d2319b03e</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
