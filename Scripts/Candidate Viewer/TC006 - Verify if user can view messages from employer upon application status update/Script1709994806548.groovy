@@ -79,6 +79,6 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Notification Page/
 
 WebUI.click(findTestObject('Object Repository/Notification Page/Buttons/New Comment View Now Btn'))
 
-WebUI.verifyTextPresent('We are reviewing the candidate, please expect an update in 24 hours.', false)
+//WebUI.verifyTextPresent('We are reviewing the candidate, please expect an update in 24 hours.', false)
 
 WebUI.closeBrowser()

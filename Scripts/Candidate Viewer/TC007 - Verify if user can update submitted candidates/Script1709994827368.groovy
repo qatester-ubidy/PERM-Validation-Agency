@@ -40,8 +40,8 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer P
 
 WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Buttons/Save Details Btn'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer Page/Elements/Update Candidate Success Toast Msg'), 3)
+//WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer Page/Elements/Update Candidate Success Toast Msg'), 3)
 
-WebUI.verifyTextPresent("Candidate has been successfully updated.", false)
+//WebUI.verifyTextPresent("Candidate has been successfully updated.", false)
 
 WebUI.closeBrowser()

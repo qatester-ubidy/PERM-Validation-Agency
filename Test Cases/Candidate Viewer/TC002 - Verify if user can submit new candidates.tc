@@ -4,6 +4,5 @@
    <name>TC002 - Verify if user can submit new candidates</name>
    <tag></tag>
    <comment></comment>
-   <recordOption>OTHER</recordOption>
    <testCaseGuid>0acf827c-89b6-49da-9014-dfdb4261db29</testCaseGuid>
 </TestCaseEntity>

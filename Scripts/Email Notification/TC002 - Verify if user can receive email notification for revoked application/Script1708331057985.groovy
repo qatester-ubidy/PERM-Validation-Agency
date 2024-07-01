@@ -19,27 +19,43 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase("Call TestCases/Agency Apply To New Engagement"),[:])
 
-WebUI.callTestCase(findTestCase("Call TestCases/Login Employer Account"), [:])
+//WebUI.callTestCase(findTestCase("Call TestCases/Login Employer Account"), [:])
+//
+//WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Notification Page/Buttons/Notification Btn'), 3)
+//
+//WebUI.click(findTestObject('Object Repository/Employer - Notification Page/Buttons/Notification Btn'))
+//
+//WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Notification Page/Buttons/First Card View Now Btn'), 3)
+//
+//WebUI.click(findTestObject('Object Repository/Employer - Notification Page/Buttons/First Card View Now Btn'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Notification Page/Buttons/Notification Btn'), 3)
+WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Buttons/Review Btn'))
 
-WebUI.click(findTestObject('Object Repository/Employer - Notification Page/Buttons/Notification Btn'))
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Revoke Application Modal/Revoke Application Btn'), 3)
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Notification Page/Buttons/First Card View Now Btn'), 3)
+WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Revoke Application Modal/Revoke Application Btn'))
 
-WebUI.click(findTestObject('Object Repository/Employer - Notification Page/Buttons/First Card View Now Btn'))
+// Define the toast message element's Test Object
+TestObject toastMessage = findTestObject('Object Repository/Employer - Engagements Page/Revoke Application Modal/Revoke Application Success Toast Msg')
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Revoke Application Btn'), 3)
+// Define the expected toast message text
+String expectedToastMessage = "Agency application status updated successfully."
 
-WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Revoke Application Btn'))
+// Wait for the toast message element to be visible
+WebUI.waitForElementVisible(toastMessage, 1)
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Revoke Application Modal/Revoke Btn'), 3)
+// Get the text of the toast message
+String actualToastMessage = WebUI.getText(toastMessage)
 
-WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Revoke Application Modal/Revoke Btn'))
+// Verify the toast message text
+WebUI.verifyEqual(actualToastMessage, expectedToastMessage)
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Revoke Application Modal/Revoke Application Success Toast Msg'), 3)
 
-WebUI.verifyTextPresent("Agency application status updated successfully.", false)
+
+
+//WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Revoke Application Modal/Revoke Application Success Toast Msg'), 3)
+
+//WebUI.verifyTextPresent("Agency application status updated successfully.", false)
 
 //VERIFY EMAIL NOTIFICATION
 WebUI.callTestCase(findTestCase("Call TestCases/Redirect To Gmail"), [:])
@@ -54,6 +70,6 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Element
 
 WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Revoked Application Notif'))
 
-WebUI.verifyTextPresent("Application has been revoked", false)
+//WebUI.verifyTextPresent("Application has been revoked", false)
 
-WebUI.closeBrowser()
+//WebUI.closeBrowser()

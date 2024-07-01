@@ -123,7 +123,7 @@ WebUI.setText(findTestObject('Object Repository/Profile Completion/Assessment Ta
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Contact Name Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Contact Name Txtboxes'), RandomInputs.randomFirstName() + RandomInputs.randomLastName())
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Contact Name Txtboxes'), RandomInputs.randomFirstName() + " " + RandomInputs.randomLastName())
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Department Email Txtboxes'))
 
@@ -206,7 +206,7 @@ WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Confirm Name Txtboxes'))
 
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Confirm Name Txtboxes'), "Joy Martinez")
+WebUI.setText(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Confirm Name Txtboxes'), RandomInputs.randomFirstName() + " " + RandomInputs.randomLastName())
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Assessment Tab/Textboxes/Assessment - Confirm Position Txtboxes'))
 
