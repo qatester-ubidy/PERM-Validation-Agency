@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Search Txtbox</name>
+   <name>Download Btn</name>
    <tag></tag>
-   <elementGuidId>68aafb48-3af2-4212-a3ef-3b5fb5ca0312</elementGuidId>
+   <elementGuidId>0a9d12e4-b565-4244-bde0-4c2050b214a2</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@placeholder = 'Search mail']</value>
+         <value>//button[@class = 'ant-btn download-cv-btn']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,15 +17,15 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>input</value>
-      <webElementGuid>65690617-b3ee-485b-8ade-c9630766fc22</webElementGuid>
+      <value>button</value>
+      <webElementGuid>562f2070-b82e-4499-88e6-c71b55f92781</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>placeholder</name>
+      <name>class</name>
       <type>Main</type>
-      <value>Search mail</value>
-      <webElementGuid>1348965a-c1b5-4a0e-b1e6-91e336cfc450</webElementGuid>
+      <value>ant-btn download-cv-btn</value>
+      <webElementGuid>2b58df17-0bb5-4366-9bcd-413d4876d930</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
