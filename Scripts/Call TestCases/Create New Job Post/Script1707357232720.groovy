@@ -142,8 +142,6 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engageme
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagement Builder/Select TR Tab/Buttons/Select Fee Type Dropdown Btn'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagement Builder/Select TR Tab/Elements/Percent Base - Annual Option'), 3)
-
 WebUI.click(findTestObject('Object Repository/Employer - Engagement Builder/Select TR Tab/Elements/Percent Base - Annual Option'))
 
 WebUI.setText(findTestObject('Object Repository/Employer - Engagement Builder/Select TR Tab/Textboxes/Amount Txtbox'), numberRoles)

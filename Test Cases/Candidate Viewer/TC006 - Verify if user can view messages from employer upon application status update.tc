@@ -4,6 +4,5 @@
    <name>TC006 - Verify if user can view messages from employer upon application status update</name>
    <tag></tag>
    <comment></comment>
-   <recordOption>OTHER</recordOption>
    <testCaseGuid>c12b73ff-1089-48e9-aa63-241e65f35826</testCaseGuid>
 </TestCaseEntity>

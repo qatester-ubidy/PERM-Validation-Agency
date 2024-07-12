@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//button[@aria-label = 'Search in mail']</value>
+         <value>//button[@aria-label = 'Search mail']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,14 +18,14 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>7ea7fa28-5145-47ef-9693-ba73348fc796</webElementGuid>
+      <webElementGuid>49e9e553-67b4-4d62-9249-a76f8502d91d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>aria-label</name>
       <type>Main</type>
-      <value>Search in mail</value>
-      <webElementGuid>7f06e095-57ce-44c5-95bf-86d1ac338d2b</webElementGuid>
+      <value>Search mail</value>
+      <webElementGuid>4c911d5a-9798-4c0c-ae5a-369f6617aeae</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC002 - Verify if user can download the Ubidy Nondisclosure Agreement in Opportunities (All Other Opportunities)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c263f1c2-56d9-4c38-9a03-05dc833f8174</testCaseGuid>
+</TestCaseEntity>

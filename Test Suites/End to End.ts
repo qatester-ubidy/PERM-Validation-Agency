@@ -550,4 +550,32 @@
       <testCaseId>Test Cases/Candidate Restriction/TC002 - Verify if user can submit candidate with not match nationality</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>3636d3be-e875-4394-9687-cbdead4d502c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Download Engagement attachments/TC001 - Verify if user can download the Ubidy Nondisclosure Agreement in Opportunities (Your Opportunities)</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>936096e2-1cc8-4ab0-b7ed-5a9fe4e29645</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Download Engagement attachments/TC002 - Verify if user can download the Ubidy Nondisclosure Agreement in Opportunities (All Other Opportunities)</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8e649d83-d577-4235-9fd6-2f9100a86045</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Download Engagement attachments/TC003 - Verify if user can download the Employers Terms and Conditions in Opportunities (Your Opportunities)</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ddc5d9a2-abbd-4a55-9bb7-4478d3f271b1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Download Engagement attachments/TC004 - Verify if user can download the Employers Terms and Conditions in Opportunities (All Other Opportunities)</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
