@@ -125,7 +125,7 @@ WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Rev
 //ENGAGEMENT BUILDER - SET UP
 String numberRoles = new Random().nextInt(20) + 1
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagement Builder/Set Up Tab/Textboxes/CV Slot Txtbox'), 5)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagement Builder/Set Up Tab/Textboxes/CV Slot Txtbox'), 3)
 
 WebUI.setText(findTestObject('Object Repository/Employer - Engagement Builder/Set Up Tab/Textboxes/CV Slot Txtbox'), numberRoles)
 

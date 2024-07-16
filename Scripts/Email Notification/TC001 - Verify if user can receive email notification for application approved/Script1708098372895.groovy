@@ -22,12 +22,6 @@ WebUI.callTestCase(findTestCase("Call TestCases/Agency Apply To New Engagement")
 //VERIFY EMAIL NOTIFICATION
 WebUI.callTestCase(findTestCase("Call TestCases/Redirect To Gmail"), [:])
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Textboxes/Search Txtbox'), 3)
-
-WebUI.setText(findTestObject('Object Repository/Gmail Page/Textboxes/Search Txtbox'), "Engagement Application Approved")
-
-WebUI.click(findTestObject('Object Repository/Gmail Page/Buttons/Search Btn'))
-
 WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'), 3)
 
 WebUI.delay(5)

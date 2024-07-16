@@ -34,15 +34,15 @@ WebUI.setText(findTestObject('Object Repository/Opportunities Page/Textboxes/Sea
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), 3)
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'), 3)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'), 30)
 
 WebUI.click(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Checkboxes/Ubidy NDA Checkbox'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Checkboxes/Nondisclosure Agreement'), 3)
 
-WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Checkboxes/Ubidy NDA Checkbox'))
+WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Checkboxes/Nondisclosure Agreement'))
 
-WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Checkboxes/Employer T and C Checkbox'))
+WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Checkboxes/Terms and Conditions'))
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Buttons/Submit Application Btn'))
 
@@ -67,21 +67,17 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Notific
 
 WebUI.click(findTestObject('Object Repository/Employer - Notification Page/Buttons/First Card View Now Btn'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Application Status Update Dropdown Btn'), 3)
-
-WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Application Status Update Dropdown Btn'))
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Decline Option'), 3)
-
-WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Decline Option'))
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Decline Application Modal/Decline Btn'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Decline Application Modal/Decline Btn'), 3)
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Decline Application Modal/Decline Btn'))
 
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Decline Application Modal/Declined Application Btn'), 3)
+
+WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Decline Application Modal/Declined Application Btn'))
+
 WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Decline Application Modal/Decline Application Success Toast Msg'), 3)
 
-WebUI.verifyTextPresent("Agency application status updated successfully.", false)
+WebUI.verifyTextPresent("The agency application has been successfully declined.", false)
 
 //VERIFY EMAIL NOTIFICATION
 WebUI.callTestCase(findTestCase("Call TestCases/Redirect To Gmail"), [:])

@@ -70,7 +70,7 @@ WebUI.click(findTestObject('Object Repository/Account Settings Page/Add User Mod
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Account Settings Page/Elements/Add User Success Toast Msg'), 3)
 
-WebUI.verifyTextPresent("User has been added", false)
+WebUI.verifyTextPresent("We have sent them an email to create their account password.", false)
 
 WebUI.callTestCase(findTestCase("Call TestCases/Redirect To Gmail"), [:])
 

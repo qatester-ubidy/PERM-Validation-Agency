@@ -7,17 +7,33 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>/html/body/div[8]/div[3]/div/div[2]/div[4]/div/div/div/div[2]/div/div[1]/div/div[3]/div/div[2]/div[1]/div[2]/div[6]/div[1]/div/table/tbody/tr[1]/td[6]/div/div/div[2]/span/span/span[text()=&quot;Revoked&quot;]/parent::span</value>
+         <value>//*[@id = ':6kh' and (text() = 'Engagement Application Revoked' or . = 'Engagement Application Revoked')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[8]/div[3]/div/div[2]/div[4]/div/div/div/div[2]/div/div[1]/div/div[3]/div/div[2]/div[1]/div[2]/div[6]/div[1]/div/table/tbody/tr[1]/td[6]/div/div/div[2]/span/span/span[text()=&quot;Revoked&quot;]/parent::span</value>
-      <webElementGuid>6ee0d2ea-076b-40cb-af35-890058d928b6</webElementGuid>
+      <value>/html/body/div[8]/div[3]/div/div[2]/div[4]/div/div/div/div[2]/div/div[1]/div/div[2]/div[5]/div[1]/div/table/tbody/tr[1]</value>
+      <webElementGuid>7c868e40-914a-4079-9ff6-211a30351f13</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>:6kh</value>
+      <webElementGuid>b72f2471-55c4-4933-8100-9a532c6e663c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Engagement Application Revoked</value>
+      <webElementGuid>06a51688-50b9-4e23-ba84-57ddc5571d8d</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

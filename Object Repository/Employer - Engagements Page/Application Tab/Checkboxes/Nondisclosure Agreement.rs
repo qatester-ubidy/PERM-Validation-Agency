@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Employer T and C Checkbox</name>
+   <name>Nondisclosure Agreement</name>
    <tag></tag>
-   <elementGuidId>93b95e1e-5b6c-415a-87e1-6170c75b08f2</elementGuidId>
+   <elementGuidId>a12f9bf8-8f35-4861-9781-26b02b94b6e7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[text()=&quot; Employer's Terms &amp; Conditions&quot;]//preceding::input[1]</value>
+         <value>//*[text()=' Ubidy Nondisclosure Agreement']//parent::span//preceding::input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[text()=&quot; Employer's Terms &amp; Conditions&quot;]//preceding::input[1]</value>
-      <webElementGuid>a97efae2-2e8a-4356-ab7b-f487536709f3</webElementGuid>
+      <value>//*[text()=' Ubidy Nondisclosure Agreement']//parent::span//preceding::input</value>
+      <webElementGuid>13a155c0-9fa0-442f-949b-c8a969493867</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
