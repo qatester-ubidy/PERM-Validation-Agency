@@ -7,18 +7,17 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>/html/body/div[8]/div[3]/div/div[2]/div[4]/div/div/div/div[2]/div/div[1]/div/div[3]/div/div[2]/div[1]/div[2]/div[6]/div[1]/div/table/tbody/tr[1]</value>
+         <value>/html/body/div[8]/div[3]/div/div[2]/div[4]/div/div/div/div[2]/div/div[1]/div/div[2]/div[5]/div[1]/div/table/tbody/tr[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
-   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[8]/div[3]/div/div[2]/div[4]/div/div/div/div[2]/div/div[1]/div/div[3]/div/div[2]/div[1]/div[2]/div[6]/div[1]/div/table/tbody/tr[1]</value>
-      <webElementGuid>e5d76542-3683-45b3-a10f-a2cf57c0c972</webElementGuid>
+      <value>/html/body/div[8]/div[3]/div/div[2]/div[4]/div/div/div/div[2]/div/div[1]/div/div[2]/div[5]/div[1]/div/table/tbody/tr[1]</value>
+      <webElementGuid>68cecf33-c024-4a6f-8997-889e94ccbb0e</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

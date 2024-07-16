@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase("Call TestCases/Agency Apply To New Engagement"),[:])
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Buttons/Review Btn'))
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Buttons/Review Btn'), 3)
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Buttons/Review Btn'))
 
@@ -44,6 +44,8 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Element
 
 WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Revoked Application Notif'))
 
-//WebUI.verifyTextPresent("Application has been revoked", false)
+WebUI.delay(5)
+
+WebUI.verifyTextPresent("Application has been revoked", false)
 
 WebUI.closeBrowser()

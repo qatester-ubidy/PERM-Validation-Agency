@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>First Opportunity Card</name>
+   <name>Terms and Conditions</name>
    <tag></tag>
-   <elementGuidId>ee8a5580-fce7-4ad8-8be8-c71bbc6c4bf2</elementGuidId>
+   <elementGuidId>93b95e1e-5b6c-415a-87e1-6170c75b08f2</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;root&quot;]/div/div[2]/div[3]/div/main/div[5]/div/div/div[2]</value>
+         <value>//*[text()=&quot; Employer's Terms &amp; Conditions&quot;]//preceding::input[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;root&quot;]/div/div[2]/div[3]/div/main/div[5]/div/div/div[2]</value>
-      <webElementGuid>959df5df-d6e7-41fc-8c89-1449a1714a77</webElementGuid>
+      <value>//*[text()=&quot; Employer's Terms &amp; Conditions&quot;]//preceding::input[1]</value>
+      <webElementGuid>a97efae2-2e8a-4356-ab7b-f487536709f3</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -38,11 +38,11 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Opportunities Page
 
 WebUI.click(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Checkboxes/Ubidy NDA Checkbox'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Checkboxes/Nondisclosure Agreement'), 3)
 
-WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Checkboxes/Ubidy NDA Checkbox'))
+WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Checkboxes/Nondisclosure Agreement'))
 
-WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Checkboxes/Employer T and C Checkbox'))
+WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Checkboxes/Terms and Conditions'))
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Buttons/Submit Application Btn'))
 
