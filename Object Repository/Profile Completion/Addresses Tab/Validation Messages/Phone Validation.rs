@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'ant-form-explain' and (text() = 'Phone is required!' or . = 'Phone is required!')]</value>
+         <value>//*[@class = 'ant-form-explain' and (text() = 'Phone No. is required!' or . = 'Phone No. is required!')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,14 +18,14 @@
       <name>class</name>
       <type>Main</type>
       <value>ant-form-explain</value>
-      <webElementGuid>41f866a0-f135-4ff0-9b76-8f32da3839bb</webElementGuid>
+      <webElementGuid>beb05dd2-f471-4178-854f-27c02515dcec</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Phone is required!</value>
-      <webElementGuid>4e61eedc-6e09-48f3-802b-f35e60960066</webElementGuid>
+      <value>Phone No. is required!</value>
+      <webElementGuid>a1ef4c66-babe-403b-9935-4c04d37eb5d6</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

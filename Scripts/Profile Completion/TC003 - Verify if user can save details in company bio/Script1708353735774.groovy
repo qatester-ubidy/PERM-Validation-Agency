@@ -21,6 +21,18 @@ WebUI.openBrowser(GlobalVariable.StagingEnv)
 
 WebUI.maximizeWindow()
 
+
+def AddDescription() {
+	
+	WebUI.click(findTestObject('Object Repository/Profile Completion/Company Bio Tab/Buttons/Create Your Company Bio Btn'))
+	
+	WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Company Bio Tab/Textboxes/Company Bio Txtboxes'), 10)
+	
+	WebUI.setText(findTestObject('Object Repository/Profile Completion/Company Bio Tab/Textboxes/Company Bio Txtboxes'), GlobalVariable.CompanyBioMessage)
+	
+	WebUI.click(findTestObject('Object Repository/Profile Completion/Company Bio Tab/Buttons/Company Bio Save AND Continue Btn'))
+}
+	
 //LOG IN VALID ACCOUNT
 WebUI.callTestCase(findTestCase("Call TestCases/Login with Verifed Account"), [:])
 
@@ -28,12 +40,18 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Company Bio Tab/Buttons/Company Bio Btn'))
 
-WebUI.click(findTestObject('Object Repository/Profile Completion/Company Bio Tab/Buttons/Create Your Company Bio Btn'))
+if (WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Company Bio Tab/Buttons/Create Your Company Bio Btn'), 3) == true) {
+	AddDescription()
+	
+} else {
+	
+	WebUI.setText(findTestObject('Object Repository/Profile Completion/Company Bio Tab/Textboxes/Company Bio Txtboxes'), Keys.chord(Keys.COMMAND, 'a') + Keys.BACK_SPACE)
+	
+	WebUI.setText(findTestObject('Object Repository/Profile Completion/Company Bio Tab/Textboxes/Company Bio Txtboxes'), GlobalVariable.CompanyBioMessage)
+	
+	WebUI.click(findTestObject('Object Repository/Profile Completion/Company Bio Tab/Buttons/Company Bio Save AND Continue Btn'))
+}
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Company Bio Tab/Textboxes/Company Bio Txtboxes'), 10)
-
-WebUI.setText(findTestObject('Object Repository/Profile Completion/Company Bio Tab/Textboxes/Company Bio Txtboxes'), GlobalVariable.CompanyBioMessage)
-
-WebUI.click(findTestObject('Object Repository/Profile Completion/Company Bio Tab/Buttons/Company Bio Save AND Continue Btn'))
+WebUI.delay(3)
 
 WebUI.closeBrowser()

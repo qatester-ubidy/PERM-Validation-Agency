@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'robot-btn-createCompanyBio']</value>
+         <value>//button[@id = 'robot-btn-createCompanyBio']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,14 +18,14 @@
       <name>id</name>
       <type>Main</type>
       <value>robot-btn-createCompanyBio</value>
-      <webElementGuid>9bf16416-6f39-4e71-b9e5-92edf85c50aa</webElementGuid>
+      <webElementGuid>723beddc-b0df-4151-afcc-2bfede956643</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>a4cd80fc-2ea8-4537-8d94-728f8c881dd6</webElementGuid>
+      <webElementGuid>66ac6b77-f806-4888-82c9-838979b1fa14</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

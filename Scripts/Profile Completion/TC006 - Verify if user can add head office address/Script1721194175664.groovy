@@ -28,44 +28,9 @@ WebUI.callTestCase(findTestCase("Call TestCases/Login with Verifed Account"), [:
 
 WebUI.delay(5)
 
-// VERIFY HEAD OFFICE ADDRESS VALIDATION MESSAGES
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Addresses Tab Btn'), 10)
-
-WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Addresses Tab Btn'))
-
-WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Edit Head Office Address Btn'))
-
-WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Save Address Btn'))
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/Address 1 Validation'), 3)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/Address 1 Validation'), "Address 1 is required!")
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/City Validation'), 3)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/City Validation'), "City is required!")
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/Province Validation'), 3)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/Province Validation'), "Province/State is required!")
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/Country Validation'), 3)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/Country Validation'), "Country is required!")
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/Postal Validation'), 3)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/Postal Validation'), "Postal/Zip is required!" ,FailureHandling.CONTINUE_ON_FAILURE)== true
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/Phone Validation'), 3)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/Phone Validation'), "Phone is required!")
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/Email Validation'), 3)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Profile Completion/Addresses Tab/Validation Messages/Email Validation'), "Email is required!")
-
 // VERIFY IF USER CAN ADD HEAD OFFICE ADDRESS 
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Addresses Tab/Textboxes/Address 1 Txtboxes'), 3)
+
 WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Textboxes/Address 1 Txtboxes'))
 
 WebUI.setText(findTestObject('Object Repository/Profile Completion/Addresses Tab/Textboxes/Address 1 Txtboxes'), GlobalVariable.HeadAddress1)
@@ -95,3 +60,5 @@ WebUI.click(findTestObject('Object Repository/Profile Completion/Profile Details
 WebUI.setText(findTestObject('Object Repository/Profile Completion/Profile Details Tab/Textboxes/Email Address Txtboxes'), GlobalVariable.HeadAddressEmail)
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Address Save Changes Btn'))
+
+WebUI.closeBrowser()
