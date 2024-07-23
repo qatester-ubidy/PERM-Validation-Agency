@@ -34,7 +34,7 @@ WebUI.click(findTestObject('Object Repository/Opportunities Page/Buttons/All Oth
 
 //WebUI.waitForElementPresent(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), 3)
 
-WebUI.waitForElementClickable(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'), 30)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'), 3)
 
 WebUI.enhancedClick(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'))
 

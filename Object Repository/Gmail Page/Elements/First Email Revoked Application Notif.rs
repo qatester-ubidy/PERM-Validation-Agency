@@ -7,33 +7,34 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = ':6kh' and (text() = 'Engagement Application Revoked' or . = 'Engagement Application Revoked')]</value>
+         <value>/html/body/div[8]/div[3]/div/div[2]/div[4]/div/div/div/div[2]/div/div[1]/div/div[3]/div/div[2]/div[1]/div[2]/div[6]/div[1]/div/table/tbody/tr[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[8]/div[3]/div/div[2]/div[4]/div/div/div/div[2]/div/div[1]/div/div[2]/div[5]/div[1]/div/table/tbody/tr[1]</value>
-      <webElementGuid>7c868e40-914a-4079-9ff6-211a30351f13</webElementGuid>
+      <value>/html/body/div[8]/div[3]/div/div[2]/div[4]/div/div/div/div[2]/div/div[1]/div/div[3]/div/div[2]/div[1]/div[2]/div[6]/div[1]/div/table/tbody/tr[1]</value>
+      <webElementGuid>fa45ff73-16ed-4fae-97e6-9b69a6572e56</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
       <value>:6kh</value>
-      <webElementGuid>b72f2471-55c4-4933-8100-9a532c6e663c</webElementGuid>
+      <webElementGuid>5b8c1197-2b5f-4122-a70f-8975bca88953</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
       <value>Engagement Application Revoked</value>
-      <webElementGuid>06a51688-50b9-4e23-ba84-57ddc5571d8d</webElementGuid>
+      <webElementGuid>d5d5512d-8859-4bb4-b74d-9dce5895b3d0</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

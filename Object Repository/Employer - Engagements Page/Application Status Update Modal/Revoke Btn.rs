@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Revoke Application Btn</name>
+   <name>Revoke Btn</name>
    <tag></tag>
-   <elementGuidId>7fb21ebe-ea0b-4fe9-a5ba-9cd9e7e5d685</elementGuidId>
+   <elementGuidId>a0488e00-263f-40f1-a723-44aeaf125c2a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//button[(text() = 'Revoke Application' or . = 'Revoke Application')]</value>
+         <value>//button[(text() = 'Revoke' or . = 'Revoke')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -19,14 +19,14 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>95aa3038-b12a-40f1-93cc-01c077cf89e0</webElementGuid>
+      <webElementGuid>e010b8c0-58e1-485b-a29b-1685289bb0b1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Revoke Application</value>
-      <webElementGuid>2843b5fd-f54e-4e50-9880-ff923e771efc</webElementGuid>
+      <value>Revoke</value>
+      <webElementGuid>085317a1-426f-491d-bed9-2cde5866e3a9</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -27,9 +27,13 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagem
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Revoke Application Modal/Revoke Application Btn'))
 
-//WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Revoke Application Modal/Revoke Application Success Toast Msg'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Revoke Btn'), 3)
 
-//WebUI.verifyTextPresent("Agency application status updated successfully.", false)
+WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Revoke Btn'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Revoke Application Modal/Revoke Application Success Toast Msg'), 3)
+
+WebUI.verifyTextPresent("The agency application has been successfully updated.", false)
 
 //VERIFY EMAIL NOTIFICATION
 WebUI.callTestCase(findTestCase("Call TestCases/Redirect To Gmail"), [:])
