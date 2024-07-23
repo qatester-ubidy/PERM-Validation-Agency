@@ -39,3 +39,5 @@ WebUI.click(findTestObject('Object Repository/Profile Completion/Company Bio Tab
 WebUI.verifyTextPresent('You exceed the maximum number of character', false)
 
 WebUI.closeBrowser()
+
+

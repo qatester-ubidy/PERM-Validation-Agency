@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC015 - Verify if user can remove job classification</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>426ceb05-1ec7-42ca-98c9-3cc557a82135</testCaseGuid>
+</TestCaseEntity>

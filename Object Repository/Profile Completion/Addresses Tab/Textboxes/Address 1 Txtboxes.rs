@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'address1']</value>
+         <value>//input[@id = 'address1']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,6 +18,14 @@
       <name>id</name>
       <type>Main</type>
       <value>address1</value>
-      <webElementGuid>6411e006-dfce-4d6c-ae63-ad47a9e81969</webElementGuid>
+      <webElementGuid>c775197c-6465-45c0-ad9a-818e640e9950</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>d492adb2-0647-4580-8438-c15c4cfc0686</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

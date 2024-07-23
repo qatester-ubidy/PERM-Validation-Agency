@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC011 - Verify if user can delete regions</name>
+   <name>TC010 - Verify if user can edit office address</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>80df3b28-0522-4844-8956-18bdfdc9f387</testCaseGuid>
+   <testCaseGuid>0af3f8c8-e78c-4a19-9b44-23f4583f94d5</testCaseGuid>
 </TestCaseEntity>

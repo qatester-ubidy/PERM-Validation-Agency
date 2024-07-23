@@ -18,6 +18,19 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 
+def DeleteRegion() {
+	WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Regions Tab/Buttons/Delete Region Btn'), 10)
+
+	WebUI.click(findTestObject('Object Repository/Profile Completion/Regions Tab/Buttons/Delete Region Btn'))
+
+	WebUI.click(findTestObject('Object Repository/Profile Completion/Regions Tab/Delete Regions Modal/OK Regions Btn'))
+
+	WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Regions Tab/Delete Regions Modal/Delete Region Success Toast Msg'), 3)
+
+	WebUI.verifyTextPresent('Region has been successfully deleted!', false)
+	
+}
+
 WebUI.openBrowser(GlobalVariable.StagingEnv)
 
 WebUI.maximizeWindow()
@@ -32,16 +45,13 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Regions Tab/Buttons/Regions Tab Btn'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Regions Tab/Buttons/Delete Region Btn'), 10)
-
-WebUI.click(findTestObject('Object Repository/Profile Completion/Regions Tab/Buttons/Delete Region Btn'))
-
-WebUI.click(findTestObject('Object Repository/Profile Completion/Regions Tab/Delete Regions Modal/OK Regions Btn'))
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Regions Tab/Delete Regions Modal/Delete Region Success Toast Msg'), 3)
-
-WebUI.verifyTextPresent('Region has been successfully deleted!', false)
-
-WebUI.delay(5)
+if (WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Regions Tab/Buttons/Delete Region Btn'), 3) == true) {
+	DeleteRegion()
+	
+} else {
+	WebUI.callTestCase(findTestCase("Test Cases/Profile Completion/TC012 - Verify if user can add regions"), [:])
+	
+	DeleteRegion()
+}
 
 WebUI.closeBrowser()

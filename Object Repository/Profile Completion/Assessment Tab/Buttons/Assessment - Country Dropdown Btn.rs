@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'countryId' and @class = 'ant-select ant-select-enabled']</value>
+         <value>//div[@id = 'countryId']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,14 +18,22 @@
       <name>id</name>
       <type>Main</type>
       <value>countryId</value>
-      <webElementGuid>de0bc56f-859e-4392-b0ac-86b428d474ef</webElementGuid>
+      <webElementGuid>4b967d4d-bab0-44d2-8407-bc7479e5f41a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>ant-select ant-select-enabled</value>
-      <webElementGuid>c05b5547-10f0-4a26-87ea-ac305877eb10</webElementGuid>
+      <webElementGuid>166391e5-f8f8-459a-a5ca-17395d491f1b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>f287376c-6365-4bac-81ee-26bd55ee79dd</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

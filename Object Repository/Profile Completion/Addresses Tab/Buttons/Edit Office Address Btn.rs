@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'label-editOfficeAddress robot-btn-editOfficeAddress']</value>
+         <value>//button[@id = 'label-editOfficeAddress robot-btn-editOfficeAddress']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,14 +18,14 @@
       <name>id</name>
       <type>Main</type>
       <value>label-editOfficeAddress robot-btn-editOfficeAddress</value>
-      <webElementGuid>f5929095-8658-401d-b022-12f24132aa43</webElementGuid>
+      <webElementGuid>8f803367-b2d4-4e4c-935c-772d27e35b20</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>ab6c15a7-ac6a-40b8-a644-3b7b8b652221</webElementGuid>
+      <webElementGuid>919113a3-099e-499f-b265-6dc23b233d21</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

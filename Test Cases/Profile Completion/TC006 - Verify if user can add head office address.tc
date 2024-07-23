@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC005 - Verify if user can add head office address</name>
+   <name>TC006 - Verify if user can add head office address</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>d46b39dc-374b-4722-aba2-6457b6fb4025</testCaseGuid>

@@ -12,101 +12,115 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>9c771922-8818-4fe5-9629-a7a22ecfbbfb</testSuiteGuid>
    <testCaseLink>
-      <guid>2c986565-61aa-4e04-981c-0a821c712850</guid>
+      <guid>e746ee88-a429-4c6b-8f55-7bdf4916f37a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Profile Completion/TC001 - Verify validation on profile details tab</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>879cb66d-5149-4e83-b4df-b16f80c366d4</guid>
+      <guid>3af2ce6b-88bb-4ccb-8812-a0c68af00b5a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Profile Completion/TC002 - Verify if user can save information on Profile Details tab</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e4557750-b9a4-468c-a152-43daf88b0179</guid>
+      <guid>dbb2ea6a-1adc-4d19-8c33-9a19da1132f0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Profile Completion/TC003 - Verify if user can save details in company bio</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>27ce42a3-8863-4459-b77c-64bd1a88ed18</guid>
+      <guid>92222d60-3728-4daf-9aa3-a9858af13162</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Profile Completion/TC004 - Verify validation on company bio</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6b48d91a-c91a-4e7e-b6b4-64a3499d51dd</guid>
+      <guid>00f925fc-5e6c-45fd-adf6-fa93563ceff5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Profile Completion/TC005 - Verify if user can add head office address</testCaseId>
+      <testCaseId>Test Cases/Profile Completion/TC005 - Verify validation messages on head office address</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>2191b959-2fd2-4178-a92a-d6bcc2bfd7ba</guid>
+      <guid>fb99a590-f94b-415c-9615-4ac7f5562953</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Profile Completion/TC006 - Verify if user can edit head office address</testCaseId>
+      <testCaseId>Test Cases/Profile Completion/TC006 - Verify if user can add head office address</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>72ed74c3-f80d-407a-8ca6-aefaa3c2598e</guid>
+      <guid>00c636ca-e0e0-4e1c-ae31-23e928245ac9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Profile Completion/TC007 - Verify if user can add office address</testCaseId>
+      <testCaseId>Test Cases/Profile Completion/TC007 - Verify if user can edit head office address</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>77a6290c-65d9-4390-a3b1-1f29006e548c</guid>
+      <guid>b3002303-5956-446e-8a8b-5e5a28d15855</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Profile Completion/TC008 - Verify if user can edit office address</testCaseId>
+      <testCaseId>Test Cases/Profile Completion/TC008 - Verify validation messages on office address form</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ecc28676-d6a3-4a18-9a58-eb02a3d19d27</guid>
+      <guid>a87552f1-00d0-47b5-ad1a-deaf08357a57</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Profile Completion/TC009 - Verify if user can delete office address</testCaseId>
+      <testCaseId>Test Cases/Profile Completion/TC009 - Verify if user can add office address</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8764975b-1283-4e69-9042-ccebed23f71c</guid>
+      <guid>43604352-453d-47b2-b792-b5a9bf8b315f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Profile Completion/TC010 - Verify if user can add regions</testCaseId>
+      <testCaseId>Test Cases/Profile Completion/TC010 - Verify if user can edit office address</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b53bd5e6-f6e5-4917-94d8-3bbb10bbc1f5</guid>
+      <guid>afeb599e-ba0e-4d72-be2e-a3752a674699</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Profile Completion/TC011 - Verify if user can delete regions</testCaseId>
+      <testCaseId>Test Cases/Profile Completion/TC011 - Verify if user can delete office address</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f42d3c43-6aae-4458-8d3c-52d43ce3c2f4</guid>
+      <guid>cf6535a5-46d2-4d42-b59c-131ec18ccacc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Profile Completion/TC012 - Verify if user can select job classifications</testCaseId>
+      <testCaseId>Test Cases/Profile Completion/TC012 - Verify if user can add regions</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>430cae04-1260-45a3-b67d-dd8223009cd2</guid>
+      <guid>336c2efe-28a9-4145-b44b-4f8a9c6e97f0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Profile Completion/TC013 - Verify if user can remove job classification</testCaseId>
+      <testCaseId>Test Cases/Profile Completion/TC013 - Verify if user can delete regions</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>313f3356-2d2f-4163-b71d-4c7eca99fc6a</guid>
+      <guid>ab676f67-3e32-436d-95d0-53391d0ec834</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Profile Completion/TC014 - Verify if user can add assessment</testCaseId>
+      <testCaseId>Test Cases/Profile Completion/TC014 - Verify if user can select job classifications</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0fe68b1c-dfb6-48c6-9ccf-14169cf215e3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Profile Completion/TC015 - Verify if user can remove job classification</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bfe4f9c7-72f7-4a10-a40c-f29ffcc9d26a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Profile Completion/TC016 - Verify if user can add assessment</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
