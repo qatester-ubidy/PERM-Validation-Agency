@@ -16,5 +16,4 @@ build
 .project
 
 settings/external/com.katalon.katalon-studio-slack-plugin.properties
-settings/external/com.katalon.katalon-studio-slack-plugin.properties
 settings/external/*.properties
