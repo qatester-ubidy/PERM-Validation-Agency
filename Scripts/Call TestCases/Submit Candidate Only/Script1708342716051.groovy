@@ -82,6 +82,8 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer P
 
 WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Confirm Consent Modal/Confirm Btn'))
 
+WebUI.delay(5)
+
 //WebUI.waitForElementVisible(findTestObject('Object Repository/Candidate Viewer Page/Elements/Submit Candidate Success Toast Msg'), 3)
 
 //WebUI.verifyElementText("Candidate has been successfully submitted to the employer.", false)
