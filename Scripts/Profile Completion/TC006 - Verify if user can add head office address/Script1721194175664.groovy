@@ -29,6 +29,12 @@ WebUI.callTestCase(findTestCase("Call TestCases/Login with Verifed Account"), [:
 WebUI.delay(5)
 
 // VERIFY IF USER CAN ADD HEAD OFFICE ADDRESS 
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Addresses Tab Btn'), 10)
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Addresses Tab Btn'))
+
+WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Edit Head Office Address Btn'))
+
 WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Addresses Tab/Textboxes/Address 1 Txtboxes'), 3)
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Textboxes/Address 1 Txtboxes'))

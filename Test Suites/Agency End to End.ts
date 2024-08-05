@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Test Run 10-04-2024</name>
+   <name>Agency End to End</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,292 +10,278 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>e0c620c3-d211-4336-8199-2f9fb216f883</testSuiteGuid>
+   <testSuiteGuid>178a8c86-9aa4-4c09-b7e6-b413cb6b664a</testSuiteGuid>
    <testCaseLink>
-      <guid>370591b5-e7ce-46f2-95c6-42d7f6ffb6d7</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Sign Up/TC001 - Verify if user can register with invalid values</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>1682200d-7189-4065-86ec-36fabe987fac</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Sign Up/TC002 - Verify if General Terms of User hyperlink is working as expected</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>0912078a-2b78-4f2c-adf1-d9e282066de0</guid>
+      <guid>05e9240d-84d2-497c-bf7b-7532389bd5a7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Sign Up/TC003 - Verify if an error message is displayed when registering an email that is already existing</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4865b2d2-1cf4-45fc-8ee1-ae3952e4a4f9</guid>
+      <guid>c2e91c8c-001e-49b3-9497-64caee82b4fb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Sign Up/TC004 - Verify if user can succesfully register account with valid details</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6bed39b6-24cf-4a1b-b199-b0be110b19a4</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Log In/TC001 - Verify if user can log in with empty fields</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>409d6f00-1462-479e-8067-96b2f06f5ae8</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Log In/TC002 - Verify if user can log in with invalid format for email and password</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>ad434add-33f2-4684-9f68-59f4c09dd65f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Log In/TC003 - Verify validation when clearing inputted values for Email and Password fields</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>276e3aad-1903-4be9-970d-89427362ee58</guid>
+      <guid>c0d95fe1-7a95-482a-967f-32e2f3a33e1a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Log In/TC004 - Verify if user can log in incorrect credentials</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7b8e3c8c-67bd-4967-8ecf-be110a2205d5</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Log In/TC005 - Verify if the user can login using unverified account</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>d4e5c10a-ff13-49f5-a9ed-8c5d975ad61a</guid>
+      <guid>0ec7711e-b2cf-4383-8f00-4eef927daf10</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Log In/TC006 - Verify if the user can login with correct email address and password</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>cdc55aae-83e9-46f2-b5cb-e366a1a07788</guid>
+      <guid>d347c5a5-c318-4a38-a0c7-10c247ce0bdd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Opportunities/TC001 - Verify if user can view opportunities</testCaseId>
+      <testCaseId>Test Cases/Profile Completion/TC001 - Verify validation on profile details tab</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d8a1e633-c7b3-43c6-a8e1-74ea028e791c</guid>
+      <guid>150d0734-cf27-4c69-a39b-04895e70d32b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Opportunities/TC002 - Verify if user can search for opportunities</testCaseId>
+      <testCaseId>Test Cases/Profile Completion/TC002 - Verify if user can save information on Profile Details tab</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f93dad86-b2ad-4227-a1f1-8c9a80003e99</guid>
+      <guid>bd46d7c3-9072-46ee-9f18-ba41495dc477</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Profile Completion/TC003 - Verify if user can save details in company bio</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7c42dcea-71e9-4b18-acb4-4dbb40c6d8ba</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Profile Completion/TC004 - Verify validation on company bio</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a19e95d7-89c8-4e67-846c-4540adf6015b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Profile Completion/TC005 - Verify validation messages on head office address</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>17c2615d-3978-43e9-8640-21c889ae69f0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Profile Completion/TC006 - Verify if user can add head office address</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>420c57b9-f25b-49a7-a718-50af87b4422d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Profile Completion/TC007 - Verify if user can edit head office address</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>931c7994-8c2e-4805-b7b8-1ad25db1521c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Profile Completion/TC008 - Verify validation messages on office address form</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b900e515-4031-4cd1-8e93-8cff1729f879</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Profile Completion/TC009 - Verify if user can add office address</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8d6d71c9-7eef-4e51-8add-6eaf0e930c3f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Profile Completion/TC010 - Verify if user can edit office address</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0bd83867-f7fc-4c98-ae98-1b714aa5ae58</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Profile Completion/TC011 - Verify if user can delete office address</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>eb6c8b42-afd6-4be1-8351-7b9af00306bc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Profile Completion/TC012 - Verify if user can add regions</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5a6fbd28-5ef9-409f-821a-71db33fc043d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Profile Completion/TC013 - Verify if user can delete regions</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d4730644-bf80-43bc-9fd5-5c6a85949838</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Profile Completion/TC014 - Verify if user can select job classifications</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5baee56a-e825-4b1d-8a30-ea8557f8ea88</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Profile Completion/TC015 - Verify if user can remove job classification</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2f2c9e17-203b-4c89-b6df-7c86e2e9217e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Profile Completion/TC016 - Verify if user can add assessment</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>af667cc8-6264-4e63-a526-8ba4a5badc6c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/User Management/TC001 - Verify if user can add new sub user</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cfcf234f-9961-4921-9ad7-8aecaac9e2ca</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/User Management/TC004 - Verify if newly invited sub user can log in to their account</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>75e50fa9-964b-4ce2-b1a3-8e1e040b4143</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Opportunities/TC003 - Verify if user can apply for opportunities</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>2a52b602-c024-4c11-a87a-a1eaa4aa1376</guid>
+      <guid>f0ababe8-3562-469e-b915-a3520aa26c42</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Opportunities/TC004 - Verify if user can apply for opportunities without inputting fee amount</testCaseId>
+      <testCaseId>Test Cases/Engagements/TC002 - Verify if user can submit candidates</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a17d908e-246c-4b62-ac98-86c9986b9bff</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Engagements/TC001 - Verify if engagements are displayed in each tabs</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>903a6457-f9c9-4ee1-8adc-2d0a2ebee6f9</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Engagements/TC002 -Verify if user can submit candidates</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>3ffc8829-60f2-4744-8785-601f4a214476</guid>
+      <guid>88148274-3f78-4411-a3c1-1e22230107cf</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Engagements/TC003 - User should be able to withdraw submitted candidates</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ea041459-6ea0-4ebb-8d16-2ba187398aab</guid>
+      <guid>09d5e6d9-301c-4bfb-bc86-ee156bd6f371</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Engagements/TC004 - User should be able to view engagement notices</testCaseId>
+      <testCaseId>Test Cases/Candidate Viewer/TC002 - Verify if user can submit new candidates</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>903f51bb-033d-4a47-9b70-4bb3c999b964</guid>
+      <guid>bfa51886-f734-4d21-b075-1c1406b7254a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Engagements/TC005 - Verify if user can search for engagement</testCaseId>
+      <testCaseId>Test Cases/Candidate Viewer/TC003 - Verify if user can submit the existing candidate in engagement</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>07bea0db-9808-4b62-b61a-a5135dd508b7</guid>
+      <guid>d12c64d1-9f16-4eef-9b14-597c54ebc8cf</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Candidate Viewer/TC004 - Verify if user can withdraw candidate application</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>63917c39-2a85-420a-a581-4d879aa00c8b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Candidate Viewer/TC007 - Verify if user can update submitted candidates</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d3e09b62-4865-4dc6-87b3-e6c0d0fc3f11</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Candidate Viewer/TC008 - Verify if user can send comments</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e3ac7bb2-3466-4a82-be6b-2ccac97dd07d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Notifications/TC001 - Verify if user receives notification when candidate application status is updated</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>36d641da-c931-4ef8-88d0-9569dac6abc7</guid>
+      <guid>0155267b-4d55-47d9-9371-ea5cd20d64c1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Notifications/TC002 - Verify if user receives notification for new Comments</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>039d2c51-85cb-43df-8a2f-bfdd0c368e3e</guid>
+      <guid>22d4582f-7c00-4950-90a4-ea33084ae943</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Notifications/TC003 - Verify if user receives notification for Engagement status updates</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d448cc4a-eced-4cef-84dc-01acf6fca7df</guid>
+      <guid>f614ecdd-a706-43d8-85ad-56f249135df1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Notifications/TC004 - Verify if user receives notification for Talent Request updates</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7c465046-0472-4a19-b7dc-69f97b3d0a1b</guid>
+      <guid>d6a5072d-266c-4116-aff9-a82f4a03c4af</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Notifications/TC005 - Verify if user receives notification for application status update</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8d043b55-e6a9-4ebf-961d-7337c0758353</guid>
+      <guid>74b7e0d6-1b2a-4109-9ff8-7b83465eef57</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Candidate Center/TC001 - Verify if user can search for candidate</testCaseId>
+      <testCaseId>Test Cases/Forgot Password/TC003 - Verify if Reset button would enable when inputting valid email address</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>2a90ecd1-7d2e-45e7-8fd0-050de6b28774</guid>
+      <guid>ec137c7f-d462-4500-9e61-fb279ca31442</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Candidate Center/TC002 - Verify if user can view all candidates from each tabs</testCaseId>
+      <testCaseId>Test Cases/Forgot Password/TC005 - Verify the redirection when user clicks on the Forgot password link</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>70a05805-a459-4808-a267-94c38e6b4f96</guid>
+      <guid>9fb3f4a4-402e-4a96-baa2-4d1fda5e7cdc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Candidate Center/TC003 - Verify redirection when clicking a candidate</testCaseId>
+      <testCaseId>Test Cases/Candidate Restriction/TC001 - Verify if user can submit candidate with match nationality</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b34960a3-49e4-4b42-96b1-fbeda0ef7474</guid>
+      <guid>9672d2dc-a300-4b55-8b51-24d0bc6146a3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Email Notification/TC001 - Verify if user can receive email notification for application approved</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>8667fe1e-db51-4212-8bd8-cb3a8c5d30aa</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Email Notification/TC002 - Verify if user can receive email notification for revoked application</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>6296f6b5-01f4-4293-973d-5a51c87c3c37</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Email Notification/TC003 - Verify if user can receive email notification for declined application</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>9d459b09-e92d-46b1-a010-8c77269420fc</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Email Notification/TC004 - Verify if user can receive email notification for Candidate Status update for Offer Extended</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>94317cd9-aa81-4a78-9025-a3e87684996b</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Email Notification/TC005 - Verify if user can receive email notification for Candidate Status update for Interviewing</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>836064ce-0dc2-4d58-bd16-a638ed524082</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Email Notification/TC006 - Verify if user can receive email notification for Candidate Status update for Screening</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>b6b00a2f-00fd-4d76-8793-44dada2b2f1a</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Email Notification/TC007 - Verify if user can receive email notification for Candidate Status update for Shortlisted</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>54c44117-c539-4c95-b1a1-1b05003c9e8a</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Email Notification/TC008 - Verify if user can receive email notification for Candidate Status update for Rejected</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>18db0691-d28e-46de-af9b-b564890f96a1</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Email Notification/TC009 - Verify if user can receive email notification for Candidate Status update for Hired</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>fc50341e-192e-418a-9e25-f4ece7fc7b0e</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Email Notification/TC010 - Verify if user can receive email notification for New Opportunity</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>edc9c442-0221-473d-a7d7-6b78a0f6ec47</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Email Notification/TC011 - Verify if user can receive email notification for payment email</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>e9766bbf-8512-40c3-ae38-9726b1f05161</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Email Notification/TC012 - Verify if user can receive email notification for Agency Email Verification</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>d060143a-5e3f-45d4-bcda-0d008671fb68</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Email Notification/TC013 - Verify if user can receive email notification for engagement notice</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>c9649eea-9615-48d7-9611-0ac4e9bd5cee</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Email Notification/TC014 - Verify if user can receive email notification for user invitation</testCaseId>
+      <testCaseId>Test Cases/Candidate Restriction/TC002 - Verify if user can submit candidate with not match nationality</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

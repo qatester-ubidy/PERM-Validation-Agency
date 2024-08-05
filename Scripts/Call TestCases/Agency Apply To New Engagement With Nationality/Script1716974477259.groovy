@@ -38,7 +38,7 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Opportunities Page
 
 WebUI.click(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Checkboxes/Nondisclosure Agreement'), 3)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Checkboxes/Nondisclosure Agreement'), 30)
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Checkboxes/Nondisclosure Agreement'))
 

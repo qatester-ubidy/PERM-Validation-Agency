@@ -7,18 +7,18 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@id = 'cvSlotPerAgency']</value>
+         <value>//*[@id = 'cvSlotPerAgency']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>e9e201e4-fed6-4e33-928c-541f915eadda</webElementGuid>
+      <webElementGuid>8fec9e78-c5dc-466a-ac9a-bf087d302a0a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -26,6 +26,6 @@
       <name>id</name>
       <type>Main</type>
       <value>cvSlotPerAgency</value>
-      <webElementGuid>0bacde78-1be1-4c43-a15c-0751b8b3d068</webElementGuid>
+      <webElementGuid>21f9878e-39c9-454d-8aa0-943a987940ad</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
