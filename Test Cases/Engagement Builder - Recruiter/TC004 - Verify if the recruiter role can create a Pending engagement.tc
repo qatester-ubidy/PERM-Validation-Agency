@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC004 - Verify if the recruiter role can create a Pending engagement</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>73d9eb9c-da13-4b14-a1ce-44f910cb3444</testCaseGuid>
-</TestCaseEntity>
