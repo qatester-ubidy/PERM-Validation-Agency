@@ -7,18 +7,18 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[(text() = 'Engagements' or . = 'Engagements')]</value>
+         <value>//*[(text() = 'Engagements' or . = 'Engagements') and @class = 'engagement-board-title']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>28b1b05f-d2e1-44c9-80ae-b73be794c215</webElementGuid>
+      <webElementGuid>265e3e50-c20b-4378-88fd-460a4b9b1ea1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -26,6 +26,14 @@
       <name>text</name>
       <type>Main</type>
       <value>Engagements</value>
-      <webElementGuid>b213def4-bf53-403a-8731-03bab00fe715</webElementGuid>
+      <webElementGuid>d5b196ac-b9eb-4dd3-8ffc-248647e90e2d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>engagement-board-title</value>
+      <webElementGuid>6a07ae36-dee1-4074-a826-c5477c83e053</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
