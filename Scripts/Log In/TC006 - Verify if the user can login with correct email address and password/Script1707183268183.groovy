@@ -27,6 +27,7 @@ WebUI.setText(findTestObject('Object Repository/Login Page/Textboxes/Password Te
 WebUI.click(findTestObject('Object Repository/Login Page/Buttons/Sign In Btn'))
 
 //VERIFY REDIRECTION
+WebUI.delay(5)
 WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Texts/Engagements Title Txt'), 3)
 
 def TabTitle = WebUI.getWindowTitle()

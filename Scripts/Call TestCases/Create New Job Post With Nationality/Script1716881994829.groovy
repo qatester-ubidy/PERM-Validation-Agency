@@ -164,3 +164,5 @@ WebUI.click(findTestObject('Object Repository/Employer - Engagement Builder/Revi
 WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Elements/Creating Engagement Toast Message/Creating Job Post Toast Msg'), 3)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Texts/Engagements Title Txt'), 3)
+
+WebUI.closeBrowser()

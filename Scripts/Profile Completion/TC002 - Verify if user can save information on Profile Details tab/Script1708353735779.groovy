@@ -25,8 +25,6 @@ WebUI.maximizeWindow()
 //LOG IN VALID ACCOUNT
 WebUI.callTestCase(findTestCase("Call TestCases/Login with Verifed Account"), [:])
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Logo/Sidebar Company Logo'), 3)
-
 WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Logo/Sidebar Company Logo'))
 
 WebUI.setText(findTestObject('Object Repository/Profile Completion/Profile Details Tab/Textboxes/PhoneNo Txtboxes'), GlobalVariable.PhoneNo)

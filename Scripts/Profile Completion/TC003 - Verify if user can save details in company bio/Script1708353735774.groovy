@@ -38,6 +38,8 @@ WebUI.callTestCase(findTestCase("Call TestCases/Login with Verifed Account"), [:
 
 WebUI.delay(5)
 
+WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Logo/Sidebar Company Logo'))
+
 WebUI.click(findTestObject('Object Repository/Profile Completion/Company Bio Tab/Buttons/Company Bio Btn'))
 
 if (WebUI.waitForElementPresent(findTestObject('Object Repository/Profile Completion/Company Bio Tab/Buttons/Create Your Company Bio Btn'), 3) == true) {
