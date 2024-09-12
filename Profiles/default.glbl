@@ -286,7 +286,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'qa.tester+Henry671qatestdata@ubidy.com'</initValue>
+      <initValue>'qa.tester+a4qatestdata@ubidy.com'</initValue>
       <name>NewlyCreatedAccount</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

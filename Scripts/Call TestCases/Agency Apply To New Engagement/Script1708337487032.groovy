@@ -22,7 +22,7 @@ WebUI.callTestCase(findTestCase("Call TestCases/Create New Job Post"), [:])
 //APPLY TO THE NEWLY CREATED JOB POST
 WebUI.callTestCase(findTestCase("Call TestCases/Log In Existing Agency Account"), [:])
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Buttons/Slider Btn'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Slider Btn'), 3)
 
 WebUI.click(findTestObject('Object Repository/Opportunities Page/Buttons/Opportunities Tab Btn'))
 
