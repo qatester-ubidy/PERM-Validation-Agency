@@ -25,9 +25,9 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagem
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Buttons/Review Btn'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Revoke Application Btn'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Revoke Application Modal/Revoke Application Btn'), 3)
 
-WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Revoke Application Btn'))
+WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Revoke Application Modal/Revoke Application Btn'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Revoke Application Modal/Revoke Application Btn'), 3)
 

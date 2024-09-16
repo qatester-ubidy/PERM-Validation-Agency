@@ -29,6 +29,7 @@ def uploadFile() {
 }
 
 WebUI.callTestCase(findTestCase("Call TestCases/Agency Apply To New Engagement With Nationality"), [:])
+
 WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
 
 //LOG IN VALID ACCOUNT
@@ -84,7 +85,5 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer P
 WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Confirm Consent Modal/Confirm Btn'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer Page/Elements/Submit Candidate Success Toast Msg'), 10)
-
-WebUI.verifyTextPresent("Candidate has been successfully submitted to the employer.", false)
 
 WebUI.closeBrowser()

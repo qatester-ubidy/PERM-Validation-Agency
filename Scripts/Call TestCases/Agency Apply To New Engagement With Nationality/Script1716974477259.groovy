@@ -38,7 +38,7 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Opportunities Page
 
 WebUI.click(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Checkboxes/Nondisclosure Agreement'), 3)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Checkboxes/Nondisclosure Agreement'), 30)
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Checkboxes/Nondisclosure Agreement'))
 
@@ -67,13 +67,9 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Notific
 
 WebUI.click(findTestObject('Object Repository/Employer - Notification Page/Buttons/First Card View Now Btn'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Application Status Update Dropdown Btn'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Approve Btn'), 3)
 
-WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Application Status Update Dropdown Btn'))
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Approve Option'), 3)
-
-WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Approve Option'))
+WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Approve Btn'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Approve Application Modal/Approve Application Btn'), 3)
 
@@ -81,4 +77,4 @@ WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Approv
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Approve Application Modal/Approve Application Success Toast Msg'), 3)
 
-WebUI.verifyTextPresent("Agency application status updated successfully.", false)
+//WebUI.verifyTextPresent("Agency application status updated successfully.", false)

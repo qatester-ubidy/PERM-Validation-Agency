@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Webapp Notifications</name>
+   <name>Agency Forgot Password</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,40 +10,40 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>3a55c3ba-ddbd-44da-9418-c1febd012a1e</testSuiteGuid>
+   <testSuiteGuid>57cccdab-fa96-4659-9a59-2a2d9ff9cef0</testSuiteGuid>
    <testCaseLink>
-      <guid>ea0b7c09-ca64-4820-be52-6884f6f4a4d7</guid>
+      <guid>a99623f7-bd4f-4e9d-81bb-09d1db42c85c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Notifications/TC001 - Verify if user receives notification when candidate application status is updated</testCaseId>
+      <testCaseId>Test Cases/Forgot Password/TC001 - Verify if user can request to reset password without entering email address</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ccec9947-3ba0-4823-bd8a-24aeab6530f1</guid>
+      <guid>eb132030-6996-48cd-a4f1-9dcacd3826dd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Notifications/TC002 - Verify if user receives notification for new Comments</testCaseId>
+      <testCaseId>Test Cases/Forgot Password/TC002 - Verify if reset password button is enabled when inputted email is invalid</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>9329b410-8149-4cc8-a08f-e419b85fab4d</guid>
+      <guid>6ad2ccd9-47c1-49f6-970c-e20dd6081125</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Notifications/TC003 - Verify if user receives notification for Engagement status updates</testCaseId>
+      <testCaseId>Test Cases/Forgot Password/TC003 - Verify if Reset button would enable when inputting valid email address</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>67bac2a9-1eab-4795-9b42-31b4ad5f429f</guid>
+      <guid>21388ad6-56d9-4741-821d-ff6969a2689b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Notifications/TC004 - Verify if user receives notification for Talent Request updates</testCaseId>
+      <testCaseId>Test Cases/Forgot Password/TC004 - Verify if user can request reset password by inputting registered email address</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>9a900f0f-f689-4ea6-8464-05c2d52c447d</guid>
+      <guid>b781b92d-c51d-433e-86d6-3b1abd5778b7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Notifications/TC005 - Verify if user receives notification for application status update</testCaseId>
+      <testCaseId>Test Cases/Forgot Password/TC005 - Verify the redirection when user clicks on the Forgot password link</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

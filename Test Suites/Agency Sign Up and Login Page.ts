@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Candidates</name>
+   <name>Agency Sign Up and Login Page</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,82 +10,75 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>fbef9f04-f1a7-4511-acd1-e396215944c8</testSuiteGuid>
+   <testSuiteGuid>155ad9dc-eb0a-4c2f-8526-23522af8383c</testSuiteGuid>
    <testCaseLink>
-      <guid>bd0009a2-56a7-4655-bf6c-c5a2e5130e97</guid>
+      <guid>bbf6f72a-1137-4f1b-a09f-020c5266da94</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Candidate Center/TC001 - Verify if user can search for candidate</testCaseId>
+      <testCaseId>Test Cases/Sign Up/TC001 - Verify if user can register with invalid values</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8a60d10c-7d2f-4bff-bcd2-8e15e47bce67</guid>
+      <guid>cb90411e-6edb-4574-8ca2-b4d3579ac75e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Candidate Center/TC002 - Verify if user can view all candidates from each tabs</testCaseId>
+      <testCaseId>Test Cases/Sign Up/TC002 - Verify if General Terms of User hyperlink is working as expected</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>2f1e1067-03b8-45b4-abe5-9c44418210ea</guid>
+      <guid>064c1c14-438f-4da6-b3e7-63fbf40943b3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Candidate Center/TC003 - Verify redirection when clicking a candidate</testCaseId>
+      <testCaseId>Test Cases/Sign Up/TC003 - Verify if an error message is displayed when registering an email that is already existing</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>eff94a62-5ab9-421f-9c76-fdc1eea0adf3</guid>
+      <guid>a68bd798-5dd3-4662-a39e-40dc42b71046</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Candidate Viewer/TC001 - Verify validation on submit candidate form</testCaseId>
+      <testCaseId>Test Cases/Sign Up/TC004 - Verify if user can succesfully register account with valid details</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>bf46655e-9760-4e74-af1f-f9db9087fa15</guid>
+      <guid>1416f130-d87b-4c5a-a99d-bc27f1d0280b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Candidate Viewer/TC002 - Verify if user can submit new candidates</testCaseId>
+      <testCaseId>Test Cases/Log In/TC001 - Verify if user can log in with empty fields</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>63396324-cadd-41be-baa8-45ac84e867e5</guid>
+      <guid>f8091f11-2ebc-4811-81d2-07f9c4e1183a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Candidate Viewer/TC003 - Verify if user can submit the existing candidate in engagement</testCaseId>
+      <testCaseId>Test Cases/Log In/TC002 - Verify if user can log in with invalid format for email and password</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b7b6a6f9-6995-459d-ad40-91ea0d0cdcab</guid>
+      <guid>d1917793-f179-46f5-bb96-5c251304c175</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Candidate Viewer/TC004 - Verify if user can withdraw candidate application</testCaseId>
+      <testCaseId>Test Cases/Log In/TC003 - Verify validation when clearing inputted values for Email and Password fields</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>322ae95a-0fae-4ba8-9221-9d81416ed6e8</guid>
+      <guid>8bb09684-c627-40cd-a86e-04f2ca140e61</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Candidate Viewer/TC005 - Verify if user can close CV Viewer</testCaseId>
+      <testCaseId>Test Cases/Log In/TC004 - Verify if user can log in incorrect credentials</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d5bca377-2a06-4b89-806c-e7b07567e80e</guid>
+      <guid>c334fbf5-6e36-4599-9b1c-239cdbea95f0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Candidate Viewer/TC006 - Verify if user can view messages from employer upon application status update</testCaseId>
+      <testCaseId>Test Cases/Log In/TC005 - Verify if the user can login using unverified account</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>df0ef9d2-51c3-4c18-8033-b131fbc03ccf</guid>
+      <guid>e5604384-2b39-4261-b073-b7780cca8a7a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Candidate Viewer/TC007 - Verify if user can update submitted candidates</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>c5d7daae-f240-42a1-8a05-dfc4f9886f57</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Candidate Viewer/TC008 - Verify if user can send comments</testCaseId>
+      <testCaseId>Test Cases/Log In/TC006 - Verify if the user can login with correct email address and password</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

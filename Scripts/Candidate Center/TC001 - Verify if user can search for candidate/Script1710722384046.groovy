@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 //SUBMIT NEW CANDIDATE
-WebUI.callTestCase(findTestCase("Engagements/TC002 -Verify if user can submit candidates"), [:])
+WebUI.callTestCase(findTestCase("Engagements/TC002 - Verify if user can submit candidates"), [:])
 
 //REDIRECT TO CANDIDATE CENTER
 WebUI.callTestCase(findTestCase("Call TestCases/Log In Existing Agency Account"), [:])

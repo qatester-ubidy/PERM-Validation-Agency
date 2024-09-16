@@ -7,7 +7,8 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[text()='All Other Opportunities']</value>
+         <value>//div[@role='tab' and contains(@class, 'ant-tabs-tab') and text()='All Other Opportunities']
+</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -19,14 +20,15 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>72375819-d3d0-4c03-b808-cfd4485b060d</webElementGuid>
+      <webElementGuid>eda86ae6-2c77-4756-9109-c798945831b7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[text()='All Other Opportunities']</value>
-      <webElementGuid>6f8aa426-fc9d-43ca-b6bc-d24855f72314</webElementGuid>
+      <value>//div[@role='tab' and contains(@class, 'ant-tabs-tab') and text()='All Other Opportunities']
+</value>
+      <webElementGuid>0dcea5d0-2711-4f87-b5a5-ed45679c1116</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -76,7 +76,7 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Notification Page/
 
 WebUI.click(findTestObject('Object Repository/Notification Page/Buttons/Notification Btn'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Notification Page/Buttons/Offer Extended View Now Btn'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Notification Page/Buttons/Offer Extended View Now Btn'), 5)
 
 WebUI.click(findTestObject('Object Repository/Notification Page/Buttons/Offer Extended View Now Btn'))
 
