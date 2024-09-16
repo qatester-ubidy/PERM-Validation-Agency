@@ -4,5 +4,6 @@
    <name>TC008 - Verify if user can receive email notification for Candidate Status update for Rejected</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>94c3bcbe-9b46-4d77-811b-33702832f15a</testCaseGuid>
 </TestCaseEntity>

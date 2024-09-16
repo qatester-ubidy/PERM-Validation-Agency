@@ -4,5 +4,6 @@
    <name>TC006 - Verify if user can receive email notification for Candidate Status update for Screening</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>f39262f9-efea-4db4-903a-af162e334577</testCaseGuid>
 </TestCaseEntity>

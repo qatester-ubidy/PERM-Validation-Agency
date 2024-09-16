@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>All Other Opportunities Tab Btn</name>
+   <name>Confirm Btn</name>
    <tag></tag>
-   <elementGuidId>062a9cc1-c299-49ef-81dc-3888aa6a3d56</elementGuidId>
+   <elementGuidId>289715ca-4d6d-48bd-985b-a5ecfb66dee8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[text()='All Other Opportunities']</value>
+         <value>//button[(text() = 'Confirm' or . = 'Confirm')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>72375819-d3d0-4c03-b808-cfd4485b060d</webElementGuid>
+      <webElementGuid>dcfe6a3c-2439-4e13-98d6-2c1121965389</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>text</name>
       <type>Main</type>
-      <value>//div[text()='All Other Opportunities']</value>
-      <webElementGuid>6f8aa426-fc9d-43ca-b6bc-d24855f72314</webElementGuid>
+      <value>Confirm</value>
+      <webElementGuid>57156db5-e1ea-48bc-88a5-d6cd810ad380</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

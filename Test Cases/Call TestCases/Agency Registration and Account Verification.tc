@@ -4,5 +4,6 @@
    <name>Agency Registration and Account Verification</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>36aefcbe-536c-42ca-bd59-7f769c3fb055</testCaseGuid>
 </TestCaseEntity>

@@ -4,5 +4,6 @@
    <name>TC004 - Verify if user can receive email notification for Candidate Status update for Offer Extended</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>6f0e09a2-87eb-422d-b1a2-bc24c5e3ac19</testCaseGuid>
 </TestCaseEntity>

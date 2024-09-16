@@ -81,15 +81,9 @@ WebUI.verifyTextPresent("Congratulations, candidate Hired", false)
 //VERIFY EMAIL NOTIF
 WebUI.callTestCase(findTestCase("Call TestCases/Redirect To Gmail"), [:])
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Textboxes/Search Txtbox'), 3)
-
-WebUI.setText(findTestObject('Object Repository/Gmail Page/Textboxes/Search Txtbox'), "Candidate Hired")
-
-WebUI.click(findTestObject('Object Repository/Gmail Page/Buttons/Search Btn'))
-
 WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'), 3)
 
-WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Hired Notif'))
+WebUI.enhancedClick(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'))
 
 WebUI.verifyTextPresent("Candidate has been hired", false)
 

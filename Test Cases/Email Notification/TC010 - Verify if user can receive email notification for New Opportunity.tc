@@ -4,5 +4,6 @@
    <name>TC010 - Verify if user can receive email notification for New Opportunity</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>0dec7176-8611-425e-acf9-f55506b6ead8</testCaseGuid>
 </TestCaseEntity>

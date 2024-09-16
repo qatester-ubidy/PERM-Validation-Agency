@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>All Other Opportunities Tab Btn</name>
+   <name>Information Toast Msg</name>
    <tag></tag>
-   <elementGuidId>062a9cc1-c299-49ef-81dc-3888aa6a3d56</elementGuidId>
+   <elementGuidId>d7091a52-7d37-457b-bea6-5fbaa4d1c474</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[text()='All Other Opportunities']</value>
+         <value>//div[@class = 'ant-notification-notice ant-notification-notice-closable ubidy-ui-kit notification-card info']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>button</value>
-      <webElementGuid>72375819-d3d0-4c03-b808-cfd4485b060d</webElementGuid>
+      <value>div</value>
+      <webElementGuid>8e79aefa-f52e-4e39-9eec-7b6a6265bd0f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>class</name>
       <type>Main</type>
-      <value>//div[text()='All Other Opportunities']</value>
-      <webElementGuid>6f8aa426-fc9d-43ca-b6bc-d24855f72314</webElementGuid>
+      <value>ant-notification-notice ant-notification-notice-closable ubidy-ui-kit notification-card info</value>
+      <webElementGuid>fade1ca6-3b93-4844-a0d3-21e80b0b7e7a</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

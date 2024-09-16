@@ -4,5 +4,6 @@
    <name>TC009 - Verify if user can receive email notification for Candidate Status update for Hired</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>1f318fb2-4e0e-4d20-8a01-a037b09cc66c</testCaseGuid>
 </TestCaseEntity>
