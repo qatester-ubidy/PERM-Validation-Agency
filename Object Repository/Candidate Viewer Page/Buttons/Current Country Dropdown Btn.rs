@@ -3,22 +3,21 @@
    <description></description>
    <name>Current Country Dropdown Btn</name>
    <tag></tag>
-   <elementGuidId>3d327fec-7e5c-4bff-b02b-ec7e2aef41b6</elementGuidId>
+   <elementGuidId>ae1b8c5b-7f4b-4d39-913a-aad3f07026db</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[text()=&quot;Current Country - Select a Country&quot;]/parent::div/parent::div/parent::div[@id=&quot;country-select-id&quot;]</value>
+         <value>//div[text()=&quot;Current Country - Select a Country&quot;]/parent::div/parent::div/parent::div[@id = 'country-select-id']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
-   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[text()=&quot;Current Country - Select a Country&quot;]/parent::div/parent::div/parent::div[@id=&quot;country-select-id&quot;]</value>
-      <webElementGuid>4a236179-8031-4bdb-834d-278195e05a2b</webElementGuid>
+      <value>//div[text()=&quot;Current Country - Select a Country&quot;]/parent::div/parent::div/parent::div[@id = 'country-select-id']</value>
+      <webElementGuid>a159c7ea-479c-444c-8cdf-b987ddf096e0</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

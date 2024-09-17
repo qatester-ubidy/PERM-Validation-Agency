@@ -18,10 +18,6 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.apache.commons.lang3.RandomStringUtils
 
-WebUI.openBrowser(GlobalVariable.StagingEnv)
-
-WebUI.maximizeWindow()
-
 // ASSESSMENT FORM
 WebUI.callTestCase(findTestCase("Call TestCases/Assessment Form"), [:])
 

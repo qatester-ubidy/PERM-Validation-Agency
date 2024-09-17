@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@id = 'currentCountry']</value>
+         <value>//div[text()=&quot;Nationality - Select a Country&quot;]/parent::div/parent::div/parent::div[@id = 'country-select-id']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,17 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>tag</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>div</value>
-      <webElementGuid>83a1fcc3-ca44-4ec4-9a92-794fb0cd670d</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>currentCountry</value>
-      <webElementGuid>e057c067-3f99-47fa-8f6a-779b06b999f6</webElementGuid>
+      <value>//div[text()=&quot;Nationality - Select a Country&quot;]/parent::div/parent::div/parent::div[@id = 'country-select-id']</value>
+      <webElementGuid>f5a0d2fd-8b79-4fd5-bc90-9b1bb5a94990</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

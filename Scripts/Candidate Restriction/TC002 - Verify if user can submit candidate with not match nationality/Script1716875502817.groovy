@@ -96,7 +96,13 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer P
 
 WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Elements/French Polynesia Option'))
 
-WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Location Txtbox'), RandomInputs.randomCity())
+WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Buttons/Current Country Dropdown Btn'))
+
+WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Nationality Txtbox'), "French Polynesia")
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer Page/Elements/French Polynesia Option'), 3)
+
+WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Elements/French Polynesia Option'))
 
 WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Base Salary Txtbox'), "100000")
 

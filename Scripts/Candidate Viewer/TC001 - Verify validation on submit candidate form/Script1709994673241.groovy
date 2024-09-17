@@ -44,7 +44,7 @@ WebUI.verifyTextPresent('Please input Candidate contact no.', false)
 
 WebUI.verifyTextPresent('Please select a nationality', false)
 
-WebUI.verifyTextPresent('Please input Candidate location', false)
+WebUI.verifyTextPresent('Please select a current country', false)
 
 WebUI.verifyTextPresent('Please input annualized base salary.', false)
 
