@@ -37,9 +37,9 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Buttons/
 
 WebUI.click(findTestObject('Object Repository/Gmail Page/Buttons/Next Btn'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'), 3)
 
-WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Verify Agency Notif'))
+WebUI.enhancedClick(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'))
 
 WebUI.verifyTextPresent('Welcome to Ubidy', false)
 

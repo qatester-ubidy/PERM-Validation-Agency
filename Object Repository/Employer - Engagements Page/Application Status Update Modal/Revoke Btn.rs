@@ -1,40 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Decline Btn</name>
+   <name>Revoke Btn</name>
    <tag></tag>
-   <elementGuidId>b8958812-dfe0-400c-ae54-1ecab4b917f5</elementGuidId>
+   <elementGuidId>a0488e00-263f-40f1-a723-44aeaf125c2a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//li[@id=&quot;Declined&quot;]</value>
+         <value>//button[(text() = 'Revoke' or . = 'Revoke')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>14107269-ba5c-42fe-ba5d-1c204be024f7</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>Decline</value>
-      <webElementGuid>ffd82592-1490-464e-a8b5-89c07c44e927</webElementGuid>
+      <webElementGuid>e010b8c0-58e1-485b-a29b-1685289bb0b1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>text</name>
       <type>Main</type>
-      <value>//li[@id=&quot;Declined&quot;]</value>
-      <webElementGuid>c85c0072-76b1-4222-8553-e0bf006f1425</webElementGuid>
+      <value>Revoke</value>
+      <webElementGuid>085317a1-426f-491d-bed9-2cde5866e3a9</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

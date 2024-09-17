@@ -4,5 +4,6 @@
    <name>TC015 - Verify if user can receive email notification for Account Pending for Ubidy Assessment</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>7cd3e93b-5945-46ad-bead-ecbb2a294680</testCaseGuid>
 </TestCaseEntity>

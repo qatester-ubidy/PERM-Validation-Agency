@@ -4,5 +4,6 @@
    <name>TC007 - Verify if user can receive email notification for Candidate Status update for Shortlisted</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>3f31f5bf-3756-4e3d-9fed-bf59b0541459</testCaseGuid>
 </TestCaseEntity>
