@@ -153,12 +153,10 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagem
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagement Builder/Review and Publish Tab/Buttons/Publish Engagement Btn'))
 
-WebUI.click(findTestObject('Object Repository/Employer - Engagement Builder/Review and Publish Tab/Buttons/Confirm Btn'))
+WebUI.click(findTestObject('Object Repository/Employer - Engagement Builder/Review and Publish Tab/Buttons/Confirm Button'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Elements/Creating Engagement Toast Message/Creating Job Post Toast Msg'), 3)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Texts/Engagements Title Txt'), 3)
-
-WebUI.click(findTestObject('Object Repository/Employer - Engagement Builder/Review and Publish Tab/Buttons/Confirm Btn'))
-
 WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagement Builder/Review and Publish Tab/Elements/Information Toast Msg'), 3)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Texts/Engagements Title Txt'), 3)
