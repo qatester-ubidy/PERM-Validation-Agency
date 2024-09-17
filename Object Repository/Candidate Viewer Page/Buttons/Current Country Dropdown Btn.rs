@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Nationality Dropdown Btn</name>
+   <name>Current Country Dropdown Btn</name>
    <tag></tag>
-   <elementGuidId>4a763035-3e05-4300-97b4-29bb6d730202</elementGuidId>
+   <elementGuidId>ae1b8c5b-7f4b-4d39-913a-aad3f07026db</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[text()=&quot;Nationality - Select a Country&quot;]/parent::div/parent::div/parent::div[@id = 'country-select-id']</value>
+         <value>//div[text()=&quot;Current Country - Select a Country&quot;]/parent::div/parent::div/parent::div[@id = 'country-select-id']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[text()=&quot;Nationality - Select a Country&quot;]/parent::div/parent::div/parent::div[@id = 'country-select-id']</value>
-      <webElementGuid>f5a0d2fd-8b79-4fd5-bc90-9b1bb5a94990</webElementGuid>
+      <value>//div[text()=&quot;Current Country - Select a Country&quot;]/parent::div/parent::div/parent::div[@id = 'country-select-id']</value>
+      <webElementGuid>a159c7ea-479c-444c-8cdf-b987ddf096e0</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

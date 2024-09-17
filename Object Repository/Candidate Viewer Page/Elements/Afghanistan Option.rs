@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//p[text()=&quot;Afghanistan&quot;]</value>
+         <value>//p[text()='Afghanistan']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//p[text()=&quot;Afghanistan&quot;]</value>
-      <webElementGuid>4616daf6-3752-49d1-86d2-927ff91f3b5d</webElementGuid>
+      <value>//p[text()='Afghanistan']</value>
+      <webElementGuid>d2214828-231e-4f6b-9891-aed5e0157f53</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
