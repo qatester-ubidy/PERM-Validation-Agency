@@ -4,5 +4,6 @@
    <name>TC018 - Verify if user can receive email notification for Ubidy Invitation</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>84eb0a93-447b-4952-9bb4-990a62623047</testCaseGuid>
 </TestCaseEntity>

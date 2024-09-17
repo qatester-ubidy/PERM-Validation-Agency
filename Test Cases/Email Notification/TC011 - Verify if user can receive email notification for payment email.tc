@@ -4,5 +4,6 @@
    <name>TC011 - Verify if user can receive email notification for payment email</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>a773495b-cb7c-4f55-b9d2-ed129d6a5c47</testCaseGuid>
 </TestCaseEntity>

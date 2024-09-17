@@ -4,5 +4,6 @@
    <name>TC013 - Verify if user can receive email notification for engagement notice</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>bfdbc305-8428-4fe1-93ce-bedbb234fb6d</testCaseGuid>
 </TestCaseEntity>

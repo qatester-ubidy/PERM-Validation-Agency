@@ -20,8 +20,7 @@ import org.apache.commons.lang3.RandomStringUtils
 
 WebUI.callTestCase(findTestCase("Call TestCases/Login Employer Account"), [:])
 
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Agencies/Buttons/Slider Btn'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Agencies/Buttons/Slider Btn'), 3)
 
 WebUI.click(findTestObject('Object Repository/Employer - Agencies/Buttons/Slider Btn'))
 
@@ -72,7 +71,7 @@ WebUI.callTestCase(findTestCase("Call TestCases/Redirect To Gmail"), [:])
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'), 3)
 
-WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'))
+WebUI.enhancedClick(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'))
 
 WebUI.verifyTextPresent('Congratulations! You have been invited to register', false)
 

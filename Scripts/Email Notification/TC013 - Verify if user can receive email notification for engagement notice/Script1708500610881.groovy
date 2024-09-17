@@ -58,7 +58,7 @@ WebUI.click(findTestObject('Object Repository/Gmail Page/Buttons/Search Btn'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'), 3)
 
-WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Notices Notif'))
+WebUI.enhancedClick(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'))
 
 WebUI.verifyElementText("Notice Message:", false)
 

@@ -1,40 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Decline Btn</name>
+   <name>Confirm Btn</name>
    <tag></tag>
-   <elementGuidId>b8958812-dfe0-400c-ae54-1ecab4b917f5</elementGuidId>
+   <elementGuidId>b74558af-2559-4d55-ae36-4a510cd775c1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//li[@id=&quot;Declined&quot;]</value>
+         <value>//button[(text() = 'Confirm' or . = 'Confirm')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>14107269-ba5c-42fe-ba5d-1c204be024f7</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>Decline</value>
-      <webElementGuid>ffd82592-1490-464e-a8b5-89c07c44e927</webElementGuid>
+      <webElementGuid>4c770c7e-a4a1-4a53-a91c-c7f684ad53be</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>text</name>
       <type>Main</type>
-      <value>//li[@id=&quot;Declined&quot;]</value>
-      <webElementGuid>c85c0072-76b1-4222-8553-e0bf006f1425</webElementGuid>
+      <value>Confirm</value>
+      <webElementGuid>df0206dd-5d48-483d-88e0-fdc405c48f08</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

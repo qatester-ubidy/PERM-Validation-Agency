@@ -74,15 +74,9 @@ WebUI.verifyTextPresent("candidate has an Offer Extended", false)
 //VERIFY EMAIL NOTIF
 WebUI.callTestCase(findTestCase("Call TestCases/Redirect To Gmail"), [:])
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Textboxes/Search Txtbox'), 3)
-
-WebUI.setText(findTestObject('Object Repository/Gmail Page/Textboxes/Search Txtbox'), "Candidate Offer Extended ")
-
-WebUI.click(findTestObject('Object Repository/Gmail Page/Buttons/Search Btn'))
-
 WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'), 3)
 
-WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Offer Extended Notif'))
+WebUI.enhancedClick(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'))
 
 WebUI.verifyTextPresent("Candidate has an Offer Extended", false)
 

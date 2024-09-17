@@ -25,7 +25,7 @@ WebUI.callTestCase(findTestCase("Call TestCases/Redirect To Gmail"), [:])
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'), 3)
 
-WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'))
+WebUI.enhancedClick(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'))
 
 WebUI.verifyTextPresent('Account Pending Review', false)
 

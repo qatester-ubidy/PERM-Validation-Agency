@@ -72,15 +72,9 @@ WebUI.verifyTextPresent("candidate is now under Screening", false)
 //VERIFY EMAIL NOTIF
 WebUI.callTestCase(findTestCase("Call TestCases/Redirect To Gmail"), [:])
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Textboxes/Search Txtbox'), 3)
-
-WebUI.setText(findTestObject('Object Repository/Gmail Page/Textboxes/Search Txtbox'), "candidate screening")
-
-WebUI.click(findTestObject('Object Repository/Gmail Page/Buttons/Search Btn'))
-
 WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'), 3)
 
-WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Screening Notif'))
+WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'))
 
 WebUI.verifyTextPresent("Candidate is now in Screening", false)
 

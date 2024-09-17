@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>New Opportunity Table Details</name>
+   <name>Payment Table</name>
    <tag></tag>
-   <elementGuidId>ae3e2edf-990e-4f6d-b454-dd0ee9979237</elementGuidId>
+   <elementGuidId>1f898fb9-fd62-44cd-beaa-a700479c8fd2</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//table/tbody/tr[2]/td[1]/table/tbody//table</value>
+         <value>//table/tbody/tr[4]/td[1]/table/tbody//table</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,7 +18,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//table/tbody/tr[2]/td[1]/table/tbody//table</value>
-      <webElementGuid>d6d066a8-7847-40d9-a2c9-5756700f9908</webElementGuid>
+      <value>//table/tbody/tr[4]/td[1]/table/tbody//table</value>
+      <webElementGuid>ae7c29e6-bdc5-4fc9-82d5-13092cee8231</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

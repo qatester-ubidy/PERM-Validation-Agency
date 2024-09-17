@@ -79,19 +79,17 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagem
 
 WebUI.verifyTextPresent("The agency application has been successfully declined.", false)
 
+WebUI.delay(2)
+
 //VERIFY EMAIL NOTIFICATION
 WebUI.callTestCase(findTestCase("Call TestCases/Redirect To Gmail"), [:])
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Textboxes/Search Txtbox'), 3)
-
-WebUI.setText(findTestObject('Object Repository/Gmail Page/Textboxes/Search Txtbox'), "Engagement Application Declined")
-
-WebUI.click(findTestObject('Object Repository/Gmail Page/Buttons/Search Btn'))
-
 WebUI.waitForElementPresent(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'), 3)
 
-WebUI.click(findTestObject('Object Repository/Gmail Page/Elements/First Email Decline Application Notif'))
+WebUI.enhancedClick(findTestObject('Object Repository/Gmail Page/Elements/First Email Notif'))
 
-WebUI.verifyTextPresent("Application has been declined", false)
+WebUI.verifyTextPresent("Rejected Engagement Application", false)
+
+WebUI.verifyTextPresent("Rebidding Permission:", false)
 
 WebUI.closeBrowser()

@@ -4,5 +4,6 @@
    <name>TC003 - Verify if user can receive email notification for declined application</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>bf863029-aaf7-4e67-a26d-47cc18470854</testCaseGuid>
 </TestCaseEntity>

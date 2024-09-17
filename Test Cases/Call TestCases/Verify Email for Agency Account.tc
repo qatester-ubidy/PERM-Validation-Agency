@@ -4,5 +4,6 @@
    <name>Verify Email for Agency Account</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>93038d7b-08fb-4032-a3c2-6edb9feaf1b5</testCaseGuid>
 </TestCaseEntity>
