@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//li[(text() = 'January' or . = 'January')]</value>
+         <value>//li[(contains(@class, 'ant-select-dropdown-menu-item') or @aria-selected='false') and text()='January']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,17 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>tag</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>li</value>
-      <webElementGuid>549deec5-5927-4437-85fc-9377bd5f3542</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>January</value>
-      <webElementGuid>7a3c39ee-134d-4439-937e-2a70b1029ed0</webElementGuid>
+      <value>//li[(contains(@class, 'ant-select-dropdown-menu-item') or @aria-selected='false') and text()='January']</value>
+      <webElementGuid>fb4ac07f-de7a-4eb8-9a24-86c5807c0367</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
