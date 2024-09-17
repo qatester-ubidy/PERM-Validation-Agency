@@ -24,6 +24,8 @@ def firstName = random.randomFirstName()
 
 def number = RandomStringUtils.randomNumeric(3)
 
+def phoneNumber = RandomStringUtils.randomNumeric(9)
+
 def emailAddress = "qa.tester+" + firstName + number + "@ubidy.com"
 
 GlobalVariable.VerifiedAccount = emailAddress
@@ -31,8 +33,6 @@ GlobalVariable.VerifiedAccount = emailAddress
 def lastName = random.randomLastName()
 
 def companyName = random.randomCompany()
-
-def city = random.randomCity()
 
 def uploadFile() {
 	String osName = System.getProperty('os.name')
@@ -61,17 +61,23 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer P
 
 WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Elements/Afghanistan Option'))
 
-WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Contact No Txtbox'), number)
+WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Contact No Txtbox'), phoneNumber)
 
 WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Buttons/Nationality Dropdown Btn'))
 
-WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Nationality Txtbox'), "French Polynesia")
-
 WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer Page/Elements/French Polynesia Option'), 3)
 
-WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Elements/French Polynesia Option'))
+WebUI.enhancedClick(findTestObject('Object Repository/Candidate Viewer Page/Elements/French Polynesia Option'))
 
-WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Location Txtbox'), RandomInputs.randomCity())
+//WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Buttons/Current Country Dropdown Btn'))
+
+WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Nationality Txtbox'))
+
+//WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Nationality Txtbox'), "Algeria")
+
+WebUI.scrollToElement(findTestObject('Object Repository/Candidate Viewer Page/Elements/Algeria Option'), 10)
+
+WebUI.enhancedClick(findTestObject('Object Repository/Candidate Viewer Page/Elements/Algeria Option'))
 
 WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Base Salary Txtbox'), "100000")
 
