@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>/html/body/div[7]/div[3]/div/div[2]/div[4]/div/div/div/div[2]/div/div[1]/div/div[1]/div[5]/div[1]/div/table/tbody/tr[1]</value>
+         <value>/html/body/div[7]/div[3]/div/div[2]/div[4]/div/div/div/div[2]/div/div[1]/div/div[2]/div[6]/div[1]/div[1]/div[1]/div/table/tbody/tr[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[7]/div[3]/div/div[2]/div[4]/div/div/div/div[2]/div/div[1]/div/div[1]/div[5]/div[1]/div/table/tbody/tr[1]</value>
-      <webElementGuid>0a865943-78e7-4c14-a2d5-64cae0f83e8d</webElementGuid>
+      <value>/html/body/div[7]/div[3]/div/div[2]/div[4]/div/div/div/div[2]/div/div[1]/div/div[2]/div[6]/div[1]/div[1]/div[1]/div/table/tbody/tr[1]</value>
+      <webElementGuid>2477e672-ddd6-40a8-8ecf-6205c994791b</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
