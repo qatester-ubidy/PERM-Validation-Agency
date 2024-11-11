@@ -67,4 +67,6 @@ WebUI.setText(findTestObject('Object Repository/Profile Completion/Profile Detai
 
 WebUI.click(findTestObject('Object Repository/Profile Completion/Addresses Tab/Buttons/Address Save Changes Btn'))
 
+WebUI.delay(2)
+
 WebUI.closeBrowser()

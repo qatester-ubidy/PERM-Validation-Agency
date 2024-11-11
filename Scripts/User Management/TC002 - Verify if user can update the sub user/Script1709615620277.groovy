@@ -53,3 +53,5 @@ WebUI.click(findTestObject('Object Repository/Account Settings Page/Edit User Mo
 WebUI.waitForElementPresent(findTestObject('Object Repository/Account Settings Page/Elements/Update User Success Toast Msg'), 3)
 
 WebUI.verifyTextPresent("User information has been saved", false)
+
+WebUI.closeBrowser()

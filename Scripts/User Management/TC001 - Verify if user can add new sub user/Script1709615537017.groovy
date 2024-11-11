@@ -64,6 +64,8 @@ WebUI.setText(findTestObject('Object Repository/Account Settings Page/Add User M
 
 WebUI.setText(findTestObject('Object Repository/Account Settings Page/Add User Modal/Last Name Txtbox'), lastName)
 
+WebUI.click(findTestObject('Object Repository/Account Settings Page/Buttons/Manager Account Btn'))
+
 WebUI.click(findTestObject('Object Repository/Account Settings Page/Add User Modal/Save Changes Btn'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Account Settings Page/Elements/Add User Success Toast Msg'), 3)

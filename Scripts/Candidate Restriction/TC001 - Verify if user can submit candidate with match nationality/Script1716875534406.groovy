@@ -71,11 +71,11 @@ WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/
 
 WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Buttons/Nationality Dropdown Btn'))
 
-WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Nationality Txtbox'), "South Africa" + Keys.ENTER)
+WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Current Country Txtbox'), "South Africa" + Keys.ENTER)
 
 WebUI.click(findTestObject('Object Repository/Candidate Viewer Page/Buttons/Current Country Dropdown Btn'))
 
-WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Nationality Txtbox'), "French Polynesia")
+WebUI.setText(findTestObject('Object Repository/Candidate Viewer Page/Textboxes/Current Country Txtbox'), "French Polynesia")
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Candidate Viewer Page/Elements/French Polynesia Option'), 3)
 

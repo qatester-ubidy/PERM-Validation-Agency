@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC020 - Verify if user can receive an email for a rejection with the reason and disabled rebidding</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b8bb553a-777e-4d25-b991-52b88701049d</testCaseGuid>
+</TestCaseEntity>
