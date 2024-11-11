@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC024 - Verify if user can receive an email when rebidding permission is disabled</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e0f628de-03aa-4b8d-85e3-34e5ca5d61a2</testCaseGuid>
+</TestCaseEntity>
