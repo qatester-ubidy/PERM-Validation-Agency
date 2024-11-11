@@ -22,7 +22,7 @@ import randomInput.RandomInputs
 def uploadFile() {
 	String osName = System.getProperty('os.name')
 	if (osName.contains("Mac OS X")) {
-		WebUI.uploadFile(findTestObject('Object Repository/Employer - Talent Request Page/Additional Documents/Elements/Job Description Container'), GlobalVariable.NewlyCreatedAccount)
+		WebUI.uploadFile(findTestObject('Object Repository/Employer - Talent Request Page/Additional Documents/Elements/Job Description Container'), GlobalVariable.JobDescriptionFile)
 	} else {
 		WebUI.uploadFile(findTestObject('Object Repository/Employer - Talent Request Page/Additional Documents/Elements/Job Description Container'), GlobalVariable.JDFileLocation)
 	}
