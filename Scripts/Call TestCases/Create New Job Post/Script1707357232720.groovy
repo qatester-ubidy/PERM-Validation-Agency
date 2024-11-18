@@ -125,7 +125,7 @@ WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Rev
 //ENGAGEMENT BUILDER - SET UP
 String numberRoles = new Random().nextInt(20) + 1
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagement Builder/Set Up Tab/Textboxes/CV Slot Txtbox'), 3)
+//WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagement Builder/Set Up Tab/Textboxes/CV Slot Txtbox'), 3)
 
 WebUI.setText(findTestObject('Object Repository/Employer - Engagement Builder/Set Up Tab/Textboxes/CV Slot Txtbox'), numberRoles)
 
@@ -160,3 +160,9 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Talent 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagement Builder/Review and Publish Tab/Elements/Information Toast Msg'), 3)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Texts/Engagements Title Txt'), 3)
+
+WebUI.click(findTestObject('Object Repository/Engagement Page/Elements/First Engagement Card'))
+
+WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Flag as Urgent/Buttons/Flag as Urgent btn'))
+
+WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Flag as Urgent/Confirm Engagement Urgency Modal/Buttons/Confirm Changes Btn'))

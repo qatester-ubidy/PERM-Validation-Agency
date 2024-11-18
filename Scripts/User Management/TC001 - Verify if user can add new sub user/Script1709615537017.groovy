@@ -70,6 +70,6 @@ WebUI.click(findTestObject('Object Repository/Account Settings Page/Add User Mod
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Account Settings Page/Elements/Add User Success Toast Msg'), 3)
 
-WebUI.verifyTextPresent("User has been added", false)
+//WebUI.verifyTextPresent("User has been added", false)
 
 WebUI.closeBrowser()

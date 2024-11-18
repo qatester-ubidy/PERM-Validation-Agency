@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class=&quot;engagements-table&quot;]/section[1]/div[ @id=&quot;engagement-main-section&quot;]</value>
+         <value>//*[@id=&quot;root&quot;]/div/div[2]/div[3]/div/main/div[6]/div/div/section[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@class=&quot;engagements-table&quot;]/section[1]/div[ @id=&quot;engagement-main-section&quot;]</value>
-      <webElementGuid>9a4b7c75-74b8-4b69-b92e-14c749094ed9</webElementGuid>
+      <value>//*[@id=&quot;root&quot;]/div/div[2]/div[3]/div/main/div[6]/div/div/section[1]</value>
+      <webElementGuid>0fc696b6-a52a-4471-9b8a-1e73ef97e801</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
