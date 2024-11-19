@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@id = 'Job Requirements form_roleCategory']</value>
+         <value>//div[@id=&quot;Job Requirements form_roleCategory&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,17 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>tag</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>div</value>
-      <webElementGuid>c4512641-8b2b-4380-8091-290dc1e14c70</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>Job Requirements form_roleCategory</value>
-      <webElementGuid>542117ce-0718-4f95-8c7c-916e5dd4cc3f</webElementGuid>
+      <value>//div[@id=&quot;Job Requirements form_roleCategory&quot;]</value>
+      <webElementGuid>2e45a872-f58e-492e-a9bc-031d254d73b0</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

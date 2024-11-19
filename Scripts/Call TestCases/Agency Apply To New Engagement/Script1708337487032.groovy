@@ -30,23 +30,23 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Opportunities Page
 
 WebUI.click(findTestObject('Object Repository/Opportunities Page/Buttons/All Other Opportunities Tab Btn'))
 
-//WebUI.waitForElementVisible(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), 3)
+WebUI.waitForElementVisible(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), 3)
 
-//WebUI.click(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'))
+WebUI.click(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'))
 
-//WebUI.setText(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), GlobalVariable.GetRandomJobTitle)
+WebUI.setText(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), GlobalVariable.EngagementNo)
 
-//WebUI.sendKeys(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), Keys.chord(Keys.ENTER))
 
 WebUI.delay(2)
 
-//WebUI.waitForElementClickable(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'), 10)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'), 10)
 
-//WebUI.enhancedClick(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'))
+WebUI.enhancedClick(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'))
 
-WebUI.waitForElementClickable(findTestObject('Object Repository/Opportunities Page/Elements/First Urgent Engagement'), 10)
-
-WebUI.enhancedClick(findTestObject('Object Repository/Opportunities Page/Elements/First Urgent Engagement'))
+//WebUI.waitForElementClickable(findTestObject('Object Repository/Opportunities Page/Elements/First Urgent Engagement'), 10)
+//
+//WebUI.enhancedClick(findTestObject('Object Repository/Opportunities Page/Elements/First Urgent Engagement'))
 
 WebUI.waitForElementClickable(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Checkboxes/Nondisclosure Agreement'), 30)
 
