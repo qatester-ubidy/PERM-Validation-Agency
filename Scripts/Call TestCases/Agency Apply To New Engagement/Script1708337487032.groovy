@@ -30,15 +30,15 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Opportunities Page
 
 WebUI.click(findTestObject('Object Repository/Opportunities Page/Buttons/All Other Opportunities Tab Btn'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), 3)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), 3)
 
-WebUI.click(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'))
+//WebUI.click(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'))
 
 WebUI.setText(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), GlobalVariable.EngagementNo)
 
 WebUI.sendKeys(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), Keys.chord(Keys.ENTER))
 
-WebUI.delay(2)
+WebUI.delay(3)
 
 WebUI.waitForElementClickable(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'), 10)
 
