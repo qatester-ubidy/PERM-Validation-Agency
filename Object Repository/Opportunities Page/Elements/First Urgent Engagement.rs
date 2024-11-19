@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Role Category Dropdown Btn</name>
+   <name>First Urgent Engagement</name>
    <tag></tag>
-   <elementGuidId>ebaf0502-d8e3-44fd-b8a5-6e1b667d8c38</elementGuidId>
+   <elementGuidId>ac0f8ab5-83e7-4160-bb8c-2aae63659d62</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@id=&quot;Job Requirements form_roleCategory&quot;]</value>
+         <value>//div[contains(@class, 'opportunities-main-section') and contains(@class, 'is-urgent')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@id=&quot;Job Requirements form_roleCategory&quot;]</value>
-      <webElementGuid>2e45a872-f58e-492e-a9bc-031d254d73b0</webElementGuid>
+      <value>//div[contains(@class, 'opportunities-main-section') and contains(@class, 'is-urgent')]</value>
+      <webElementGuid>23bd096c-ae5f-475a-85d1-43ca2f9e8581</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

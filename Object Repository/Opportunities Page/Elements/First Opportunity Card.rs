@@ -7,18 +7,17 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;root&quot;]/div/div[2]/div[3]/div/main/div[5]/div/div/div[2]/section/div[2]</value>
+         <value>//div[@class=&quot;opportunities-item&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
-   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;root&quot;]/div/div[2]/div[3]/div/main/div[5]/div/div/div[2]/section/div[2]</value>
-      <webElementGuid>1bc57f39-6bab-4dd0-8d0b-a1c3cbaed5c4</webElementGuid>
+      <value>//div[@class=&quot;opportunities-item&quot;]</value>
+      <webElementGuid>c85bc7bb-2570-4b34-aa79-c1176bcbce64</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
