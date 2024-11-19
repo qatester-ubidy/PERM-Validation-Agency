@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Create New Job Post</name>
+   <name>Create New Job Post - ATR</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>0e8bebcf-f386-4af9-8188-6157961e3438</testCaseGuid>
+   <testCaseGuid>cf15752a-60de-48e0-95cd-998c9d0e41bf</testCaseGuid>
 </TestCaseEntity>

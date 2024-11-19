@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Create New Job Post</name>
+   <name>TC004 Verify if user can submit new bid successfully (ATR)</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>0e8bebcf-f386-4af9-8188-6157961e3438</testCaseGuid>
+   <testCaseGuid>8bff8a49-5711-47d7-a033-b411ce4fa6ed</testCaseGuid>
 </TestCaseEntity>

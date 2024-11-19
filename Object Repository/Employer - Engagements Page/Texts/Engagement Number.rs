@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>First Opportunity Card</name>
+   <name>Engagement Number</name>
    <tag></tag>
-   <elementGuidId>ee8a5580-fce7-4ad8-8be8-c71bbc6c4bf2</elementGuidId>
+   <elementGuidId>6b55a1d2-30db-48cc-9db2-eb4834156980</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class=&quot;opportunities-item&quot;]/section[1]</value>
+         <value>//Section[@class=&quot;ubidy-ui-kit engagement-card-section&quot;][1]/div/div[1]/div[@class=&quot;auction-info&quot;]/div[2]//span[@class=&quot;value&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,7 +18,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@class=&quot;opportunities-item&quot;]/section[1]</value>
-      <webElementGuid>dd4b3d31-e4c2-4cc0-85c6-8614200f217e</webElementGuid>
+      <value>//Section[@class=&quot;ubidy-ui-kit engagement-card-section&quot;][1]/div/div[1]/div[@class=&quot;auction-info&quot;]/div[2]//span[@class=&quot;value&quot;]</value>
+      <webElementGuid>32445623-670c-44ce-997f-0a55063b7843</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

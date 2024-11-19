@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Create New Job Post</name>
+   <name>TC001 if Declined applications with rebidding enabled appear in the Application tab (ATR)</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>0e8bebcf-f386-4af9-8188-6157961e3438</testCaseGuid>
+   <testCaseGuid>7974a917-bc5b-48ec-9766-30e90cf2b46e</testCaseGuid>
 </TestCaseEntity>

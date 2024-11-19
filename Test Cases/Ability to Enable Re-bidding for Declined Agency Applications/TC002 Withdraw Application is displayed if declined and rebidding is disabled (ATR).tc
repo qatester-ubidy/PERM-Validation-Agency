@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Create New Job Post</name>
+   <name>TC002 Withdraw Application is displayed if declined and rebidding is disabled (ATR)</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>0e8bebcf-f386-4af9-8188-6157961e3438</testCaseGuid>
+   <testCaseGuid>5e0c2704-8188-4e8d-b08f-22c23fb2e936</testCaseGuid>
 </TestCaseEntity>
