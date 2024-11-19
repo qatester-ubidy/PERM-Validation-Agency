@@ -100,7 +100,7 @@ WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job
 //STEP 2 - COMPENSATION
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Compensation/Buttons/Currency Dropdown Btn'))
 
-WebUI.setText(findTestObject('Object Repository/Employer - Talent Request Page/Compensation/Textboxes/Currency Txtbox'), "USD" + Keys.ENTER)
+WebUI.setText(findTestObject('Object Repository/Employer - Talent Request Page/Compensation/Textboxes/Currency Txtbox'), "USD" + Keys.RETURN)
 
 WebUI.setText(findTestObject('Object Repository/Employer - Talent Request Page/Compensation/Textboxes/Minimum Txtbox'), "1000")
 
