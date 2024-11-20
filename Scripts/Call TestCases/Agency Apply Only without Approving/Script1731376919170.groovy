@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase("Call TestCases/Create New Job Post"), [:])
+WebUI.callTestCase(findTestCase("Call TestCases/Create New Job Post - ATR"), [:])
 
 //APPLY TO THE NEWLY CREATED JOB POST
 WebUI.callTestCase(findTestCase("Call TestCases/Log In Existing Agency Account"), [:])
@@ -30,27 +30,23 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Opportunities Page
 
 WebUI.click(findTestObject('Object Repository/Opportunities Page/Buttons/All Other Opportunities Tab Btn'))
 
-//WebUI.waitForElementVisible(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), 3)
+WebUI.setText(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), GlobalVariable.EngagementNumber)
 
-//WebUI.click(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'))
+WebUI.waitForElementPresent(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), 3)
 
-WebUI.setText(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), GlobalVariable.EngagementNo)
-
-WebUI.sendKeys(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), Keys.chord(Keys.ENTER))
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'), 3)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'), 3)
 
 WebUI.enhancedClick(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'))
-
-//WebUI.waitForElementClickable(findTestObject('Object Repository/Opportunities Page/Elements/First Urgent Engagement'), 10)
-//
-//WebUI.enhancedClick(findTestObject('Object Repository/Opportunities Page/Elements/First Urgent Engagement'))
 
 WebUI.waitForElementClickable(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Checkboxes/Nondisclosure Agreement'), 30)
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Checkboxes/Nondisclosure Agreement'))
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Checkboxes/Terms and Conditions'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Application Tab/Textboxes/Fee Amount Txtbox'), 3)
+
+WebUI.setText(findTestObject('Object Repository/Engagement Page/Application Tab/Textboxes/Fee Amount Txtbox'), "10")
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Buttons/Submit Application Btn'))
 
@@ -63,30 +59,3 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagem
 WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Assign Team Member Modal/Done Btn'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Elements/Submitting Application Toast Msg'), 3)
-
-//APPROVE APPLICATION
-WebUI.callTestCase(findTestCase("Call TestCases/Login Employer Account"), [:])
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Notification Page/Buttons/Notification Btn'), 3)
-
-WebUI.click(findTestObject('Object Repository/Employer - Notification Page/Buttons/Notification Btn'))
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Notification Page/Buttons/First Card View Now Btn'), 3)
-
-WebUI.click(findTestObject('Object Repository/Employer - Notification Page/Buttons/First Card View Now Btn'))
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Approve Btn'), 3)
-
-WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Approve Btn'))
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Approve Application Modal/Approve Application Btn'), 3)
-
-WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Approve Application Modal/Approve Application Btn'))
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Approve Application Modal/Approve Application Success Toast Msg'), 3)
-
-//WebUI.verifyTextPresent("The agency application has been successfully updated.", false)
-
-
-
-

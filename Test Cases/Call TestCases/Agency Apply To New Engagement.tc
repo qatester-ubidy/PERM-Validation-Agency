@@ -4,5 +4,6 @@
    <name>Agency Apply To New Engagement</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>49abec2a-8479-440f-bcff-722bde97a020</testCaseGuid>
 </TestCaseEntity>

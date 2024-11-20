@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Create New Job Post</name>
+   <name>Agency Apply Only without Approving</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>0e8bebcf-f386-4af9-8188-6157961e3438</testCaseGuid>
+   <testCaseGuid>9255a2bc-e69d-4ecc-8e82-387aa1ed805a</testCaseGuid>
 </TestCaseEntity>

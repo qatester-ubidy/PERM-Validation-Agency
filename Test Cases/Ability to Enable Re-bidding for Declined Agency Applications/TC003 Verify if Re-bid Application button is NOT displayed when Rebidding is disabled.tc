@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Create New Job Post</name>
+   <name>TC003 Verify if Re-bid Application button is NOT displayed when Rebidding is disabled</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>0e8bebcf-f386-4af9-8188-6157961e3438</testCaseGuid>
+   <testCaseGuid>d16544c0-8181-4757-9c5b-265e2c8a8616</testCaseGuid>
 </TestCaseEntity>

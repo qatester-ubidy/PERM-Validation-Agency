@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Application Tab</name>
+   <tag></tag>
+   <elementGuidId>37fcb158-63fc-4c07-9cf4-7780839e0e7f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//span[text()=&quot;Application&quot;]//parent::label</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>57213751-f222-4905-96f9-60b1eb82ef7c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//span[text()=&quot;Application&quot;]//parent::label</value>
+      <webElementGuid>4d244850-6b18-47b8-9238-0428b560664c</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

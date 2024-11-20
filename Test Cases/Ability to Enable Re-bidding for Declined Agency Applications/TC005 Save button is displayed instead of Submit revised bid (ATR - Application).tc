@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Create New Job Post</name>
+   <name>TC005 Save button is displayed instead of Submit revised bid (ATR - Application)</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>0e8bebcf-f386-4af9-8188-6157961e3438</testCaseGuid>
+   <testCaseGuid>8fdfbaef-682a-48f5-9b58-de15b06d0c74</testCaseGuid>
 </TestCaseEntity>

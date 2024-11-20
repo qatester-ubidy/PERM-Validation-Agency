@@ -125,15 +125,15 @@ WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Rev
 //ENGAGEMENT BUILDER - SET UP
 String numberRoles = new Random().nextInt(20) + 1
 
-//WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagement Builder/Set Up Tab/Textboxes/CV Slot Txtbox'), 3)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagement Builder/Set Up Tab/Textboxes/CV Slot Txtbox'), 3)
 
 WebUI.setText(findTestObject('Object Repository/Employer - Engagement Builder/Set Up Tab/Textboxes/CV Slot Txtbox'), numberRoles)
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagement Builder/Set Up Tab/Buttons/Engagement Type Dropdown Btn'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagement Builder/Set Up Tab/Elements/Employer Sets Rate Option'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagement Builder/Set Up Tab/Elements/Agency Tenders Rate Option'), 3)
 
-WebUI.click(findTestObject('Object Repository/Employer - Engagement Builder/Set Up Tab/Elements/Employer Sets Rate Option'))
+WebUI.click(findTestObject('Object Repository/Employer - Engagement Builder/Set Up Tab/Elements/Agency Tenders Rate Option'))
 
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/Next Btn'))
 
@@ -143,8 +143,6 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engageme
 WebUI.click(findTestObject('Object Repository/Employer - Engagement Builder/Select TR Tab/Buttons/Select Fee Type Dropdown Btn'))
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagement Builder/Select TR Tab/Elements/Percent Base - Annual Option'))
-
-WebUI.setText(findTestObject('Object Repository/Employer - Engagement Builder/Select TR Tab/Textboxes/Amount Txtbox'), numberRoles)
 
 WebUI.click(findTestObject('Object Repository/Employer - Talent Request Page/Job Requirements/Create Talent Request Page/Buttons/Next Btn'))
 
@@ -161,13 +159,11 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagem
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Texts/Engagements Title Txt'), 3)
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Elements/First Card Engagement No'), 3)
+//GET Engagement Number
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Texts/Engagement Number'), 5)
 
-def EngagementNumber = WebUI.getText(findTestObject('Object Repository/Employer - Engagements Page/Elements/First Card Engagement No'))
+def EngagementNo = WebUI.getText(findTestObject('Object Repository/Employer - Engagements Page/Texts/Engagement Number'))
 
-GlobalVariable.EngagementNo = EngagementNumber
-//WebUI.click(findTestObject('Object Repository/Engagement Page/Elements/First Engagement Card'))
-//
-//WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Flag as Urgent/Buttons/Flag as Urgent btn'))
-//
-//WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Flag as Urgent/Confirm Engagement Urgency Modal/Buttons/Confirm Changes Btn'))
+GlobalVariable.EngagementNumber = EngagementNo
+
+
