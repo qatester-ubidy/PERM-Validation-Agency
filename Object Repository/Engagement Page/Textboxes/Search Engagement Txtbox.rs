@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Nondisclosure Agreement</name>
+   <name>Search Engagement Txtbox</name>
    <tag></tag>
-   <elementGuidId>a12f9bf8-8f35-4861-9781-26b02b94b6e7</elementGuidId>
+   <elementGuidId>123ce2f3-00f1-4ccf-9c91-c6dc10170753</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[text()=' Ubidy Nondisclosure Agreement']//parent::span//preceding::input[1]</value>
+         <value>//div[text()=&quot;Search by Job Title, Engagement Number or Employer Name&quot;]/parent::div//input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,7 +18,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[text()=' Ubidy Nondisclosure Agreement']//parent::span//preceding::input[1]</value>
-      <webElementGuid>3542927b-5ec9-4137-b38f-e9b144ccf01d</webElementGuid>
+      <value>//div[text()=&quot;Search by Job Title, Engagement Number or Employer Name&quot;]/parent::div//input</value>
+      <webElementGuid>8d0fb0c4-b834-4440-812c-b6b11eb2d8e8</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Nondisclosure Agreement</name>
+   <name>Rebidding Permission Text</name>
    <tag></tag>
-   <elementGuidId>a12f9bf8-8f35-4861-9781-26b02b94b6e7</elementGuidId>
+   <elementGuidId>fd057016-0979-4fe2-a68b-41a5db092329</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[text()=' Ubidy Nondisclosure Agreement']//parent::span//preceding::input[1]</value>
+         <value>//span[@class=&quot;rebidding-permission-text&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,7 +18,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[text()=' Ubidy Nondisclosure Agreement']//parent::span//preceding::input[1]</value>
-      <webElementGuid>3542927b-5ec9-4137-b38f-e9b144ccf01d</webElementGuid>
+      <value>//span[@class=&quot;rebidding-permission-text&quot;]</value>
+      <webElementGuid>2a3aa7fe-fc5d-4059-a908-1414663b7adc</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

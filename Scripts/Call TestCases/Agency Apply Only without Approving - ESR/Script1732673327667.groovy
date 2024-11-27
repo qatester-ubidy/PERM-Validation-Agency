@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase("Call TestCases/Create New Job Post - ATR"), [:])
+WebUI.callTestCase(findTestCase("Call TestCases/Create New Job Post"), [:])
 
 //APPLY TO THE NEWLY CREATED JOB POST
 WebUI.callTestCase(findTestCase("Call TestCases/Log In Existing Agency Account"), [:])
@@ -30,9 +30,9 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Opportunities Page
 
 WebUI.click(findTestObject('Object Repository/Opportunities Page/Buttons/All Other Opportunities Tab Btn'))
 
-WebUI.setText(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), GlobalVariable.EngagementNumber)
-
 WebUI.waitForElementPresent(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), 3)
+
+WebUI.setText(findTestObject('Object Repository/Opportunities Page/Textboxes/Search Txtbox'), GlobalVariable.EngagementNo)
 
 WebUI.waitForElementClickable(findTestObject('Object Repository/Opportunities Page/Elements/First Opportunity Card'), 3)
 
@@ -43,14 +43,6 @@ WebUI.waitForElementClickable(findTestObject('Object Repository/Employer - Engag
 WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Checkboxes/Nondisclosure Agreement'))
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Checkboxes/Terms and Conditions'))
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Application Tab/Textboxes/Fee Amount Txtbox'), 3)
-
-WebUI.sendKeys(findTestObject('Object Repository/Engagement Page/Application Tab/Textboxes/Fee Amount Txtbox'), Keys.chord(Keys.CONTROL+"a"))
-
-WebUI.sendKeys(findTestObject('Object Repository/Engagement Page/Application Tab/Textboxes/Fee Amount Txtbox'), Keys.chord(Keys.DELETE))
-
-WebUI.setText(findTestObject('Object Repository/Engagement Page/Application Tab/Textboxes/Fee Amount Txtbox'), "10")
 
 WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Tab/Buttons/Submit Application Btn'))
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC008 Verify if Declined applications now displayed in Application tab (ESR)</name>
+   <name>Employer Decline Application - ESR</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>d3ce7820-fbb6-47ce-86de-b29dcce74f76</testCaseGuid>
+   <testCaseGuid>2b547a27-344f-4ae1-8482-b8454271577d</testCaseGuid>
 </TestCaseEntity>

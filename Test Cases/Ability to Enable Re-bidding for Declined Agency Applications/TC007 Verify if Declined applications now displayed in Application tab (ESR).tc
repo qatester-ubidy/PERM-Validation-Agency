@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC007 Verify if Declined applications now displayed in Application tab (ESR)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d3ce7820-fbb6-47ce-86de-b29dcce74f76</testCaseGuid>
+</TestCaseEntity>

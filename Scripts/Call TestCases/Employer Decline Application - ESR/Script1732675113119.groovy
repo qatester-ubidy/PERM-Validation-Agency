@@ -29,9 +29,10 @@ WebUI.click(findTestObject('Object Repository/Employer - Notification Page/Butto
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Decline Btn'), 3)
 
-//WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Decline Btn'))
-//
-//WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Decline Application Btn'), 3)
-//
-//WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Decline Application Btn'))
+WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Decline Btn'))
 
+WebUI.click(findTestObject('Object Repository/Employer - Engagements Page/Application Status Update Modal/Decline Application Btn'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Employer - Engagements Page/Decline Application Modal/Decline Application Success Toast Msg'), 3)
+
+WebUI.verifyTextPresent("The agency application has been successfully declined.", false)

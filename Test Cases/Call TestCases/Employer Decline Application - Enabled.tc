@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC007 Withdraw application is NOT displayed on Declined status rebidding enabled</name>
+   <name>Employer Decline Application - Enabled</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>2b8f0e9a-0f3d-409c-82c8-881fafe48059</testCaseGuid>
+   <testCaseGuid>a5dbe635-4808-41bc-bbb1-359f58d8cb19</testCaseGuid>
 </TestCaseEntity>

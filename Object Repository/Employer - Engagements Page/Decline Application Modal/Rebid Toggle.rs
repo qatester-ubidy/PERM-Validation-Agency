@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Nondisclosure Agreement</name>
+   <name>Rebid Toggle</name>
    <tag></tag>
-   <elementGuidId>a12f9bf8-8f35-4861-9781-26b02b94b6e7</elementGuidId>
+   <elementGuidId>98ea090a-78cb-4d1b-8683-8b002bdd59eb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[text()=' Ubidy Nondisclosure Agreement']//parent::span//preceding::input[1]</value>
+         <value>//div[@class=&quot;rebid-status&quot;]//span[@class=&quot;ant-switch-inner&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,7 +18,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[text()=' Ubidy Nondisclosure Agreement']//parent::span//preceding::input[1]</value>
-      <webElementGuid>3542927b-5ec9-4137-b38f-e9b144ccf01d</webElementGuid>
+      <value>//div[@class=&quot;rebid-status&quot;]//span[@class=&quot;ant-switch-inner&quot;]</value>
+      <webElementGuid>485b09e1-dd87-43b0-80dd-12f647ed17ba</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

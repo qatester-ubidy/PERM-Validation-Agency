@@ -17,3 +17,24 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+//WebUI.callTestCase(findTestCase("Call TestCases/Agency Apply Only without Approving - ESR"), [:])
+
+WebUI.callTestCase(findTestCase("Call TestCases/Employer Decline Application - ESR"), [:])
+
+WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
+
+WebUI.callTestCase(findTestCase("Call TestCases/Login Agency Account"), [:])
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Buttons/Engagements Tab Btn'), 3)
+
+WebUI.click(findTestObject('Object Repository/Engagement Page/Buttons/Engagements Tab Btn'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Application Tab/Application Tab'), 3)
+
+WebUI.click(findTestObject('Object Repository/Engagement Page/Application Tab/Application Tab'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Application Tab/Elements/First Engagement Card'), 3)
+
+WebUI.verifyTextPresent(GlobalVariable.EngagementNo, false)
+
+WebUI.closeBrowser()
