@@ -17,3 +17,42 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.callTestCase(findTestCase("Call TestCases/Agency Apply Only without Approving"), [:])
+
+WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
+
+WebUI.callTestCase(findTestCase("Call TestCases/Login Agency Account"), [:])
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Buttons/Engagements Tab Btn'), 3)
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Application Tab/Application Tab'), 3)
+
+WebUI.click(findTestObject('Object Repository/Engagement Page/Application Tab/Application Tab'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Application Tab/Elements/First Engagement Card'), 3)
+
+WebUI.click(findTestObject('Object Repository/Engagement Page/Application Tab/Elements/First Engagement Card'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Application Tab/Buttons/Edit Application Btn'), 3)
+
+WebUI.click(findTestObject('Object Repository/Engagement Page/Application Tab/Buttons/Edit Application Btn'))
+
+WebUI.sendKeys(findTestObject('Object Repository/Engagement Page/Application Tab/Textboxes/Fee Amount Txtbox'), Keys.chord(Keys.CONTROL+"a"))
+
+WebUI.sendKeys(findTestObject('Object Repository/Engagement Page/Application Tab/Textboxes/Fee Amount Txtbox'), Keys.chord(Keys.DELETE))
+
+WebUI.setText(findTestObject('Object Repository/Engagement Page/Application Tab/Textboxes/Fee Amount Txtbox'), "12")
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Engagement Page/Application Tab/Buttons/Save Btn'), 3)
+
+WebUI.verifyElementNotPresent(findTestObject('Object Repository/Engagement Page/Application Tab/Buttons/Submit Bid Btn'), 3)
+
+WebUI.verifyElementNotPresent(findTestObject('Object Repository/Engagement Page/Application Tab/Buttons/Submit Application Btn'), 3)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Engagement Page/Application Tab/Buttons/Withdraw Application Btn'), 3)
+
+WebUI.click(findTestObject('Object Repository/Engagement Page/Application Tab/Buttons/Save Btn'))
+
+WebUI.verifyTextPresent("Successfully updated your application", false)
+
+WebUI.closeBrowser()

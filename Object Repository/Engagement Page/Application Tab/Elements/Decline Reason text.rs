@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Nondisclosure Agreement</name>
+   <name>Decline Reason text</name>
    <tag></tag>
-   <elementGuidId>a12f9bf8-8f35-4861-9781-26b02b94b6e7</elementGuidId>
+   <elementGuidId>fabfa16b-6c9f-4a53-a777-92c1ad12e2a8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[text()=' Ubidy Nondisclosure Agreement']//parent::span//preceding::input[1]</value>
+         <value>//span[@class=&quot;reason-text&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,7 +18,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[text()=' Ubidy Nondisclosure Agreement']//parent::span//preceding::input[1]</value>
-      <webElementGuid>3542927b-5ec9-4137-b38f-e9b144ccf01d</webElementGuid>
+      <value>//span[@class=&quot;reason-text&quot;]</value>
+      <webElementGuid>6f4af8ef-5f07-47d4-8386-489d83dc9367</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

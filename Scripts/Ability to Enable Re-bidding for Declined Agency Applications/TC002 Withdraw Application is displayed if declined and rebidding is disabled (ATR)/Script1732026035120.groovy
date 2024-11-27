@@ -19,8 +19,30 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase("Call TestCases/Agency Apply Only without Approving"), [:])
 
-WebUI.callTestCase(findTestCase("Call TestCases/Employer Decline Application"), [:])
+WebUI.callTestCase(findTestCase("Call TestCases/Employer Decline Application - Disabled"), [:])
 
-//WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
-//
-//WebUI.callTestCase(findTestCase("Call TestCases/Login Agency Account"), [:])
+WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
+
+WebUI.callTestCase(findTestCase("Call TestCases/Login Agency Account"), [:])
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Notification Page/Buttons/Notification Btn'), 3)
+
+WebUI.click(findTestObject('Object Repository/Notification Page/Buttons/Notification Btn'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Notification Page/Buttons/View Now Btn'), 3)
+
+WebUI.click(findTestObject('Object Repository/Notification Page/Buttons/View Now Btn'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Application Tab/Elements/Application Declined Banner'), 3)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Engagement Page/Application Tab/Elements/Rebidding Permission Text'), 3)
+
+WebUI.verifyTextPresent("Rebidding Permission: Disabled", false)
+
+WebUI.verifyTextPresent("Reason: This is test automation declined reason", false)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Engagement Page/Application Tab/Buttons/Withdraw Application Btn'), 3)
+
+WebUI.verifyElementClickable(findTestObject('Object Repository/Engagement Page/Application Tab/Buttons/Withdraw Application Btn'))
+
+WebUI.closeBrowser()

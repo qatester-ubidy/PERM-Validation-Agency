@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Agency Apply Only without Approving - ESR</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f65e8bfa-000c-4897-8aa5-0981f667f960</testCaseGuid>
+</TestCaseEntity>

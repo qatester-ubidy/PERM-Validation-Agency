@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase("Call TestCases/Agency Apply Only without Approving"), [:])
 
-WebUI.callTestCase(findTestCase("Call TestCases/Employer Decline Application"), [:])
+WebUI.callTestCase(findTestCase("Call TestCases/Employer Decline Application - Disabled"), [:])
 
 WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
 

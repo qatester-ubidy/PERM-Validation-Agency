@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Decline Reason Txtbox</name>
+   <tag></tag>
+   <elementGuidId>b681545d-a4a7-470c-b773-a4262c1760fc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//section[@class=&quot;decline-section&quot;]//textarea</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//section[@class=&quot;decline-section&quot;]//textarea</value>
+      <webElementGuid>c7e10656-720d-48f9-b337-d59ecd21b2bc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>textarea</value>
+      <webElementGuid>07ebfaf5-90a2-4f58-9e6d-e37194c7b17e</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

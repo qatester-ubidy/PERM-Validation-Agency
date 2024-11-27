@@ -17,3 +17,28 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.callTestCase(findTestCase("Call TestCases/Agency Apply Only without Approving"), [:])
+
+WebUI.callTestCase(findTestCase("Call TestCases/Employer Decline Application - Disabled"), [:])
+
+WebUI.callTestCase(findTestCase("Call TestCases/Open Ubidy Agency"), [:])
+
+WebUI.callTestCase(findTestCase("Call TestCases/Login Agency Account"), [:])
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Notification Page/Buttons/Notification Btn'), 3)
+
+WebUI.click(findTestObject('Object Repository/Notification Page/Buttons/Notification Btn'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Notification Page/Buttons/View Now Btn'), 3)
+
+WebUI.click(findTestObject('Object Repository/Notification Page/Buttons/View Now Btn'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Engagement Page/Application Tab/Elements/Rebidding Permission Text'), 3)
+
+WebUI.verifyElementText(findTestObject('Object Repository/Engagement Page/Application Tab/Elements/Rebidding Permission Text'), "Rebidding Permission: Disabled")
+
+WebUI.verifyElementNotPresent(findTestObject('Object Repository/Engagement Page/Application Tab/Buttons/Edit Application Btn'), 3)
+
+WebUI.verifyElementNotPresent(findTestObject('Object Repository/Engagement Page/Application Tab/Buttons/Re-bid Application Btn'), 3)
+
+WebUI.closeBrowser()

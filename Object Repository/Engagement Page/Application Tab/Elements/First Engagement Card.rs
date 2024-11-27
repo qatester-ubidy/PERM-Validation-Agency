@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Nondisclosure Agreement</name>
+   <name>First Engagement Card</name>
    <tag></tag>
-   <elementGuidId>a12f9bf8-8f35-4861-9781-26b02b94b6e7</elementGuidId>
+   <elementGuidId>c4bc1e37-f8e3-440c-b5bc-982501949192</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[text()=' Ubidy Nondisclosure Agreement']//parent::span//preceding::input[1]</value>
+         <value>//div[@class=&quot;engagements-table&quot;]/section[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,7 +18,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[text()=' Ubidy Nondisclosure Agreement']//parent::span//preceding::input[1]</value>
-      <webElementGuid>3542927b-5ec9-4137-b38f-e9b144ccf01d</webElementGuid>
+      <value>//div[@class=&quot;engagements-table&quot;]/section[1]</value>
+      <webElementGuid>553589ce-3627-4765-9ce6-3ad135a0733c</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
