@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC004 Verify Rebid Enabled notification redirection</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>28403899-a1ef-4159-bcc8-7c6c72cd94e6</testCaseGuid>
+</TestCaseEntity>
