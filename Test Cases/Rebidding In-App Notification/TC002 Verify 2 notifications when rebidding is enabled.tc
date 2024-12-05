@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC002 Verify 2 notifications when rebidding is enabled</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>716717a9-bbf5-420c-aa1f-239290b1031a</testCaseGuid>
+</TestCaseEntity>
